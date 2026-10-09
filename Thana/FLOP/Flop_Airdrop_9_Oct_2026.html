@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flop Airdrop 9 Oct 2026 - Live Preview & Interactive Playbook</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #090a0f;
+            --card-bg: rgba(18, 20, 32, 0.85);
+            --card-border: rgba(255, 255, 255, 0.08);
+            --accent-yellow: #fbbf24;
+            --accent-orange: #f97316;
+            --accent-cyan: #06b6d4;
+            --accent-purple: #a855f7;
+            --accent-green: #10b981;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --font-head: 'Space Grotesk', sans-serif;
+            --font-main: 'Inter', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: var(--font-main);
+            line-height: 1.6;
+            background-image: 
+                radial-gradient(circle at 10% 10%, rgba(251, 191, 36, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(168, 85, 247, 0.08) 0%, transparent 40%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2.5rem 1.5rem;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.25rem 2rem;
+            background: rgba(9, 10, 15, 0.9);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid var(--card-border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-family: var(--font-head);
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .tag-pill {
+            background: rgba(251, 191, 36, 0.15);
+            color: var(--accent-yellow);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .btn-github {
+            background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+            color: #080a0f;
+            padding: 0.6rem 1.4rem;
+            border-radius: 10px;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 0.9rem;
+            box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3);
+            transition: all 0.2s ease;
+        }
+
+        .btn-github:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(251, 191, 36, 0.45);
+        }
+
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem 2rem;
+        }
+
+        .hero-title {
+            font-family: var(--font-head);
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .hero-title span {
+            background: linear-gradient(135deg, var(--accent-yellow), var(--accent-orange));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            color: var(--text-muted);
+            font-size: 1.15rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+        }
+
+        /* Metrics Cards */
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1.25rem;
+            margin-bottom: 3rem;
+        }
+
+        .metric-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            backdrop-filter: blur(12px);
+            transition: transform 0.25s ease;
+        }
+
+        .metric-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(251, 191, 36, 0.3);
+        }
+
+        .metric-label {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.5rem;
+        }
+
+        .metric-value {
+            font-size: 1.8rem;
+            font-weight: 700;
+            font-family: var(--font-mono);
+            color: #fff;
+        }
+
+        .metric-subtext {
+            font-size: 0.85rem;
+            color: var(--accent-green);
+            margin-top: 0.4rem;
+            font-weight: 600;
+        }
+
+        /* Review Sections & Cards */
+        .section-title {
+            font-family: var(--font-head);
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--accent-yellow);
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .review-card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            backdrop-filter: blur(16px);
+        }
+
+        .screenshot-container {
+            position: relative;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            margin: 1.5rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .screenshot-img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .screenshot-caption {
+            background: rgba(10, 11, 16, 0.9);
+            padding: 0.75rem 1.25rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--card-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contest-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 16px;
+            padding: 1.5rem;
+            transition: border-color 0.25s ease;
+        }
+
+        .contest-card:hover {
+            border-color: rgba(251, 191, 36, 0.3);
+        }
+
+        .contest-badge {
+            background: rgba(168, 85, 247, 0.15);
+            color: #c084fc;
+            border: 1px solid rgba(168, 85, 247, 0.3);
+            padding: 0.25rem 0.65rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Table Design */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 0.9rem 1.2rem;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        th {
+            background: rgba(0, 0, 0, 0.35);
+            color: var(--text-muted);
+            font-family: var(--font-head);
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.5px;
+        }
+
+        .badge-fair {
+            background: rgba(16, 185, 129, 0.15);
+            color: #34d399;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        .badge-cyan {
+            background: rgba(6, 182, 212, 0.15);
+            color: #38bdf8;
+            padding: 0.25rem 0.6rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.85rem;
+        }
+
+        /* Playbook Steps */
+        .playbook-card {
+            background: rgba(255, 255, 255, 0.02);
+            border-left: 4px solid var(--accent-yellow);
+            border-radius: 0 14px 14px 0;
+            padding: 1.5rem;
+            margin-bottom: 1.25rem;
+        }
+
+        .playbook-card.miner {
+            border-left-color: var(--accent-green);
+        }
+
+        .playbook-card.validator {
+            border-left-color: var(--accent-cyan);
+        }
+
+        .playbook-card h3 {
+            font-family: var(--font-head);
+            color: #fff;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .playbook-card ol {
+            margin-left: 1.25rem;
+            margin-top: 0.75rem;
+            color: var(--text-muted);
+        }
+
+        .playbook-card li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* Links Grid */
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1.2rem 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid var(--card-border);
+            border-radius: 14px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 600;
+            transition: all 0.25s ease;
+        }
+
+        .link-card:hover {
+            background: rgba(251, 191, 36, 0.08);
+            border-color: rgba(251, 191, 36, 0.4);
+            transform: translateX(4px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 1rem;
+            color: var(--text-muted);
+            border-top: 1px solid var(--card-border);
+            margin-top: 4rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: var(--accent-yellow);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">⚡ FLOP AIRDROP REVIEW & PLAYBOOK</div>
+        <span class="tag-pill">TinyFish Verified Data</span>
+        <a href="https://github.com/ThanaLamth/Tinyfish-review" target="_blank" class="btn-github">GitHub Repo ↗</a>
+    </header>
+
+    <div class="container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="hero-title">Flop Network: <span>Food for Your AI Agent</span></h1>
+            <p class="hero-subtitle">Báo cáo phân tích thực tế từ TinyFish CLI, 2 cuộc thi Pre-Testnet mới nhất từ Arthur Hayes & Flop Labs, và Hướng dẫn thực thi chi tiết Airdrop Flop Finance.</p>
+        </section>
+
+        <!-- Live Metrics Grid -->
+        <div class="metrics-grid">
+            <div class="metric-card">
+                <div class="metric-label">Tổng Genesis Pool</div>
+                <div class="metric-value">4.4B $FLOP</div>
+                <div class="metric-subtext">~24.3% Tổng cung năm 10</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Mô hình Phân bổ</div>
+                <div class="metric-value">100% FAIR</div>
+                <div class="metric-subtext">No Pre-sale • No VCs</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Thời gian Testnet</div>
+                <div class="metric-value">Q4 2026</div>
+                <div class="metric-subtext">Thời lượng: ~90 Ngày</div>
+            </div>
+            <div class="metric-card">
+                <div class="metric-label">Mainnet Launch</div>
+                <div class="metric-value">Q1 2027</div>
+                <div class="metric-subtext">Genesis Block Allocation</div>
+            </div>
+        </div>
+
+        <!-- Section 1: TinyFish Verification & Screenshots -->
+        <div class="review-card">
+            <h2 class="section-title">🌐 1. Trải Nghiệm Thực Tế & Dẫn Chứng Screenshots (TinyFish)</h2>
+            <p>Kiểm chứng dữ liệu trực tiếp từ các domain chính thức <a href="https://flop.finance/" target="_blank" style="color: var(--accent-yellow);">flop.finance</a>, <a href="https://flop.finance/airdrop" target="_blank" style="color: var(--accent-yellow);">flop.finance/airdrop</a> và <a href="https://flop.finance/testnet" target="_blank" style="color: var(--accent-yellow);">flop.finance/testnet</a> bằng TinyFish CLI:</p>
+
+            <div class="screenshot-container">
+                <img src="./screenshots/flop_homepage.jpg" alt="Flop Finance Homepage" class="screenshot-img">
+                <div class="screenshot-caption">
+                    <span>🖼️ Screenshot 1: Trang chủ Flop Finance - Proof of Useful Inference</span>
+                    <a href="https://flop.finance/" target="_blank" style="color: var(--accent-yellow); text-decoration: none;">Xem flop.finance ↗</a>
+                </div>
+            </div>
+
+            <div class="screenshot-container">
+                <img src="./screenshots/flop_airdrop_dashboard.jpg" alt="Flop Airdrop Dashboard" class="screenshot-img">
+                <div class="screenshot-caption">
+                    <span>🖼️ Screenshot 2: Bảng Quản trị Airdrop & Phân bổ 4.4B $FLOP</span>
+                    <a href="https://flop.finance/airdrop" target="_blank" style="color: var(--accent-yellow); text-decoration: none;">Xem flop.finance/airdrop ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: Pre-Testnet Competitions -->
+        <div class="review-card">
+            <h2 class="section-title">🏆 2. Chi Tiết 2 Cuộc Thi Pre-Testnet (Arthur Hayes & Flop Labs)</h2>
+            <p style="margin-bottom: 1.5rem;">Cập nhật 2 cuộc thi đang diễn ra trên môi trường <strong>Technocore</strong> làm tiêu chí nhận thưởng $FLOP sớm trước khi Testnet mở:</p>
+
+            <div class="grid-2">
+                <div class="contest-card">
+                    <h3 style="font-family: var(--font-head); color: var(--accent-yellow); margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                        <span>1. NVDA Perp Prediction</span>
+                        <span class="contest-badge">1M $FLOP Pool</span>
+                    </h3>
+                    <p style="font-size: 0.85rem; color: var(--accent-orange); margin-bottom: 0.75rem;">Đăng bởi @CryptoHayes (Arthur Hayes) • 25/09/2026</p>
+                    <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1rem;">
+                        <strong>Nội dung:</strong> AI Agent dự đoán giá NVDA perp trên Hyperliquid vào ngày 04/10/2026. Các Agent tự động đọc luật, claim tiền thử nghiệm và giao dịch tự động trên Technocore.
+                    </p>
+                    <a href="https://x.com/CryptoHayes/status/2103453504513937720" target="_blank" style="color: var(--accent-yellow); font-size: 0.85rem; text-decoration: none;">Xem Tweet Gốc của Arthur Hayes ↗</a>
+                </div>
+
+                <div class="contest-card">
+                    <h3 style="font-family: var(--font-head); color: var(--accent-yellow); margin-bottom: 0.5rem; display: flex; justify-content: space-between;">
+                        <span>2. 100k FLOP Sonnet Challenge</span>
+                        <span class="contest-badge">100k $FLOP Pool</span>
+                    </h3>
+                    <p style="font-size: 0.85rem; color: var(--accent-orange); margin-bottom: 0.75rem;">Đăng bởi @flop_labs • 11/09 - 18/09/2026</p>
+                    <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 1rem;">
+                        <strong>Nội dung:</strong> AI Agent lập nhóm 4–8 Agents để cùng viết một bài thơ Sonnet (mỗi turn 1 từ). 50k $FLOP cho Team thắng + 50k $FLOP chia cho người dùng bình chọn (Voters).
+                    </p>
+                    <a href="https://x.com/flop_labs/status/2098307911948890489" target="_blank" style="color: var(--accent-yellow); font-size: 0.85rem; text-decoration: none;">Xem Tweet Gốc của Flop Labs ↗</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Allocation Table -->
+        <div class="review-card">
+            <h2 class="section-title">📊 3. Bảng Phân Bổ Genesis Allocation & Cơ Chế Unlock</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Vai trò</th>
+                        <th>Pool Genesis</th>
+                        <th>Cách tính điểm</th>
+                        <th>Cơ chế Unlock (Unlock Terms)</th>
+                        <th>Form Đăng ký</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Miner (GPU)</strong></td>
+                        <td>1,200,000,000 $FLOP</td>
+                        <td>Pro-rata theo compute đã verify (FLOPs)</td>
+                        <td><span class="badge-fair">25% Liquid</span> lúc Genesis; 75% unlock 1:1 theo $FLOP phí inference Mainnet</td>
+                        <td><a href="https://flop.finance/apply/miner" target="_blank" class="badge-cyan">Apply Miner ↗</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Agent (User/Bot)</strong></td>
+                        <td>1,200,000,000 $FLOP</td>
+                        <td>Pro-rata theo compute mua trong session settled + Contests</td>
+                        <td>Khóa 100%. Mở khóa 3:1 (Tiêu 3 $FLOP khóa vào compute để mở 1 $FLOP liquid)</td>
+                        <td>Dùng DID</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Validator</strong></td>
+                        <td>1,200,000,000 $FLOP</td>
+                        <td>Top 1,000 ranking Testnet (1.2M FLOP/ghế)</td>
+                        <td>Khóa làm Bond thế chấp đến Halving 1 (~2 năm), mở 1 validator/ngày trong 1,000 ngày</td>
+                        <td><a href="https://flop.finance/apply/validator" target="_blank" class="badge-cyan">Apply Node ↗</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ecosystem</strong></td>
+                        <td>800,000,000 $FLOP</td>
+                        <td>Creator, referral, builder, security reports, Sonnet Voters</td>
+                        <td>Phân bổ theo các chương trình phát triển hệ sinh thái</td>
+                        <td><a href="https://flop.finance/apply/kol" target="_blank" class="badge-cyan">Apply KOL ↗</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Section 4: How-to-Farm Playbook -->
+        <div class="review-card">
+            <h2 class="section-title">🎯 4. Cẩm Nang Hướng Dẫn Thực Thi Chi Tiết (How-To-Farm Playbook)</h2>
+
+            <div class="playbook-card">
+                <h3><span>🟢 1. Luồng Agent (Máy Tính Thường / Người Dùng Phổ Thông)</span> <span style="font-size: 0.85rem; color: var(--accent-yellow);">DỄ NHẤT</span></h3>
+                <ol>
+                    <li><strong>Tạo Định danh DID</strong>: Dùng mã hóa Ed25519 tạo khoá cặp `did:key:...` và đăng ký trên <a href="https://technocore.chat/" target="_blank" style="color: var(--accent-yellow);">technocore.chat</a>. Lưu Private Key an toàn tại local.</li>
+                    <li><strong>Tham gia Pre-Testnet Contests</strong>: Dùng DID vote cho các bài thơ Sonnet (chia pool 50k $FLOP) và chạy Agent trade tự động trong NVDA prediction (pool 1M $FLOP).</li>
+                    <li><strong>Thực thi khi Testnet Q4 2026 Mở</strong>: Rút token Faucet và chạy bot tự động mua compute AI inference trong các session settled. <em>(Lưu ý: Giữ token Faucet = 0 điểm)</em>.</li>
+                </ol>
+            </div>
+
+            <div class="playbook-card miner">
+                <h3><span>🚀 2. Luồng Miner (GPU ≥ 16GB VRAM)</span> <span style="font-size: 0.85rem; color: var(--accent-green);">TIỀM NĂNG CAO NHẤT</span></h3>
+                <ol>
+                    <li><strong>Chuẩn bị GPU</strong>: GPU $\ge$ 16GB VRAM (RTX 3090, 4090, A6000, A100 hoặc thuê Cloud GPU trên Vast.ai/RunPod).</li>
+                    <li><strong>Nộp Form Attestation</strong>: Điền form tại <a href="https://flop.finance/apply/miner" target="_blank" style="color: var(--accent-green);">flop.finance/apply/miner</a> để được ưu tiên tài trợ tiền thế chấp.</li>
+                    <li><strong>Vận hành Miner Node</strong>: Cài đặt Flop Miner Client, thực hiện Calibration và giữ node 24/7 phục vụ các session inference thành công. <em>(Treo máy idle = 0 điểm)</em>.</li>
+                </ol>
+            </div>
+
+            <div class="playbook-card validator">
+                <h3><span>🖥️ 3. Luồng Validator (Server VPS / Dedicated Server)</span> <span style="font-size: 0.85rem; color: var(--accent-cyan);">SUẤT 1.2M FLOP BOND</span></h3>
+                <ol>
+                    <li><strong>Cấu hình Server</strong>: CPU 8+ cores, 64GB RAM, 4TB NVMe SSD (tối thiểu 2TB), Mạng 1Gbps.</li>
+                    <li><strong>Nộp Form & Deploy</strong>: Nộp form tại <a href="https://flop.finance/apply/validator" target="_blank" style="color: var(--accent-cyan);">flop.finance/apply/validator</a>. Deploy node và giữ Uptime > 99.9%.</li>
+                    <li><strong>Cạnh tranh Top 1,000</strong>: Lọt bảng xếp hạng Top 1,000 Validator để nhận suất 1.2 Triệu $FLOP Genesis Bond.</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Section 5: Direct Hyperlinks -->
+        <div class="review-card">
+            <h2 class="section-title">🔗 5. Danh Sách Hyperlinks Dẫn Chứng Trực Tiếp</h2>
+            <div class="links-grid">
+                <a href="https://flop.finance/" target="_blank" class="link-card">
+                    <div>
+                        <div>Trang Chủ Flop Finance</div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">flop.finance</span>
+                    </div>
+                    <span style="color: var(--accent-yellow);">↗</span>
+                </a>
+                <a href="https://flop.finance/airdrop" target="_blank" class="link-card">
+                    <div>
+                        <div>Quy Tắc Airdrop Flop</div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">flop.finance/airdrop</span>
+                    </div>
+                    <span style="color: var(--accent-yellow);">↗</span>
+                </a>
+                <a href="https://flop.finance/testnet" target="_blank" class="link-card">
+                    <div>
+                        <div>Thông Số Testnet Spec</div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">flop.finance/testnet</span>
+                    </div>
+                    <span style="color: var(--accent-yellow);">↗</span>
+                </a>
+                <a href="https://x.com/flop_labs" target="_blank" class="link-card">
+                    <div>
+                        <div>X / Twitter @flop_labs</div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">x.com/flop_labs</span>
+                    </div>
+                    <span style="color: var(--accent-yellow);">↗</span>
+                </a>
+                <a href="https://x.com/CryptoHayes" target="_blank" class="link-card">
+                    <div>
+                        <div>X / Twitter @CryptoHayes</div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">x.com/CryptoHayes</span>
+                    </div>
+                    <span style="color: var(--accent-yellow);">↗</span>
+                </a>
+                <a href="https://github.com/ThanaLamth/Tinyfish-review" target="_blank" class="link-card">
+                    <div>
+                        <div>GitHub Repository</div>
+                        <span style="font-size: 0.8rem; color: var(--text-muted);">ThanaLamth/Tinyfish-review</span>
+                    </div>
+                    <span style="color: var(--accent-yellow);">↗</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>Báo cáo Đánh giá & Hướng dẫn Săn Airdrop Flop Finance | Verified via <strong>TinyFish CLI</strong></p>
+        <p style="margin-top: 0.5rem; font-size: 0.8rem;">Push thành công lên GitHub Repository: <a href="https://github.com/ThanaLamth/Tinyfish-review" target="_blank">https://github.com/ThanaLamth/Tinyfish-review.git</a></p>
+    </footer>
+
+</body>
+</html>
