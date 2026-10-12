@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hands-on Arcus review covering Stock Tokens, Perpetuals, wallet onboarding, Rewards, and Arcus Points.">
+  <title>Arcus Review 2026</title>
+  <style>
+    :root {
+      --bg: #f6f4ed;
+      --surface: #fffdf8;
+      --surface-2: #eeeadf;
+      --ink: #17231b;
+      --muted: #657068;
+      --line: #d8d5ca;
+      --green: #174b2b;
+      --green-soft: #dce8dc;
+      --gold: #9a6b18;
+      --danger: #a23a2b;
+      --shadow: 0 18px 50px rgba(31, 48, 37, 0.10);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 12% 0%, rgba(23, 75, 43, .11), transparent 32rem),
+        var(--bg);
+      font: 16px/1.7 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: .85rem max(1.25rem, calc((100vw - 1120px) / 2));
+      color: #f8f7f1;
+      background: rgba(19, 47, 29, .96);
+      border-bottom: 1px solid rgba(255,255,255,.12);
+      backdrop-filter: blur(10px);
+    }
+    .brand { font-weight: 800; letter-spacing: .08em; }
+    .meta { color: #d8e5da; font-size: .9rem; }
+    main { width: min(1120px, calc(100% - 2rem)); margin: 2.5rem auto 5rem; }
+    article {
+      padding: clamp(1.4rem, 4vw, 4.5rem);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+    }
+    h1, h2, h3 {
+      color: #143420;
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.18;
+      text-wrap: balance;
+    }
+    h1 { margin: 0 0 1.2rem; font-size: clamp(2.35rem, 6vw, 4.7rem); letter-spacing: -.045em; }
+    h2 { margin: 3.5rem 0 1rem; padding-top: .5rem; font-size: clamp(1.65rem, 3.5vw, 2.5rem); }
+    h3 { margin: 2.35rem 0 .75rem; font-size: clamp(1.25rem, 2.5vw, 1.65rem); }
+    p, li { max-width: 82ch; }
+    a { color: var(--green); font-weight: 650; text-decoration-thickness: .08em; text-underline-offset: .16em; }
+    a:hover { color: var(--gold); }
+    hr { margin: 3rem 0; border: 0; border-top: 1px solid var(--line); }
+    blockquote {
+      margin: .75rem 0 2rem;
+      padding: .8rem 1rem;
+      color: var(--muted);
+      background: var(--green-soft);
+      border-left: 4px solid var(--green);
+      border-radius: 0 10px 10px 0;
+    }
+    blockquote p { margin: 0; }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+      margin: 1.25rem auto .75rem;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(20, 52, 32, .10);
+    }
+    table { width: 100%; margin: 1.25rem 0 2rem; border-collapse: collapse; font-size: .94rem; }
+    thead th { color: white; background: var(--green); }
+    th, td { padding: .8rem .9rem; text-align: left; vertical-align: top; border: 1px solid var(--line); }
+    tbody tr:nth-child(even) { background: #f3f1e9; }
+    code { padding: .15em .35em; background: var(--surface-2); border-radius: 5px; }
+    ul, ol { padding-left: 1.35rem; }
+    li + li { margin-top: .45rem; }
+    article > p:first-of-type { color: var(--muted); font-size: 1.12rem; }
+    .footer { margin-top: 1.5rem; color: var(--muted); text-align: center; font-size: .88rem; }
+    @media (max-width: 760px) {
+      .topbar { align-items: flex-start; flex-direction: column; }
+      main { width: min(100% - 1rem, 1120px); margin-top: .5rem; }
+      article { padding: 1.15rem; border-radius: 14px; }
+      table { display: block; overflow-x: auto; white-space: normal; }
+      h2 { margin-top: 2.5rem; }
+    }
+    @media print {
+      .topbar { position: static; }
+      body { background: white; }
+      main { width: 100%; margin: 0; }
+      article { border: 0; box-shadow: none; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">ARCUS REVIEW</div>
+    <div class="meta">TinyFish public walkthrough · Captured October 12, 2026</div>
+  </header>
+  <main>
+    <article><h1 dir="auto">Arcus Review 2026: Stock Token DEX, Wallet Flow, Perps Gate, and Points Campaign</h1>
+<p dir="auto"><em>Reviewed October 12, 2026 | Public interface tested with TinyFish | Data checked against Arcus Docs and DefiLlama</em></p>
+<hr>
+<h2 dir="auto">First Impression: More Brokerage Than DEX</h2>
+<p dir="auto">The <a href="https://arcus.xyz/" rel="nofollow">Arcus homepage</a> opens with a large promise: <strong>“Trade commodities while the world sleeps.”</strong> Under it, Arcus advertises 24/7 Stock Token trading with zero fees and a separate waitlist for leveraged Perpetuals.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/07_homepage.png"><img loading="eager" src="./ss/07_homepage.png" alt="Arcus homepage advertising 24/7 Stock Token trading and the Perps waitlist" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://arcus.xyz/" rel="nofollow">arcus.xyz</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">The design is unusually restrained for crypto: cream background, dark green type, no mascot, token price, or oversized APY. The app follows the same approach. Instead of opening with a wall of crypto pairs, it leads with familiar companies, charts, fundamentals, and news. Navigation includes Spot, Perps, Discover, Portfolio, Vaults, Rewards, and a live-status indicator.</p>
+<p dir="auto">Access was the first material concern. A red banner said the TinyFish session appeared to be in a restricted country or region. Public markets remained visible, but Arcus' terms prohibit access from the United States, Canada, the United Kingdom, sanctioned locations, and anywhere use would violate applicable law. They also prohibit using a VPN to bypass the restriction.</p>
+<p dir="auto">Testing was limited to harmless public interactions. No email was entered, wallet connected, message signed, money deposited, code redeemed, or order placed.</p>
+<hr>
+<h2 dir="auto">Who Built Arcus?</h2>
+<p dir="auto">Founder Eddie Zhang previously built Pocket Protector, which dYdX Labs acquired. Arcus launched as a project built by dYdX Labs in partnership with Robinhood Crypto, described by Arcus as a strategic investor.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/08_launch_team.png"><img loading="eager" src="./ss/08_launch_team.png" alt="Arcus launch article by founder Eddie Zhang" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://arcus.xyz/blog/welcome-to-arcus" rel="nofollow">Welcome to Arcus</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">The operational structure has several layers. Pocket Protector Labs Inc. operates the interface. Arcus Labs Ltd., a Cayman Islands company, issues the Protocol Terms. Current docs name Bitstamp Global Ltd. as the Stock Token issuer. Privy powers authentication, Fun handles deposit routing, and USDG is the settlement currency.</p>
+<p dir="auto">So “non-custodial” does not mean “dependency-free.” Arcus may not hold wallet keys, but the product still relies on contracts, permissioned validators, an issuer and custody structure, USDG, oracles, bridges, and onboarding providers.</p>
+<hr>
+<h2 dir="auto">Opening Spot: TSLA, USDG, and Real Market Context</h2>
+<p dir="auto">The <a href="https://app.arcus.xyz/trade/spot/TSLA" rel="nofollow">TSLA Spot market</a> loaded a live price, 24-hour change, Arcus volume, TradingView chart, company profile, corporate data, and news. The swap form used USDG as the source asset and TSLA as the destination.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/01_spot_tsla.png"><img loading="eager" src="./ss/01_spot_tsla.png" alt="Arcus TSLA Spot interface with chart, swap form, and restriction banner" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://app.arcus.xyz/trade/spot/TSLA" rel="nofollow">Arcus TSLA Spot</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">A second TinyFish check at approximately 08:14 UTC provided a point-in-time reading of the live page:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>TSLA Spot field</th>
+<th align="right">Visible value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price</td>
+<td align="right"><strong>$383.99</strong></td>
+</tr>
+<tr>
+<td>24-hour change</td>
+<td align="right"><strong>+2.40%</strong></td>
+</tr>
+<tr>
+<td>Arcus 24-hour volume</td>
+<td align="right"><strong>$186K</strong></td>
+</tr>
+<tr>
+<td>Displayed market cap</td>
+<td align="right"><strong>$1.51T</strong></td>
+</tr>
+<tr>
+<td>Selected chart interval</td>
+<td align="right"><strong>1 hour</strong></td>
+</tr>
+<tr>
+<td>Current candle — O / H / L / C</td>
+<td align="right"><strong>383.97 / 384.25 / 383.81 / 383.99</strong></td>
+</tr>
+<tr>
+<td>Quote slippage</td>
+<td align="right"><strong>0.50%</strong></td>
+</tr>
+<tr>
+<td>Source / destination assets</td>
+<td align="right"><strong>USDG / TSLA</strong></td>
+</tr>
+<tr>
+<td>Company details</td>
+<td align="right">Founded <strong>2010</strong> · Austin, Texas · <strong>134,785 employees</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">The earlier screenshot recorded TSLA at $384.91 with a +2.64% 24-hour move and $169K Arcus volume. The change between the screenshot and the later extraction is expected for live market data and shows why every numerical observation needs a timestamp.</p>
+<p dir="auto">This is Arcus' strongest surface. Most DEXs assume the user already understands the token; Arcus gives the stock a proper research page. The public panel exposed exchange rate, network fee, platform fee, settlement, and quote-slippage fields. Quote slippage displayed 0.50%. Balances and Swap History stopped at “Connect Wallet Required,” while fee and settlement values stayed blank when logged out.</p>
+<p dir="auto">Arcus says Spot is free at launch. That means no Arcus trading fee, not zero economic cost. Spread, slippage, gas, bridging, card processing, or currency conversion may still apply. The final USDG amount, received token amount, route, and approval should be inspected before treating any quote as free.</p>
+<p dir="auto">A Stock Token is also not an ordinary brokerage share. It gives contractual economic exposure to the linked security. Voting rights do not pass through, and dividends are reflected through reinvestment and token accounting rather than normal cash payments.</p>
+<p dir="auto">The execution model is also different from both a broker and a normal DEX pool. Arcus does not maintain one Spot order book. Its router compares available on-chain AMMs with quotes from professional makers in an RFQ network, then selects the better execution. The user signs a slippage-bounded intent and the maker signs the quote; the trade settles atomically on-chain.</p>
+<p dir="auto">When native liquidity is available, the wallet receives the real Stock Token. For a long-tail market, the docs say a whitelisted maker may mint a wrapped placeholder such as <code class="notranslate">wTSLA</code>, later settled into the native token on the maker's cadence. That distinction should be visible before confirmation. A buyer needs to know whether the output is the native instrument or a temporary claim, who performs conversion, and how long it normally takes.</p>
+<p dir="auto">The current docs name Bitstamp Global Ltd. as issuer and describe backing through underlying shares, or cash and equivalents when shares are on loan. A separate Arcus article describes Robinhood Assets Jersey Limited and Bitstamp in different program roles. That may reflect a changed structure, so the current terms for each asset should be checked rather than assuming every Stock Token has identical issuance and redemption rights.</p>
+<hr>
+<h2 dir="auto">Wallet and Deposits: Clean Start, Untested Last Mile</h2>
+<p dir="auto">Clicking <strong>Sign in</strong> opened a Privy modal with email, Google, and wallet choices.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/02_sign_in_modal.png"><img loading="eager" src="./ss/02_sign_in_modal.png" alt="Arcus Privy sign-in modal" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://app.arcus.xyz/trade/spot/TSLA" rel="nofollow">Arcus sign-in surface</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">The modal looked clean and never requested a seed phrase or private key. Testing stopped before an authentication method was selected, so the wallet list, network prompt, signature wording, token approvals, recovery, and embedded-wallet export were not verified. Those are the details that matter after a good-looking modal.</p>
+<p dir="auto">Arcus' onboarding docs explain the expected next steps:</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/09_onboarding_docs.png"><img loading="eager" src="./ss/09_onboarding_docs.png" alt="Arcus documentation explaining wallets, USDG, and Fun deposits" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://docs.arcus.xyz/concepts/onboarding" rel="nofollow">Onboarding &amp; Deposits</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<ol dir="auto">
+<li>Choose <strong>USDG (Spot)</strong> or <strong>USDG (Perps)</strong>.</li>
+<li>Fund from crypto, a supported exchange balance, or cash through Apple Pay, card, Google Pay, or AstroPay.</li>
+<li>Review the route, processing cost, and estimated time.</li>
+<li>Fun swaps and bridges the deposit into USDG.</li>
+</ol>
+<p dir="auto">Arcus charges no deposit or withdrawal fee of its own and says native USDG transfers are free. Third-party conversion, card, bridge, and network costs can still apply. The docs mention Bitcoin, Ethereum, Solana, Base, Arbitrum, and other routes, but the live list can change.</p>
+<p dir="auto">A complete test should include a minimal deposit, one small Spot swap, and a withdrawal. Quoted costs should be compared with USDG received, and every signature should be inspected. Until that loop works, easy onboarding is only partly proven.</p>
+<hr>
+<h2 dir="auto">Perpetuals: Professional Terminal, Invite Gate</h2>
+<p dir="auto">The <a href="https://app.arcus.xyz/trade/perpetuals/BTC-USD" rel="nofollow">BTC-USD Perpetuals page</a> loaded a TradingView chart, order book, trades, Market and Limit tabs, Long and Short controls, TP/SL, funding history, positions, and account-risk fields.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/03_perps_btc.png"><img loading="eager" src="./ss/03_perps_btc.png" alt="Arcus BTC Perpetuals interface behind the early-access modal" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://app.arcus.xyz/trade/perpetuals/BTC-USD" rel="nofollow">BTC-USD Perpetuals</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">TinyFish extracted the following values at approximately 08:14 UTC without joining the waitlist or signing in:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>BTC-USD Perp field</th>
+<th align="right">Visible value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Price</td>
+<td align="right"><strong>$83,682.00</strong></td>
+</tr>
+<tr>
+<td>24-hour change</td>
+<td align="right"><strong>+0.91%</strong></td>
+</tr>
+<tr>
+<td>24-hour volume</td>
+<td align="right"><strong>$162,484,195.55</strong></td>
+</tr>
+<tr>
+<td>Open interest</td>
+<td align="right"><strong>$40,270,086.53</strong></td>
+</tr>
+<tr>
+<td>Funding</td>
+<td align="right"><strong>0.0013%</strong></td>
+</tr>
+<tr>
+<td>Displayed market leverage</td>
+<td align="right"><strong>40x</strong></td>
+</tr>
+<tr>
+<td>Maximum leverage claim</td>
+<td align="right"><strong>Up to 50x</strong></td>
+</tr>
+<tr>
+<td>Market-count claim</td>
+<td align="right"><strong>125+ markets</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">BTC-USD showed 40x beside the market name; Arcus markets up to 50x depending on the contract. Mark price, oracle price, open interest, funding, liquidation price, maintenance margin, and margin ratio were visible.</p>
+<p dir="auto">But the early-access modal blocked the order panel. It offered Join Waitlist, “I Have an Invite Code,” or sign-in for whitelisted users. The public session allowed evaluation of layout, not execution. Fills, signing, cancellation, realized slippage, liquidation, and withdrawals were not tested.</p>
+<p dir="auto">Funding is hourly. Crypto Perps have a documented 0.01% per-eight-hour base before premium adjustments. RWA Perps use SOFR plus 0.5% annually as the base. Overnight and weekend behavior differs because the underlying stock market closes even though Arcus stays open. Price bands, higher initial margin, and locked off-hours funding reduce risk but do not create underlying liquidity.</p>
+<p dir="auto">The difference between the displayed prices matters. The <strong>oracle price</strong> represents the external market. The <strong>mark price</strong> is the risk reference used for margin, PnL, and liquidation. Funding measures the Perp's premium or discount to the oracle and transfers value between long and short traders. A positive rate means longs pay shorts; a negative rate reverses that flow.</p>
+<p dir="auto">For RWA Perps, Arcus suspends the live premium calculation when the underlying is fully closed outside 04:00–20:00 ET and locks funding to the base rate. Price bands widen gradually rather than allowing an unrestricted weekend move. These controls reduce liquidation cascades but cannot eliminate them. A large or sustained move can still push account equity below maintenance margin.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Perps risk</th>
+<th>What to check before entry</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Leverage</td>
+<td>Effective position size and distance to liquidation, not merely the maximum allowed</td>
+</tr>
+<tr>
+<td>Funding</td>
+<td>Current hourly rate, next payment, and expected holding duration</td>
+</tr>
+<tr>
+<td>Off-hours RWA</td>
+<td>Price band, spread, higher initial margin, and when the underlying reopens</td>
+</tr>
+<tr>
+<td>Cross margin</td>
+<td>Whether one losing position can consume collateral supporting other positions</td>
+</tr>
+<tr>
+<td>Oracle/mark divergence</td>
+<td>How far execution price sits from the references used for liquidation</td>
+</tr>
+<tr>
+<td>Exit liquidity</td>
+<td>Price impact of closing the whole position, not just the best bid or ask</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<hr>
+<h2 dir="auto">Fees: Cheap During Beta, Not Fixed Forever</h2>
+<p dir="auto">Arcus cut beta Perps taker fees by 50% and maker fees to zero for Tiers 0–4.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/12_fees.png"><img loading="eager" src="./ss/12_fees.png" alt="Arcus Perpetuals beta fee announcement" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://arcus.xyz/blog/arcus-perpetuals-taker-fees-halved-for-beta" rel="nofollow">Perpetuals Taker Fees</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Tier</th>
+<th align="right">30-day volume</th>
+<th align="right">Taker</th>
+<th align="right">Maker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td align="right">$0+</td>
+<td align="right">0.0225%</td>
+<td align="right">0.000%</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="right">$5M+</td>
+<td align="right">0.0190%</td>
+<td align="right">0.000%</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="right">$20M+</td>
+<td align="right">0.0160%</td>
+<td align="right">0.000%</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="right">$100M+</td>
+<td align="right">0.0135%</td>
+<td align="right">0.000%</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="right">$400M+</td>
+<td align="right">0.0115%</td>
+<td align="right">0.000%</td>
+</tr>
+<tr>
+<td>5</td>
+<td align="right">$1B+</td>
+<td align="right">0.0100%</td>
+<td align="right">-0.002% rebate</td>
+</tr>
+<tr>
+<td>6</td>
+<td align="right">$3B+</td>
+<td align="right">0.0095%</td>
+<td align="right">-0.003% rebate</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">At Tier 0, a $10,000 taker order costs about $2.25. Entering and closing the same notional as a taker costs roughly $4.50 before spread, slippage, funding, and PnL. Arcus says standard rates return after beta, so the live Portfolio page or fee API—not this snapshot—is the source of truth.</p>
+<hr>
+<h2 dir="auto">Discover: The Strongest Research Page</h2>
+<p dir="auto">Discover showed 208 Spot markets with filters for stocks, commodities, crypto, and more. Columns included price, 24-hour change, market cap, total volume, and Arcus volume.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/06_discover.png"><img loading="eager" src="./ss/06_discover.png" alt="Arcus Discover page with 208 Spot markets" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://app.arcus.xyz/discover" rel="nofollow">Arcus Discover</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">The 08:15 UTC re-check returned the following first-page rows. These figures are useful because they show the difference between total underlying-market activity and volume actually routed through Arcus.</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Market</th>
+<th align="right">Price</th>
+<th align="right">24h change</th>
+<th align="right">Market cap</th>
+<th align="right">24h total volume</th>
+<th align="right">24h Arcus volume</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NVDA</td>
+<td align="right">$230.00</td>
+<td align="right">-0.22%</td>
+<td align="right">$5.55T</td>
+<td align="right">84.6M</td>
+<td align="right"><strong>$2.29M</strong></td>
+</tr>
+<tr>
+<td>AAPL</td>
+<td align="right">$337.20</td>
+<td align="right">-0.96%</td>
+<td align="right">$4.94T</td>
+<td align="right">37.9M</td>
+<td align="right"><strong>$52.2K</strong></td>
+</tr>
+<tr>
+<td>GOOGL</td>
+<td align="right">$353.50</td>
+<td align="right">+1.49%</td>
+<td align="right">$4.26T</td>
+<td align="right">17.3M</td>
+<td align="right"><strong>$79.1K</strong></td>
+</tr>
+<tr>
+<td>MSFT</td>
+<td align="right">$536.20</td>
+<td align="right">+2.61%</td>
+<td align="right">$3.97T</td>
+<td align="right">18.5M</td>
+<td align="right"><strong>$31.1K</strong></td>
+</tr>
+<tr>
+<td>AMZN</td>
+<td align="right">$263.90</td>
+<td align="right">+3.88%</td>
+<td align="right">$2.82T</td>
+<td align="right">34.8M</td>
+<td align="right"><strong>$62.0K</strong></td>
+</tr>
+<tr>
+<td>TSM</td>
+<td align="right">$457.60</td>
+<td align="right">-0.08%</td>
+<td align="right">$2.35T</td>
+<td align="right">9.21M</td>
+<td align="right"><strong>$2.36K</strong></td>
+</tr>
+<tr>
+<td>VTI</td>
+<td align="right">$398.80</td>
+<td align="right">+5.08%</td>
+<td align="right">$2.31T</td>
+<td align="right">2.68M</td>
+<td align="right"><strong>$1.45K</strong></td>
+</tr>
+<tr>
+<td>SPCX</td>
+<td align="right">$164.20</td>
+<td align="right">+2.26%</td>
+<td align="right">$2.14T</td>
+<td align="right">93M</td>
+<td align="right"><strong>$26.8K</strong></td>
+</tr>
+<tr>
+<td>META</td>
+<td align="right">$726.40</td>
+<td align="right">+0.76%</td>
+<td align="right">$1.83T</td>
+<td align="right">12.6M</td>
+<td align="right"><strong>$5.49K</strong></td>
+</tr>
+<tr>
+<td>AVGO</td>
+<td align="right">$362.40</td>
+<td align="right">+0.63%</td>
+<td align="right">$1.72T</td>
+<td align="right">16.8M</td>
+<td align="right"><strong>$0</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">NVDA accounted for roughly 90% of the Arcus volume shown across these ten rows ($2.29M out of approximately $2.55M). At the other extreme, AVGO displayed no Arcus volume and TSM only $2.36K. This snapshot supports a more cautious conclusion than the 208-market headline: breadth is strong, but venue activity is highly uneven by asset.</p>
+<p dir="auto">This makes Arcus broader than a TSLA swap app. But a long list does not prove deep liquidity in every market. Long-tail names may use wrapped placeholders before delivery of the native token. Order size, quote expiry, output, and price impact should be inspected asset by asset.</p>
+<p dir="auto">Robinhood advertises 190+ Stock Tokens, Ondo 450+ tokenized stocks and ETFs, and Ostium 70+ RWA Perps markets. Arcus' differentiator is not the largest asset count; it is combining routed self-custodied Spot tokens and cross-asset Perps in one interface.</p>
+<hr>
+<h2 dir="auto">Rewards and Points: Real Program, No Airdrop Promise</h2>
+<p dir="auto">Rewards loaded publicly with Points, Trading, and Referrals tabs, a Season 1 countdown, and a leaderboard. Personal data required sign-in.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/04_rewards.png"><img loading="eager" src="./ss/04_rewards.png" alt="Arcus Season 1 Rewards and Points leaderboard" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://app.arcus.xyz/rewards" rel="nofollow">Arcus Rewards</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">At approximately 08:15 UTC, the public leaderboard showed:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th align="right">Rank</th>
+<th>Public alias</th>
+<th>Tier</th>
+<th align="right">Season 1 Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">1</td>
+<td>Rustic Owl</td>
+<td>Diamond</td>
+<td align="right"><strong>8,100.93</strong></td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td>Brave Heron</td>
+<td>Diamond</td>
+<td align="right"><strong>5,445.87</strong></td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td>Topaz Hawk</td>
+<td>Diamond</td>
+<td align="right"><strong>3,186.06</strong></td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td>Crimson Magpie</td>
+<td>Diamond</td>
+<td align="right"><strong>3,027.87</strong></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td>Atomic Lynx</td>
+<td>Diamond</td>
+<td align="right"><strong>2,744.55</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">The first-ranked account held 2,655.06 more Points than second place and almost three times the fifth-ranked balance. The page showed <strong>$0 Total Fees Earned</strong> and <strong>$0 Claimable Fees</strong> in the unsigned session, while personal Points and distribution history remained behind wallet authentication. The countdown displayed 2 days, 10 hours, and 44 minutes until the next drop during the re-check.</p>
+<p dir="auto">Season 0 covered July 1–September 30, 2026. Season 1 distributes <strong>250,000 Points weekly</strong> every Wednesday at 19:00 UTC and should end no later than the first half of 2027.</p>
+<p dir="auto">Officially described inputs include genuine trading, tight and consistent market making, retained deposits, referrals, and referred-user activity. Boosts include RWA trades, RWA Perps outside regular U.S. hours, and eligible Robinhood Wallet Spot swaps routed through Arcus.</p>
+<p dir="auto">Invite codes require serious volume: one code per $1 million of personal qualifying Perps volume and another per $1 million from direct referrals. At the base beta taker rate, $1 million of one-way volume implies about $225 in fees before funding, slippage, and losses. Chasing a code can easily cost more than it is worth.</p>
+<p dir="auto">The Terms are explicit: Points are not cash, ownership, or a token/airdrop promise. They can be recalculated, reduced, frozen, canceled, or forfeited. Wash trading, self-trading, wallet splitting, circular trades, referral rings, and artificial volume are prohibited.</p>
+<hr>
+<h2 dir="auto">How to Evaluate the Points Campaign</h2>
+<p dir="auto">Eligible users already interested in Arcus can treat Points as a four-week product experiment.</p>
+<p dir="auto"><strong>Week 1:</strong> use a dedicated wallet, make the smallest practical deposit, inspect every signature, place one minimal Spot trade, and withdraw. Stop for any unclear approval, unexplained fee, or failed exit.</p>
+<p dir="auto"><strong>Week 2:</strong> make only a trade that would still be justified without Points. Record notional, fee, spread, slippage, gas, funding, and realized PnL.</p>
+<p dir="auto"><strong>Week 3:</strong> calculate total cost per Point. If fees are $18, funding $7, slippage $10, and trading loss $15, total cost is $50. Receiving 500 Points means a $0.10 break-even cost per Point. It does not mean a Point is worth $0.10.</p>
+<p dir="auto"><strong>Week 4:</strong> continue only if the product itself remains useful. Retained deposits and off-hours RWA boosts add stablecoin, issuer, liquidity, and opportunity-cost risk.</p>
+<p dir="auto">Participation should stop if costs rise faster than Points, activity exists only to generate volume, leverage exceeds the original trading plan, or eligibility is unclear. Invite codes should not be purchased, and linked wallets, self-referrals, or location-control bypasses should be avoided.</p>
+<p dir="auto">A weekly log provides a clearer record than relying on the Rewards dashboard alone:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Metric</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gross notional</td>
+<td>Shows how much volume was required to earn the weekly allocation</td>
+</tr>
+<tr>
+<td>Maker/taker fees</td>
+<td>Direct venue cost using the live tier rather than an old promotional rate</td>
+</tr>
+<tr>
+<td>Funding paid or received</td>
+<td>Captures the carry cost hidden outside the trade fee</td>
+</tr>
+<tr>
+<td>Spread and slippage</td>
+<td>Measures the difference between the screen price and actual execution</td>
+</tr>
+<tr>
+<td>Realized PnL</td>
+<td>Prevents a losing position from looking successful because it earned Points</td>
+</tr>
+<tr>
+<td>Deposited USDG and days retained</td>
+<td>Measures capital tied up and stablecoin exposure</td>
+</tr>
+<tr>
+<td>Points received</td>
+<td>Allows week-to-week efficiency comparison</td>
+</tr>
+<tr>
+<td>Total cost per Point</td>
+<td>Provides a break-even figure without pretending a future token exists</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p dir="auto">Market making is not a low-risk shortcut. Arcus says it considers tightness, depth, and consistency, meaning occasional passive orders may not score like professional quoting. A maker faces adverse selection, inventory risk, oracle moves, cancellation latency, and the possibility that rebates or Points do not cover trading losses.</p>
+<p dir="auto">Referrals are not free either. The public Discover page advertised a share of referred-user fees, while the Referral Terms allow rates and eligibility to change. Anyone publishing a code should disclose the financial interest, avoid earnings promises, and never encourage an ineligible person to access the protocol.</p>
+<hr>
+<h2 dir="auto">Under the Hood: Fast but Hybrid</h2>
+<p dir="auto">Arcus Perps uses a centralized off-chain matching engine, a permissioned appchain validator set, EVM rootchain contracts, and decentralized data availability.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/10_architecture_docs.png"><img loading="eager" src="./ss/10_architecture_docs.png" alt="Arcus hybrid exchange architecture" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://docs.arcus.xyz/concepts/exchange-architecture" rel="nofollow">Exchange Architecture</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">The core sequences and matches orders. Validators re-check signatures, margin, fills, oracle prices, and state transitions. Rootchain contracts custody Perps collateral, settle withdrawals, and provide an emergency path. Arcus claims more than 100,000 orders per second and roughly 20 ms confirmations.</p>
+<p dir="auto">Performance comes with trust assumptions. Validators are permissioned, and users depend on the sequencer, data availability, oracles, rootchain contracts, and escape hatch. The docs say contracts were independently reviewed, but the page visible in this session did not expose an auditor name or report link. The report, deployed addresses, upgrade controls, and emergency-withdrawal instructions should be checked before committing serious capital.</p>
+<hr>
+<h2 dir="auto">On-Chain Reality Check</h2>
+<p dir="auto">DefiLlama showed $53.76M TVL, $75.99M 30-day DEX volume, $7.562B 30-day Perps volume, $105.07M open interest, $1.28M 30-day fees, and $1.16M 30-day revenue.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/11_defillama.png"><img loading="eager" src="./ss/11_defillama.png" alt="DefiLlama Arcus dashboard" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://defillama.com/protocol/arcus" rel="nofollow">DefiLlama Arcus</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">That is meaningful activity, not an empty beta. But protocol-wide volume does not prove depth for a specific Stock Token at a specific hour. A small TSLA swap and a large weekend order can have very different execution.</p>
+<p dir="auto">The mix is revealing. The captured 30-day Perps volume was <strong>99.5 times</strong> Spot DEX volume ($7.562B versus $75.99M). Open interest was about <strong>1.95 times</strong> TVL ($105.07M versus $53.76M), while reported 30-day revenue represented roughly <strong>90.6%</strong> of fees ($1.16M versus $1.28M). Arcus may market Spot and Perps together, but current activity is primarily a derivatives story. That matters for Points participants because incentives can pull users toward the higher-risk side of the platform.</p>
+<p dir="auto">Fees and revenue also should not be confused with profit. Maker rebates, referrals, Points incentives, infrastructure, oracle costs, and development expenses sit below those topline numbers. DefiLlama is useful confirmation that users and volume exist; it is not a complete financial statement or proof that every market is healthy.</p>
+<hr>
+<h2 dir="auto">What Broke or Felt Frustrating</h2>
+<p dir="auto">The restriction banner persisted throughout the app. Perps remained invite-gated. A mobile-app preorder popup repeatedly covered the terminal's lower-right area.</p>
+<p dir="auto">The <code class="notranslate">/vaults</code> route also redirected back to TSLA Spot while logged out instead of showing a Vaults product.</p>
+<p dir="auto"><a target="_blank" rel="noopener noreferrer" href="./ss/05_vaults_redirect.png"><img loading="eager" src="./ss/05_vaults_redirect.png" alt="Arcus Vaults route redirecting to TSLA Spot" style="max-width: 100%;"></a></p>
+<blockquote>
+<p dir="auto"><strong>Source:</strong> <a href="https://app.arcus.xyz/vaults" rel="nofollow">Arcus Vaults</a> — captured with TinyFish on 2026-10-12</p>
+</blockquote>
+<p dir="auto">Finally, the documentation is good but fragmented. Understanding one trade requires separate pages for issuance, RFQ routing, wrapped tokens, USDG, funding, liquidation, architecture, Points, and legal terms. More of that context should appear directly beside the final signature.</p>
+<hr>
+<h2 dir="auto">Who Is Arcus For?</h2>
+<p dir="auto"><strong>Good fit:</strong> eligible experienced traders seeking stocks, commodities, indices, and crypto in one on-chain interface; users who understand Stock Tokens versus shares and Perps; self-custody users comfortable checking signatures and issuers; Points participants who measure costs honestly.</p>
+<p dir="auto"><strong>Not a good fit:</strong> restricted users; beginners seeking conventional broker protection and voting rights; anyone expecting a guaranteed airdrop; traders tempted by 40x–50x leverage without a liquidation plan; users unwilling to depend on USDG, issuers, oracles, permissioned validators, and onboarding providers.</p>
+<hr>
+<h2 dir="auto">Verdict</h2>
+<p dir="auto">Arcus is one of the more polished attempts to combine tokenized equities and crypto-style Perpetuals. Spot research is genuinely useful, Discover gives the venue breadth, and the project has credible lineage through dYdX Labs and Robinhood Crypto. DefiLlama also shows meaningful activity.</p>
+<p dir="auto">But the test stopped at the most important boundary. Funding, trading, fill quality, and withdrawals were not tested. Perps remained gated, the session was geo-restricted, and an audit report could not be independently verified from the Architecture page. Points are documented but discretionary.</p>
+<p dir="auto">Arcus earns <strong>7.8/10</strong> for its public product, documentation, and visible activity. It is worth watching for experienced eligible traders who want on-chain Stock Tokens and RWA Perps. Leverage or paid Points farming should be avoided until a minimal deposit-trade-withdrawal test works end to end.</p>
+<hr>
+<h2 dir="auto">What Was and Was Not Verified</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Item</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homepage, Spot, Discover, Rewards, and public data</td>
+<td>Verified with TinyFish screenshots</td>
+</tr>
+<tr>
+<td>Email, Google, and wallet choices</td>
+<td>Verified up to the Privy modal</td>
+</tr>
+<tr>
+<td>Perps terminal and invite gate</td>
+<td>Verified without ordering</td>
+</tr>
+<tr>
+<td>Fees, funding, deposits, architecture, Points</td>
+<td>Checked against official sources</td>
+</tr>
+<tr>
+<td>DefiLlama snapshot</td>
+<td>Independently captured</td>
+</tr>
+<tr>
+<td>Wallet signature, deposit, trade, close, withdrawal</td>
+<td><strong>Not tested</strong></td>
+</tr>
+<tr>
+<td>Realized spread, slippage, fill quality</td>
+<td><strong>Not tested</strong></td>
+</tr>
+<tr>
+<td>Audit report and deployed-contract scope</td>
+<td><strong>Not independently verified</strong></td>
+</tr>
+<tr>
+<td>Future token or airdrop</td>
+<td><strong>Not promised</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<hr>
+<h2 dir="auto">Key Terms</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Term</th>
+<th>Plain-English meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Stock Token</td>
+<td>On-chain contractual exposure to a stock or ETF; not the same legal asset as a brokerage share.</td>
+</tr>
+<tr>
+<td>Perpetual</td>
+<td>Leveraged derivative with no expiry.</td>
+</tr>
+<tr>
+<td>USDG</td>
+<td>Arcus' launch settlement and collateral stablecoin.</td>
+</tr>
+<tr>
+<td>RFQ</td>
+<td>Market makers return signed quotes for a Spot trade.</td>
+</tr>
+<tr>
+<td>CLOB</td>
+<td>Price-and-time-ranked order book.</td>
+</tr>
+<tr>
+<td>Funding</td>
+<td>Hourly payment between long and short traders.</td>
+</tr>
+<tr>
+<td>Mark price</td>
+<td>Reference used for PnL, margin, and liquidation.</td>
+</tr>
+<tr>
+<td>Oracle</td>
+<td>External price anchoring the market.</td>
+</tr>
+<tr>
+<td>Liquidation</td>
+<td>Forced closure after equity reaches maintenance margin.</td>
+</tr>
+<tr>
+<td>Wrapped placeholder</td>
+<td>Temporary token used before delivery of the native Stock Token.</td>
+</tr>
+<tr>
+<td>Points</td>
+<td>Discretionary participation score with no guaranteed token value.</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<hr>
+<h2 dir="auto">Sources</h2>
+<p dir="auto"><a href="https://app.arcus.xyz/" rel="nofollow">Arcus app</a> · <a href="https://arcus.xyz/" rel="nofollow">Homepage</a> · <a href="https://arcus.xyz/blog/welcome-to-arcus" rel="nofollow">Launch article</a> · <a href="https://arcus.xyz/blog/introducing-arcus-points" rel="nofollow">Points</a> · <a href="https://arcus.xyz/blog/arcus-invite-codes-are-live" rel="nofollow">Invite codes</a> · <a href="https://arcus.xyz/blog/arcus-perpetuals-taker-fees-halved-for-beta" rel="nofollow">Beta fees</a> · <a href="https://arcus.xyz/legal/terms" rel="nofollow">Interface Terms</a> · <a href="https://arcus.xyz/legal/protocol-terms" rel="nofollow">Protocol Terms</a> · <a href="https://docs.arcus.xyz/concepts/onboarding" rel="nofollow">Onboarding</a> · <a href="https://docs.arcus.xyz/concepts/spot-overview" rel="nofollow">Stock Tokens</a> · <a href="https://docs.arcus.xyz/concepts/exchange-architecture" rel="nofollow">Architecture</a> · <a href="https://docs.arcus.xyz/concepts/perpetuals/funding" rel="nofollow">Funding</a> · <a href="https://docs.arcus.xyz/concepts/perpetuals/fees" rel="nofollow">Fees</a> · <a href="https://defillama.com/protocol/arcus" rel="nofollow">DefiLlama</a> · <a href="https://robinhood.com/rhj/stocktokens/" rel="nofollow">Robinhood Stock Tokens</a> · <a href="https://ondo.finance/ondo-stocks" rel="nofollow">Ondo Stocks</a> · <a href="https://www.ostium.com/" rel="nofollow">Ostium</a></p>
+<p dir="auto"><em>Disclosure: Public-interface review only. No wallet was connected and no financial transaction was performed.</em></p></article>
+    <div class="footer">Local preview generated from arcus-review-2026.md. Live market values may change.</div>
+  </main>
+</body>
+</html>
