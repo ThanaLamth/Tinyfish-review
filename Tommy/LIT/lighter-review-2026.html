@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Evidence-backed Lighter review covering perpetual trading, wallet flow, pools, staking, referrals, points, architecture and security.">
+  <title>Lighter Review 2026 - Hands-on Experience</title>
+  <style>
+    :root{--bg:#f4f6f2;--paper:#fff;--ink:#151b18;--muted:#647069;--line:#d9dfda;--green:#173f31;--lime:#b9ff68;--soft:#edf5ef;--code:#eef1ee}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;max-width:100%;overflow-x:hidden}body{max-width:100%;overflow-x:hidden;margin:0;background:var(--bg);color:var(--ink);font:16px/1.72 Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif}
+    .topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;gap:1rem;align-items:center;padding:14px clamp(18px,4vw,54px);background:rgba(23,63,49,.96);color:#fff;border-bottom:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px)}
+    .brand{font-weight:850;letter-spacing:.1em}.meta{font-size:.86rem;color:#d8e5dd;text-align:right}
+    main{max-width:1040px;min-width:0;margin:46px auto;padding:0 22px 70px}article{min-width:0;overflow-wrap:anywhere;background:var(--paper);padding:clamp(25px,5vw,68px);border:1px solid var(--line);border-radius:20px;box-shadow:0 20px 60px rgba(28,50,39,.08)}
+    h1,h2,h3{line-height:1.2;letter-spacing:-.025em;color:#102219}h1{font-size:clamp(2.1rem,5.2vw,4.1rem);margin:.1em 0 .45em}h2{font-size:clamp(1.45rem,3vw,2.25rem);margin:2.4em 0 .65em;padding-top:.25em}h3{font-size:1.25rem;margin:1.8em 0 .5em}
+    p{margin:.85em 0}a{color:#0b6846;text-decoration-thickness:1.5px;text-underline-offset:3px}strong{color:#0b3124}hr{border:0;border-top:1px solid var(--line);margin:2.4rem 0}
+    img{display:block;max-width:100%;height:auto;margin:1.3rem auto .45rem;border-radius:12px;border:1px solid #cfd7d1;box-shadow:0 12px 34px rgba(19,50,37,.10)}
+    blockquote{margin:.2rem 0 1.8rem;padding:.7rem 1rem;border-left:4px solid #5cad77;background:var(--soft);color:#48564e;border-radius:0 8px 8px 0}blockquote p{margin:0}
+    markdown-accessiblity-table{display:block;max-width:100%;overflow-x:auto}table{width:100%;max-width:100%;border-collapse:collapse;margin:1.25rem 0 1.8rem;font-size:.93rem;display:table}thead{background:#173f31;color:#fff}th,td{padding:.72rem .85rem;border:1px solid var(--line);text-align:left;white-space:nowrap}tbody tr:nth-child(even){background:#f6f8f6}th[align="right"],td[align="right"]{text-align:right}
+    ul,ol{padding-left:1.35rem}li{margin:.4rem 0}code{padding:.15em .35em;background:var(--code);border-radius:5px;font-size:.92em}article>p:first-of-type{font-size:1.02rem;color:var(--muted)}
+    .foot{max-width:1040px;margin:-45px auto 35px;padding:0 22px;text-align:center;color:#718078;font-size:.84rem}
+    @media(max-width:680px){.topbar{align-items:flex-start;flex-direction:column}.meta{text-align:left}main{width:100%;max-width:100vw;margin:20px 0;padding:0 12px 55px;overflow:hidden}article{width:calc(100vw - 24px);max-width:calc(100vw - 24px);overflow:hidden;padding:24px 17px;border-radius:13px}h1{font-size:2.15rem}th,td{padding:.6rem .68rem;font-size:.84rem}}
+    @media print{.topbar{position:static}.topbar,.foot{display:none}body{background:#fff}main{margin:0;max-width:none;padding:0}article{box-shadow:none;border:0;padding:0}a{color:#111}img{break-inside:avoid}h2{break-after:avoid}}
+  </style>
+</head>
+<body>
+  <header class="topbar"><div class="brand">LIGHTER REVIEW</div><div class="meta">TinyFish public walkthrough · Captured October 12, 2026</div></header>
+  <main><article><h1>Lighter Review 2026: What the Trading Experience Actually Feels Like</h1>
+<p><em>Tested October 12, 2026 | Public walkthrough performed with TinyFish | No wallet, signature, deposit, or order was used</em></p>
+<h2>Quick Verdict After Using the Public App</h2>
+<p><strong>Lighter feels fast, information-dense, and built for traders who already understand perpetuals. The trading screen is the strongest part of the product; the wallet-gated staking, portfolio, and referral pages are much harder to evaluate before signing in.</strong></p>
+<p>Three public walkthroughs covered approximately <strong>25 interface actions</strong> across the trading terminal, Public Pools, staking, referrals, and portfolio. The experience was not limited to reading documentation: markets were changed, order tabs and advanced controls were opened, pool rows and detail tabs were inspected, history pages were switched, and the wallet modal was opened and closed.</p>
+<p>The largest practical problem appeared immediately: a red warning said the session was in a restricted jurisdiction, while the lower status bar showed <strong>GEO BLOCKED</strong>. Market data remained usable, but trading could not be completed.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/01_homepage.png"><img src="./ss/01_homepage.png" alt="Lighter homepage describing zero-fee trading and custom ZK infrastructure" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://lighter.xyz/" rel="nofollow">Lighter homepage</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<h3>Test Scope: What Was Clicked and What Was Not</h3>
+<p><strong>The review exercised every safe logged-out control that could be reached, but stopped before any financial or identity action.</strong></p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Walkthrough</th>
+<th align="right">Approximate actions</th>
+<th>What was tested</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trading terminal</td>
+<td align="right"><strong>15</strong></td>
+<td>LIT to BTC switch, Market/Limit tabs, Advanced panel, funding display, wallet modal</td>
+</tr>
+<tr>
+<td>Public Pools</td>
+<td align="right"><strong>5</strong></td>
+<td>Search/sort surface, LLP detail, Guinea Pool detail, breadcrumb, wallet gate</td>
+</tr>
+<tr>
+<td>Staking, referrals, portfolio</td>
+<td align="right"><strong>5</strong></td>
+<td>Public tabs, About/Details, history tabs, empty states, Connect Wallet gate</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>No email was entered, wallet provider selected, signature approved, funds deposited, order placed, position opened, referral created, or pool joined. Statements about those steps are marked as unverified.</p>
+<h2>Trading Terminal Experience</h2>
+<h3>Opening the LIT Market</h3>
+<p><strong>The LIT market loads directly into a usable trading layout without requiring an account. Price, order book, chart, funding, volume, open interest, and the entire order form are visible immediately.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/02_trade_lit.png"><img src="./ss/02_trade_lit.png" alt="LIT perpetual trading terminal with live market statistics" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/trade/LIT" rel="nofollow">LIT perpetual market</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<p>The captured screen showed:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Field</th>
+<th align="right">Screenshot value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mark / index price</td>
+<td align="right"><strong>3.8352 / 3.8359</strong></td>
+</tr>
+<tr>
+<td>24-hour change</td>
+<td align="right"><strong>+7.62%</strong></td>
+</tr>
+<tr>
+<td>24-hour volume</td>
+<td align="right"><strong>$14.58M</strong></td>
+</tr>
+<tr>
+<td>Open interest</td>
+<td align="right"><strong>$79.06M</strong></td>
+</tr>
+<tr>
+<td>One-hour funding</td>
+<td align="right"><strong>+0.0012%</strong></td>
+</tr>
+<tr>
+<td>Spread</td>
+<td align="right"><strong>0.0007 / 0.018%</strong></td>
+</tr>
+<tr>
+<td>Maximum displayed leverage</td>
+<td align="right"><strong>5x</strong></td>
+</tr>
+<tr>
+<td>Maker / taker fee</td>
+<td align="right"><strong>0% / 0%</strong></td>
+</tr>
+<tr>
+<td>Default maximum slippage</td>
+<td align="right"><strong>1%</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>A later live revisit showed LIT at <strong>3.7897</strong>, +6.32% over 24 hours, $15.26M volume, and $78.52M open interest. The changing values made the terminal feel live rather than like a static product demo.</p>
+<p>The useful part is data placement. Mark and index prices sit beside funding and OI, so the user does not need to open separate panels before sizing a trade. The weakness is visual density: a new perpetual trader receives almost no explanation of why mark price, index price, and funding matter.</p>
+<h3>Switching From LIT to BTC</h3>
+<p><strong>Changing from LIT to BTC was quick, and the full terminal updated without forcing a new page flow. BTC immediately showed a much deeper market and 50x leverage instead of LIT’s 5x.</strong></p>
+<p>The BTC screen displayed a mark price of <strong>83,523.5</strong>, index price of <strong>83,554.3</strong>, +0.49% daily change, <strong>$677.33M</strong> 24-hour volume, <strong>$348.55M</strong> open interest, and +0.0012% one-hour funding. Roughly 30 bid and ask rows were visible.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/09_trade_btc.png"><img src="./ss/09_trade_btc.png" alt="BTC perpetual terminal after switching from LIT" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/trade/BTC" rel="nofollow">Lighter BTC market</a> - captured through a TinyFish browser session on 2026-10-12.</p>
+</blockquote>
+<p>The market selector was less convincing than the resulting screen. An <strong>Open Markets</strong> shortcut appeared at the bottom with <code class="notranslate">⌘K</code>, but the walkthrough did not expose a clear filter panel with five comparable market rows. The current market button works, yet discovery is not as obvious as the terminal itself.</p>
+<h3>Trying Market, Limit, and Advanced Controls</h3>
+<p><strong>The order form is easy to understand for an experienced trader, but only Market and Limit were clearly discoverable while logged out. Stop, Trigger, and TWAP were not visible from the tested panel.</strong></p>
+<p>The Market form exposed:</p>
+<ul>
+<li>Buy/Long and Sell/Short sides;</li>
+<li>an amount field;</li>
+<li>a percentage slider with 25%, 50%, and 75% markers;</li>
+<li>TP/SL and Reduce Only options;</li>
+<li>estimated slippage and maximum slippage;</li>
+<li>maker and taker fees.</li>
+</ul>
+<p>Selecting Limit added price-based order entry. Opening <strong>Advanced</strong> exposed order size, order value, estimated liquidation price, position margin, estimated price, slippage, and fees. It did not reveal additional order types during the walkthrough.</p>
+<p>This was the clearest product-level disappointment. A sophisticated perpetual terminal should make conditional orders easy to find. Either those order types are unavailable while logged out or the interface hides them too deeply.</p>
+<h2>Wallet and Portfolio Experience</h2>
+<h3>Opening the Wallet Modal</h3>
+<p><strong>The wallet gate is clean but adds an account-style “Log in or sign up” step before trading. Direct wallet users may find the email-first framing unnecessary.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/03_wallet_modal.png"><img src="./ss/03_wallet_modal.png" alt="Lighter connection modal with email and wallet providers" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/trade/LIT" rel="nofollow">Lighter app</a> - wallet modal opened with TinyFish on 2026-10-12.</p>
+</blockquote>
+<p>Opening Connect Wallet produced an email field and six recommended providers: Coinbase, OKX Wallet, MetaMask, Binance Wallet, Rabby, and Phantom. A <strong>View all wallets</strong> link was also available. Closing the modal returned to the BTC terminal without losing the selected market.</p>
+<p>The modal never requested a seed phrase. Testing stopped before provider selection, so network switching, signature wording, token allowances, recovery, deposits, and order confirmation remain unverified.</p>
+<h3>Does “Zero Fee” Feel Real?</h3>
+<p><strong>Yes, the Standard order panel visibly reports 0% maker and 0% taker fees. However, funding and slippage are displayed beside those fees, making it clear that a trade can still have a real cost.</strong></p>
+<p>The tested BTC screen showed estimated slippage of 0.00% and maximum slippage of 1% while no amount was entered. Funding was positive, meaning longs would pay shorts at the next settlement if the rate remained positive.</p>
+<p>The <a href="https://docs.lighter.xyz/trading/trading-fees" rel="nofollow">official fee table</a> explains why some users still pay:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Account</th>
+<th align="right">Maker</th>
+<th align="right">Taker</th>
+<th align="right">Taker latency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Standard</td>
+<td align="right"><strong>0%</strong></td>
+<td align="right"><strong>0%</strong></td>
+<td align="right"><strong>300 ms</strong></td>
+</tr>
+<tr>
+<td>Premium, no LIT staked</td>
+<td align="right">0.0040%</td>
+<td align="right">0.0280%</td>
+<td align="right">140 ms</td>
+</tr>
+<tr>
+<td>Premium, 500,000 LIT staked</td>
+<td align="right">0.0028%</td>
+<td align="right">0.0196%</td>
+<td align="right">140 ms</td>
+</tr>
+<tr>
+<td>Plus</td>
+<td align="right">0.5 bps</td>
+<td align="right">0.5 bps</td>
+<td align="right">300 ms</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>The experience supports the zero-fee claim for Standard accounts, not the broader idea of cost-free trading.</p>
+<h3>Portfolio Experience While Logged Out</h3>
+<p><strong>The portfolio navigation is comprehensive, but every tab becomes an empty shell without a connected wallet. It explains what exists without showing what the finished account experience looks like.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/04_portfolio.png"><img src="./ss/04_portfolio.png" alt="Logged-out Lighter portfolio and account-history tabs" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/portfolio" rel="nofollow">Lighter portfolio</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<p>The walkthrough switched among Order History, Trade History, Funding History, and other account tabs. Each returned a <strong>Not Connected</strong> state. Deposits, Withdrawals, Transfers, Liquidations, TWAP, Strategies, Open Orders, and Public Pools were all present in navigation, but no sample rows or column previews were provided.</p>
+<p>A banner advertised deposits from card, Bitcoin, Coinbase, Tron, Solana, USDT, and other routes. That breadth looks useful, although fees, minimums, settlement time, and bridge behavior could not be seen before wallet connection.</p>
+<h2>Browsing Public Pools</h2>
+<p><strong>Public Pools are easy to compare from the list, but important decision data disappears after opening a pool. The list is more informative than the detail page.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/05_public_pools.png"><img src="./ss/05_public_pools.png" alt="Lighter Public Pools with APR, Sharpe ratio, TVL, and age" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/public-pools" rel="nofollow">Lighter Public Pools</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<p>The page loaded one protocol pool and 18 community pools. A search box filtered community pools, while APR, TVL, and Sharpe headers acted as sort controls. The selected sort direction was not visually obvious, and there were no filters for fee, pool age, TVL range, or risk.</p>
+<p>The list made comparison fast:</p>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Pool</th>
+<th align="right">Fee</th>
+<th align="right">APR</th>
+<th align="right">Sharpe</th>
+<th align="right">TVL</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LLP</td>
+<td align="right">0%</td>
+<td align="right">14.70%</td>
+<td align="right">3.83</td>
+<td align="right">$88.94M</td>
+</tr>
+<tr>
+<td>Guinea Pool</td>
+<td align="right">30%</td>
+<td align="right">277.10%</td>
+<td align="right">0.66</td>
+<td align="right">~$161.54K</td>
+</tr>
+<tr>
+<td>Peter Schiff’s vault</td>
+<td align="right">10%</td>
+<td align="right">-243.04%</td>
+<td align="right">-1.72</td>
+<td align="right">~$459.23K</td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>One screen is enough to see that the highest APR is not automatically the strongest risk-adjusted result.</p>
+<h3>Opening LLP and Guinea Pool</h3>
+<p><strong>LLP feels institutional and data-rich; Guinea Pool feels experimental and openly high-risk. Both detail pages still omit basic deposit terms before wallet connection.</strong></p>
+<p>LLP opened in one click and showed <strong>14.70% APR</strong>, <strong>$88.94M TVL</strong>, 0% operator fee, and a description of market-making and liquidation activity. Tabs included Overview, Stats, Margin, Strategies, and Returns. The page exposed <strong>171 positions and assets</strong>, which is useful evidence of what the pool is actually doing.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/10_llp_detail.png"><img src="./ss/10_llp_detail.png" alt="LLP detail page with APR, TVL, strategy, returns, and open positions" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/public-pools" rel="nofollow">Lighter Liquidity Provider</a> - opened from the pool list and captured through TinyFish on 2026-10-12.</p>
+</blockquote>
+<p>Guinea Pool also opened in one click. It displayed <strong>277.10% APR</strong>, about <strong>$161.54K TVL</strong>, a 30% operator fee, 414 days of age, and eight active positions. Its own strategy description warned of “high risk, high volatility” and “large swings,” which is more honest than the headline APR.</p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/11_guinea_pool_detail.png"><img src="./ss/11_guinea_pool_detail.png" alt="Guinea Pool detail page with high-risk strategy text and active positions" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/public-pools" rel="nofollow">Guinea Pool</a> - captured through a TinyFish browser session on 2026-10-12.</p>
+</blockquote>
+<p>The missing details mattered more than the navigation:</p>
+<ul>
+<li>no minimum deposit was visible;</li>
+<li>no lockup or withdrawal terms were visible;</li>
+<li>Sharpe appeared on the list but not the detail page;</li>
+<li>chart-period controls were not obvious;</li>
+<li>the deposit action did not appear until wallet connection.</li>
+</ul>
+<h2>Staking, Referrals, and Leaderboard</h2>
+<h3>Staking Experience</h3>
+<p><strong>The staking page communicates the headline reward well but does not explain the complete staking transaction before login.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/06_staking.png"><img src="./ss/06_staking.png" alt="LIT staking page showing APR and total staked amount" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/staking" rel="nofollow">LIT staking</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<p>The screen showed <strong>6% APR</strong>, approximately <strong>113.86M LIT staked</strong>, and an Active status. A public TVL chart moved between roughly 113M and 115M LIT over the displayed period. Details and About tabs were available, together with Rewards, LIT Fee Credits, Staking Activity, My Activity, and Pending Unstakes.</p>
+<p>What was missing was the action itself. No Stake or Unstake form appeared while logged out, and the three-day unstaking period was not visible on the main page. It had to be confirmed in the <a href="https://docs.lighter.xyz/about-lighter/lit-utility" rel="nofollow">LIT utility documentation</a>. The page sells the benefit before showing the full commitment.</p>
+<h3>Referral Experience</h3>
+<p><strong>The referral page is simple, but it cannot be meaningfully evaluated without a wallet because the code, sharing flow, tier progress, and payout history are hidden.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/07_referrals.png"><img src="./ss/07_referrals.png" alt="Lighter referral dashboard showing the base fee-share rate" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/referrals" rel="nofollow">Lighter referrals</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<p>Logged out, the screen showed a <strong>10%</strong> fee-share rate, $0 earned, $0 paid, $0 referral volume, and zero referred users. It also advertised earnings “up to 30%,” settled in USDC every Monday.</p>
+<p>The <a href="https://docs.lighter.xyz/referral-program" rel="nofollow">current referral rules</a> publicly define Bronze at 10% and Silver at 20%, with Silver requiring at least 15 unique referrals active on five separate days. The walkthrough did not find a public explanation for the advertised 30% tier. That mismatch creates unnecessary doubt at the exact point where the page is asking users to promote the product.</p>
+<h3>Is the Leaderboard Useful?</h3>
+<p><strong>The leaderboard is useful for measuring activity, but it is not useful as a copy-trading guide.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/08_leaderboard.png"><img src="./ss/08_leaderboard.png" alt="Lighter leaderboard with wallet count, PnL, volume, and ranked accounts" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://app.lighter.xyz/leaderboard" rel="nofollow">Lighter leaderboard</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<p>The page tracked <strong>98,436 wallets</strong> and showed <strong>+$22.30M</strong> seven-day PnL plus <strong>$960.27M</strong> seven-day volume for the top 100. Rank one displayed $36.21M account value and +$3.10M PnL; rank two showed $5.66M account value and +62.13% ROI.</p>
+<p>The table was easy to scan and claimed hourly refreshes. Its limitation is selection bias: it shows winners without maximum drawdown, external hedges, deposits, withdrawals, or the losing population.</p>
+<h2>Security, Architecture, and Scale</h2>
+<h3>What the Architecture Adds to the Experience</h3>
+<p><strong>The architecture does not change how the interface feels, but it explains why Lighter can offer an order book while still settling state through Ethereum.</strong></p>
+<p>The practical point is short: the sequencer handles fast ordering, proofs validate operations, and Ethereum stores the canonical state. An Escape Hatch is designed to let users exit through Ethereum if priority requests are not processed. That emergency path was not tested, so it remains a documented safeguard rather than a verified user experience.</p>
+<h3>Security Evidence Available Before Depositing</h3>
+<p><strong>Lighter makes multiple audit reports easy to find, which is better than hiding security material in announcements or repositories.</strong></p>
+<p>The page listed work covering Lighter Core, the EVM deposit bridge, spot contracts, wrappers, and exit logic, including reports from Nethermind and Block. The audit library is a positive part of the pre-deposit experience, although the interface does not summarize unresolved findings or map each report to the currently deployed version.</p>
+<h2>Points Experience and Airdrop Reality</h2>
+<p><strong>The points rules are detailed enough to show what matters, but not detailed enough to estimate a reliable return. No official page guarantees another airdrop.</strong></p>
+<p>Season 2 distributes <strong>200,000 points every Friday</strong> for Wednesday-to-Tuesday activity. Volume, open interest, funding, liquidations or deleverages, PnL, and trading quality can affect the result. Scoring is non-linear and different markets carry different weights.</p>
+<p>LIT already launched in December 2025, with <a href="https://www.coindesk.com/markets/2025/12/30/lighter-dex-launches-lit-token-with-25-airdrop" rel="nofollow">contemporary reporting</a> describing a 25% supply distribution against 12.5 million historical points. The practical farming rule is therefore simple: trade only when the trade itself makes sense, then treat points as uncertain upside.</p>
+<h3>Scale Check Against DefiLlama</h3>
+<p><strong>The interface does not feel empty because independent activity data shows meaningful capital, volume, and open interest.</strong></p>
+<p><a target="_blank" rel="noopener noreferrer" href="./ss/12_defillama.png"><img src="./ss/12_defillama.png" alt="DefiLlama Lighter dashboard with TVL, revenue, volume, and valuation" style="max-width: 100%;"></a></p>
+<blockquote>
+<p><strong>Capture:</strong> <a href="https://defillama.com/protocol/lighter" rel="nofollow">DefiLlama - Lighter</a> - TinyFish, 2026-10-12.</p>
+</blockquote>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Metric</th>
+<th align="right">Captured value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TVL</td>
+<td align="right"><strong>$756.6M</strong></td>
+</tr>
+<tr>
+<td>Fees / revenue, 30 days</td>
+<td align="right"><strong>$5.56M / $4.62M</strong></td>
+</tr>
+<tr>
+<td>Perpetual volume, 30 days</td>
+<td align="right"><strong>$59.747B</strong></td>
+</tr>
+<tr>
+<td>Open interest</td>
+<td align="right"><strong>$806.53M</strong></td>
+</tr>
+<tr>
+<td>Active addresses, 24 hours</td>
+<td align="right"><strong>16,885</strong></td>
+</tr>
+<tr>
+<td>Transactions, 24 hours</td>
+<td align="right"><strong>1.41M</strong></td>
+</tr>
+<tr>
+<td>LIT price / market cap</td>
+<td align="right"><strong>$3.89 / $972.89M</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<p>These values support the impression of an active venue. They do not prove that liquidity will remain available during volatility or that every market has equally strong execution.</p>
+<h2>Usability Findings</h2>
+<h3>What Worked Well</h3>
+<p><strong>The trading terminal worked better than the surrounding rewards pages.</strong></p>
+<ul>
+<li>Market data and the order book loaded without authentication.</li>
+<li>Switching from LIT to BTC preserved a consistent layout.</li>
+<li>Fees, funding, slippage, and leverage were visible before trading.</li>
+<li>The wallet modal opened and closed without losing the selected market.</li>
+<li>Public Pool positions and strategy descriptions were readable before depositing.</li>
+<li>Pool comparison required little navigation.</li>
+</ul>
+<h3>What Felt Frustrating</h3>
+<p><strong>Most frustration came from missing previews and inconsistent disclosure, not from page speed.</strong></p>
+<ul>
+<li>The region warning made the entire trading journey non-actionable.</li>
+<li>Market discovery and advanced order types were less obvious than expected.</li>
+<li>Portfolio tabs showed empty states without sample columns.</li>
+<li>Pool detail pages hid Sharpe and did not show minimum deposit or lockup terms.</li>
+<li>Staking emphasized 6% APR before showing the unstaking commitment.</li>
+<li>Referral copy advertised up to 30%, while the public rules explained only 10% and 20% tiers.</li>
+<li>Repeated listing notifications distracted from the main workflow.</li>
+</ul>
+<h2>Final Review</h2>
+<p><strong>Lighter delivers a convincing public trading terminal but an incomplete logged-out evaluation of its supporting products.</strong></p>
+<p>For active perpetual traders, the LIT-to-BTC switch, dense order book, visible funding, and zero-fee Standard form make a strong first impression. Public Pools are also unusually inspectable because positions and strategy text are visible.</p>
+<p>The weakest part is the transition from browsing to commitment. Portfolio, staking, referrals, pool deposits, wallet approvals, and settlement reveal too little before connection. The product is therefore easiest to recommend for experienced traders who already understand what they are looking at, not for users who need the interface to teach them how risk and account flows work.</p>
+<h2>Verification Matrix</h2>
+<markdown-accessiblity-table><table role="table">
+<thead>
+<tr>
+<th>Area</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LIT and BTC public terminals</td>
+<td>Interacted with and compared</td>
+</tr>
+<tr>
+<td>Market/Limit/Advanced controls</td>
+<td>Opened and inspected</td>
+</tr>
+<tr>
+<td>Wallet modal</td>
+<td>Opened and closed; no provider selected</td>
+</tr>
+<tr>
+<td>Portfolio history tabs</td>
+<td>Opened; all wallet-gated</td>
+</tr>
+<tr>
+<td>LLP and Guinea Pool</td>
+<td>Detail pages opened and compared</td>
+</tr>
+<tr>
+<td>Staking and referral public tabs</td>
+<td>Inspected; actions wallet-gated</td>
+</tr>
+<tr>
+<td>Wallet signatures, deposits, withdrawals</td>
+<td><strong>Not tested</strong></td>
+</tr>
+<tr>
+<td>Order submission and fills</td>
+<td><strong>Not tested</strong></td>
+</tr>
+<tr>
+<td>Pool deposit, staking, referral payout</td>
+<td><strong>Not tested</strong></td>
+</tr>
+<tr>
+<td>Escape Hatch and liquidation</td>
+<td><strong>Not tested</strong></td>
+</tr>
+</tbody>
+</table></markdown-accessiblity-table>
+<h2>Sources</h2>
+<ul>
+<li><a href="https://app.lighter.xyz/" rel="nofollow">Lighter app</a></li>
+<li><a href="https://docs.lighter.xyz/trading/trading-fees" rel="nofollow">Lighter trading fees</a></li>
+<li><a href="https://docs.lighter.xyz/about-lighter/lit-utility" rel="nofollow">LIT utility</a></li>
+<li><a href="https://docs.lighter.xyz/referral-program" rel="nofollow">Referral program</a></li>
+<li><a href="https://docs.lighter.xyz/points-program/retail" rel="nofollow">Retail points rules</a></li>
+<li><a href="https://docs.lighter.xyz/about-lighter/technical-architecture-lighter-core" rel="nofollow">Lighter architecture</a></li>
+<li><a href="https://docs.lighter.xyz/security/security-audits" rel="nofollow">Security audits</a></li>
+<li><a href="https://defillama.com/protocol/lighter" rel="nofollow">DefiLlama - Lighter</a></li>
+</ul>
+<p><em>Disclaimer: This independent review is not financial, legal, or tax advice. Market data, fees, rewards, and regional availability can change.</em></p></article></main>
+  <div class="foot">Local evidence package · Market values are timestamped observations and may change.</div>
+</body>
+</html>
