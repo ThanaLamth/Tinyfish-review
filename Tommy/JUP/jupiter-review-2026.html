@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Jupiter Review 2026 — Hands-on Walkthrough</title>
+<style>:root{--bg:#0a1017;--panel:#121e2a;--line:#2b4054;--text:#edf3fa;--muted:#a7b5c6;--lime:#c7fb83;--link:#9bcbff}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.68 system-ui,-apple-system,"Segoe UI",sans-serif}main{max-width:1120px;margin:auto;padding:38px 26px 72px}h1{font-size:clamp(2.2rem,5vw,3.8rem);line-height:1.06;margin:.35rem 0 1rem}h2{font-size:1.7rem;margin:3.2rem 0 1rem;padding-top:1rem;border-top:1px solid var(--line)}h3{font-size:1.15rem}.eyebrow{color:var(--lime);font-size:.8rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.meta,.note{color:var(--muted)}.lead{background:linear-gradient(110deg,#172d39,#142432);border:1px solid #35576c;border-radius:14px;padding:20px 22px;font-size:1.1rem}.step{border-left:4px solid var(--lime);padding:3px 0 3px 16px}a{color:var(--link)}strong{color:#fff}figure{margin:1.7rem 0;background:var(--panel);border:1px solid var(--line);border-radius:13px;overflow:hidden}img{display:block;width:100%;height:auto}figcaption{padding:10px 14px;color:var(--muted);font-size:.9rem}table{border-collapse:collapse;width:100%;margin:1.2rem 0 1.6rem;background:var(--panel)}th,td{padding:11px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}th{background:#1a3040;color:#e7f9eb}tr:last-child td{border:0}ul{padding-left:1.3rem}@media(max-width:680px){main{padding:25px 15px}table{display:block;overflow:auto;font-size:.88rem}h2{font-size:1.4rem}}</style></head>
+<body><main>
+<div class="eyebrow">TinyFish live public walkthrough · October 13, 2026</div>
+<h1>Jupiter Review 2026: One Solana Front Door, Six Different User Journeys</h1>
+<p class="meta">No wallet connection · No signature · No deposit · No swap, loan, stake, or order submission</p>
+<p class="lead"><strong>Verdict:</strong> Jupiter feels less like one DEX and more like a Solana operating system. That creates exceptional product breadth before wallet connection, but it also creates a dense first visit. The public app is strongest where it explains a decision before asking for a wallet—Perps, Offerbook, token research, and Stake.</p>
+
+<h2>What Was Actually Walked Through</h2>
+<table><thead><tr><th>Product</th><th>Public interaction</th><th>Financial action not taken</th></tr></thead><tbody>
+<tr><td>Spot</td><td>Opened Market and Limit layouts</td><td>Enter amount / connect / swap</td></tr><tr><td>Perps</td><td>Changed SOL to BTC and opened Limit</td><td>Enter size / Long / Short</td></tr><tr><td>JupSOL</td><td>Changed Transactions to Top Traders</td><td>Trade the token</td></tr><tr><td>Prediction</td><td>Loaded Browse and advanced carousel</td><td>Copy bet / Yes / No</td></tr><tr><td>Offerbook</td><td>Compared live USDC offers</td><td>Select collateral / accept loan</td></tr><tr><td>Stake</td><td>Changed Native to JupSOL</td><td>Connect / stake SOL</td></tr>
+</tbody></table>
+
+<h2>First Impression: More Than a Swap Widget</h2>
+<p>The opening <a href="https://jup.ag/spot">Spot screen</a> does not centre a single oversized swap box. Market Pulse, Spotlight, Popular, Trending, Stocks, SmartMoney Buys, and a heatmap occupy the primary canvas; USDC-to-SOL is docked at the side.</p>
+<figure><img src="./evidence/01_spot_dashboard_4k.png" alt="Jupiter Spot dashboard"><figcaption>Live capture — SOL <strong>$106.64 (-4.8%)</strong>; JUP <strong>$0.33316 (-8.6%)</strong>; PUMP <strong>$0.00502</strong>; cbBTC <strong>$82,864.18</strong>; ZEC <strong>$1,201.71</strong>; SmartMoney Buys <strong>$576K / $477K / $290K</strong>.</figcaption></figure>
+<p class="step"><strong>What was clicked:</strong> Limit. The form changed from immediate swap framing to a target-price flow while retaining the pair context. Market, Limit, DCA, Ultra, Paste CA, V1 transactions, and Connect were accessible without a wallet. The upside is research and action in one view; the downside is substantial cognitive load. <a href="https://docs.jup.ag/user-docs/trade/spot">Official Spot documentation</a>.</p>
+
+<h2>Product Screens: What the Public Walkthrough Actually Shows</h2>
+<h3>Perps: Risk Context Appears Before the Wallet Prompt</h3>
+<p>The <a href="https://jup.ag/perps/long/SOL-SOL">SOL Perps</a> route loaded a full terminal rather than a simplified leverage card: chart, market list, order form, position area, and liquidity context.</p>
+<figure><img src="./evidence/02_perps_sol_4k.png" alt="Jupiter SOL Perps terminal"><figcaption>Live capture — Mark <strong>$106.73</strong>; 24h <strong>-4.79%</strong>; volume <strong>$223.32M</strong>; high/low <strong>$113.26 / $101.63</strong>; liquidity <strong>$10M</strong>; borrow <strong>0.0015%/hr</strong>.</figcaption></figure>
+<p>Market/Limit, Long/Buy and Short/Sell, 10x default leverage, a 1.1x–250x slider, TP/SL, liquidation context, and Max 1% slippage were visible with zero size entered.</p>
+<p class="step"><strong>What was clicked:</strong> BTC, then Limit.</p>
+<figure><img src="./evidence/11_btc_perps_limit.png" alt="Jupiter BTC Perps Limit screen"><figcaption>Live capture — BTC mark <strong>$82,840.48</strong>; 24h <strong>-0.94%</strong>; volume <strong>$34.86M</strong>; liquidity <strong>$20M</strong>; borrow <strong>0.0013%/hr</strong>; visible Limit price <strong>$82,844</strong>.</figcaption></figure>
+<p>The layout remained consistent but the price, liquidity, and borrow context changed. Limit exposed a target entry field while order size stayed 0 BTC. Jupiter shows the relevant risk inputs early; that does not make the 250x ceiling appropriate. <a href="https://jup.ag/perps">Jupiter Perps</a>.</p>
+
+<h3>JupSOL: Research Goes Beyond the Price Chart</h3>
+<p class="step"><strong>What was clicked:</strong> JupSOL token page, then Top Traders.</p>
+<figure><img src="./evidence/10_jup_token_page.png" alt="JupSOL token page with transactions and holders"><figcaption>Live capture — Price <strong>$129.26</strong>; market cap/liquidity <strong>$551M / $551M</strong>; holders <strong>33.3K</strong>; Org Score <strong>88.0</strong>; volume <strong>$3.44M</strong>.</figcaption></figure>
+<p>The initial state combined the chart, transaction rows at $129.26/$129.24/$129.21, swap controls, and token flags: 60.12% Top 10 Holders, No Freeze Auth, and Yes Mint Auth.</p>
+<figure><img src="./evidence/16_jupsol_top_traders.png" alt="JupSOL Top Traders table"><figcaption>Live capture — Price <strong>$130.33</strong>; volume <strong>$3.32M</strong>; buys <strong>4.2K / $1.82M</strong>; sells <strong>3.9K / $1.49M</strong>; net volume <strong>+$324K</strong>.</figcaption></figure>
+<p>Top Traders replaced transactions with entry/exit, realised value, PnL, and activity columns. Leading displayed realised/PnL rows were $4.94M, $2.50M, $2.68M, and $1.92M. This is strong token-flow research, not a copy-trading instruction.</p>
+
+<h3>Prediction: A Full Browse Grid After Loading</h3>
+<p>The first quick view was incomplete; a longer revisit loaded a full <a href="https://jup.ag/prediction">Prediction</a> browse grid across politics, crypto, sports, culture, economics, tech, finance, and weather.</p>
+<figure><img src="./evidence/12_prediction_browse.png" alt="Jupiter Prediction market cards"><figcaption>Live capture — Featured trade card <strong>$11,865.52</strong>; visible outcomes 95¢/80¢, 18¢/16¢, and 89¢/7¢; card volumes <strong>$1.044M</strong>, <strong>$45.756M</strong>, <strong>$65.404M</strong>, and <strong>$180.406M</strong>.</figcaption></figure>
+<p class="step"><strong>What was clicked:</strong> the featured-bet carousel. It changed to a $11,871.04 No bet on James Talarico. Copy bet, Yes, and No were not selected, so trade routing and settlement remain unverified.</p>
+
+<h3>Offerbook: The Strongest Pre-Commitment Lending Disclosure</h3>
+<p>The public <a href="https://offerbook.jup.ag">Offerbook</a> route showed actual offer terms before the wallet barrier.</p>
+<figure><img src="./evidence/14_offerbook_beta.png" alt="Jupiter Offerbook USDC borrow offers"><figcaption>Live capture — Default <strong>500 USDC</strong>; <strong>652 offers</strong>; tenors <strong>7d / 14d / 30d</strong>.</figcaption></figure>
+<p>With 14d selected, the top PENGU offer showed 42% LTV, 13.5% APR, cost 1.29, and 149,743 PENGU locked. Other rows showed 63% LTV at 15% APR / 3d / cost 0.62, and 20% APR / 3d / cost 0.82. The journey stopped at Choose collateral and Connect wallet.</p>
+
+<h3>Stake: Native Versus JupSOL Is a Real Product Choice</h3>
+<p class="step"><strong>What was clicked:</strong> Native, then JupSOL.</p>
+<figure><img src="./evidence/15_stake_jup.png" alt="Jupiter Native SOL Stake"><figcaption>Live capture — TVL <strong>10,758,267.51 SOL</strong>; APY <strong>4.74%–6.74%</strong>; visible <strong>2-day</strong> unlock period.</figcaption></figure>
+<figure><img src="./evidence/18_stake_jupsol_tab.png" alt="Jupiter JupSOL liquid staking tab"><figcaption>Live capture — JupSOL tab: receiving JupSOL, instant liquidity, auto-compounding rewards, and DeFi use.</figcaption></figure>
+<p>Native emphasises direct validator rewards and an unlock period. JupSOL emphasises liquidity after staking. The public app explains that trade-off well; reward accrual and unstaking were not tested.</p>
+
+<h2>Three Real User Journeys Jupiter Handles Well</h2>
+<p>The clearest way to judge Jupiter is not by asking whether every tab suits every visitor. It is by following the paths that connect naturally.</p>
+<h3>1. Token researcher</h3>
+<p><strong>Spot → token page → Transactions → Top Traders.</strong> The opening dashboard supplies discovery signals; the JupSOL page then supplies price, liquidity, holder concentration, live prints, token flags, and trader-flow data. No external tab was required to move from “this asset is moving” to “who is trading it and how concentrated is it?” The strongest evidence is concrete: <strong>$551M</strong> liquidity, <strong>33.3K</strong> holders, and <strong>60.12%</strong> held by the top ten. Jupiter surfaces the inputs well, though it leaves the interpretation of acceptable concentration to the user.</p>
+<h3>2. Active perps trader</h3>
+<p><strong>Perps → select market → compare header data → choose Market or Limit → decide whether connecting a wallet is justified.</strong> The SOL-to-BTC switch showed that this is not a cosmetic market list: price, volume, available liquidity, borrow rate, chart, and entry controls changed together while the risk controls remained in place. The useful feature is not the 250x label; it is the proximity of borrow rate, max slippage, TP/SL, liquidation context, and limit price. The interface still expects real derivatives literacy.</p>
+<h3>3. SOL holder choosing yield or liquidity</h3>
+<p><strong>Stake → Native versus JupSOL</strong>, with <strong>Offerbook</strong> as a separate route for fixed-term collateralised borrowing. The first choice is direct: a native route with a stated <strong>two-day unlock</strong>, or JupSOL for liquidity and other DeFi uses. Offerbook then surfaces the different borrowing decision: collateral, LTV, term, APR, and cost. Jupiter showed the lock-up before staking and showed <strong>42% LTV</strong>, <strong>13.5% APR</strong>, and stated cost before a 14-day loan could progress.</p>
+
+<h2>The Pre-Wallet Decision Checklist</h2>
+<table>
+  <thead><tr><th>Decision</th><th>Visible publicly</th><th>Still requires a wallet test</th></tr></thead>
+  <tbody>
+    <tr><td>Spot swap</td><td>Pair, Market/Limit/DCA modes, transaction options</td><td>Quote route, final fee, signed transaction, fill</td></tr>
+    <tr><td>Perps</td><td>Price, volume, liquidity, borrow rate, leverage, TP/SL, max slippage</td><td>Margin calculation, signature, execution, liquidation behaviour</td></tr>
+    <tr><td>Token research</td><td>Chart, prints, holders, concentration, trade flow</td><td>Trading still requires connection</td></tr>
+    <tr><td>Prediction</td><td>Event cards, prices, volume, interactive carousel</td><td>Price lock, trade confirmation, settlement</td></tr>
+    <tr><td>Offerbook</td><td>Offer count, LTV, APR, term, estimated cost</td><td>Collateral transfer, loan acceptance, repayment</td></tr>
+    <tr><td>Stake</td><td>TVL, APY range, Native/JupSOL distinction, unlock period</td><td>Reward accrual, stake/unstake timing, received asset</td></tr>
+  </tbody>
+</table>
+<p>This boundary improves the review rather than weakening it. The public application can be assessed deeply without claiming that a financial transaction occurred; the precise limit is where configuration becomes fund movement.</p>
+
+<h2>What the Walkthrough Revealed Between the Screens</h2>
+<p><strong>Spot is fast, not gentle.</strong> Popular cards can show low-cap assets with large multiples while SmartMoney uses wallet activity and purchase size. The interface does not tell a new user which signal deserves priority. Its navigation places Spot, Stocks, Perps, Predict, Gacha, Lend, Offerbook, Stake, Send, and Deposit close together: efficient for an experienced Solana user, but not a guided first decision.</p>
+<p><strong>Perps makes comparison possible but not simple.</strong> SOL, BTC, and ETH carried 250x labels in the visible list, while ZEC, HYPE, and JUP carried 20x labels. That signals different market constraints, not a safety ranking. BTC showed $20M available liquidity versus SOL’s $10M in the captured states, while its 24-hour volume was $34.86M versus SOL’s $223.32M. These are snapshots, not execution benchmarks, but they are more informative than a generic “deep liquidity” claim.</p>
+<p><strong>The token page is genuinely live research tooling.</strong> JupSOL moved from $129.26 to $130.33 while switching from Transactions to Top Traders, with 24-hour volume changing from $3.44M to $3.32M. This does not validate every metric, but it confirms the screen was serving current state rather than a frozen product mock-up.</p>
+<p><strong>Prediction becomes useful only after it finishes loading.</strong> Once populated, it stops feeling like a crypto-only add-on: politics, sport, macro, weather, culture, and crypto use the same compact Yes/No card language. That makes scanning fast, but a card alone provides limited context for interpreting the underlying question.</p>
+<p><strong>Offerbook is unusually clear about the cost of a term.</strong> Duration, APR, and immediate cost appear together. The remaining weakness is collateral risk: LTV and locked collateral are shown, but the practical consequence of a missed repayment is less prominent than the “without liquidations” promise.</p>
+<p><strong>Stake makes the real decision visible.</strong> Native frames the position around validator security and an exit delay; JupSOL frames it around receiving a liquid asset that can be used elsewhere. The decision is the liquidity trade-off, not merely the APY headline.</p>
+
+<h2>Friction, Fit, and Verdict</h2>
+<p><strong>What frustrates:</strong> each product has a separate mental model—Spot aggregation, leveraged Perps, fixed-term borrowing, event pricing, and staking. Jupiter connects them in navigation, not in a beginner-friendly decision tree. The public boundary is also firm: final signatures, fills, collateral movement, and withdrawals cannot be tested without wallet commitment.</p>
+<p><strong>Good fit:</strong> Solana users who value depth, fast product switching, and pre-wallet data. <strong>Weak fit:</strong> beginners who need guided onboarding or users unable to independently assess leverage, collateral, and token-risk signals.</p>
+<p class="lead"><strong>Final verdict:</strong> Jupiter earns its “everything exchange” positioning at the interface level. The best reason to use it is not that it makes DeFi simple; it is that it puts many Solana decisions behind one fast, data-rich front door.</p>
+<p class="note">Independent public-interface review; not financial, legal, or tax advice. Dynamic values were captured October 13, 2026 and can change immediately.</p>
+</main></body></html>
