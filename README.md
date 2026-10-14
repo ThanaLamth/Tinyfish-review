@@ -7,7 +7,6 @@ Chụp screenshot thực tế trên 3 thiết bị → research bằng TinyFish 
 - **Python 3.10+**
 - **Playwright** — browser automation + screenshot
 - **TinyFish CLI** — web search, fetch, remote CDP browser
-- **eth-account / mnemonic** — tạo ví demo
 - **MetaMask v13** extension — demo wallet connection flow
 
 ## Cài đặt (Ubuntu)
@@ -33,28 +32,72 @@ cp .env.example .env
 # Edit .env: set TINYFISH_API_KEY
 ```
 
-## Chạy nhanh
+## Download MetaMask extension (Ubuntu)
 
 ```bash
-# Chụp 3 thiết bị (desktop/tablet/phone)
+MM_VERSION="13.48.0"
+wget "https://github.com/MetaMask/metamask-extension/releases/download/v${MM_VERSION}/metamask-chrome-${MM_VERSION}.zip"
+unzip metamask-chrome-${MM_VERSION}.zip -d /opt/metamask
+# Then set in .env: MM_EXT_PATH=/opt/metamask
+```
+
+## Wallet Setup (chạy 1 lần duy nhất)
+
+```bash
+# Setup MetaMask + lưu profile vào ~/.tinyfish-review/mm-profile/
+# Chỉ cần chạy 1 lần. Profile tồn tại vĩnh viễn qua các lần reboot.
+Xvfb :99 -screen 0 1440x900x24 &
+DISPLAY=:99 python tools/setup_wallet_once.py
+```
+
+Script sẽ:
+- Nhập seed phrase từ `WALLET_MNEMONIC` trong `.env`
+- Đặt password `WALLET_PASSWORD`
+- Lưu profile vào `~/.tinyfish-review/mm-profile/`
+- Ghi `~/.tinyfish-review/wallet_ready.flag` (chạy lần 2 sẽ skip tự động)
+- Auto-append `USER_DATA_DIR` vào `.env`
+
+Sau khi setup xong, mọi lần chạy tiếp chỉ cần `--reuse`:
+
+```bash
+./run_wallet_flow.sh --url https://kyberswap.com --reuse
+# MetaMask chỉ unlock bằng password — không cần nhập lại seed
+```
+
+## Workflow bình thường (sau setup)
+
+```bash
+# Chụp 3 thiết bị (desktop/tablet/phone) — không cần MetaMask
 python tools/capture_devices.py https://kyberswap.com --out ./screenshots/kyberswap
 
-# Chụp full MetaMask wallet flow
-python tools/capture_wallet_flow.py --url https://kyberswap.com --out ./screenshots/kyberswap/wallet-flow
+# Chụp full wallet connect flow (MetaMask đã setup sẵn)
+./run_wallet_flow.sh --url https://kyberswap.com --reuse
 
-# Viết bài hoàn chỉnh
+# Viết bài hoàn chỉnh (research + generate)
 python tools/write_article.py \
     --url https://kyberswap.com \
     --type dex \
-    --out ./articles/kyberswap-review-2026.md
+    --slug kyberswap-review-2026
+```
+
+## Chạy nhanh (all-in-one)
+
+```bash
+SITE=https://uniswap.org
+SLUG=uniswap-review-2026
+
+python tools/capture_devices.py $SITE
+./run_wallet_flow.sh --url $SITE --reuse
+python tools/write_article.py --url $SITE --type dex --slug $SLUG --no-screenshots
 ```
 
 ## Cấu trúc repo
 
 ```
 tools/
+  setup_wallet_once.py     # Chạy 1 lần — setup MetaMask + lưu session
   capture_devices.py       # Screenshot 3 device via TinyFish CDP
-  capture_wallet_flow.py   # MetaMask setup + DEX connect flow
+  capture_wallet_flow.py   # MetaMask connect flow (dùng --reuse sau setup)
   write_article.py         # Research + generate Markdown article
 templates/
   dex_review_template.md   # Article template (DEX/swap)
@@ -65,6 +108,7 @@ screenshots/
     desktop.png / tablet.png / phone.png
     tutorial/              # Step-by-step captures
     wallet-flow/           # MetaMask connect captures
+run_wallet_flow.sh         # Ubuntu Xvfb wrapper for wallet flow
 ```
 
 ## Biến môi trường (.env)
@@ -75,39 +119,31 @@ PROXY_HOST=103.82.22.77
 PROXY_PORT=12775
 PROXY_USER=29dt
 PROXY_PASS=29dt
-MM_EXT_PATH=/opt/metamask          # path to extracted MetaMask extension
-USER_DATA_DIR=/tmp/pw-mm-demo      # Playwright persistent profile
+MM_EXT_PATH=/opt/metamask
+USER_DATA_DIR=~/.tinyfish-review/mm-profile   # auto-set by setup_wallet_once.py
+WALLET_MNEMONIC=word1 word2 ... word12
+WALLET_PASSWORD=Demo@Wallet2026!
 ```
 
-## Ubuntu headless (Xvfb)
+## Session / Cookie được lưu ở đâu?
 
-Wallet flow cần hiển thị (MetaMask extension không chạy headless).  
-Dùng Xvfb:
+Playwright `launch_persistent_context` lưu toàn bộ trạng thái trình duyệt  
+(cookies, localStorage, extension state, MetaMask keyring) vào `USER_DATA_DIR`.
 
-```bash
-Xvfb :99 -screen 0 1440x900x24 &
-export DISPLAY=:99
-python tools/capture_wallet_flow.py --url https://kyberswap.com
-```
+| File/Folder | Nội dung |
+|---|---|
+| `~/.tinyfish-review/mm-profile/` | Chromium profile đầy đủ — MetaMask đã unlock |
+| `~/.tinyfish-review/wallet_ready.flag` | JSON flag — setup đã xong |
+| `~/.tinyfish-review/setup-shots/` | Screenshots từ lần setup ban đầu |
 
-Hoặc dùng script có sẵn:
-
-```bash
-./run_wallet_flow.sh https://kyberswap.com
-```
-
-## Download MetaMask extension (Ubuntu)
-
-```bash
-# Download MetaMask v13 từ GitHub releases
-MM_VERSION="13.48.0"
-wget "https://github.com/MetaMask/metamask-extension/releases/download/v${MM_VERSION}/metamask-chrome-${MM_VERSION}.zip"
-unzip metamask-chrome-${MM_VERSION}.zip -d /opt/metamask
-```
+Khi dùng `--reuse`, script chỉ mở lại profile cũ và gõ password để unlock —  
+**không nhập lại seed phrase**.
 
 ## Workflow tự động (cron / Ubuntu service)
 
 ```bash
 # Viết 1 bài mỗi ngày lúc 8am
-0 8 * * * cd /path/to/Tinyfish-review && python tools/write_article.py --url https://newsite.com --type dex >> logs/cron.log 2>&1
+0 8 * * * cd /path/to/Tinyfish-review && \
+    python tools/write_article.py --url https://newsite.com --type dex \
+    >> logs/cron.log 2>&1
 ```
