@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="N1 Exchange Review 2026: live interface, markets, fees, order types, margin, liquidation, security, points and a hands-on beginner tutorial.">
+  <meta property="og:title" content="N1 Exchange Review 2026: Complete Beginner's Guide">
+  <meta property="og:description" content="A practical, source-linked review of N1 Exchange and its trading-focused Layer 1 architecture.">
+  <title>N1 Exchange Review 2026: Complete Beginner's Guide</title>
+  <style>
+    :root{--ink:#202124;--muted:#62676c;--line:#e6e8eb;--accent:#b4482c;--paper:#fff;--bg:#f5f6f7}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.75 Georgia,'Times New Roman',serif}.page{max-width:900px;margin:0 auto;background:var(--paper);min-height:100vh;padding:42px 70px 80px}header{border-bottom:1px solid var(--line);padding-bottom:30px;margin-bottom:32px}.kicker{font:700 12px/1.2 Arial,sans-serif;color:var(--accent);letter-spacing:.12em;text-transform:uppercase}.meta{font:13px/1.5 Arial,sans-serif;color:var(--muted);margin:14px 0}.meta span{margin-right:16px}h1{font:800 clamp(36px,5vw,58px)/1.08 Arial,sans-serif;letter-spacing:-.04em;margin:12px 0 20px}h2{font:800 31px/1.18 Arial,sans-serif;letter-spacing:-.025em;margin:48px 0 14px;padding-top:12px}h3{font:800 22px/1.25 Arial,sans-serif;margin:30px 0 8px}p{margin:0 0 17px}a{color:#9f3e24;text-decoration:underline;text-underline-offset:2px}.dek{font-size:21px;line-height:1.5;color:#444}.audience{background:#faf7f4;border-left:4px solid var(--accent);padding:16px 20px;margin:26px 0;font-style:italic}.article-img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:4px;margin:20px 0 8px}.caption{font-size:14px;line-height:1.5;color:var(--muted);margin:0 0 24px;font-style:italic}.callout{border:1px solid #e5c9bd;background:#fff8f4;padding:17px 20px;margin:24px 0}.warning{border-color:#eab8b0;background:#fff5f3}table{width:100%;border-collapse:collapse;margin:20px 0 28px;font-size:16px}th,td{padding:11px 12px;border:1px solid var(--line);text-align:left;vertical-align:top}th{background:#f8f8f8;font:700 14px Arial,sans-serif}ol{padding-left:26px}li{margin:7px 0}.rating{font:800 30px Arial,sans-serif;color:var(--accent)}.quick{display:flex;flex-wrap:wrap;gap:8px;font:14px Arial,sans-serif}.quick a{border:1px solid var(--line);border-radius:4px;padding:7px 10px;text-decoration:none;color:var(--ink)}footer{border-top:1px solid var(--line);margin-top:48px;padding-top:22px;color:var(--muted);font-size:14px}@media(max-width:760px){.page{padding:26px 20px 55px}h2{font-size:27px}.dek{font-size:19px}body{font-size:16px}table{font-size:14px}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"N1 Exchange Review 2026: Complete Beginner's Guide","datePublished":"2026-10-18","dateModified":"2026-10-18","author":{"@type":"Organization","name":"Editorial Team"}}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is N1 Exchange a centralized exchange?","acceptedAnswer":{"@type":"Answer","text":"No. N1 Exchange is an onchain perpetual futures venue built on the N1 network, with wallet-controlled trading accounts."}},{"@type":"Question","name":"What is the difference between CLOB and RFQ markets on N1?","acceptedAnswer":{"@type":"Answer","text":"CLOB markets match orders against a resting order book, while RFQ markets request a firm quote from designated market makers."}},{"@type":"Question","name":"How much does N1 charge?","acceptedAnswer":{"@type":"Answer","text":"The published mainnet CLOB schedule starts at 0.01% maker and 0.035% taker for Tier 1; RFQ rates can differ by tier and execution mode."}},{"@type":"Question","name":"Can beginners trade TCGX safely?","acceptedAnswer":{"@type":"Answer","text":"TCGX is a leveraged perpetual on a trading-card index, not ownership of cards. It adds index, liquidity and valuation risk, so beginners should understand margin before trading it."}}]}</script>
+</head>
+<body>
+<article class="page">
+  <header>
+    <div class="kicker">DEX Reviews · Hands-on review</div>
+    <h1>N1 Exchange Review 2026: Complete Beginner's Guide — Trade Perps on a Trading-Focused L1</h1>
+    <div class="meta"><span>Published: 18 October 2026</span><span>Author: Editorial Team</span><span>Last verified: 18 October 2026</span></div>
+    <p class="dek">A practical review of N1 Exchange: its trading-focused Layer 1, live orderbook interface, markets, fees, margin, security model, points and beginner workflow.</p>
+  </header>
+  <div class="audience"><strong>Who this guide is for:</strong> Traders who want an onchain perpetual venue with a native orderbook, and beginners who want to understand N1 before connecting a wallet or funding an account.</div>
+  <div class="callout"><strong>In this guide:</strong> <a href="#device">device experience</a> · <a href="#features">features</a> · <a href="#markets">markets</a> · <a href="#fees">fees</a> · <a href="#tutorial">tutorial</a> · <a href="#security">security</a> · <a href="#conclusion">conclusion</a></div>
+
+  <h2>What Is N1 Exchange?</h2>
+  <p>N1 is a Layer 1 blockchain built specifically for trading. N1 Exchange is its onchain perpetual futures venue, with a native orderbook, RFQ markets and margining embedded at the network layer rather than assembled only from application contracts.</p>
+  <p>The practical result is a trading terminal that looks closer to a professional derivatives exchange than to a simple swap page. You trade price exposure, not the underlying asset, and your account still depends on collateral, funding, margin, oracle data and liquidation rules.</p>
+  <p>N1 began as Layer N in 2023, became N1 in December 2024 and announced the 01 Exchange acquisition in July 2026. The official history is documented in <a href="https://www.n1.xyz/about" target="_blank" rel="noreferrer">About N1 ↗</a>.</p>
+  <p>N1's official site reports more than $3.7B in volume processed and more than 24,000 active traders at the time of review. These are platform-reported counters, so treat them as changing dashboard metrics rather than independently audited performance.</p>
+
+  <h2 id="device">How N1 Looks on Your Device</h2>
+  <h3>On a Desktop — 1440 × 810</h3>
+  <img class="article-img" src="n1-assets/n1-live-desktop.png" alt="N1 live desktop homepage with trending markets and restricted access banner">
+  <p class="caption">The desktop homepage shows the top navigation, trending cards, new markets, an announcement rail and a market table. A red eligibility banner remains visible across the top.</p>
+  <p>The desktop layout uses the available width well: market cards sit above the table, while the right column carries announcements and discovery links. It feels like a market terminal rather than a single-purpose trade form.</p>
+  <p><strong>Best for:</strong> First-time research, scanning markets and comparing price, funding, volume and open interest before opening a trading screen.</p>
+
+  <h3>On a Tablet — 1024 × 576</h3>
+  <img class="article-img" src="n1-assets/n1-live-tablet.png" alt="N1 live tablet homepage with market cards and announcement panel">
+  <p class="caption">At tablet width, the same dashboard remains usable, but the market table and announcement column compete for horizontal room.</p>
+  <p>The navigation stays visible and the trending cards remain readable. The main compromise is density: some tables require more scrolling, and the announcement rail takes space that could otherwise show market data.</p>
+  <p><strong>Best for:</strong> Monitoring a shortlist of markets or checking a position away from a desk, not reviewing a complex order under time pressure.</p>
+
+  <h3>On a Phone — 430 × 242</h3>
+  <img class="article-img" src="n1-assets/n1-live-phone.png" alt="N1 live phone homepage with compact navigation and restricted access message">
+  <p class="caption">The phone view collapses into a compact navigation bar with Home, Trade, Feed, Analytics, Portfolio and Rewards.</p>
+  <p>The mobile layout is clean, but the capture is dominated by the restricted-access message. The bottom navigation is easy to understand, while market comparison and order review need more space than this viewport provides.</p>
+  <p><strong>Best for:</strong> Quick status checks and navigation. Use a larger screen before reviewing leverage, margin or liquidation details.</p>
+  <div class="callout warning"><strong>Access limitation observed:</strong> The live app displayed that perpetual access is restricted in some jurisdictions. No wallet was connected, no funds were deposited and no order was submitted.</div>
+
+  <h2 id="features">Core Features</h2>
+  <h3>1. Native central limit orderbook</h3>
+  <p>N1's CLOB markets use price-time priority. Resting orders provide liquidity, incoming orders take liquidity, and the orderbook exposes price, size and total notional on both sides.</p>
+  <h3>2. RFQ execution</h3>
+  <p>RFQ markets work differently: a trader sends a request with side, size, price bound and optional timeout, then designated market makers can return firm quotes. The two execution modes are documented in the <a href="https://docs.n1.xyz/trading/markets/execution-modes" target="_blank" rel="noreferrer">Execution Modes guide ↗</a>.</p>
+  <h3>3. Network-native margining</h3>
+  <p>N1 accounts are cross-margin portfolios. The network calculates initial and maintenance requirements across positions, and the official docs describe up to eight separate trading accounts per wallet.</p>
+  <h3>4. Discovery markets</h3>
+  <p>N1 is not limited to major crypto pairs. TCGX is a trading-card index perpetual covering 160 card variants from Magic: The Gathering, Pokémon, One Piece Card Game and Disney Lorcana.</p>
+  <h3>5. Session keys and mobile access</h3>
+  <p>The connected Solana wallet authorizes a session key so traders do not need to sign every order manually. N1 also advertises dedicated iOS and Android apps through its <a href="https://app.n1.xyz/download" target="_blank" rel="noreferrer">download page ↗</a>.</p>
+
+  <h2 id="markets">Supported Markets</h2>
+  <p>The official markets page showed 39 perpetual markets at review time. Maximum leverage varies by market, and the app makes funding, volume and open interest visible beside the trading interface.</p>
+  <table><thead><tr><th>Market group</th><th>Examples</th><th>Observed maximum leverage</th><th>Execution note</th></tr></thead><tbody>
+    <tr><td>Major crypto</td><td>BTC, ETH</td><td>Up to 50×</td><td>Displayed in the CLOB terminal</td></tr>
+    <tr><td>Large-cap crypto</td><td>SOL, HYPE, BNB, UNI</td><td>Up to 20×</td><td>Market-specific limits</td></tr>
+    <tr><td>Altcoins and newer assets</td><td>SUI, XRP, ZEC, ONDO, MON</td><td>3×–10×</td><td>Liquidity and risk limits vary</td></tr>
+    <tr><td>Discovery market</td><td>TCGX-USD</td><td>6×</td><td>RFQ; index methodology applies</td></tr>
+  </tbody></table>
+  <p>The <a href="https://www.n1.xyz/perps" target="_blank" rel="noreferrer">official markets page ↗</a> is the right place to check current listings. Market data changes, and the page itself labels the quotes as indicative rather than executable.</p>
+
+  <h2 id="fees">Fee Schedule</h2>
+  <p>N1 charges per fill, using the account's fee tier, the market type, the execution mode and whether the account is maker or taker. Do not assume that one CLOB rate automatically applies to RFQ trading.</p>
+  <table><thead><tr><th>Tier</th><th>Maker volume qualification</th><th>Maker fee</th><th>Taker fee</th></tr></thead><tbody>
+    <tr><td>T1</td><td>≤ $5M</td><td>0.010%</td><td>0.035%</td></tr>
+    <tr><td>T2</td><td>&gt; $5M or ≥ 0.5% maker share</td><td>0.005%</td><td>0.030%</td></tr>
+    <tr><td>T3</td><td>&gt; $25M or ≥ 2.5% maker share</td><td>0%</td><td>0.025%</td></tr>
+    <tr><td>T4</td><td>&gt; $100M or ≥ 10% maker share</td><td>0%</td><td>0.023%</td></tr>
+    <tr><td>T5</td><td>&gt; $1B</td><td>0%</td><td>0.020%</td></tr>
+  </tbody></table>
+  <p>The published schedule is dated 15 August 2026 and notes that RFQ rates may differ. An external withdrawal normally costs 1 USDC, while internal transfers between N1 trading accounts do not incur that fee. See the <a href="https://docs.n1.xyz/trading/orders/fees" target="_blank" rel="noreferrer">official fee documentation ↗</a>.</p>
+  <h3>Worked example: a 10,000 USDC fill</h3>
+  <p>At Tier 1, a 10,000 USDC taker fill costs 3.50 USDC. The same notional as a maker costs 1.00 USDC. This excludes funding, slippage, withdrawal costs and any RFQ-specific rate.</p>
+
+  <h2>Order Types and Execution</h2>
+  <table><thead><tr><th>Order type</th><th>What happens</th><th>Best use</th></tr></thead><tbody>
+    <tr><td>Limit</td><td>Trades at the limit price or better; remaining quantity can rest</td><td>Controlled entry</td></tr>
+    <tr><td>Post-only</td><td>Posts only if it would not execute immediately</td><td>Maker-only execution</td></tr>
+    <tr><td>IOC</td><td>Executes immediately up to constraints and cancels the rest</td><td>Fast partial fill</td></tr>
+    <tr><td>FOK</td><td>Fills the entire requested amount immediately or cancels</td><td>All-or-nothing entry</td></tr>
+    <tr><td>Reduce-only</td><td>Can reduce but cannot increase or flip an existing perp position</td><td>Safer exit management</td></tr>
+  </tbody></table>
+  <p>The <a href="https://docs.n1.xyz/trading/orders/order-types" target="_blank" rel="noreferrer">Order Types documentation ↗</a> explains the mechanics. The live BTC/USD terminal also exposed Buy/Long, Sell/Short, Market, Limit, Atomics, Cross and 20× controls before login.</p>
+
+  <h2>Funding, Accounts and Points</h2>
+  <p>Deposits from Solana use the Proton bridge, while other supported routes can use Unifold. Deposits credit the wallet's default trading account; moving funds to a subaccount requires a separate internal transfer.</p>
+  <p>N1 supports up to eight trading accounts per wallet, each with separate balances, positions, orders, margin and fee tier. This separation is useful for strategy isolation, but it adds account-management overhead for beginners.</p>
+  <p>N1 Points are distributed weekly during Season 1. The published program describes a fixed total of 1,987,000,000 Points, with Levels and Momentum showing progression. The rules and boost parameters are still subject to change, so points should not be treated as guaranteed financial value.</p>
+  <p>Read the official guides for <a href="https://docs.n1.xyz/trading/accounts/deposits-and-withdrawals" target="_blank" rel="noreferrer">deposits and withdrawals ↗</a>, <a href="https://docs.n1.xyz/trading/accounts/subaccounts" target="_blank" rel="noreferrer">subaccounts ↗</a> and <a href="https://docs.n1.xyz/trading/points" target="_blank" rel="noreferrer">N1 Points ↗</a>.</p>
+
+  <h2>Funding and Backers</h2>
+  <p>Layer N, the project's former name, announced a $5M seed round in September 2023. The official announcement says it was co-led by Founders Fund and dao5, with participation from Amber Group, Kraken Ventures, SALT, Mirana Ventures, GSR and others.</p>
+  <p>Independent project databases report a broader $7M total raise, including a later $2M community sale. Because that figure is not stated in the official seed announcement, it should be treated as a secondary-source estimate rather than a single confirmed financing total.</p>
+  <table><thead><tr><th>Item</th><th>What the sources say</th><th>How to read it</th></tr></thead><tbody>
+    <tr><td>Public seed announcement</td><td>$5M, September 2023</td><td>Primary-source figure</td></tr>
+    <tr><td>Named backers</td><td>Founders Fund, dao5, Amber, Kraken Ventures, SALT, Mirana, GSR</td><td>Reported participation, not a guarantee of future performance</td></tr>
+    <tr><td>Broader project total</td><td>CoinLaunch reports $7M including a $2M 2025 sale</td><td>Secondary-source figure; verify terms independently</td></tr>
+  </tbody></table>
+  <p>See the <a href="https://www.n1.xyz/blog/seed" target="_blank" rel="noreferrer">official seed announcement ↗</a> and compare it with the <a href="https://coinlaunch.space/projects/n1-chain/" target="_blank" rel="noreferrer">independent CoinLaunch project analysis ↗</a>.</p>
+
+  <h2>Team and Company Background</h2>
+  <p>Null Studios is described as a core contributor to N1. The official team page says its founders have known each other since high school, entered crypto in 2019 and have built low-latency onchain trading and orderbook systems since 2020.</p>
+  <p>The founding team publicly associated with Layer N includes Dima Romanov, David Cao and Sheheryar Parvaz. N1's security page also names Null Studios as the core contributor and lists Founders Fund, IMC, Amber and GSR among the backers.</p>
+  <p>This background is relevant to product fit: N1 is not presenting itself as a general-purpose chain with a trading app added later. Its team history and architecture are both centered on execution, liquidity and margining.</p>
+  <p>Read <a href="https://docs.n1.xyz/learn/about-the-team" target="_blank" rel="noreferrer">About the team ↗</a> and <a href="https://www.n1.xyz/about" target="_blank" rel="noreferrer">N1's project history ↗</a>.</p>
+
+  <h2>Token Status and Points Reality Check</h2>
+  <p>N1 has not publicly confirmed a native token, TGE date or final tokenomics in the sources checked for this review. N1 Points are a live participation program, but Points are not the same thing as a token, an equity claim or a guaranteed airdrop.</p>
+  <img class="article-img" src="n1-assets/n1-rewards-points.png" alt="N1 Rewards page showing sign in required before points can be viewed">
+  <p class="caption">The live Rewards page did not expose a public points balance: it showed “Sign in required” before rewards could be viewed. This is consistent with the documentation describing a private user Points balance rather than a public leaderboard.</p>
+  <p>The official Points documentation describes 1,987,000,000 Season 1 Points: 75M distributed over 26 live weeks plus 37M across two retroactive weeks. The launch announcement says the program is intended to unlock future rewards, but it does not publish a token conversion ratio.</p>
+  <p>Independent airdrop trackers also label any N1 airdrop as unconfirmed. That is the correct risk framing: trade or provide liquidity only for the product itself, not because a future token distribution is assumed.</p>
+  <p>Check the <a href="https://docs.n1.xyz/trading/points" target="_blank" rel="noreferrer">official Points rules ↗</a> and the more cautious <a href="https://airdrops.io/n1/" target="_blank" rel="noreferrer">independent airdrop status page ↗</a> before assigning monetary value to Points.</p>
+
+  <h2>Roadmap and Delivery Status</h2>
+  <table><thead><tr><th>Milestone</th><th>Status or source statement</th><th>Review implication</th></tr></thead><tbody>
+    <tr><td>Layer N → N1</td><td>Renamed in December 2024</td><td>Current product is the continuation of the former Layer N project</td></tr>
+    <tr><td>01 Exchange acquisition</td><td>Announced July 2026</td><td>Exchange and network were brought under one product direction</td></tr>
+    <tr><td>Nord Nova / N1 Exchange</td><td>Launched August 2026 with RFQ markets and Points</td><td>Public trading product is still in an expansion phase</td></tr>
+    <tr><td>Equity perps, Vaults, portfolio margin</td><td>Announced for gradual public release</td><td>Roadmap items should not be counted as live until independently visible</td></tr>
+    <tr><td>N1 Mobile and deeper liquidity</td><td>Announced as staged rollout and ramp-up work</td><td>Access and execution quality may vary by user and market</td></tr>
+  </tbody></table>
+  <img class="article-img" src="n1-assets/n1-roadmap-launch.png" alt="N1 official Day One launch page describing RFQ markets, Points and future product rollout">
+  <p class="caption">The official launch post frames the roadmap around RFQ markets, Points, deeper liquidity and future products. The page is a roadmap statement, so individual items should still be checked against the live app.</p>
+  <p>The roadmap is ambitious: N1 wants one balance to support more markets through CLOB, RFQ, portfolio margining and Vaults. The important distinction is between what the launch post promised and what a user can access today.</p>
+  <p>Read the <a href="https://www.n1.xyz/blog/n1x" target="_blank" rel="noreferrer">Day One launch post ↗</a> alongside the live <a href="https://app.n1.xyz/" target="_blank" rel="noreferrer">N1 app ↗</a>. In our capture, perp access was still restricted by jurisdiction.</p>
+
+  <h2>Independent Onchain Data</h2>
+  <p>Official dashboards and independent analytics measure different scopes, so the numbers should not be combined. N1's homepage displayed $3.72B volume processed, while DeFiLlama's N1 chain page showed approximately $1.3M in 24-hour perp volume and $15.37M over seven days when checked.</p>
+  <img class="article-img" src="n1-assets/n1-defillama-onchain.png" alt="DeFiLlama N1 dashboard showing 24-hour perps volume and historical volume chart">
+  <p class="caption"><a href="https://defillama.com/chain/n1" target="_blank" rel="noreferrer">DeFiLlama's live N1 dashboard ↗</a> showed $1.14M in 24-hour perps volume in this capture and plotted the recent volume history. The metric is time-sensitive, so the screenshot is evidence of the observed snapshot rather than a permanent figure.</p>
+  <p>DeFiLlama's separate 01 Exchange page reported $2.832B cumulative perp volume on N1. That is a historical protocol metric, not the same as the N1 homepage's current counter or the chain page's recent window.</p>
+  <table><thead><tr><th>Metric</th><th>Observed figure</th><th>Source and caveat</th></tr></thead><tbody>
+    <tr><td>N1 homepage volume processed</td><td>$3.72B</td><td>Official product counter; scope and update timing are not independently audited</td></tr>
+    <tr><td>N1 perps volume, 24h</td><td>About $1.3M</td><td>DeFiLlama snapshot; recent-window metric</td></tr>
+    <tr><td>N1 perps volume, 7d</td><td>About $15.37M</td><td>DeFiLlama snapshot; not cumulative lifetime volume</td></tr>
+    <tr><td>01 Exchange cumulative perp volume</td><td>$2.832B</td><td>DeFiLlama protocol page; historical 01 Exchange metric</td></tr>
+  </tbody></table>
+  <p>The gap between lifetime counters and recent volume is not automatically a contradiction: the products, time windows and data definitions differ. Still, it shows why a serious review should publish both official claims and independent snapshots instead of repeating one headline number.</p>
+  <p>Track the live <a href="https://defillama.com/chain/n1" target="_blank" rel="noreferrer">DeFiLlama N1 dashboard ↗</a> and its <a href="https://defillama.com/protocol/01-exchange" target="_blank" rel="noreferrer">01 Exchange methodology page ↗</a> for updated data.</p>
+
+  <h2 id="tutorial">How to Use N1 Exchange: Step-by-Step Tutorial</h2>
+  <h3>Step 1 — Open the app and check eligibility</h3>
+  <p>Go to <a href="https://app.n1.xyz/" target="_blank" rel="noreferrer">app.n1.xyz ↗</a>. Before connecting a wallet, read the eligibility banner and open the Terms of Use. Availability is jurisdiction-dependent.</p>
+  <img class="article-img" src="n1-assets/n1-live-desktop.png" alt="N1 homepage before wallet connection">
+  <p class="caption">The homepage gives a useful market overview, but the access banner appears before any trading action.</p>
+  <h3>Step 2 — Choose a market</h3>
+  <p>Open Markets or search a symbol such as BTC/USD. Compare mark price, index price, funding, 24-hour volume, open interest and the market's maximum leverage before opening the trade terminal.</p>
+  <img class="article-img" src="n1-assets/n1-trade-desktop.png" alt="N1 BTC USD perpetual terminal with chart orderbook and market data">
+  <p class="caption">The BTC/USD terminal combines chart, orderbook, trades, funding, open interest and account controls on one screen.</p>
+  <h3>Step 3 — Choose direction, execution mode and leverage</h3>
+  <p>Select Buy/Long or Sell/Short, then review Market, Limit, Atomics, Cross and the leverage selector. The live BTC/USD screen showed 20× in the order ticket, but each market has its own limit.</p>
+  <img class="article-img" src="n1-assets/n1-step3-market-ticket.png" alt="N1 order ticket showing Buy Long Sell Short Market Limit Atomics Cross and 20x controls">
+  <p class="caption">This close capture isolates the decision controls for Step 3: direction, execution mode and leverage.</p>
+  <h3>Step 4 — Review margin and risk fields</h3>
+  <p>Before signing, check size, reduce-only, take-profit/stop-loss availability, order value, initial margin, liquidation price, fees and slippage. If the account is not connected, the terminal leaves these fields blank.</p>
+  <img class="article-img" src="n1-assets/n1-step4-risk-fields.png" alt="N1 terminal risk section showing reduce only and account margin fields">
+  <p class="caption">The risk panel is where a trader should verify margin and liquidation information before committing collateral.</p>
+  <h3>Step 5 — Log in, connect and confirm</h3>
+  <p>Only after checking the market and risk fields should you click Log in and authorize the wallet/session key. Confirm the account, network, size and fees. In this review, the jurisdiction restriction prevented the login flow from continuing.</p>
+  <img class="article-img" src="n1-assets/n1-step5-login-state.png" alt="N1 terminal showing not connected login state and blank risk values">
+  <p class="caption">The final observed state was “Not connected to N1”: Login was available, but no account, margin or liquidation price was populated.</p>
+
+  <h2>Margin and Liquidation: The Risk You Must Understand</h2>
+  <p>N1's margin system defines initial, cancel and maintenance fractions. The docs give a 10× illustrative column: 10% initial margin, 6.25% cancel margin and 5% maintenance margin.</p>
+  <table><thead><tr><th>Risk level</th><th>10× illustrative fraction</th><th>Meaning</th></tr></thead><tbody>
+    <tr><td>Initial margin</td><td>10%</td><td>Required to open or increase exposure</td></tr>
+    <tr><td>Cancel margin</td><td>6.25%</td><td>Risk-increasing open orders may be cancelled below this level</td></tr>
+    <tr><td>Maintenance margin</td><td>5%</td><td>Positions become eligible for liquidation below this level</td></tr>
+  </tbody></table>
+  <p>Liquidation begins by cancelling orders that increase risk and reducing positions. More distressed accounts can have positions transferred to the backstop near the index price, and liquidated users pay a liquidation fee.</p>
+  <p>These are account-level rules, not a promise that a position can tolerate a fixed percentage move. Funding, fees, index price changes, market liquidity and the market's own margin fraction all affect the result. Read the <a href="https://docs.n1.xyz/trading/margining/margin" target="_blank" rel="noreferrer">margin guide ↗</a> and <a href="https://docs.n1.xyz/trading/margining/liquidations" target="_blank" rel="noreferrer">liquidation guide ↗</a>.</p>
+
+  <h2 id="security">Security and Trust: What N1 Discloses</h2>
+  <p>N1's security model is different from a typical smart-contract DEX. The official security page says the orderbook, RFQ and margin system are native modules secured by validators, while today the network runs on Proton with a curated operator.</p>
+  <ul><li><strong>Wallet control:</strong> a Solana wallet owns the trading accounts and authorizes actions.</li><li><strong>Session-key risk:</strong> a session key can act without signing every order until it expires or is revoked.</li><li><strong>Settlement risk:</strong> validators monitor proposed blocks and can halt withdrawals after a bad update.</li><li><strong>Oracle risk:</strong> index prices, confidence bounds and outage behavior affect margin and liquidation.</li><li><strong>Leverage risk:</strong> perpetuals can lose all collateral when adverse movement reaches the account's risk limits.</li></ul>
+  <p>N1's own disclosure says the network is still moving toward future shared security and a native validator set. That is important context: “validator-secured” does not mean the system has the same maturity or decentralization profile as a long-running public chain.</p>
+  <p>Read <a href="https://www.n1.xyz/security" target="_blank" rel="noreferrer">N1 Security and Trust ↗</a> and the <a href="https://docs.n1.xyz/learn/protocol/settlement" target="_blank" rel="noreferrer">settlement documentation ↗</a> before funding an account.</p>
+
+  <h2>For Builders: APIs and Agent Access</h2>
+  <p>N1 exposes REST and WebSocket APIs, signed actions, a TypeScript client and a Nord Agent Kit. Developers can read markets, orderbooks, trades and account state, then place and manage orders programmatically.</p>
+  <p>The agent tooling is a notable differentiator, but it increases the importance of session security and action scoping. Start with read-only market data, protect signing keys and test on devnet before submitting live actions. The <a href="https://docs.n1.xyz/developers/guide" target="_blank" rel="noreferrer">developer guide ↗</a> is the best starting point.</p>
+
+  <h2>N1 vs Competitors</h2>
+  <p>This comparison uses four named alternatives: Hyperliquid for a crypto-native orderbook, dYdX for an appchain derivatives venue, Ostium for broader real-world-asset perpetual exposure, and a centralized exchange for account-based access.</p>
+  <table><thead><tr><th></th><th>N1</th><th>Hyperliquid</th><th>dYdX</th><th>Ostium</th><th>Centralized exchange</th></tr></thead><tbody>
+    <tr><td>Core model</td><td>Trading-focused L1 + perps</td><td>Crypto-native perp venue</td><td>Appchain derivatives venue</td><td>Onchain RWA and crypto perps</td><td>Custodial exchange account</td></tr>
+    <tr><td>Execution</td><td>CLOB and RFQ</td><td>Orderbook</td><td>Orderbook</td><td>Protocol-specific execution</td><td>Centralized matching engine</td></tr>
+    <tr><td>Distinctive market</td><td>TCGX trading-card index</td><td>Crypto markets</td><td>Crypto markets</td><td>Stocks, commodities, forex and crypto</td><td>Varies by venue</td></tr>
+    <tr><td>Custody</td><td>Wallet-controlled accounts</td><td>Wallet / protocol accounts</td><td>Wallet / appchain accounts</td><td>Wallet and smart contracts</td><td>Exchange custody</td></tr>
+    <tr><td>Best for</td><td>Traders who want native market infrastructure</td><td>Deep crypto-native activity</td><td>Appchain derivatives users</td><td>Macro and RWA exposure</td><td>Convenience, fiat rails and support</td></tr>
+  </tbody></table>
+  <p>N1's strongest differentiation is not simply “another perp DEX.” It is the attempt to make orderbook, RFQ and margining network-native, while adding unusual discovery markets such as TCGX. The trade-off is a younger ecosystem, jurisdiction restrictions and a more complex account model.</p>
+
+  <h2 id="conclusion">Conclusion</h2>
+  <p>N1 is an ambitious trading-focused Layer 1 with a serious terminal, native orderbook, RFQ execution and unusual markets such as TCGX. The interface exposes the information active traders expect: orderbook, funding, volume, open interest, margin and liquidation fields.</p>
+  <p>The experience is not frictionless for beginners. Wallet/session-key permissions, cross-margin accounts, market-specific leverage and liquidation rules require more understanding than a simple swap. The live app also restricted perp access in the tested jurisdiction.</p>
+  <p>N1 is worth exploring if you want infrastructure built around trading rather than a general-purpose chain. Start with read-only research, use modest leverage and confirm eligibility, fees, margin and withdrawal terms before depositing funds.</p>
+
+  <h2>FAQ — Straight Answers for New Traders</h2>
+  <h3>Is N1 Exchange a centralized exchange?</h3><p><strong>No.</strong> N1 Exchange is an onchain perpetual futures venue built on the N1 network, with wallet-controlled trading accounts. The current network still uses a curated operator, which is a separate decentralization consideration.</p>
+  <h3>What is the difference between CLOB and RFQ markets?</h3><p><strong>CLOB matches against resting orders.</strong> RFQ sends a private request to designated market makers for a firm quote. A market uses one execution mode at a time.</p>
+  <h3>How much does N1 charge?</h3><p><strong>Tier 1 CLOB rates start at 0.01% maker and 0.035% taker.</strong> RFQ rates can differ by tier and execution mode, and external withdrawals normally cost 1 USDC.</p>
+  <h3>Can beginners trade TCGX safely?</h3><p><strong>Only after understanding the risk.</strong> TCGX is a leveraged perpetual on a trading-card index, not ownership of cards. Index methodology, liquidity, funding and liquidation risk all apply.</p>
+
+  <h2>Quick Links</h2>
+  <p class="quick"><a href="https://app.n1.xyz/" target="_blank" rel="noreferrer">N1 app</a><a href="https://www.n1.xyz/perps" target="_blank" rel="noreferrer">Markets</a><a href="https://www.n1.xyz/security" target="_blank" rel="noreferrer">Security</a><a href="https://docs.n1.xyz/learn/introduction-to-n1" target="_blank" rel="noreferrer">N1 Docs</a><a href="https://docs.n1.xyz/trading/orders/fees" target="_blank" rel="noreferrer">Fees</a><a href="https://docs.n1.xyz/trading/orders/order-types" target="_blank" rel="noreferrer">Order types</a><a href="https://docs.n1.xyz/developers/guide" target="_blank" rel="noreferrer">Developer guide</a></p>
+  <footer>Last verified: 18 October 2026. Screenshots show the public N1 app and terminal. No wallet connection, deposit, order or transaction was performed.</footer>
+</article>
+</body>
+</html>
