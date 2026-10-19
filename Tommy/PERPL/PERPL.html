@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Perpl review 2026: a hands-on look at the on-chain order book, fees, Monad markets, margin, Perpl Points, Purple Summer mPoints, security and beginner trading tutorial.">
+  <meta property="og:title" content="Perpl Review 2026: Complete Beginner's Guide">
+  <meta property="og:description" content="A practical, source-linked review of Perpl's fully on-chain perpetual futures exchange on Monad.">
+  <base href="file:///C:/Users/ADMIN/">
+  <title>Perpl Review 2026: Complete Beginner's Guide</title>
+  <style>
+    :root{--ink:#202124;--muted:#62676c;--line:#e6e8eb;--accent:#6556d8;--accent2:#f0edff;--paper:#fff;--bg:#f5f6f7;--dark:#111827}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.72 Georgia,'Times New Roman',serif}.page{max-width:920px;margin:0 auto;background:var(--paper);min-height:100vh;padding:54px 62px 80px;box-shadow:0 0 28px #00000009}a{color:#5548b7;text-decoration:underline;text-underline-offset:2px}h1,h2,h3{font-family:Arial,Helvetica,sans-serif;line-height:1.18;color:#18212b}h1{font-size:44px;letter-spacing:-1.4px;margin:0 0 18px}h2{font-size:28px;margin:44px 0 12px;border-bottom:2px solid #18212b;padding-bottom:8px}h3{font-size:21px;margin:26px 0 8px}p{margin:0 0 16px}.dek{font-size:21px;line-height:1.45;color:#4d555d;margin-bottom:24px}.meta{font:13px/1.5 Arial,sans-serif;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:11px 0;margin-bottom:28px}.tag{display:inline-block;font:12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#5548b7;background:var(--accent2);padding:5px 9px;border-radius:3px;margin-bottom:15px}.note{background:#f5f2ff;border-left:4px solid var(--accent);padding:15px 18px;margin:22px 0 26px}.note p:last-child{margin-bottom:0}.figure{margin:25px 0 30px}.figure img{width:100%;display:block;border:1px solid #dfe4e9;border-radius:5px;background:#111}.caption{font:13px/1.45 Arial,sans-serif;color:var(--muted);margin-top:8px}.grid{display:grid;grid-template-columns:1fr;gap:22px;margin:18px 0 28px}.grid .figure{margin:0}.grid .caption{font-size:12px}.two{display:grid;grid-template-columns:1fr 1fr;gap:18px}.table-wrap{overflow-x:auto;margin:18px 0 28px}table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45}th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:11px 12px}th{font-family:Arial,sans-serif;background:#f4f6f8;color:#25303b}tr:nth-child(even) td{background:#fbfcfd}.steps{counter-reset:step}.step{position:relative;border-top:1px solid var(--line);padding:22px 0 20px 52px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:22px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;font:700 16px/32px Arial}.step h3{margin-top:0}.step .figure{margin:15px 0 5px}.faq{border-top:1px solid var(--line);padding:15px 0}.faq h3{font-size:18px;margin:0 0 5px}.small{font-size:14px;color:var(--muted)}footer{border-top:1px solid var(--line);margin-top:45px;padding-top:18px;font:13px/1.55 Arial,sans-serif;color:var(--muted)}@media(max-width:720px){.page{padding:34px 22px}h1{font-size:35px}.dek{font-size:19px}.two{grid-template-columns:1fr}body{font-size:16px}}
+  </style>
+</head>
+<body>
+<main class="page">
+  <span class="tag">Hands-on review · 2026</span>
+  <h1>Perpl Review 2026: Complete Beginner's Guide to the On-Chain Perps DEX</h1>
+  <p class="dek">Perpl is a perpetual futures exchange built on Monad with a fully on-chain central limit order book. This review covers the live terminal, fees, order flow, margin, points, security and what a first-time trader should know before connecting a wallet.</p>
+  <div class="meta">Reviewed from the live Perpl interface and official documentation · Last checked October 18, 2026 · Beginner-friendly guide</div>
+
+  <p>Perpl’s pitch is different from a typical pool-based perp DEX. It wants the familiar feel of a trading terminal—chart, order book, limit orders and market orders—while keeping matching and settlement onchain.</p>
+  <p>The app was accessible for interface review, but it displayed “Unavailable in your location” before wallet connection. No wallet, deposit or order was submitted. The article separates what was visible live from what the official docs describe.</p>
+  <div class="note"><p><strong>Quick take:</strong> Perpl is interesting for traders who prefer transparent order-book execution and Monad’s fast EVM environment. The main caveats are geographic availability, beta-stage product maturity, leverage risk and a fee model that charges on opening rather than closing.</p></div>
+
+  <h2>What Is Perpl?</h2>
+  <p>Perpl is a decentralized perpetual futures exchange handcrafted for Monad EVM. Perpetuals let traders take leveraged long or short exposure without an expiry date, using a price index and stablecoin collateral rather than buying the underlying asset.</p>
+  <p>The project says its exchange, matching and settlement run fully onchain, with no off-chain matching engine. Its architecture uses an onchain order book, margin engine, liquidation system, funding mechanism and aggregated price index.</p>
+  <p>That makes Perpl closer in execution model to an onchain CLOB venue than to GMX-style pooled liquidity. The trade-off is that the product depends on performant chain infrastructure, market makers keeping the book populated and users understanding order-book behavior. <a href="https://docs.perpl.xyz/">Read the official introduction</a>.</p>
+
+  <h2>How Perpl Looks on Your Device</h2>
+  <p>The desktop terminal places the chart on the left, order book in the centre and order ticket on the right. Tablet compresses those columns into a tighter workspace, while the phone view prioritizes the header and navigation; serious order entry is easier on a larger screen.</p>
+  <div class="grid">
+    <figure class="figure"><img src="perpl-assets/perpl-live-desktop.png" alt="Perpl live desktop trading terminal"><figcaption class="caption">Desktop: chart, onchain order book, order ticket and market metrics in one view.</figcaption></figure>
+    <figure class="figure"><img src="perpl-assets/perpl-live-tablet.png" alt="Perpl live tablet trading terminal"><figcaption class="caption">Tablet: the terminal keeps the book and ticket visible but with less horizontal room.</figcaption></figure>
+    <figure class="figure"><img src="perpl-assets/perpl-live-phone.png" alt="Perpl live mobile trading terminal"><figcaption class="caption">Phone: compact market view; the narrow viewport is better for checking prices than placing complex orders.</figcaption></figure>
+  </div>
+  <p>The most important live detail is the pink location warning at the top and inside the order ticket. The app still exposes market data and controls, but the account state shows no available balance and no active position until eligibility and wallet access are resolved.</p>
+
+  <h2>Core Features</h2>
+  <h3>Fully on-chain order book</h3>
+  <p>Perpl’s order book records open bids and asks onchain. Limit orders rest until matched or cancelled, market orders execute against available liquidity, and price-time priority determines which orders fill first.</p>
+  <h3>Monad-native execution</h3>
+  <p>The exchange is designed around Monad’s high-throughput EVM environment. Perpl’s documentation targets less than 100,000 gas for a market-maker post-and-cancel operation, a constraint that matters when quotes need frequent updates.</p>
+  <h3>TradingView-style analysis</h3>
+  <p>The live terminal includes candlesticks, timeframes, indicators, chart/depth tabs and a bottom market ticker. This is closer to a CEX workflow than a simple DeFi swap page.</p>
+  <h3>Risk controls in the ticket</h3>
+  <p>The order panel exposes Market, Limit and Stop tabs, up to 15x leverage in the live view, Long/Short, price, size, Reduce Only, time-in-force and TP/SL controls. Available-to-trade and liquidation fields sit below the ticket.</p>
+
+  <h2>Markets and Trading Surface</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td>Market header</td><td>Mark price, oracle price, 24h change, 24h volume, open interest and funding countdown.</td><td>Lets you check price reference, activity and carry before entering.</td></tr>
+      <tr><td>Order book</td><td>Price, size and total for live bid/ask levels, plus a spread readout.</td><td>Shows available liquidity and how much depth exists near the mid.</td></tr>
+      <tr><td>Order ticket</td><td>Market, Limit and Stop; Long/Short; leverage; price; size; Reduce Only; TP/SL.</td><td>Controls entry direction and execution conditions.</td></tr>
+      <tr><td>Portfolio</td><td>Positions, orders, balances and PnL are available after wallet access.</td><td>Needed to manage margin and close exposure.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Perpl’s public documentation focuses on perpetual contracts rather than a giant multi-asset catalogue. The live BTC screen is the clearest evidence in this review: the product is built around a deep book, precise order entry and fast market data, not a broad synthetic-assets menu.</p>
+  <p>That positioning matters when choosing a venue. Perpl is best understood as an order-book-first Monad venue, so the key questions are spread, depth, supported markets and whether the book can absorb your intended size without meaningful price impact.</p>
+  <p>For the underlying design, see the <a href="https://docs.perpl.xyz/exchange/architecture">architecture page</a> and <a href="https://docs.perpl.xyz/exchange/order-book">onchain order-book documentation</a>.</p>
+
+  <h2>Fee Schedule</h2>
+  <p>Perpl uses a maker-taker model and charges trading fees when a position is opened, not when it is closed. The published schedule is volume-based, with rebates at higher tiers and a separate onchain base-fee concept.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Tier</th><th>14-day volume</th><th>Maker open</th><th>Taker open</th><th>Close</th></tr></thead>
+    <tbody>
+      <tr><td>T1</td><td>&lt; $5M</td><td>0.9 bps</td><td>6.9 bps</td><td>0</td></tr>
+      <tr><td>T2</td><td>≥ $5M</td><td>0.5 bps</td><td>6.0 bps</td><td>0</td></tr>
+      <tr><td>T3</td><td>≥ $25M</td><td>0.25 bps</td><td>5.0 bps</td><td>0</td></tr>
+      <tr><td>T4</td><td>≥ $100M</td><td>0</td><td>4.2 bps</td><td>0</td></tr>
+      <tr><td>T5</td><td>≥ $250M</td><td>-0.01 bps</td><td>3.5 bps</td><td>0</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>Example:</strong> a $10,000 taker entry at the T1 rate of 6.9 bps implies about $6.90 in opening fee before any rebates or other transaction costs. Closing has a published 0 bps trading fee, but funding, gas and execution conditions still affect the total result.</p>
+  <p>Check the current <a href="https://docs.perpl.xyz/exchange/fees">Perpl fee documentation</a> before trading because tiers, rebates and the onchain fee configuration can change.</p>
+
+  <h2>Margin, Funding and Liquidation</h2>
+  <p>Perpl’s margin engine distinguishes Initial Margin, required to open a position, from Maintenance Margin, required to keep it open. Requirements can vary by market, volatility and position size, so the live adjustment panel matters more than a generic leverage number.</p>
+  <p>The docs describe isolated margin as the initial mode, with cross and hybrid concepts documented for the broader system. Funding is periodic and designed to keep the perpetual price aligned with the underlying index; the live terminal displays a funding countdown.</p>
+  <p>If a position falls below maintenance requirements, the liquidation engine attempts to close it on the order book. Perpl says liquidation proceeds are distributed 80% to the position holder, 10% to the insurance fund and 10% to the protocol. Read the <a href="https://docs.perpl.xyz/exchange/margin">margin</a> and <a href="https://docs.perpl.xyz/exchange/liquidation">liquidation</a> docs before using leverage.</p>
+
+  <h2>How to Trade on Perpl: Step-by-Step</h2>
+  <p>This walkthrough follows the live terminal. The interface was available for inspection, but the location warning prevented wallet connection, so no order was submitted and the final steps are documented from Perpl’s official flow.</p>
+  <p>Perpl is built for Monad EVM. The official guide assumes a compatible wallet funded with AUSD on Monad, followed by a gasless Enable Trading signature and a deposit into the exchange account.</p>
+  <div class="steps">
+    <section class="step"><h3>Open the app and check access</h3><figure class="figure"><img src="perpl-assets/perpl-step1-open-app.png" alt="Perpl live trading interface with location warning, chart, order book and order ticket"><figcaption class="caption">Step 1: open the live terminal and check the location banner before connecting a wallet.</figcaption></figure><p>Go to <a href="https://app.perpl.xyz/">app.perpl.xyz</a>. Confirm that the app is available in your jurisdiction and that the Beta interface loads normally. If the warning says “Unavailable in your location,” do not attempt to bypass it with a wallet or transaction.</p></section>
+    <section class="step"><h3>Select BTC or another listed market</h3><figure class="figure"><img src="perpl-assets/perpl-step2-market-chart.png" alt="Perpl BTC market header and chart showing mark, oracle, volume, open interest and funding"><figcaption class="caption">Step 2: read the mark/oracle spread, volume, open interest and funding countdown.</figcaption></figure><p>Use the market selector and inspect the header before touching the ticket. Compare mark with oracle price, note 24-hour volume and open interest, then check the funding direction and countdown. These values help you decide whether the market is active enough for your intended size.</p></section>
+    <section class="step"><h3>Choose order type, side and size</h3><figure class="figure"><img src="perpl-assets/perpl-step3-orderbook-ticket.png" alt="Perpl order book and order ticket showing Market Limit Stop, Long Short, leverage and size controls"><figcaption class="caption">Step 3: choose Market, Limit or Stop, then set Long/Short, leverage, price and size.</figcaption></figure><p>Market orders trade against available book liquidity; Limit orders rest at a chosen price; Stop orders trigger when the defined condition is reached. Choose Long or Short, set leverage conservatively and enter size only after checking available-to-trade.</p></section>
+    <section class="step"><h3>Review margin, liquidation and protection</h3><figure class="figure"><img src="perpl-assets/perpl-step4-risk-fields.png" alt="Perpl order ticket showing location warning, liquidation price, order value and margin fields"><figcaption class="caption">Step 4: inspect liquidation price, order value, margin required and fee fields.</figcaption></figure><p>Review the liquidation estimate, order value, margin required and fee before confirming. Add Reduce Only when closing exposure, and configure TP/SL only after understanding whether the trigger is market or limit based. A lower leverage setting gives the position more room before liquidation.</p></section>
+    <section class="step"><h3>Connect, fund and submit only when ready</h3><figure class="figure"><img src="perpl-assets/perpl-step5-location-warning.png" alt="Perpl order ticket with unavailable in your location warning and Long order controls"><figcaption class="caption">Step 5: the location restriction remains visible inside the order ticket before wallet access.</figcaption></figure><p>Connect a compatible wallet on Monad, sign Enable Trading, then deposit AUSD into the exchange account. After the balance appears, review size, leverage, time-in-force and slippage before confirming an order. This review stopped at the location warning and did not execute a trade.</p></section>
+  </div>
+
+  <h2>Points, Rewards and Tournaments</h2>
+  <p>Perpl currently has two separate reward tracks. Season One Perpl Points launched on June 10, 2026, while Purple Summer adds mPoints for a 16-week campaign that began on July 8, 2026. The two ledgers run in parallel and do not affect each other.</p>
+  <figure class="figure"><img src="perpl-assets/perpl-points-official.png" alt="Official Perpl Points announcement graphic dated June 10 2026"><figcaption class="caption">Official Perpl Points announcement, published June 10, 2026. <a href="https://blog.perpl.xyz/points-are-live/">Source article</a>.</figcaption></figure>
+  <p>The official mPoints rules allocate 1,000,000 mPoints in total: 800,000 through weekly trading rewards and 200,000 for builder codes, tournaments and other activations. Snapshots happen every Wednesday, with mPoints distributed every Monday.</p>
+  <p>Perpl states that the campaign can distribute up to $1,000,000 in MON, with a guaranteed $500,000 base and another $500,000 unlocked through sustained OI-adjusted activity. That is a defined reward programme, but the final amount still depends on the unlocked tier and each wallet’s mPoints share.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Programme</th><th>How it works</th><th>Important caveat</th></tr></thead>
+    <tbody>
+      <tr><td>Perpl Points</td><td>50,000 points weekly; organic trading, referrals, PLP participation and bonuses.</td><td>No token conversion announced; rules and weights can change.</td></tr>
+      <tr><td>Purple Summer mPoints</td><td>50,000 mPoints weekly for 16 weeks, plus 200,000 for activations.</td><td>mPoints determine a share of the unlocked MON pool at campaign end.</td></tr>
+      <tr><td>Referrals</td><td>Perpl Points: +5% boost for referees and matching direct-referral points for referrers; mPoints also receive a permanent +5% boost both ways during Purple Summer.</td><td>Referral rewards are subject to the current programme rules.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Only organic activity counts, and institutional market makers are excluded from mPoints. Wash trading or self-dealing can reduce multipliers, so farming volume without a real trading rationale adds fee, slippage and liquidation risk.</p>
+  <p>See the official <a href="https://docs.perpl.xyz/exchange/points">Points rules</a>, <a href="https://docs.perpl.xyz/exchange/mpoints">mPoints campaign terms</a> and <a href="https://app.perpl.xyz/points">live Points page</a>. Perpl’s public announcement also states that the existing Perpl Points programme remains separate from Purple Summer.</p>
+
+  <h2>Funding, Team and Delivery Context</h2>
+  <p>DefiLlama and NFTgators report a $9.25M funding round led by Dragonfly, with participation from Ergonia, Brevan Howard, Mirana Ventures, L1D, HashKey Capital, Breed VC and CMS Holdings. NFTgators reported the round in May 2025 while Perpl was building on Monad.</p>
+  <figure class="figure"><img src="perpl-assets/perpl-funding-team-live.png" alt="NFTgators article documenting Perpl's 9.25 million dollar funding round led by Dragonfly"><figcaption class="caption">Funding evidence: the NFTgators report identifies the $9.25M Dragonfly-led round and Perpl’s Monad focus. <a href="https://www.nftgators.com/perpl-bags-9-25m-round-led-by-dragonfly-to-build-a-dex-platform-on-monad/">Source article</a>.</figcaption></figure>
+  <p>The project’s official materials emphasize a team with experience across infrastructure, wallets, developer tooling, arbitrage and interoperability. The product’s current Beta label and the live location restriction are important context: a working terminal does not necessarily mean open access.</p>
+  <p>Perpl’s roadmap is best read through the product itself: the current interface already exposes onchain order-book trading, points, tournaments and rescue tooling, while market coverage, public access and liquidity depth remain things to verify over time.</p>
+
+  <h2>Independent Onchain Data Snapshot</h2>
+  <p>DefiLlama provides an independent protocol-level view. The screenshot below was captured on October 18, 2026; dashboards refresh continuously, so use the date as part of the evidence rather than treating the values as fixed specifications.</p>
+  <figure class="figure"><img src="perpl-assets/perpl-independent-defillama.png" alt="DefiLlama Perpl dashboard showing TVL, fees, revenue, perp volume, open interest and total raised"><figcaption class="caption">Independent snapshot: TVL, 30-day fees, revenue, perp volume, open interest and total raised.</figcaption></figure>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Source note</th></tr></thead>
+    <tbody>
+      <tr><td>TVL</td><td>$3.32M</td><td>Monad collateral tracked by DefiLlama.</td></tr>
+      <tr><td>Perp volume, 30d</td><td>$529.43M</td><td>Notional volume including leverage.</td></tr>
+      <tr><td>Open interest</td><td>$1.32M</td><td>Live protocol-level OI snapshot.</td></tr>
+      <tr><td>Fees, 30d</td><td>$181,610</td><td>Includes maker, taker, protocol and insurance fees.</td></tr>
+      <tr><td>Revenue, 30d</td><td>$168,823</td><td>Protocol revenue after excluded cost-of-revenue items.</td></tr>
+      <tr><td>Total raised</td><td>$9.25M</td><td>Funding figure listed by DefiLlama.</td></tr>
+    </tbody>
+  </table></div>
+  <p>These figures give Perpl useful scale, but they also show a smaller footprint than the largest perp venues. The right question is not whether the interface looks like a major exchange; it is whether liquidity, spread and execution remain reliable at the size you actually trade.</p>
+  <p><strong>Method:</strong> Perpl’s figures are the October 18, 2026 DefiLlama snapshot shown above. The comparison below uses the same DefiLlama perp-volume and protocol pages where available; values are directional and should be refreshed before publication because volume and open interest move continuously.</p>
+
+  <h2>Security and Rescue Mode</h2>
+  <p>Perpl’s security model is tied to its onchain design. The exchange, order book and settlement can be independently inspected, while liquidation, insurance and withdrawal controls are part of the protocol’s risk system.</p>
+  <p>The most practical feature is Rescue Mode: a stripped-down reduce-only interface that can view positions and orders, close positions, cancel orders and withdraw funds even if the main frontend is unavailable. It cannot open new positions, which is exactly the right boundary for an emergency exit tool.</p>
+  <p>Read the <a href="https://docs.perpl.xyz/exchange/rescue-ui">Rescue UI guide</a>, <a href="https://docs.perpl.xyz/exchange/security">security documentation</a> and <a href="https://perpl.xyz/terms-of-use">Terms of Use</a> before depositing.</p>
+
+  <h2>Perpl vs Competitors</h2>
+  <p>Perpl is most interesting for traders who want an order book without giving up self-custody or EVM composability. The combined table separates market structure from scale, because GMX’s pool model should not be judged by CLOB depth alone.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Venue</th><th>Liquidity model</th><th>TVL</th><th>Perp volume, 30d</th><th>Open interest</th><th>How it compares with Perpl</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://defillama.com/protocol/perpl"><strong>Perpl</strong></a></td><td>Onchain CLOB on Monad</td><td>$3.32M</td><td>$529.43M</td><td>$1.32M</td><td>Smaller early-stage footprint; depth and fills need hands-on checking.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/hyperliquid">Hyperliquid</a></td><td>Onchain order book on its own chain</td><td>$6.99B</td><td>$209.53B</td><td>$7.77B</td><td>Closest execution benchmark, with materially deeper activity.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/gmx">GMX</a></td><td>Pool-based, oracle-driven liquidity</td><td>$242.88M</td><td>$28.476B</td><td>$255M</td><td>Different liquidity model; not directly comparable to CLOB depth.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/dydx">dYdX</a></td><td>Order-book derivatives venue</td><td>$108.53M</td><td>$1.194B</td><td>Not exposed</td><td>More established derivatives venue, but a different chain/ecosystem trade-off.</td></tr>
+      <tr><td>Centralized exchanges</td><td>Custodial order books</td><td>Not comparable</td><td>Not comparable</td><td>Not comparable</td><td>Usually deeper and more mature, but without Perpl’s wallet-based custody.</td></tr>
+    </tbody>
+  </table></div>
+  <p>The comparison should be read in layers: Hyperliquid tests Perpl’s execution ambition, GMX tests its DeFi liquidity model, and dYdX tests its maturity as a derivatives venue. Perpl’s advantage is Monad/EVM composability; its current weakness is the much smaller measured activity base.</p>
+
+  <h2>Conclusion</h2>
+  <p>Perpl offers a coherent onchain trading thesis: Monad performance, a transparent order book and a CEX-like terminal without custodial accounts. The live UI supports that story with charting, depth, limit orders, leverage and visible risk fields.</p>
+  <p>The product is not frictionless yet. Geographic availability, Beta status, liquidity depth and the opening-fee model all deserve attention before a deposit. The smaller independent footprint also means traders should test execution rather than assume the interface guarantees deep fills.</p>
+  <p>For users eligible to access Monad, Perpl is worth evaluating with a small position and conservative leverage. For everyone else, the best first step is to read the order-book, margin, fees and Rescue Mode docs before waiting for broader access.</p>
+
+  <h2>FAQs</h2>
+  <div class="faq"><h3>What is Perpl?</h3><p>Perpl is a decentralized perpetual futures exchange built on Monad, using an onchain order book for matching and settlement.</p></div>
+  <div class="faq"><h3>Does Perpl charge trading fees?</h3><p>Yes. The published maker-taker schedule charges on opening, with fees based on 14-day volume. Closing fees are listed at zero.</p></div>
+  <div class="faq"><h3>What wallet and network does Perpl use?</h3><p>Perpl is built for Monad EVM and requires a compatible wallet with the required stablecoin balance and network approval.</p></div>
+  <div class="faq"><h3>What happens if the main Perpl app is unavailable?</h3><p>Rescue Mode is a reduce-only interface for viewing positions, closing exposure, cancelling orders and withdrawing funds directly through the chain.</p></div>
+
+  <footer><strong>Quick links:</strong> <a href="https://app.perpl.xyz/">Perpl app</a> · <a href="https://perpl.xyz/">Perpl homepage</a> · <a href="https://docs.perpl.xyz/">Docs</a> · <a href="https://docs.perpl.xyz/exchange/fees">Fees</a> · <a href="https://docs.perpl.xyz/exchange/order-book">Order book</a> · <a href="https://docs.perpl.xyz/exchange/points">Points</a> · <a href="https://docs.perpl.xyz/exchange/rescue-ui">Rescue Mode</a><br>This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.</footer>
+</main>
+</body>
+</html>
