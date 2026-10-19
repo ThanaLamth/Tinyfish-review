@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Pacifica review 2026: a hands-on look at the Solana perpetuals exchange, fees, markets, points, risk controls and beginner trading tutorial.">
+  <meta property="og:title" content="Pacifica Review 2026: Complete Beginner's Guide">
+  <meta property="og:description" content="A practical, source-linked review of Pacifica's hybrid perpetuals and spot trading platform on Solana.">
+  <base href="file:///C:/Users/ADMIN/">
+  <title>Pacifica Review 2026: Complete Beginner's Guide</title>
+  <style>
+    :root{--ink:#202124;--muted:#62676c;--line:#e6e8eb;--accent:#1aa7d8;--accent2:#e6f7fc;--paper:#fff;--bg:#f5f6f7}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.72 Georgia,'Times New Roman',serif}.page{max-width:920px;margin:0 auto;background:var(--paper);min-height:100vh;padding:54px 62px 80px;box-shadow:0 0 28px #00000009}a{color:#087da6;text-decoration:underline;text-underline-offset:2px}h1,h2,h3{font-family:Arial,Helvetica,sans-serif;line-height:1.18;color:#172632}h1{font-size:44px;letter-spacing:-1.4px;margin:0 0 18px}h2{font-size:28px;margin:44px 0 12px;border-bottom:2px solid #172632;padding-bottom:8px}h3{font-size:21px;margin:26px 0 8px}p{margin:0 0 16px}.dek{font-size:21px;line-height:1.45;color:#4d555d;margin-bottom:24px}.meta{font:13px/1.5 Arial,sans-serif;color:var(--muted);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:11px 0;margin-bottom:28px}.tag{display:inline-block;font:12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.12em;color:#087da6;background:var(--accent2);padding:5px 9px;border-radius:3px;margin-bottom:15px}.note{background:#eefaff;border-left:4px solid var(--accent);padding:15px 18px;margin:22px 0 26px}.note p:last-child{margin-bottom:0}.figure{margin:25px 0 30px}.figure img{width:100%;display:block;border:1px solid #dfe4e9;border-radius:5px;background:#07111a}.caption{font:13px/1.45 Arial,sans-serif;color:var(--muted);margin-top:8px}.grid{display:grid;grid-template-columns:1fr;gap:22px;margin:18px 0 28px}.grid .figure{margin:0}.table-wrap{overflow-x:auto;margin:18px 0 28px}table{width:100%;border-collapse:collapse;font-size:15px;line-height:1.45}th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:11px 12px}th{font-family:Arial,sans-serif;background:#f4f6f8;color:#25303b}tr:nth-child(even) td{background:#fbfcfd}.steps{counter-reset:step}.step{position:relative;border-top:1px solid var(--line);padding:22px 0 20px 52px}.step:before{counter-increment:step;content:counter(step);position:absolute;left:0;top:22px;width:32px;height:32px;border-radius:50%;background:var(--accent);color:#fff;text-align:center;font:700 16px/32px Arial}.step h3{margin-top:0}.step .figure{margin:15px 0 5px}.faq{border-top:1px solid var(--line);padding:15px 0}.faq h3{font-size:18px;margin:0 0 5px}footer{border-top:1px solid var(--line);margin-top:45px;padding-top:18px;font:13px/1.55 Arial,sans-serif;color:var(--muted)}@media(max-width:720px){.page{padding:34px 22px}h1{font-size:35px}.dek{font-size:19px}body{font-size:16px}}
+  </style>
+</head>
+<body>
+<main class="page">
+  <span class="tag">Hands-on review · 2026</span>
+  <h1>Pacifica Review 2026: Complete Beginner's Guide to the Solana Perps DEX</h1>
+  <p class="dek">Pacifica is a hybrid perpetuals and spot trading platform built around Solana, combining a fast trading interface with self-custody, cross and isolated margin, points and a growing set of automated strategies.</p>
+  <div class="meta">Reviewed from the live Pacifica interface and official documentation · Last checked October 18, 2026 · Beginner-friendly guide</div>
+
+  <p>Pacifica is not just a simple perp terminal. Its product surface includes perpetuals, spot markets, Print, Swim, Vaults, points, leaderboards and advanced order strategies such as TWAP, OCO, trailing stop and Atomic.</p>
+  <p>The live app loaded the trade interface, but it displayed a restricted-jurisdiction warning before wallet connection. No wallet, deposit or order was submitted, so the article clearly separates live UI evidence from documented mechanics.</p>
+  <div class="note"><p><strong>Quick take:</strong> Pacifica is compelling for Solana traders who want broad market coverage, a CEX-like order ticket and a serious points programme. The main caveats are jurisdictional access, closed-beta limits, dynamic point rules, liquidation complexity and the difference between an interface that looks liquid and liquidity that holds at your size.</p></div>
+
+  <h2>What Is Pacifica?</h2>
+  <p>Pacifica describes itself as a high-performance decentralized trading platform launched in June 2025. The official docs position it as a wider trading ecosystem spanning crypto, real-world assets and pre-IPO markets, with perpetuals and spot as the core products.</p>
+  <p>Trading uses a hybrid architecture: the order book is designed for fast execution while deposits, withdrawals and account settlement use Solana infrastructure. Pacifica supports cross margin by default, isolated margin for perps and unified spot collateral. <a href="https://docs.pacifica.fi/trading-on-pacifica/overview">Read the official trading overview</a>.</p>
+  <p>The project says its team includes experience from Binance, FTX, Coinbase, Jane Street, OpenAI, DeepMind and MIT, and that Pacifica has been self-funded since inception. That gives the project a different profile from a purely anonymous points farm, but it does not remove smart-contract, oracle, liquidity or liquidation risk.</p>
+
+  <h2>How Pacifica Looks on Your Device</h2>
+  <p>The desktop terminal puts the chart on the left, order book in the centre and the order ticket on the right. Tablet compresses the same workflow, while the phone view is better for checking market state than managing a complex leveraged position.</p>
+  <div class="grid">
+    <figure class="figure"><img src="pacifica-assets/pacifica-live-desktop.png" alt="Pacifica live desktop trade terminal with BTC chart order book and order ticket"><figcaption class="caption">Desktop: chart, BTC market metrics, order book, order ticket and positions panel in one view.</figcaption></figure>
+    <figure class="figure"><img src="pacifica-assets/pacifica-live-tablet.png" alt="Pacifica live tablet trade terminal"><figcaption class="caption">Tablet: the terminal remains usable but the chart, book and ticket have less room to breathe.</figcaption></figure>
+    <figure class="figure"><img src="pacifica-assets/pacifica-live-phone.png" alt="Pacifica live phone trade terminal"><figcaption class="caption">Phone: useful for monitoring prices and funding; larger screens are safer for order entry.</figcaption></figure>
+  </div>
+  <p>The most important live detail is the red restricted-jurisdiction banner and the warning inside the ticket that trading is unavailable in the current region. Market data still rendered, including BTC mark/oracle price, 24-hour volume, open interest and funding.</p>
+
+  <h2>Core Features</h2>
+  <h3>Perpetuals and spot in one account</h3>
+  <p>Pacifica supports perpetuals and spot quoted in USDC. The trading overview lists more than 35 perpetual markets, while the broader About page claims 65+ pairs across crypto majors, altcoins, RWAs, FX and pre-IPO markets. That documentation mismatch is worth checking before relying on a market-count headline.</p>
+  <h3>Advanced order strategies</h3>
+  <p>Beyond Market and Limit, Pacifica documents Stop Market, Stop Limit, TWAP, Scale, Chase, Conditional orders, OCO, Trailing Stop, Swarm, Trigger Swarm and Atomic. This is a stronger order-toolkit story than a basic perp interface, especially for traders who split entries or manage paired exposure.</p>
+  <h3>Print, Swim, Vaults and Neptune</h3>
+  <p>The broader ecosystem includes Print for yield-like structured exposure, Swim for simplified trading experiences, Vaults for managed or automated strategies and Neptune, an agentic harness intended to turn trading ideas into executable workflows. These products expand the surface area but also create more product-specific risks to evaluate.</p>
+
+  <h2>Markets and Trading Surface</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
+    <tbody>
+      <tr><td>Market header</td><td>Mark price, oracle price, 24-hour change, volume, open interest and next funding.</td><td>Lets you check activity, price reference and carry before entering.</td></tr>
+      <tr><td>Chart</td><td>Timeframes, indicators, drawing tools, depth, liquidation heatmap and funding-rate views.</td><td>Supports both basic analysis and more structured execution planning.</td></tr>
+      <tr><td>Order book</td><td>Price, size, totals and spread across visible bids and asks.</td><td>Shows whether your intended order is likely to move through the book.</td></tr>
+      <tr><td>Order ticket</td><td>Cross/isolated margin, leverage, Market/Limit, buy/sell, amount, slippage, Reduce Only and TP/SL.</td><td>Controls exposure and makes the risk assumptions visible before submission.</td></tr>
+      <tr><td>Portfolio</td><td>Positions, balances, open orders, strategies, trade history and funding history.</td><td>Provides the controls needed to manage open risk after entry.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Pacifica’s market surface is broader than the live BTC screen alone suggests. The docs cover crypto, RWAs, FX and pre-IPO markets, but every additional market adds oracle, liquidity and liquidation questions. Treat the market list as a starting point, not proof of equal execution quality.</p>
+  <p>Read the <a href="https://docs.pacifica.fi/trading-on-pacifica/contract-specifications">contract specifications</a> and <a href="https://docs.pacifica.fi/trading-on-pacifica/contract-specifications/market-specifications">market specifications</a> before sizing beyond the most liquid pairs.</p>
+
+  <h2>Fee Schedule</h2>
+  <p>Pacifica uses volume-based maker and taker fees. Tiers update daily from the account’s trailing 30-day volume, and subaccounts share the master account’s fee tier.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Tier</th><th>30-day rolling volume</th><th>Maker</th><th>Taker</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>$0</td><td>0.015%</td><td>0.040%</td></tr>
+      <tr><td>2</td><td>&gt; $5M</td><td>0.012%</td><td>0.038%</td></tr>
+      <tr><td>3</td><td>&gt; $10M</td><td>0.009%</td><td>0.036%</td></tr>
+      <tr><td>4</td><td>&gt; $25M</td><td>0.006%</td><td>0.034%</td></tr>
+      <tr><td>5</td><td>&gt; $50M</td><td>0.003%</td><td>0.032%</td></tr>
+      <tr><td>VIP 1–3</td><td>&gt; $100M to &gt; $500M</td><td>0%</td><td>0.030% to 0.028%</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>Example:</strong> a $10,000 Tier 1 taker entry implies about $4.00 in opening trading fees before funding, slippage and network costs. The same notional executed as maker implies about $1.50, but a maker fill is never guaranteed.</p>
+  <p>See the current <a href="https://docs.pacifica.fi/trading-on-pacifica/trading-fees">Pacifica fee schedule</a> before trading because volume tiers and product-specific costs can change.</p>
+
+  <h2>Real Cost of Trading: A $1M Notional Example</h2>
+  <p>Trading cost is not just the headline maker/taker rate. The table below separates documented Pacifica charges from variable execution costs, so a points strategy is not mistaken for free volume.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Cost component</th><th>Illustrative $1M notional</th><th>What is known</th></tr></thead>
+    <tbody>
+      <tr><td>Tier 1 taker fee</td><td>$400 one-way / $800 round trip</td><td>0.040% per executed side; official fee schedule.</td></tr>
+      <tr><td>Tier 1 maker fee</td><td>$150 one-way / $300 round trip</td><td>0.015% per executed side; a maker fill is not guaranteed.</td></tr>
+      <tr><td>Funding</td><td>Variable; +0.01% = $100 per hourly payment</td><td>Funding is applied hourly and can be positive or negative; this is an example, not a current quote.</td></tr>
+      <tr><td>Slippage / spread</td><td>Not fixed</td><td>Depends on market depth, order size, price impact and whether the order crosses the book.</td></tr>
+      <tr><td>Deposit / withdrawal</td><td>Deposit: network gas; withdrawal: $1</td><td>Official USDC rules; withdrawal caps and available margin can also apply.</td></tr>
+      <tr><td>Bridge to Solana</td><td>External and variable</td><td>Not a Pacifica fee. It depends on the route used to move USDC onto Solana.</td></tr>
+    </tbody>
+  </table></div>
+  <p>For a Tier 1 taker, a $1M round trip already costs about $800 before funding and slippage. That is why points should be evaluated against the full round-trip cost, not against the fee table alone. See the <a href="https://docs.pacifica.fi/trading-on-pacifica/deposits-and-withdrawals">deposit and withdrawal rules</a>.</p>
+
+  <h2>Margin, Funding and Liquidation</h2>
+  <p>Pacifica offers cross margin by default and isolated margin for perpetuals. Leverage ranges from 3x to 50x depending on the market, while spot is cross-only. Cross margin can use unified spot collateral, which increases flexibility but also links more account equity to one risk engine.</p>
+  <p>Funding updates every hour. Pacifica samples the estimate every five seconds, uses a one-hour TWAP and caps the hourly funding rate at plus or minus 4%. The funding calculation uses the premium index, oracle price and impact prices based on a $20,000 BTC impact notional or $6,000 for other assets.</p>
+  <p>Liquidation has three layers: market liquidation into the order book, backstop liquidation when equity falls below two-thirds of maintenance margin, and auto-deleveraging if equity becomes negative. That structure is more sophisticated than a single liquidation threshold, but it also makes conservative leverage and position monitoring essential. Read the <a href="https://docs.pacifica.fi/trading-on-pacifica/funding-rates">funding</a> and <a href="https://docs.pacifica.fi/trading-on-pacifica/liquidations">liquidation</a> docs.</p>
+
+  <h2>Common Margin and Order Mistakes</h2>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Mistake</th><th>Why it matters</th><th>Safer habit</th></tr></thead>
+    <tbody>
+      <tr><td>Choosing Cross by default</td><td>Shared collateral can let one position consume more account equity than expected.</td><td>Use Isolated while learning, then move to Cross only with a deliberate account-level risk plan.</td></tr>
+      <tr><td>Using maximum leverage</td><td>Small mark-price moves, funding and slippage can push liquidation closer than the chart suggests.</td><td>Set leverage from stop distance and liquidation buffer, not from the maximum shown in the ticket.</td></tr>
+      <tr><td>Confusing Reduce Only with a protective stop</td><td>Reduce Only limits the direction of an order; it does not create an exit by itself.</td><td>Pair the intended exit with TP/SL or a conditional order and verify the trigger.</td></tr>
+      <tr><td>Ignoring hourly funding</td><td>Funding can compound while a position is open and changes the isolated liquidation price.</td><td>Check the displayed funding rate and funding history before holding through multiple intervals.</td></tr>
+    </tbody>
+  </table></div>
+  <p>The practical rule is simple: isolate learning positions, use less leverage than the interface permits and treat every order field as a risk control. Pacifica’s <a href="https://docs.pacifica.fi/trading-on-pacifica/margin-and-leverage">margin documentation</a> should be read before using shared collateral.</p>
+
+  <h2>How to Trade on Pacifica: Step-by-Step</h2>
+  <p>This walkthrough follows the live terminal. The market screen was available for inspection, but the restricted-jurisdiction warning prevented wallet connection, deposit and order submission. The final onboarding details below come from Pacifica’s official documentation.</p>
+  <div class="steps">
+    <section class="step"><h3>Open the app and check eligibility</h3><figure class="figure"><img src="pacifica-assets/pacifica-step1-open-app.png" alt="Pacifica live desktop terminal with restricted jurisdiction banner"><figcaption class="caption">Step 1: open the terminal and verify that your jurisdiction is supported.</figcaption></figure><p>Go to <a href="https://app.pacifica.fi/">app.pacifica.fi</a>. Check the top banner and Terms of Use before connecting a wallet. Pacifica documents programmatic restrictions for several jurisdictions, so do not try to bypass the warning.</p></section>
+    <section class="step"><h3>Select a market and read the header</h3><figure class="figure"><img src="pacifica-assets/pacifica-step2-market-chart.png" alt="Pacifica BTC market chart with mark price oracle price volume open interest and funding"><figcaption class="caption">Step 2: compare mark/oracle price and read volume, open interest and next funding.</figcaption></figure><p>Choose a market and inspect mark price, oracle price, 24-hour volume, open interest and the next funding value. Use the chart, depth and liquidation heatmap views to understand whether the market fits your intended size.</p></section>
+    <section class="step"><h3>Choose margin, leverage and order type</h3><figure class="figure"><img src="pacifica-assets/pacifica-step3-orderbook-ticket.png" alt="Pacifica order book and ticket showing cross margin 50x market and buy BTC controls"><figcaption class="caption">Step 3: choose margin mode, leverage, order type, direction and size.</figcaption></figure><p>Start with Cross or Isolated only after understanding how collateral is shared. Select Market, Limit or an advanced strategy, set a conservative leverage level, then enter amount and maximum slippage.</p></section>
+    <section class="step"><h3>Review position and liquidation fields</h3><figure class="figure"><img src="pacifica-assets/pacifica-step4-positions-panel.png" alt="Pacifica positions panel showing entry price mark price PnL liquidation price margin and funding columns"><figcaption class="caption">Step 4: use the positions panel to monitor PnL, liquidation price, margin and funding.</figcaption></figure><p>After entry, the Positions panel is the control centre for mark price, unrealized PnL, liquidation price, margin and funding. Use Reduce Only when reducing exposure and check funding history before holding a position across multiple hourly settlements.</p></section>
+    <section class="step"><h3>Connect Solana wallet, deposit USDC and submit carefully</h3><figure class="figure"><img src="pacifica-assets/pacifica-step5-location-warning.png" alt="Pacifica order ticket showing restricted jurisdiction warning and risk fields"><figcaption class="caption">Step 5: the live ticket shows the regional restriction before wallet access.</figcaption></figure><p>Pacifica’s docs support Solana wallets such as Phantom, Solflare, Backpack and Ledger via browser extension. Deposit USDC, confirm the balance and review fee, slippage, leverage and liquidation price before submitting. The documented minimum deposit is $10; no transaction was submitted in this review.</p></section>
+  </div>
+
+  <h2>Wallet and Network Flow After Connection</h2>
+  <p>Pacifica uses Solana for wallet access, USDC deposits and withdrawals. Supported options include Phantom, Solflare, Backpack, Ledger through a browser extension and WalletConnect-compatible wallets; the live app must first allow access in your jurisdiction.</p>
+  <p>After connecting, approve the wallet prompt, choose the deposit action and send USDC on Solana to the displayed account route. Pacifica credits the balance after on-chain confirmation; deposits have a $10 minimum and network gas is the documented charge.</p>
+  <p>Once the balance is credited, choose Cross or Isolated, select the market and confirm the available margin before placing an order. Withdrawals are bounded by available-to-withdraw rules, the closed-beta limits and a documented $1 withdrawal fee, so do not assume all displayed equity is immediately withdrawable.</p>
+  <p>This flow is different from a simple wallet swap: the wallet handles the on-chain funding action, while the trading account manages margin, positions, funding and order state. Read the <a href="https://docs.pacifica.fi/trading-on-pacifica/deposits-and-withdrawals">official wallet and network guide</a> before moving USDC.</p>
+
+  <h2>Points, Rewards and Product Programs</h2>
+  <p>Pacifica’s Points Program launched on September 4, 2026. The documented weekly allocation is 10,000,000 points, with snapshots every Thursday at 00:00 UTC and distributions within 24 hours.</p>
+  <figure class="figure"><img src="pacifica-assets/pacifica-points-live.png" alt="Pacifica Points page showing weekly snapshot countdown and sign in to view button"><figcaption class="caption">Live Points page: weekly snapshot countdown, points timing and wallet-gated account data.</figcaption></figure>
+  <p>Points are based on organic trading through the GUI or API. Pacifica says the formula is dynamic and intentionally opaque, and that self-trading, sybil activity and manipulation do not qualify. There is no confirmed token, TGE date or conversion ratio in the official points documentation.</p>
+  <p>The referral programme activates after $10,000 of volume. Referrers receive 10% of points generated by referred users, while referees receive a 5% points bonus. Print, Swim and Vaults also create separate participation paths, but their economics should be read independently from the core trading points.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Programme</th><th>Current rule</th><th>Risk or caveat</th></tr></thead>
+    <tbody>
+      <tr><td>Pacifica Points</td><td>10M points weekly; Thursday snapshots; distribution within 24 hours.</td><td>Dynamic formula; no official token conversion.</td></tr>
+      <tr><td>Referrals</td><td>10% of referred-user points for referrers; +5% points for referees after signup.</td><td>Referral link unlocks after $10,000 volume.</td></tr>
+      <tr><td>Print / Swim / Vaults</td><td>Separate product programmes with their own mechanics and possible rewards.</td><td>Do not treat product yield or points as guaranteed returns.</td></tr>
+    </tbody>
+  </table></div>
+  <h3>Points versus the cost of $1M volume</h3>
+  <p>Pacifica documents a weekly allocation of 10,000,000 points, but it does not publish a fixed points-per-dollar formula. Therefore, points earned from $1M of volume cannot be calculated honestly from official data and should not be presented as a guaranteed return.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Scenario</th><th>Documented trading cost</th><th>Points conclusion</th></tr></thead>
+    <tbody>
+      <tr><td>$1M Tier 1 taker, one-way</td><td>About $400 before funding and slippage</td><td>Points per $1M are undisclosed; no break-even claim is possible.</td></tr>
+      <tr><td>$1M Tier 1 taker, round trip</td><td>About $800 before funding and slippage</td><td>Any future reward must exceed the full cost to be economically positive.</td></tr>
+      <tr><td>$1M Tier 1 maker, round trip</td><td>About $300 if both sides fill as maker</td><td>Lower fee does not guarantee execution or points eligibility.</td></tr>
+    </tbody>
+  </table></div>
+  <p>The official formula is dynamic and opaque, and the docs do not confirm a token, conversion ratio or TGE. Treat the 10M weekly allocation as a programme fact, not as a price for your trading volume. See the <a href="https://docs.pacifica.fi/programs/points-program">Points Programme</a>.</p>
+  <p>Read the official <a href="https://docs.pacifica.fi/programs/points-program">Points Programme</a> and <a href="https://docs.pacifica.fi/programs/referral-and-affiliate-program">Referral Programme</a>. Third-party airdrop guides may describe potential upside, but they are not confirmation of a token launch.</p>
+
+  <h2>Funding, Team and Delivery Context</h2>
+  <p>Pacifica’s official About page says it launched in June 2025 and has been entirely self-funded since inception. The team profile cites backgrounds across traditional finance, crypto, high-frequency trading and AI, including Binance, FTX, Coinbase, Jane Street, OpenAI, DeepMind and MIT.</p>
+  <figure class="figure"><img src="pacifica-assets/pacifica-funding-team-live.png" alt="Pacifica official About Us documentation page showing its launch and product vision"><figcaption class="caption">Official delivery context: Pacifica’s About page describes the June 2025 launch and its broader trading ecosystem. <a href="https://docs.pacifica.fi/pacifica/readme">Source page</a>.</figcaption></figure>
+  <p>The product roadmap is visible in the surface area already shipped: perpetuals, spot, Print, Swim, Vaults, points, leaderboards and Neptune. This is a broader delivery footprint than a single perp terminal, but it also means the review should distinguish mature trading mechanics from newer strategy products.</p>
+  <p>Pacifica publishes a <a href="https://raw.githubusercontent.com/blocksecteam/audit-reports/main/rust/blocksec_pacifica_fi_perp_contracts_signed_20250424.pdf">BlockSec audit report</a> through its documentation. An audit is evidence of review, not a guarantee against smart-contract, oracle, custody or liquidation failures.</p>
+
+  <h2>Independent Onchain Data Snapshot</h2>
+  <p>DefiLlama provides an independent protocol-level view. The screenshot below was captured on October 18, 2026; dashboards refresh continuously, so the date is part of the evidence.</p>
+  <figure class="figure"><img src="pacifica-assets/pacifica-independent-defillama.png" alt="DefiLlama Pacifica dashboard showing TVL fees revenue DEX volume perp volume and open interest"><figcaption class="caption">Independent snapshot: TVL, 30-day fees, revenue, DEX volume, perp volume and open interest.</figcaption></figure>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Source note</th></tr></thead>
+    <tbody>
+      <tr><td>TVL</td><td>$24.18M</td><td>Protocol value tracked by DefiLlama.</td></tr>
+      <tr><td>Perp volume, 30d</td><td>$10.375B</td><td>Notional volume including leverage.</td></tr>
+      <tr><td>Open interest</td><td>$59.94M</td><td>Protocol-level open interest snapshot.</td></tr>
+      <tr><td>Fees, 30d</td><td>$3.68M</td><td>Fees tracked by DefiLlama.</td></tr>
+      <tr><td>Revenue, 30d</td><td>$3.65M</td><td>Protocol revenue tracked by DefiLlama.</td></tr>
+      <tr><td>DEX volume, 30d</td><td>$1.84M</td><td>Spot DEX volume, separate from perps.</td></tr>
+    </tbody>
+  </table></div>
+  <p>These numbers place Pacifica above a small experimental venue but below the largest order-book leaders. Volume alone is not enough: compare open interest, book depth, fees and liquidation behaviour before treating the headline activity as executable liquidity.</p>
+  <p><strong>Method:</strong> Pacifica’s figures come from the dated DefiLlama snapshot above. Competitor values in the comparison table use the same dashboard family where available and should be refreshed before publication.</p>
+
+  <h2>Security and Account Controls</h2>
+  <p>Pacifica combines self-custody with a centralised-feeling account interface. Deposits require a Solana-compatible wallet and USDC, while the docs describe minimum deposit and withdrawal amounts, closed-beta account caps and an exchange-wide withdrawal cap as risk controls.</p>
+  <p>The most important operational risk is liquidation design. Market liquidation can cancel orders and send IOC chunks into the book, backstop liquidation can transfer positions and collateral to a backstop liquidator, and auto-deleveraging can close opposing profitable positions if equity becomes negative.</p>
+  <p>Read the <a href="https://docs.pacifica.fi/trading-on-pacifica/deposits-and-withdrawals">deposit and withdrawal rules</a>, <a href="https://docs.pacifica.fi/trading-on-pacifica/margin-and-leverage">margin documentation</a> and <a href="https://docs.pacifica.fi/other/audits">audit page</a> before depositing.</p>
+
+  <h2>Pacifica vs Competitors</h2>
+  <p>Pacifica is best compared with Solana-native venues and high-volume perp DEXs, but the liquidity models differ. Hyperliquid and dYdX are order-book benchmarks; GMX is a pool-based comparison; Jupiter and Drift are closer Solana ecosystem alternatives.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Venue</th><th>Model / ecosystem</th><th>TVL</th><th>Perp volume, 30d</th><th>Open interest</th><th>How it compares with Pacifica</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://defillama.com/protocol/pacifica"><strong>Pacifica</strong></a></td><td>Hybrid perp/spot venue on Solana</td><td>$24.18M</td><td>$10.375B</td><td>$59.94M</td><td>Broad markets, points and advanced strategies; restricted access and higher liquidation complexity.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/hyperliquid">Hyperliquid</a></td><td>Onchain order book on its own chain</td><td>$6.99B</td><td>$209.53B</td><td>$7.77B</td><td>Much deeper order-book benchmark, but less Solana-native.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/gmx">GMX</a></td><td>Pool-based, oracle-driven liquidity</td><td>$242.88M</td><td>$28.476B</td><td>$255M</td><td>Different liquidity model; pool depth is not directly comparable to an order book.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/dydx">dYdX</a></td><td>Order-book derivatives venue</td><td>$108.53M</td><td>$1.194B</td><td>Not exposed</td><td>More mature derivatives product, but a different chain and ecosystem trade-off.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/jupiter">Jupiter</a> / <a href="https://www.drift.trade/">Drift</a></td><td>Solana-native trading and liquidity stack</td><td>Varies</td><td>Varies</td><td>Varies</td><td>Closer wallet and chain context; compare actual pair depth and costs, not brand familiarity.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Pacifica’s strongest differentiator is breadth inside a Solana-native trading account: perps, spot, points, strategies and adjacent products. Its main disadvantage versus the largest venues is that access restrictions and account-state limitations make it harder to validate execution personally from every region.</p>
+
+  <h3>Execution depth and liquidity risk</h3>
+  <p>The same DefiLlama snapshot gives Pacifica $10.375B in 30-day perp volume and $59.94M in open interest. Hyperliquid is in a different liquidity class at $209.533B volume and $7.773B open interest, while Jupiter reports $5.616B and $39.9M; dYdX reports $1.194B in volume, with open interest not exposed in the snapshot.</p>
+  <div class="table-wrap"><table>
+    <thead><tr><th>Venue</th><th>30d perp volume</th><th>Open interest</th><th>Execution / liquidity read</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://defillama.com/protocol/pacifica">Pacifica</a></td><td>$10.375B</td><td>$59.94M</td><td>Meaningful activity, but depth should be checked pair by pair; order size can matter more than headline volume.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/hyperliquid">Hyperliquid</a></td><td>$209.533B</td><td>$7.773B</td><td>Deepest benchmark here; likely better for larger orders, but it uses a separate L1 rather than Solana.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/jupiter">Jupiter</a></td><td>$5.616B</td><td>$39.9M</td><td>Closer Solana comparison, but the protocol aggregates several products; isolate the perp venue when comparing execution.</td></tr>
+      <tr><td><a href="https://defillama.com/protocol/dydx">dYdX</a></td><td>$1.194B</td><td>Not exposed</td><td>Older derivatives benchmark with lower current volume in this snapshot; venue architecture and chain differ.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Volume is not the same as executable depth. Before using size, compare the visible spread, order-book levels, expected price impact and liquidation path on the exact pair. Pacifica may be attractive for Solana-native access, but Hyperliquid remains the safer depth benchmark for large notional execution.</p>
+  <p><strong>Snapshot date:</strong> October 18, 2026. DefiLlama metrics are live and can change; see the linked protocol pages for current values and methodology.</p>
+
+  <h2>Conclusion</h2>
+  <p>Pacifica is a serious Solana trading product with more depth than a simple points-farming interface. The live terminal exposes charting, order-book data, risk fields, portfolio controls and advanced order types, while the docs cover margin, funding, liquidation and withdrawals in unusual detail.</p>
+  <p>The trade-off is complexity. Cross margin, hourly funding, dynamic points, advanced strategies and multi-product rewards create more ways to manage risk—and more ways to misunderstand it. The restricted-jurisdiction warning also means access must be verified before any deposit.</p>
+  <p>For eligible Solana users, Pacifica is worth testing with small size and conservative leverage. The strongest case is broad market access plus a transparent points programme; the strongest objection is that a high volume headline does not guarantee a deep, safe exit at the size you plan to trade.</p>
+
+  <h2>FAQs</h2>
+  <div class="faq"><h3>What is Pacifica?</h3><p>Pacifica is a decentralized perpetuals and spot trading platform built around Solana, with cross and isolated margin, advanced order strategies and self-custody.</p></div>
+  <div class="faq"><h3>What are Pacifica’s trading fees?</h3><p>Tier 1 fees are 0.015% maker and 0.040% taker, with lower rates at higher 30-day volume tiers.</p></div>
+  <div class="faq"><h3>Does Pacifica have an airdrop?</h3><p>Pacifica has an active points programme, but its official docs do not confirm a token, TGE date or conversion ratio. Treat points as speculative.</p></div>
+  <div class="faq"><h3>What wallet and network does Pacifica use?</h3><p>Pacifica uses Solana and supports wallets such as Phantom, Solflare, Backpack, Ledger browser extension and WalletConnect-compatible wallets.</p></div>
+
+  <footer><strong>Quick links:</strong> <a href="https://app.pacifica.fi/">Pacifica app</a> · <a href="https://pacifica.fi/">Homepage</a> · <a href="https://docs.pacifica.fi/">Docs</a> · <a href="https://docs.pacifica.fi/programs/points-program">Points</a> · <a href="https://docs.pacifica.fi/trading-on-pacifica/trading-fees">Fees</a> · <a href="https://docs.pacifica.fi/trading-on-pacifica/liquidations">Liquidations</a><br>This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.</footer>
+</main>
+</body>
+</html>
