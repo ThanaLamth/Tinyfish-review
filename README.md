@@ -147,3 +147,42 @@ Khi dùng `--reuse`, script chỉ mở lại profile cũ và gõ password để 
  python tools/write_article.py --url https://newsite.com --type dex \
  >> logs/cron.log 2>&1
 ```
+
+
+---
+
+## Duplicate Prevention (registry.py)
+
+Mỗi bài viết được ghi vào `articles/registry.json` ngay sau khi xuất file.
+
+```bash
+# Xem toàn bộ bài đã viết
+python tools/registry.py list
+
+# Kiểm tra một URL trước khi chạy pipeline
+python tools/registry.py check https://uniswap.org
+
+# Xoá entry để viết lại (hoặc dùng --force)
+python tools/registry.py remove https://kyberswap.com
+
+# Đánh dấu đã push git
+python tools/registry.py add https://site.com --slug site-review-2026 --type dex --path articles/site-review-2026.md
+```
+
+`write_article.py` tự động kiểm tra registry trước khi chạy.  
+Nếu URL đã tồn tại → exit với thông báo. Thêm `--force` để viết đè.
+
+---
+
+## Deep Research (deep_research.py)
+
+Thay thế pipeline research cũ, thêm:
+
+| Nguồn | Dữ liệu |
+|-------|---------|
+| **DeFiLlama API** | TVL, chains, 24h volume (DEX/DeFi) |
+| **CoinGecko API** | Giá token, market cap, rank |
+| **TinyFish search** | Reviews, fees, referral, security, Reddit sentiment |
+| **TinyFish fetch** | Homepage, docs, fees page |
+
+Tất cả data được đưa vào prompt cho AI để sinh bài chi tiết hơn.

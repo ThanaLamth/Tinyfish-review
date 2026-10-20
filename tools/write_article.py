@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 """
 tools/write_article.py
 Research a DeFi/crypto site and generate a beginner-friendly review article.
@@ -24,8 +24,19 @@ from datetime import date
 from dotenv import load_dotenv
 
 load_dotenv()
+
+# Sibling-module imports
+import sys as _sys; _sys.path.insert(0, str(Path(__file__).parent))
+import registry
+import deep_research as _deep_research
+
 TINYFISH_API_KEY = os.getenv("TINYFISH_API_KEY", "")
 PROXY = os.getenv("PROXY", "")  # host:port:user:pass
+
+# AI generation backend (OpenAI-compatible proxy)
+AI_BASE_URL = os.getenv("AI_BASE_URL", "http://185.169.252.191:8323/v1")
+AI_API_KEY  = os.getenv("CLIPROXYAPI_API_KEY", os.getenv("OPENAI_API_KEY", ""))
+AI_MODEL    = os.getenv("AI_MODEL", "claude-sonnet-4-6")
 
 # ─── TinyFish helpers ────────────────────────────────────────────────────────
 
@@ -151,8 +162,26 @@ Here is research data about {research_data['url']} ({research_data['site_type'].
 === SECURITY HISTORY ===
 {research_data['security_hits']}
 
+=== FEES / COSTS ===
+{research_data.get('fees_hits', '')}
+
+=== REDDIT SENTIMENT ===
+{research_data.get('reddit_hits', '')}
+
 === COMPETITOR COMPARISON ===
 {research_data['competitor_hits']}
+
+=== ON-CHAIN DATA (DeFiLlama) ===
+TVL: {research_data.get('tvl', 'N/A')}
+24h Volume: {research_data.get('volume_24h', 'N/A')}
+Chains: {research_data.get('chains', 'N/A')}
+DeFiLlama: {research_data.get('defillama_url', 'N/A')}
+
+=== TOKEN DATA (CoinGecko) ===
+Token: {research_data.get('token_name', 'N/A')} ({research_data.get('token_symbol', 'N/A')})
+Price: {research_data.get('token_price', 'N/A')}
+Market Cap: {research_data.get('market_cap', 'N/A')}
+CoinGecko Rank: #{research_data.get('cg_rank', 'N/A')}
 
 === TODAY ===
 {research_data['today']}
@@ -163,27 +192,21 @@ Output ONLY the finished Markdown — no preamble, no code fences, no explanatio
 {template_filled}
 """
 
-    env = _tf_env()
-    payload = json.dumps({
-        "model": "gpt-4o",
-        "messages": [
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user",   "content": user_prompt}
-        ],
-        "max_tokens": 8000
-    })
-
-    print("[write_article] Sending research to TinyFish AI for article generation...")
-    r = subprocess.run(
-        'tinyfish ai chat complete --stdin',
-        input=payload.encode("utf-8"),
-        capture_output=True, shell=True, env=env, timeout=180
-    )
-    stdout = r.stdout.decode("utf-8", "ignore").strip()
-
-    # If tinyfish AI endpoint not available, fall back to returning template with raw data
-    if not stdout or r.returncode != 0:
-        print("[write_article] WARNING: TinyFish AI unavailable, using template with research notes.")
+    print(f"[write_article] Generating article via {AI_MODEL} ...")
+    try:
+        from openai import OpenAI
+        client = OpenAI(api_key=AI_API_KEY, base_url=AI_BASE_URL)
+        resp = client.chat.completions.create(
+            model=AI_MODEL,
+            messages=[
+                {"role": "system", "content": SYSTEM_PROMPT},
+                {"role": "user",   "content": user_prompt},
+            ],
+            max_tokens=8000,
+        )
+        stdout = resp.choices[0].message.content or ""
+    except Exception as exc:
+        print(f"[write_article] WARNING: AI generation failed ({exc}), falling back to raw template.")
         stub = template_filled.replace("{{RESEARCH_HOMEPAGE}}", research_data["homepage_md"][:1000])
         return stub
 
@@ -236,11 +259,22 @@ def main():
                         help="Skip running capture_devices.py (use if screenshots already exist)")
     parser.add_argument("--template",     default=None,
                         help="Path to custom template (default: templates/{type}_review_template.md)")
+    parser.add_argument("--force", action="store_true",
+                        help="Skip duplicate check and overwrite if already in registry")
     args = parser.parse_args()
 
     if not TINYFISH_API_KEY:
         print("ERROR: TINYFISH_API_KEY not set. Copy .env.example to .env and fill it in.")
         sys.exit(1)
+
+    # ── Duplicate check ──────────────────────────────────────────────────
+    existing = registry.check(args.url)
+    if existing and not args.force:
+        print(f"\n[registry] DUPLICATE DETECTED - already written on {existing.get('date_written', '?')}:")
+        print(f"  Article : {existing.get('article_path', '?')}")
+        print(f"  Slug    : {existing.get('slug', '?')}")
+        print("\nRe-run with --force to overwrite.")
+        sys.exit(0)
 
     # Resolve template
     repo_root = Path(__file__).parent.parent
@@ -264,8 +298,8 @@ def main():
     else:
         print(f"[capture] Skipped. Using existing screenshots in {device_ss_dir}")
 
-    # Step 2 – research
-    data = research(args.url, args.site_type)
+    # Step 2 – research (deep: homepage + docs + fees + DeFiLlama + CoinGecko)
+    data = _deep_research.deep_research(args.url, args.site_type)
 
     # Step 3 – generate article
     article = build_article_via_tinyfish(data, template, screenshots_dir)
@@ -273,7 +307,8 @@ def main():
     # Step 4 – write output
     out_dir.mkdir(parents=True, exist_ok=True)
     article_path.write_text(article, encoding="utf-8")
-    print(f"\n✅  Article saved: {article_path}")
+    registry.register(args.url, args.slug, args.site_type, str(article_path))
+    print(f"\n[OK]  Article saved: {article_path}")
     print(f"    Screenshots:    {device_ss_dir}")
 
 if __name__ == "__main__":
