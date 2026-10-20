@@ -6,7 +6,7 @@ Hands-on review · 2026
 
 Perpl is a perpetual futures exchange built on Monad with a fully on-chain central limit order book. This review covers the live terminal, fees, order flow, margin, points, security and what a first-time trader should know before connecting a wallet.
 
-  Reviewed from the live Perpl interface and official documentation · Last checked October 18, 2026 · Beginner-friendly guide
+ Reviewed from the live Perpl interface and official documentation · Last checked October 18, 2026 · Beginner-friendly guide
 
 Perpl’s pitch is different from a typical pool-based perp DEX. It wants the familiar feel of a trading terminal—chart, order book, limit orders and market orders—while keeping matching and settlement onchain.
 
@@ -104,15 +104,15 @@ The order panel exposes Market, Limit and Stop tabs, up to 15x leverage in the l
 
 ## Markets and Trading Surface
 
-  <table>
-    <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
-    <tbody>
-      <tr><td>Market header</td><td>Mark price, oracle price, 24h change, 24h volume, open interest and funding countdown.</td><td>Lets you check price reference, activity and carry before entering.</td></tr>
-      <tr><td>Order book</td><td>Price, size and total for live bid/ask levels, plus a spread readout.</td><td>Shows available liquidity and how much depth exists near the mid.</td></tr>
-      <tr><td>Order ticket</td><td>Market, Limit and Stop; Long/Short; leverage; price; size; Reduce Only; TP/SL.</td><td>Controls entry direction and execution conditions.</td></tr>
-      <tr><td>Portfolio</td><td>Positions, orders, balances and PnL are available after wallet access.</td><td>Needed to manage margin and close exposure.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
+ <tbody>
+ <tr><td>Market header</td><td>Mark price, oracle price, 24h change, 24h volume, open interest and funding countdown.</td><td>Lets you check price reference, activity and carry before entering.</td></tr>
+ <tr><td>Order book</td><td>Price, size and total for live bid/ask levels, plus a spread readout.</td><td>Shows available liquidity and how much depth exists near the mid.</td></tr>
+ <tr><td>Order ticket</td><td>Market, Limit and Stop; Long/Short; leverage; price; size; Reduce Only; TP/SL.</td><td>Controls entry direction and execution conditions.</td></tr>
+ <tr><td>Portfolio</td><td>Positions, orders, balances and PnL are available after wallet access.</td><td>Needed to manage margin and close exposure.</td></tr>
+ </tbody>
+ </table>
 
 Perpl’s public documentation focuses on perpetual contracts rather than a giant multi-asset catalogue. The live BTC screen is the clearest evidence in this review: the product is built around a deep book, precise order entry and fast market data, not a broad synthetic-assets menu.
 
@@ -132,16 +132,16 @@ For the underlying design, see the <a href="https://docs.perpl.xyz/exchange/arch
 
 Perpl uses a maker-taker model and charges trading fees when a position is opened, not when it is closed. The published schedule is volume-based, with rebates at higher tiers and a separate onchain base-fee concept.
 
-  <table>
-    <thead><tr><th>Tier</th><th>14-day volume</th><th>Maker open</th><th>Taker open</th><th>Close</th></tr></thead>
-    <tbody>
-      <tr><td>T1</td><td>&lt; $5M</td><td>0.9 bps</td><td>6.9 bps</td><td>0</td></tr>
-      <tr><td>T2</td><td>≥ $5M</td><td>0.5 bps</td><td>6.0 bps</td><td>0</td></tr>
-      <tr><td>T3</td><td>≥ $25M</td><td>0.25 bps</td><td>5.0 bps</td><td>0</td></tr>
-      <tr><td>T4</td><td>≥ $100M</td><td>0</td><td>4.2 bps</td><td>0</td></tr>
-      <tr><td>T5</td><td>≥ $250M</td><td>-0.01 bps</td><td>3.5 bps</td><td>0</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Tier</th><th>14-day volume</th><th>Maker open</th><th>Taker open</th><th>Close</th></tr></thead>
+ <tbody>
+ <tr><td>T1</td><td>&lt; $5M</td><td>0.9 bps</td><td>6.9 bps</td><td>0</td></tr>
+ <tr><td>T2</td><td>≥ $5M</td><td>0.5 bps</td><td>6.0 bps</td><td>0</td></tr>
+ <tr><td>T3</td><td>≥ $25M</td><td>0.25 bps</td><td>5.0 bps</td><td>0</td></tr>
+ <tr><td>T4</td><td>≥ $100M</td><td>0</td><td>4.2 bps</td><td>0</td></tr>
+ <tr><td>T5</td><td>≥ $250M</td><td>-0.01 bps</td><td>3.5 bps</td><td>0</td></tr>
+ </tbody>
+ </table>
 
 <strong>Example:</strong> a $10,000 taker entry at the T1 rate of 6.9 bps implies about $6.90 in opening fee before any rebates or other transaction costs. Closing has a published 0 bps trading fee, but funding, gas and execution conditions still affect the total result.
 
@@ -249,14 +249,14 @@ The official mPoints rules allocate 1,000,000 mPoints in total: 800,000 through 
 
 Perpl states that the campaign can distribute up to $1,000,000 in MON, with a guaranteed $500,000 base and another $500,000 unlocked through sustained OI-adjusted activity. That is a defined reward programme, but the final amount still depends on the unlocked tier and each wallet’s mPoints share.
 
-  <table>
-    <thead><tr><th>Programme</th><th>How it works</th><th>Important caveat</th></tr></thead>
-    <tbody>
-      <tr><td>Perpl Points</td><td>50,000 points weekly; organic trading, referrals, PLP participation and bonuses.</td><td>No token conversion announced; rules and weights can change.</td></tr>
-      <tr><td>Purple Summer mPoints</td><td>50,000 mPoints weekly for 16 weeks, plus 200,000 for activations.</td><td>mPoints determine a share of the unlocked MON pool at campaign end.</td></tr>
-      <tr><td>Referrals</td><td>Perpl Points: +5% boost for referees and matching direct-referral points for referrers; mPoints also receive a permanent +5% boost both ways during Purple Summer.</td><td>Referral rewards are subject to the current programme rules.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Programme</th><th>How it works</th><th>Important caveat</th></tr></thead>
+ <tbody>
+ <tr><td>Perpl Points</td><td>50,000 points weekly; organic trading, referrals, PLP participation and bonuses.</td><td>No token conversion announced; rules and weights can change.</td></tr>
+ <tr><td>Purple Summer mPoints</td><td>50,000 mPoints weekly for 16 weeks, plus 200,000 for activations.</td><td>mPoints determine a share of the unlocked MON pool at campaign end.</td></tr>
+ <tr><td>Referrals</td><td>Perpl Points: +5% boost for referees and matching direct-referral points for referrers; mPoints also receive a permanent +5% boost both ways during Purple Summer.</td><td>Referral rewards are subject to the current programme rules.</td></tr>
+ </tbody>
+ </table>
 
 Only organic activity counts, and institutional market makers are excluded from mPoints. Wash trading or self-dealing can reduce multipliers, so farming volume without a real trading rationale adds fee, slippage and liquidation risk.
 
@@ -300,17 +300,17 @@ DefiLlama provides an independent protocol-level view. The screenshot below was 
 
 *Independent snapshot: TVL, 30-day fees, revenue, perp volume, open interest and total raised.*
 
-  <table>
-    <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Source note</th></tr></thead>
-    <tbody>
-      <tr><td>TVL</td><td>$3.32M</td><td>Monad collateral tracked by DefiLlama.</td></tr>
-      <tr><td>Perp volume, 30d</td><td>$529.43M</td><td>Notional volume including leverage.</td></tr>
-      <tr><td>Open interest</td><td>$1.32M</td><td>Live protocol-level OI snapshot.</td></tr>
-      <tr><td>Fees, 30d</td><td>$181,610</td><td>Includes maker, taker, protocol and insurance fees.</td></tr>
-      <tr><td>Revenue, 30d</td><td>$168,823</td><td>Protocol revenue after excluded cost-of-revenue items.</td></tr>
-      <tr><td>Total raised</td><td>$9.25M</td><td>Funding figure listed by DefiLlama.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Source note</th></tr></thead>
+ <tbody>
+ <tr><td>TVL</td><td>$3.32M</td><td>Monad collateral tracked by DefiLlama.</td></tr>
+ <tr><td>Perp volume, 30d</td><td>$529.43M</td><td>Notional volume including leverage.</td></tr>
+ <tr><td>Open interest</td><td>$1.32M</td><td>Live protocol-level OI snapshot.</td></tr>
+ <tr><td>Fees, 30d</td><td>$181,610</td><td>Includes maker, taker, protocol and insurance fees.</td></tr>
+ <tr><td>Revenue, 30d</td><td>$168,823</td><td>Protocol revenue after excluded cost-of-revenue items.</td></tr>
+ <tr><td>Total raised</td><td>$9.25M</td><td>Funding figure listed by DefiLlama.</td></tr>
+ </tbody>
+ </table>
 
 These figures give Perpl useful scale, but they also show a smaller footprint than the largest perp venues. The right question is not whether the interface looks like a major exchange; it is whether liquidity, spread and execution remain reliable at the size you actually trade.
 
@@ -342,16 +342,16 @@ Read the <a href="https://docs.perpl.xyz/exchange/rescue-ui">Rescue UI guide</a>
 
 Perpl is most interesting for traders who want an order book without giving up self-custody or EVM composability. The combined table separates market structure from scale, because GMX’s pool model should not be judged by CLOB depth alone.
 
-  <table>
-    <thead><tr><th>Venue</th><th>Liquidity model</th><th>TVL</th><th>Perp volume, 30d</th><th>Open interest</th><th>How it compares with Perpl</th></tr></thead>
-    <tbody>
-      <tr><td><a href="https://defillama.com/protocol/perpl"><strong>Perpl</strong></a></td><td>Onchain CLOB on Monad</td><td>$3.32M</td><td>$529.43M</td><td>$1.32M</td><td>Smaller early-stage footprint; depth and fills need hands-on checking.</td></tr>
-      <tr><td><a href="https://defillama.com/protocol/hyperliquid">Hyperliquid</a></td><td>Onchain order book on its own chain</td><td>$6.99B</td><td>$209.53B</td><td>$7.77B</td><td>Closest execution benchmark, with materially deeper activity.</td></tr>
-      <tr><td><a href="https://defillama.com/protocol/gmx">GMX</a></td><td>Pool-based, oracle-driven liquidity</td><td>$242.88M</td><td>$28.476B</td><td>$255M</td><td>Different liquidity model; not directly comparable to CLOB depth.</td></tr>
-      <tr><td><a href="https://defillama.com/protocol/dydx">dYdX</a></td><td>Order-book derivatives venue</td><td>$108.53M</td><td>$1.194B</td><td>Not exposed</td><td>More established derivatives venue, but a different chain/ecosystem trade-off.</td></tr>
-      <tr><td>Centralized exchanges</td><td>Custodial order books</td><td>Not comparable</td><td>Not comparable</td><td>Not comparable</td><td>Usually deeper and more mature, but without Perpl’s wallet-based custody.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Venue</th><th>Liquidity model</th><th>TVL</th><th>Perp volume, 30d</th><th>Open interest</th><th>How it compares with Perpl</th></tr></thead>
+ <tbody>
+ <tr><td><a href="https://defillama.com/protocol/perpl"><strong>Perpl</strong></a></td><td>Onchain CLOB on Monad</td><td>$3.32M</td><td>$529.43M</td><td>$1.32M</td><td>Smaller early-stage footprint; depth and fills need hands-on checking.</td></tr>
+ <tr><td><a href="https://defillama.com/protocol/hyperliquid">Hyperliquid</a></td><td>Onchain order book on its own chain</td><td>$6.99B</td><td>$209.53B</td><td>$7.77B</td><td>Closest execution benchmark, with materially deeper activity.</td></tr>
+ <tr><td><a href="https://defillama.com/protocol/gmx">GMX</a></td><td>Pool-based, oracle-driven liquidity</td><td>$242.88M</td><td>$28.476B</td><td>$255M</td><td>Different liquidity model; not directly comparable to CLOB depth.</td></tr>
+ <tr><td><a href="https://defillama.com/protocol/dydx">dYdX</a></td><td>Order-book derivatives venue</td><td>$108.53M</td><td>$1.194B</td><td>Not exposed</td><td>More established derivatives venue, but a different chain/ecosystem trade-off.</td></tr>
+ <tr><td>Centralized exchanges</td><td>Custodial order books</td><td>Not comparable</td><td>Not comparable</td><td>Not comparable</td><td>Usually deeper and more mature, but without Perpl’s wallet-based custody.</td></tr>
+ </tbody>
+ </table>
 
 The comparison should be read in layers: Hyperliquid tests Perpl’s execution ambition, GMX tests its DeFi liquidity model, and dYdX tests its maturity as a derivatives venue. Perpl’s advantage is Monad/EVM composability; its current weakness is the much smaller measured activity base.
 
@@ -399,4 +399,4 @@ Perpl is built for Monad EVM and requires a compatible wallet with the required 
 
 Rescue Mode is a reduce-only interface for viewing positions, closing exposure, cancelling orders and withdrawing funds directly through the chain.
 
-  <strong>Quick links:</strong> <a href="https://app.perpl.xyz/">Perpl app</a> · <a href="https://perpl.xyz/">Perpl homepage</a> · <a href="https://docs.perpl.xyz/">Docs</a> · <a href="https://docs.perpl.xyz/exchange/fees">Fees</a> · <a href="https://docs.perpl.xyz/exchange/order-book">Order book</a> · <a href="https://docs.perpl.xyz/exchange/points">Points</a> · <a href="https://docs.perpl.xyz/exchange/rescue-ui">Rescue Mode</a><br>This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.
+ <strong>Quick links:</strong> <a href="https://app.perpl.xyz/">Perpl app</a> · <a href="https://perpl.xyz/">Perpl homepage</a> · <a href="https://docs.perpl.xyz/">Docs</a> · <a href="https://docs.perpl.xyz/exchange/fees">Fees</a> · <a href="https://docs.perpl.xyz/exchange/order-book">Order book</a> · <a href="https://docs.perpl.xyz/exchange/points">Points</a> · <a href="https://docs.perpl.xyz/exchange/rescue-ui">Rescue Mode</a><br>This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.

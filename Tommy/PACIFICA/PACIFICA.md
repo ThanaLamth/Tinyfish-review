@@ -8,7 +8,7 @@
 
 Pacifica is a hybrid perpetuals and spot trading platform built around Solana, combining a fast trading interface with self-custody, cross and isolated margin, points and a growing set of automated strategies.
 
-  Reviewed from the live Pacifica interface and official documentation · Last checked October 18, 2026 · Beginner-friendly guide
+ Reviewed from the live Pacifica interface and official documentation · Last checked October 18, 2026 · Beginner-friendly guide
 
 Pacifica is not just a simple perp terminal. Its product surface includes perpetuals, spot markets, Print, Swim, Vaults, points, leaderboards and advanced order strategies such as TWAP, OCO, trailing stop and Atomic.
 
@@ -98,16 +98,16 @@ The broader ecosystem includes Print for yield-like structured exposure, Swim fo
 
 ## Markets and Trading Surface
 
-  <table>
-    <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
-    <tbody>
-      <tr><td>Market header</td><td>Mark price, oracle price, 24-hour change, volume, open interest and next funding.</td><td>Lets you check activity, price reference and carry before entering.</td></tr>
-      <tr><td>Chart</td><td>Timeframes, indicators, drawing tools, depth, liquidation heatmap and funding-rate views.</td><td>Supports both basic analysis and more structured execution planning.</td></tr>
-      <tr><td>Order book</td><td>Price, size, totals and spread across visible bids and asks.</td><td>Shows whether your intended order is likely to move through the book.</td></tr>
-      <tr><td>Order ticket</td><td>Cross/isolated margin, leverage, Market/Limit, buy/sell, amount, slippage, Reduce Only and TP/SL.</td><td>Controls exposure and makes the risk assumptions visible before submission.</td></tr>
-      <tr><td>Portfolio</td><td>Positions, balances, open orders, strategies, trade history and funding history.</td><td>Provides the controls needed to manage open risk after entry.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
+ <tbody>
+ <tr><td>Market header</td><td>Mark price, oracle price, 24-hour change, volume, open interest and next funding.</td><td>Lets you check activity, price reference and carry before entering.</td></tr>
+ <tr><td>Chart</td><td>Timeframes, indicators, drawing tools, depth, liquidation heatmap and funding-rate views.</td><td>Supports both basic analysis and more structured execution planning.</td></tr>
+ <tr><td>Order book</td><td>Price, size, totals and spread across visible bids and asks.</td><td>Shows whether your intended order is likely to move through the book.</td></tr>
+ <tr><td>Order ticket</td><td>Cross/isolated margin, leverage, Market/Limit, buy/sell, amount, slippage, Reduce Only and TP/SL.</td><td>Controls exposure and makes the risk assumptions visible before submission.</td></tr>
+ <tr><td>Portfolio</td><td>Positions, balances, open orders, strategies, trade history and funding history.</td><td>Provides the controls needed to manage open risk after entry.</td></tr>
+ </tbody>
+ </table>
 
 Pacifica’s market surface is broader than the live BTC screen alone suggests. The docs cover crypto, RWAs, FX and pre-IPO markets, but every additional market adds oracle, liquidity and liquidation questions. Treat the market list as a starting point, not proof of equal execution quality.
 
@@ -123,17 +123,17 @@ Read the [contract specifications](https://docs.pacifica.fi/trading-on-pacifica/
 
 Pacifica uses volume-based maker and taker fees. Tiers update daily from the account’s trailing 30-day volume, and subaccounts share the master account’s fee tier.
 
-  <table>
-    <thead><tr><th>Tier</th><th>30-day rolling volume</th><th>Maker</th><th>Taker</th></tr></thead>
-    <tbody>
-      <tr><td>1</td><td>$0</td><td>0.015%</td><td>0.040%</td></tr>
-      <tr><td>2</td><td>&gt; $5M</td><td>0.012%</td><td>0.038%</td></tr>
-      <tr><td>3</td><td>&gt; $10M</td><td>0.009%</td><td>0.036%</td></tr>
-      <tr><td>4</td><td>&gt; $25M</td><td>0.006%</td><td>0.034%</td></tr>
-      <tr><td>5</td><td>&gt; $50M</td><td>0.003%</td><td>0.032%</td></tr>
-      <tr><td>VIP 1–3</td><td>&gt; $100M to &gt; $500M</td><td>0%</td><td>0.030% to 0.028%</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Tier</th><th>30-day rolling volume</th><th>Maker</th><th>Taker</th></tr></thead>
+ <tbody>
+ <tr><td>1</td><td>$0</td><td>0.015%</td><td>0.040%</td></tr>
+ <tr><td>2</td><td>&gt; $5M</td><td>0.012%</td><td>0.038%</td></tr>
+ <tr><td>3</td><td>&gt; $10M</td><td>0.009%</td><td>0.036%</td></tr>
+ <tr><td>4</td><td>&gt; $25M</td><td>0.006%</td><td>0.034%</td></tr>
+ <tr><td>5</td><td>&gt; $50M</td><td>0.003%</td><td>0.032%</td></tr>
+ <tr><td>VIP 1–3</td><td>&gt; $100M to &gt; $500M</td><td>0%</td><td>0.030% to 0.028%</td></tr>
+ </tbody>
+ </table>
 
 **Example:** a $10,000 Tier 1 taker entry implies about $4.00 in opening trading fees before funding, slippage and network costs. The same notional executed as maker implies about $1.50, but a maker fill is never guaranteed.
 
@@ -149,17 +149,17 @@ See the current [Pacifica fee schedule](https://docs.pacifica.fi/trading-on-paci
 
 Trading cost is not just the headline maker/taker rate. The table below separates documented Pacifica charges from variable execution costs, so a points strategy is not mistaken for free volume.
 
-  <table>
-    <thead><tr><th>Cost component</th><th>Illustrative $1M notional</th><th>What is known</th></tr></thead>
-    <tbody>
-      <tr><td>Tier 1 taker fee</td><td>$400 one-way / $800 round trip</td><td>0.040% per executed side; official fee schedule.</td></tr>
-      <tr><td>Tier 1 maker fee</td><td>$150 one-way / $300 round trip</td><td>0.015% per executed side; a maker fill is not guaranteed.</td></tr>
-      <tr><td>Funding</td><td>Variable; +0.01% = $100 per hourly payment</td><td>Funding is applied hourly and can be positive or negative; this is an example, not a current quote.</td></tr>
-      <tr><td>Slippage / spread</td><td>Not fixed</td><td>Depends on market depth, order size, price impact and whether the order crosses the book.</td></tr>
-      <tr><td>Deposit / withdrawal</td><td>Deposit: network gas; withdrawal: $1</td><td>Official USDC rules; withdrawal caps and available margin can also apply.</td></tr>
-      <tr><td>Bridge to Solana</td><td>External and variable</td><td>Not a Pacifica fee. It depends on the route used to move USDC onto Solana.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Cost component</th><th>Illustrative $1M notional</th><th>What is known</th></tr></thead>
+ <tbody>
+ <tr><td>Tier 1 taker fee</td><td>$400 one-way / $800 round trip</td><td>0.040% per executed side; official fee schedule.</td></tr>
+ <tr><td>Tier 1 maker fee</td><td>$150 one-way / $300 round trip</td><td>0.015% per executed side; a maker fill is not guaranteed.</td></tr>
+ <tr><td>Funding</td><td>Variable; +0.01% = $100 per hourly payment</td><td>Funding is applied hourly and can be positive or negative; this is an example, not a current quote.</td></tr>
+ <tr><td>Slippage / spread</td><td>Not fixed</td><td>Depends on market depth, order size, price impact and whether the order crosses the book.</td></tr>
+ <tr><td>Deposit / withdrawal</td><td>Deposit: network gas; withdrawal: $1</td><td>Official USDC rules; withdrawal caps and available margin can also apply.</td></tr>
+ <tr><td>Bridge to Solana</td><td>External and variable</td><td>Not a Pacifica fee. It depends on the route used to move USDC onto Solana.</td></tr>
+ </tbody>
+ </table>
 
 For a Tier 1 taker, a $1M round trip already costs about $800 before funding and slippage. That is why points should be evaluated against the full round-trip cost, not against the fee table alone. See the [deposit and withdrawal rules](https://docs.pacifica.fi/trading-on-pacifica/deposits-and-withdrawals).
 
@@ -183,15 +183,15 @@ Liquidation has three layers: market liquidation into the order book, backstop l
 
 ## Common Margin and Order Mistakes
 
-  <table>
-    <thead><tr><th>Mistake</th><th>Why it matters</th><th>Safer habit</th></tr></thead>
-    <tbody>
-      <tr><td>Choosing Cross by default</td><td>Shared collateral can let one position consume more account equity than expected.</td><td>Use Isolated while learning, then move to Cross only with a deliberate account-level risk plan.</td></tr>
-      <tr><td>Using maximum leverage</td><td>Small mark-price moves, funding and slippage can push liquidation closer than the chart suggests.</td><td>Set leverage from stop distance and liquidation buffer, not from the maximum shown in the ticket.</td></tr>
-      <tr><td>Confusing Reduce Only with a protective stop</td><td>Reduce Only limits the direction of an order; it does not create an exit by itself.</td><td>Pair the intended exit with TP/SL or a conditional order and verify the trigger.</td></tr>
-      <tr><td>Ignoring hourly funding</td><td>Funding can compound while a position is open and changes the isolated liquidation price.</td><td>Check the displayed funding rate and funding history before holding through multiple intervals.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Mistake</th><th>Why it matters</th><th>Safer habit</th></tr></thead>
+ <tbody>
+ <tr><td>Choosing Cross by default</td><td>Shared collateral can let one position consume more account equity than expected.</td><td>Use Isolated while learning, then move to Cross only with a deliberate account-level risk plan.</td></tr>
+ <tr><td>Using maximum leverage</td><td>Small mark-price moves, funding and slippage can push liquidation closer than the chart suggests.</td><td>Set leverage from stop distance and liquidation buffer, not from the maximum shown in the ticket.</td></tr>
+ <tr><td>Confusing Reduce Only with a protective stop</td><td>Reduce Only limits the direction of an order; it does not create an exit by itself.</td><td>Pair the intended exit with TP/SL or a conditional order and verify the trigger.</td></tr>
+ <tr><td>Ignoring hourly funding</td><td>Funding can compound while a position is open and changes the isolated liquidation price.</td><td>Check the displayed funding rate and funding history before holding through multiple intervals.</td></tr>
+ </tbody>
+ </table>
 
 The practical rule is simple: isolate learning positions, use less leverage than the interface permits and treat every order field as a risk control. Pacifica’s [margin documentation](https://docs.pacifica.fi/trading-on-pacifica/margin-and-leverage) should be read before using shared collateral.
 
@@ -295,14 +295,14 @@ Points are based on organic trading through the GUI or API. Pacifica says the fo
 
 The referral programme activates after $10,000 of volume. Referrers receive 10% of points generated by referred users, while referees receive a 5% points bonus. Print, Swim and Vaults also create separate participation paths, but their economics should be read independently from the core trading points.
 
-  <table>
-    <thead><tr><th>Programme</th><th>Current rule</th><th>Risk or caveat</th></tr></thead>
-    <tbody>
-      <tr><td>Pacifica Points</td><td>10M points weekly; Thursday snapshots; distribution within 24 hours.</td><td>Dynamic formula; no official token conversion.</td></tr>
-      <tr><td>Referrals</td><td>10% of referred-user points for referrers; +5% points for referees after signup.</td><td>Referral link unlocks after $10,000 volume.</td></tr>
-      <tr><td>Print / Swim / Vaults</td><td>Separate product programmes with their own mechanics and possible rewards.</td><td>Do not treat product yield or points as guaranteed returns.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Programme</th><th>Current rule</th><th>Risk or caveat</th></tr></thead>
+ <tbody>
+ <tr><td>Pacifica Points</td><td>10M points weekly; Thursday snapshots; distribution within 24 hours.</td><td>Dynamic formula; no official token conversion.</td></tr>
+ <tr><td>Referrals</td><td>10% of referred-user points for referrers; +5% points for referees after signup.</td><td>Referral link unlocks after $10,000 volume.</td></tr>
+ <tr><td>Print / Swim / Vaults</td><td>Separate product programmes with their own mechanics and possible rewards.</td><td>Do not treat product yield or points as guaranteed returns.</td></tr>
+ </tbody>
+ </table>
 
 ### Points versus the cost of $1M volume
 
@@ -310,14 +310,14 @@ The referral programme activates after $10,000 of volume. Referrers receive 10% 
 
 Pacifica documents a weekly allocation of 10,000,000 points, but it does not publish a fixed points-per-dollar formula. Therefore, points earned from $1M of volume cannot be calculated honestly from official data and should not be presented as a guaranteed return.
 
-  <table>
-    <thead><tr><th>Scenario</th><th>Documented trading cost</th><th>Points conclusion</th></tr></thead>
-    <tbody>
-      <tr><td>$1M Tier 1 taker, one-way</td><td>About $400 before funding and slippage</td><td>Points per $1M are undisclosed; no break-even claim is possible.</td></tr>
-      <tr><td>$1M Tier 1 taker, round trip</td><td>About $800 before funding and slippage</td><td>Any future reward must exceed the full cost to be economically positive.</td></tr>
-      <tr><td>$1M Tier 1 maker, round trip</td><td>About $300 if both sides fill as maker</td><td>Lower fee does not guarantee execution or points eligibility.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Scenario</th><th>Documented trading cost</th><th>Points conclusion</th></tr></thead>
+ <tbody>
+ <tr><td>$1M Tier 1 taker, one-way</td><td>About $400 before funding and slippage</td><td>Points per $1M are undisclosed; no break-even claim is possible.</td></tr>
+ <tr><td>$1M Tier 1 taker, round trip</td><td>About $800 before funding and slippage</td><td>Any future reward must exceed the full cost to be economically positive.</td></tr>
+ <tr><td>$1M Tier 1 maker, round trip</td><td>About $300 if both sides fill as maker</td><td>Lower fee does not guarantee execution or points eligibility.</td></tr>
+ </tbody>
+ </table>
 
 The official formula is dynamic and opaque, and the docs do not confirm a token, conversion ratio or TGE. Treat the 10M weekly allocation as a programme fact, not as a price for your trading volume. See the [Points Programme](https://docs.pacifica.fi/programs/points-program).
 
@@ -361,17 +361,17 @@ DefiLlama provides an independent protocol-level view. The screenshot below was 
 
 *Independent snapshot: TVL, 30-day fees, revenue, DEX volume, perp volume and open interest.*
 
-  <table>
-    <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Source note</th></tr></thead>
-    <tbody>
-      <tr><td>TVL</td><td>$24.18M</td><td>Protocol value tracked by DefiLlama.</td></tr>
-      <tr><td>Perp volume, 30d</td><td>$10.375B</td><td>Notional volume including leverage.</td></tr>
-      <tr><td>Open interest</td><td>$59.94M</td><td>Protocol-level open interest snapshot.</td></tr>
-      <tr><td>Fees, 30d</td><td>$3.68M</td><td>Fees tracked by DefiLlama.</td></tr>
-      <tr><td>Revenue, 30d</td><td>$3.65M</td><td>Protocol revenue tracked by DefiLlama.</td></tr>
-      <tr><td>DEX volume, 30d</td><td>$1.84M</td><td>Spot DEX volume, separate from perps.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Source note</th></tr></thead>
+ <tbody>
+ <tr><td>TVL</td><td>$24.18M</td><td>Protocol value tracked by DefiLlama.</td></tr>
+ <tr><td>Perp volume, 30d</td><td>$10.375B</td><td>Notional volume including leverage.</td></tr>
+ <tr><td>Open interest</td><td>$59.94M</td><td>Protocol-level open interest snapshot.</td></tr>
+ <tr><td>Fees, 30d</td><td>$3.68M</td><td>Fees tracked by DefiLlama.</td></tr>
+ <tr><td>Revenue, 30d</td><td>$3.65M</td><td>Protocol revenue tracked by DefiLlama.</td></tr>
+ <tr><td>DEX volume, 30d</td><td>$1.84M</td><td>Spot DEX volume, separate from perps.</td></tr>
+ </tbody>
+ </table>
 
 These numbers place Pacifica above a small experimental venue but below the largest order-book leaders. Volume alone is not enough: compare open interest, book depth, fees and liquidation behaviour before treating the headline activity as executable liquidity.
 
@@ -403,16 +403,16 @@ Read the [deposit and withdrawal rules](https://docs.pacifica.fi/trading-on-paci
 
 Pacifica is best compared with Solana-native venues and high-volume perp DEXs, but the liquidity models differ. Hyperliquid and dYdX are order-book benchmarks; GMX is a pool-based comparison; Jupiter and Drift are closer Solana ecosystem alternatives.
 
-  <table>
-    <thead><tr><th>Venue</th><th>Model / ecosystem</th><th>TVL</th><th>Perp volume, 30d</th><th>Open interest</th><th>How it compares with Pacifica</th></tr></thead>
-    <tbody>
-      <tr><td>[**Pacifica**](https://defillama.com/protocol/pacifica)</td><td>Hybrid perp/spot venue on Solana</td><td>$24.18M</td><td>$10.375B</td><td>$59.94M</td><td>Broad markets, points and advanced strategies; restricted access and higher liquidation complexity.</td></tr>
-      <tr><td>[Hyperliquid](https://defillama.com/protocol/hyperliquid)</td><td>Onchain order book on its own chain</td><td>$6.99B</td><td>$209.53B</td><td>$7.77B</td><td>Much deeper order-book benchmark, but less Solana-native.</td></tr>
-      <tr><td>[GMX](https://defillama.com/protocol/gmx)</td><td>Pool-based, oracle-driven liquidity</td><td>$242.88M</td><td>$28.476B</td><td>$255M</td><td>Different liquidity model; pool depth is not directly comparable to an order book.</td></tr>
-      <tr><td>[dYdX](https://defillama.com/protocol/dydx)</td><td>Order-book derivatives venue</td><td>$108.53M</td><td>$1.194B</td><td>Not exposed</td><td>More mature derivatives product, but a different chain and ecosystem trade-off.</td></tr>
-      <tr><td>[Jupiter](https://defillama.com/protocol/jupiter) / [Drift](https://www.drift.trade/)</td><td>Solana-native trading and liquidity stack</td><td>Varies</td><td>Varies</td><td>Varies</td><td>Closer wallet and chain context; compare actual pair depth and costs, not brand familiarity.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Venue</th><th>Model / ecosystem</th><th>TVL</th><th>Perp volume, 30d</th><th>Open interest</th><th>How it compares with Pacifica</th></tr></thead>
+ <tbody>
+ <tr><td>[**Pacifica**](https://defillama.com/protocol/pacifica)</td><td>Hybrid perp/spot venue on Solana</td><td>$24.18M</td><td>$10.375B</td><td>$59.94M</td><td>Broad markets, points and advanced strategies; restricted access and higher liquidation complexity.</td></tr>
+ <tr><td>[Hyperliquid](https://defillama.com/protocol/hyperliquid)</td><td>Onchain order book on its own chain</td><td>$6.99B</td><td>$209.53B</td><td>$7.77B</td><td>Much deeper order-book benchmark, but less Solana-native.</td></tr>
+ <tr><td>[GMX](https://defillama.com/protocol/gmx)</td><td>Pool-based, oracle-driven liquidity</td><td>$242.88M</td><td>$28.476B</td><td>$255M</td><td>Different liquidity model; pool depth is not directly comparable to an order book.</td></tr>
+ <tr><td>[dYdX](https://defillama.com/protocol/dydx)</td><td>Order-book derivatives venue</td><td>$108.53M</td><td>$1.194B</td><td>Not exposed</td><td>More mature derivatives product, but a different chain and ecosystem trade-off.</td></tr>
+ <tr><td>[Jupiter](https://defillama.com/protocol/jupiter) / [Drift](https://www.drift.trade/)</td><td>Solana-native trading and liquidity stack</td><td>Varies</td><td>Varies</td><td>Varies</td><td>Closer wallet and chain context; compare actual pair depth and costs, not brand familiarity.</td></tr>
+ </tbody>
+ </table>
 
 Pacifica’s strongest differentiator is breadth inside a Solana-native trading account: perps, spot, points, strategies and adjacent products. Its main disadvantage versus the largest venues is that access restrictions and account-state limitations make it harder to validate execution personally from every region.
 
@@ -424,15 +424,15 @@ Pacifica’s strongest differentiator is breadth inside a Solana-native trading 
 
 The same DefiLlama snapshot gives Pacifica $10.375B in 30-day perp volume and $59.94M in open interest. Hyperliquid is in a different liquidity class at $209.533B volume and $7.773B open interest, while Jupiter reports $5.616B and $39.9M; dYdX reports $1.194B in volume, with open interest not exposed in the snapshot.
 
-  <table>
-    <thead><tr><th>Venue</th><th>30d perp volume</th><th>Open interest</th><th>Execution / liquidity read</th></tr></thead>
-    <tbody>
-      <tr><td>[Pacifica](https://defillama.com/protocol/pacifica)</td><td>$10.375B</td><td>$59.94M</td><td>Meaningful activity, but depth should be checked pair by pair; order size can matter more than headline volume.</td></tr>
-      <tr><td>[Hyperliquid](https://defillama.com/protocol/hyperliquid)</td><td>$209.533B</td><td>$7.773B</td><td>Deepest benchmark here; likely better for larger orders, but it uses a separate L1 rather than Solana.</td></tr>
-      <tr><td>[Jupiter](https://defillama.com/protocol/jupiter)</td><td>$5.616B</td><td>$39.9M</td><td>Closer Solana comparison, but the protocol aggregates several products; isolate the perp venue when comparing execution.</td></tr>
-      <tr><td>[dYdX](https://defillama.com/protocol/dydx)</td><td>$1.194B</td><td>Not exposed</td><td>Older derivatives benchmark with lower current volume in this snapshot; venue architecture and chain differ.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Venue</th><th>30d perp volume</th><th>Open interest</th><th>Execution / liquidity read</th></tr></thead>
+ <tbody>
+ <tr><td>[Pacifica](https://defillama.com/protocol/pacifica)</td><td>$10.375B</td><td>$59.94M</td><td>Meaningful activity, but depth should be checked pair by pair; order size can matter more than headline volume.</td></tr>
+ <tr><td>[Hyperliquid](https://defillama.com/protocol/hyperliquid)</td><td>$209.533B</td><td>$7.773B</td><td>Deepest benchmark here; likely better for larger orders, but it uses a separate L1 rather than Solana.</td></tr>
+ <tr><td>[Jupiter](https://defillama.com/protocol/jupiter)</td><td>$5.616B</td><td>$39.9M</td><td>Closer Solana comparison, but the protocol aggregates several products; isolate the perp venue when comparing execution.</td></tr>
+ <tr><td>[dYdX](https://defillama.com/protocol/dydx)</td><td>$1.194B</td><td>Not exposed</td><td>Older derivatives benchmark with lower current volume in this snapshot; venue architecture and chain differ.</td></tr>
+ </tbody>
+ </table>
 
 Volume is not the same as executable depth. Before using size, compare the visible spread, order-book levels, expected price impact and liquidation path on the exact pair. Pacifica may be attractive for Solana-native access, but Hyperliquid remains the safer depth benchmark for large notional execution.
 

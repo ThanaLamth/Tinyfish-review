@@ -6,7 +6,7 @@ Hands-on review · 2026
 
 Ondo Perps is a 24/7 perpetual-futures venue focused on tokenized U.S. equities, ETFs and commodities, with up to 20x leverage and a distinctive pitch: use tokenized stocks and ETFs as collateral instead of stablecoins alone.
 
-  Reviewed from the live interface, official Ondo pages and independent market data · Last checked October 18, 2026 · Beginner-friendly guide
+ Reviewed from the live interface, official Ondo pages and independent market data · Last checked October 18, 2026 · Beginner-friendly guide
 
 Ondo Perps is built for traders who want synthetic exposure to markets such as NVDA, TSLA, gold and broad equity indices outside traditional market hours. The platform combines a CEX-like order ticket with non-custodial, peer-to-peer perpetual contracts.
 
@@ -22,18 +22,18 @@ The live terminal rendered real NVDA market data, an order book, funding, margin
 
 ## At a Glance
 
-  <table>
-    <thead><tr><th>Category</th><th>Answer</th><th>Source</th></tr></thead>
-    <tbody>
-      <tr><td>Best for</td><td>24/7 equity, ETF and commodity perps with RWA collateral</td><td><a href="https://ondoperps.xyz/us">Official product page</a></td></tr>
-      <tr><td>Trading model</td><td>Peer-to-peer perpetual contracts with a live order-book interface</td><td><a href="https://ondoperps.xyz/legal/terms-of-use">Terms of Use</a></td></tr>
-      <tr><td>Leverage</td><td>Up to 20x, with the live NVDA ticket showing Cross 15x</td><td><a href="https://ondoperps.xyz/us">Product page</a></td></tr>
-      <tr><td>Collateral</td><td>Stablecoins plus selected tokenized stocks and ETFs</td><td><a href="https://ondoperps.xyz/blog/tokenized-stock-collateral">Collateral article</a></td></tr>
-      <tr><td>Main strength</td><td>RWA exposure and hedging in a single 24/7 venue</td><td><a href="https://ondoperps.xyz/us">Official product page</a></td></tr>
-      <tr><td>Main weakness</td><td>Restricted jurisdictions and a shorter execution track record</td><td><a href="https://ondoperps.xyz/legal/terms-of-use">Terms of Use</a></td></tr>
-      <tr><td>Token / points status</td><td>Ondo Points and weekly USDC/referral programmes; no confirmed perps token airdrop</td><td><a href="https://ondoperps.xyz/blog/earn-ondo-points">Official Points post</a></td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Category</th><th>Answer</th><th>Source</th></tr></thead>
+ <tbody>
+ <tr><td>Best for</td><td>24/7 equity, ETF and commodity perps with RWA collateral</td><td><a href="https://ondoperps.xyz/us">Official product page</a></td></tr>
+ <tr><td>Trading model</td><td>Peer-to-peer perpetual contracts with a live order-book interface</td><td><a href="https://ondoperps.xyz/legal/terms-of-use">Terms of Use</a></td></tr>
+ <tr><td>Leverage</td><td>Up to 20x, with the live NVDA ticket showing Cross 15x</td><td><a href="https://ondoperps.xyz/us">Product page</a></td></tr>
+ <tr><td>Collateral</td><td>Stablecoins plus selected tokenized stocks and ETFs</td><td><a href="https://ondoperps.xyz/blog/tokenized-stock-collateral">Collateral article</a></td></tr>
+ <tr><td>Main strength</td><td>RWA exposure and hedging in a single 24/7 venue</td><td><a href="https://ondoperps.xyz/us">Official product page</a></td></tr>
+ <tr><td>Main weakness</td><td>Restricted jurisdictions and a shorter execution track record</td><td><a href="https://ondoperps.xyz/legal/terms-of-use">Terms of Use</a></td></tr>
+ <tr><td>Token / points status</td><td>Ondo Points and weekly USDC/referral programmes; no confirmed perps token airdrop</td><td><a href="https://ondoperps.xyz/blog/earn-ondo-points">Official Points post</a></td></tr>
+ </tbody>
+ </table>
 
 ## Table of Contents
 
@@ -131,15 +131,15 @@ The supplied HTTPS URL returned an SSL protocol error in the browser session, wh
 
 ## Markets, Liquidity and Execution
 
-  <table>
-    <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
-    <tbody>
-      <tr><td>Market header</td><td>Price, mark, 24-hour change, volume, open interest and funding countdown.</td><td>Lets traders check activity and carry before entering.</td></tr>
-      <tr><td>Chart</td><td>Timeframes, indicators, drawing tools and price history.</td><td>Useful for planning entries and stops on markets that trade around the clock.</td></tr>
-      <tr><td>Order book</td><td>Bid/ask levels, size, totals and live spread.</td><td>Shows whether the intended order can cross the book without excessive impact.</td></tr>
-      <tr><td>Order ticket</td><td>Market, Limit, TWAP, Cross 15x, Long/Short, Reduce Only and TP/SL.</td><td>Controls exposure and makes the trade assumptions visible before submission.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Visible area</th><th>What it shows</th><th>Why it matters</th></tr></thead>
+ <tbody>
+ <tr><td>Market header</td><td>Price, mark, 24-hour change, volume, open interest and funding countdown.</td><td>Lets traders check activity and carry before entering.</td></tr>
+ <tr><td>Chart</td><td>Timeframes, indicators, drawing tools and price history.</td><td>Useful for planning entries and stops on markets that trade around the clock.</td></tr>
+ <tr><td>Order book</td><td>Bid/ask levels, size, totals and live spread.</td><td>Shows whether the intended order can cross the book without excessive impact.</td></tr>
+ <tr><td>Order ticket</td><td>Market, Limit, TWAP, Cross 15x, Long/Short, Reduce Only and TP/SL.</td><td>Controls exposure and makes the trade assumptions visible before submission.</td></tr>
+ </tbody>
+ </table>
 
 CoinGecko’s independent snapshot showed 68 listed pairs, 24-hour trading volume of $77.35M and 24-hour open interest of $99.64M at capture. The visible markets included XAU/USD, US500/USD and US100/USD, reinforcing that Ondo is targeting RWA-style markets rather than only crypto majors.
 
@@ -157,16 +157,16 @@ Volume is not the same as executable depth. Compare the visible spread and order
 
 ## Independent Market Data Snapshot
 
-  <table>
-    <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Interpretation</th></tr></thead>
-    <tbody>
-      <tr><td>Listed pairs</td><td>68</td><td>Broad RWA/perps surface; pair quality will not be uniform.</td></tr>
-      <tr><td>24-hour volume</td><td>$77.35M</td><td>Aggregate notional activity; not a guarantee of deep execution.</td></tr>
-      <tr><td>24-hour open interest</td><td>$99.64M</td><td>Capital committed to open positions at the snapshot.</td></tr>
-      <tr><td>Live NVDA spread</td><td>$0.05 / 0.02%</td><td>Observed on the live screen, not a persistent average.</td></tr>
-      <tr><td>Live NVDA funding</td><td>-0.00199%</td><td>Observed rate at capture; funding changes over time.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Metric</th><th>October 18, 2026 snapshot</th><th>Interpretation</th></tr></thead>
+ <tbody>
+ <tr><td>Listed pairs</td><td>68</td><td>Broad RWA/perps surface; pair quality will not be uniform.</td></tr>
+ <tr><td>24-hour volume</td><td>$77.35M</td><td>Aggregate notional activity; not a guarantee of deep execution.</td></tr>
+ <tr><td>24-hour open interest</td><td>$99.64M</td><td>Capital committed to open positions at the snapshot.</td></tr>
+ <tr><td>Live NVDA spread</td><td>$0.05 / 0.02%</td><td>Observed on the live screen, not a persistent average.</td></tr>
+ <tr><td>Live NVDA funding</td><td>-0.00199%</td><td>Observed rate at capture; funding changes over time.</td></tr>
+ </tbody>
+ </table>
 
 The data suggests a meaningful early market rather than an empty demo, but the gap between aggregate volume and pair-level depth remains the key execution question. Refresh the CoinGecko page before publication because these values are dynamic.
 
@@ -178,17 +178,17 @@ The data suggests a meaningful early market rather than an empty demo, but the g
 
 The live ticket displayed a 0.025% fee at capture. A launch report from KuCoin cited a 0.015% maker fee and 0.035% taker fee, so traders should verify the current in-app fee schedule and any referral discount before sizing a position.
 
-  <table>
-    <thead><tr><th>Cost component</th><th>Illustrative $10,000 notional</th><th>What is known</th></tr></thead>
-    <tbody>
-      <tr><td>Live displayed fee</td><td>$2.50 one-way / $5 round trip</td><td>Based on the 0.025% fee shown in the live ticket.</td></tr>
-      <tr><td>Reported maker fee</td><td>$1.50 one-way / $3 round trip</td><td>0.015% figure cited in the launch coverage; confirm current terms.</td></tr>
-      <tr><td>Reported taker fee</td><td>$3.50 one-way / $7 round trip</td><td>0.035% figure cited in the launch coverage; confirm current terms.</td></tr>
-      <tr><td>Funding</td><td>Variable</td><td>Funding can be paid or received and should be checked before holding.</td></tr>
-      <tr><td>Slippage</td><td>Variable</td><td>Depends on pair, book depth, order size and the ticket’s max-slippage setting.</td></tr>
-      <tr><td>Bridge / withdrawal</td><td>Verify in the eligible app</td><td>No unsupported fixed amount is assumed in this review.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Cost component</th><th>Illustrative $10,000 notional</th><th>What is known</th></tr></thead>
+ <tbody>
+ <tr><td>Live displayed fee</td><td>$2.50 one-way / $5 round trip</td><td>Based on the 0.025% fee shown in the live ticket.</td></tr>
+ <tr><td>Reported maker fee</td><td>$1.50 one-way / $3 round trip</td><td>0.015% figure cited in the launch coverage; confirm current terms.</td></tr>
+ <tr><td>Reported taker fee</td><td>$3.50 one-way / $7 round trip</td><td>0.035% figure cited in the launch coverage; confirm current terms.</td></tr>
+ <tr><td>Funding</td><td>Variable</td><td>Funding can be paid or received and should be checked before holding.</td></tr>
+ <tr><td>Slippage</td><td>Variable</td><td>Depends on pair, book depth, order size and the ticket’s max-slippage setting.</td></tr>
+ <tr><td>Bridge / withdrawal</td><td>Verify in the eligible app</td><td>No unsupported fixed amount is assumed in this review.</td></tr>
+ </tbody>
+ </table>
 
 The main lesson is that low displayed fees do not make a leveraged trade cheap. Funding, price impact, collateral volatility and liquidation distance can dominate a small maker/taker difference. Calculate the full round trip before treating any reward programme as positive expected value.
 
@@ -200,16 +200,16 @@ See the <a href="https://www.kucoin.com/news/flash/ondo-perps-launches-trade-u-s
 
 ## Common Mistakes and Risk Controls
 
-  <table>
-    <thead><tr><th>Mistake</th><th>Why it matters</th><th>Safer habit</th></tr></thead>
-    <tbody>
-      <tr><td>Using Cross by default</td><td>Portfolio collateral can expose more of the account to one position.</td><td>Use isolated or the smallest deliberate allocation while learning.</td></tr>
-      <tr><td>Taking 15x–20x because it is available</td><td>Funding, spread and a small market move can compress liquidation distance quickly.</td><td>Choose leverage from stop distance and collateral volatility.</td></tr>
-      <tr><td>Ignoring tokenized collateral risk</td><td>The collateral itself can move while the perp position moves against you.</td><td>Track collateral value and margin ratio, not only the underlying perp.</td></tr>
-      <tr><td>Treating Reduce Only as a stop</td><td>Reduce Only controls direction; it does not create an exit trigger.</td><td>Pair it with TP/SL or a conditional order and verify the trigger.</td></tr>
-      <tr><td>Ignoring the jurisdiction banner</td><td>Access restrictions are legal and operational constraints, not UI noise.</td><td>Do not bypass restrictions or deposit from an ineligible location.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Mistake</th><th>Why it matters</th><th>Safer habit</th></tr></thead>
+ <tbody>
+ <tr><td>Using Cross by default</td><td>Portfolio collateral can expose more of the account to one position.</td><td>Use isolated or the smallest deliberate allocation while learning.</td></tr>
+ <tr><td>Taking 15x–20x because it is available</td><td>Funding, spread and a small market move can compress liquidation distance quickly.</td><td>Choose leverage from stop distance and collateral volatility.</td></tr>
+ <tr><td>Ignoring tokenized collateral risk</td><td>The collateral itself can move while the perp position moves against you.</td><td>Track collateral value and margin ratio, not only the underlying perp.</td></tr>
+ <tr><td>Treating Reduce Only as a stop</td><td>Reduce Only controls direction; it does not create an exit trigger.</td><td>Pair it with TP/SL or a conditional order and verify the trigger.</td></tr>
+ <tr><td>Ignoring the jurisdiction banner</td><td>Access restrictions are legal and operational constraints, not UI noise.</td><td>Do not bypass restrictions or deposit from an ineligible location.</td></tr>
+ </tbody>
+ </table>
 
 ## How to Trade on Ondo Perps: Step-by-Step
 
@@ -285,15 +285,15 @@ Ondo’s official blog says Ondo Points are allocated as a score-weighted share 
 
 The same official post describes weekly USDC rewards, fee discounts and referrals as separate programmes with their own dashboards and payout history. It also excludes U.S., Panama and other non-eligible users from Ondo Points participation.
 
-  <table>
-    <thead><tr><th>Programme</th><th>Confirmed rule</th><th>Caveat</th></tr></thead>
-    <tbody>
-      <tr><td>Ondo Points</td><td>5M weekly; weighted by trading volume and open interest; first activity backdated to June 2.</td><td>Mechanics may evolve; no per-dollar conversion is promised.</td></tr>
-      <tr><td>USDC rewards</td><td>Weekly trading rewards with a dashboard and payout history.</td><td>Eligibility, pool size and distribution rules must be checked in-app.</td></tr>
-      <tr><td>Referrals</td><td>Additional rewards and fee discounts may be available through referrals.</td><td>Referral claims are not a substitute for official terms.</td></tr>
-      <tr><td>Perps token airdrop</td><td>Not confirmed by the official Points post.</td><td>Do not trade solely for an assumed token allocation.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Programme</th><th>Confirmed rule</th><th>Caveat</th></tr></thead>
+ <tbody>
+ <tr><td>Ondo Points</td><td>5M weekly; weighted by trading volume and open interest; first activity backdated to June 2.</td><td>Mechanics may evolve; no per-dollar conversion is promised.</td></tr>
+ <tr><td>USDC rewards</td><td>Weekly trading rewards with a dashboard and payout history.</td><td>Eligibility, pool size and distribution rules must be checked in-app.</td></tr>
+ <tr><td>Referrals</td><td>Additional rewards and fee discounts may be available through referrals.</td><td>Referral claims are not a substitute for official terms.</td></tr>
+ <tr><td>Perps token airdrop</td><td>Not confirmed by the official Points post.</td><td>Do not trade solely for an assumed token allocation.</td></tr>
+ </tbody>
+ </table>
 
 ### Points versus the cost of $1M volume
 
@@ -335,16 +335,16 @@ Ondo’s legal language also makes the counterparty model explicit: Ondo Global 
 
 Ondo should not be compared only with crypto-native perp DEXs. Its closest product question is whether traders want RWA exposure and tokenized collateral, while its closest execution benchmarks remain Hyperliquid, Jupiter and dYdX.
 
-  <table>
-    <thead><tr><th>Venue</th><th>Model / focus</th><th>Liquidity read</th><th>Best use case</th><th>Main trade-off</th></tr></thead>
-    <tbody>
-      <tr><td><strong>Ondo Perps</strong></td><td>RWA equity, ETF and commodity perps</td><td>Validate pair-level depth; independent snapshot shows $77.35M 24h volume and $99.64M OI</td><td>24/7 synthetic stock exposure and RWA collateral</td><td>Restricted access and shorter live track record</td></tr>
-      <tr><td><a href="https://www.coingecko.com/en/exchanges/hyperliquid">Hyperliquid</a></td><td>Large crypto perp and spot order-book venue</td><td>Deepest benchmark for major crypto pairs</td><td>Large-size crypto perp execution</td><td>Different chain and less direct RWA collateral thesis</td></tr>
-      <tr><td><a href="https://www.coingecko.com/en/exchanges/jupiter-perpetual-exchange">Jupiter Perps</a></td><td>Solana-native perp liquidity stack</td><td>Strong Solana ecosystem access; compare exact pair depth</td><td>Users already holding Solana assets</td><td>Different liquidity and collateral model</td></tr>
-      <tr><td><a href="https://www.coingecko.com/en/exchanges/dydx-chain">dYdX</a></td><td>Mature crypto derivatives venue</td><td>Established derivatives benchmark, but market mix differs</td><td>Crypto-native perpetual trading</td><td>No Ondo-style tokenized-equity collateral thesis</td></tr>
-      <tr><td><a href="https://www.coingecko.com/en/exchanges/gmx-perpetuals-v2-arbitrum">GMX</a></td><td>Pool/oracle-based perpetuals</td><td>Pool depth is not directly comparable to an order book</td><td>Oracle-priced crypto exposure and DeFi composability</td><td>Different execution and LP risk model</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Venue</th><th>Model / focus</th><th>Liquidity read</th><th>Best use case</th><th>Main trade-off</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Ondo Perps</strong></td><td>RWA equity, ETF and commodity perps</td><td>Validate pair-level depth; independent snapshot shows $77.35M 24h volume and $99.64M OI</td><td>24/7 synthetic stock exposure and RWA collateral</td><td>Restricted access and shorter live track record</td></tr>
+ <tr><td><a href="https://www.coingecko.com/en/exchanges/hyperliquid">Hyperliquid</a></td><td>Large crypto perp and spot order-book venue</td><td>Deepest benchmark for major crypto pairs</td><td>Large-size crypto perp execution</td><td>Different chain and less direct RWA collateral thesis</td></tr>
+ <tr><td><a href="https://www.coingecko.com/en/exchanges/jupiter-perpetual-exchange">Jupiter Perps</a></td><td>Solana-native perp liquidity stack</td><td>Strong Solana ecosystem access; compare exact pair depth</td><td>Users already holding Solana assets</td><td>Different liquidity and collateral model</td></tr>
+ <tr><td><a href="https://www.coingecko.com/en/exchanges/dydx-chain">dYdX</a></td><td>Mature crypto derivatives venue</td><td>Established derivatives benchmark, but market mix differs</td><td>Crypto-native perpetual trading</td><td>No Ondo-style tokenized-equity collateral thesis</td></tr>
+ <tr><td><a href="https://www.coingecko.com/en/exchanges/gmx-perpetuals-v2-arbitrum">GMX</a></td><td>Pool/oracle-based perpetuals</td><td>Pool depth is not directly comparable to an order book</td><td>Oracle-priced crypto exposure and DeFi composability</td><td>Different execution and LP risk model</td></tr>
+ </tbody>
+ </table>
 
 Ondo’s differentiation is product exposure, not proven depth leadership. Hyperliquid remains the more obvious benchmark for large crypto notional, while Ondo is more interesting when the trade itself requires equities, ETFs, commodities or tokenized collateral.
 
@@ -408,4 +408,4 @@ Ondo Points and weekly USDC/referral programmes are active, but the official Poi
 
 No. The official product and legal pages state that the platform is not available to U.S. persons or users in other restricted jurisdictions.
 
-  <strong>Quick links:</strong> <a href="https://app.ondoperps.xyz/">App</a> · <a href="https://ondoperps.xyz/us">Homepage</a> · <a href="https://ondoperps.xyz/blog/earn-ondo-points">Points</a> · <a href="https://www.coingecko.com/en/exchanges/ondo-perps">Market data</a> · <a href="https://ondoperps.xyz/legal/terms-of-use">Terms</a><br>This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.
+ <strong>Quick links:</strong> <a href="https://app.ondoperps.xyz/">App</a> · <a href="https://ondoperps.xyz/us">Homepage</a> · <a href="https://ondoperps.xyz/blog/earn-ondo-points">Points</a> · <a href="https://www.coingecko.com/en/exchanges/ondo-perps">Market data</a> · <a href="https://ondoperps.xyz/legal/terms-of-use">Terms</a><br>This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.

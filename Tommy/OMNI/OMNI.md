@@ -6,7 +6,7 @@ Hands-on review · 2026
 
 Omni is an onchain perpetuals venue built around RFQ quotes instead of a traditional order book. It aims to put crypto, equities, commodities, FX, indices and pre-IPO markets behind one cross-margined account.
 
-  Reviewed from the live Omni interface and official Variational documentation · Last checked October 18, 2026 · Beginner-friendly guide
+ Reviewed from the live Omni interface and official Variational documentation · Last checked October 18, 2026 · Beginner-friendly guide
 
 Omni has an unusually ambitious pitch: trade more than 500 markets, use up to 50x leverage, and pay no maker or taker trading fee. The interesting question is not whether the interface looks polished; it is whether the RFQ model, risk display and access conditions are clear enough for real users.
 
@@ -104,16 +104,16 @@ The terminal exposes market, limit and Pro order modes, leverage, Buy/Sell, spre
 
 ## Supported Markets
 
-  <table>
-    <thead><tr><th>Market family</th><th>What Omni says it supports</th><th>What to check before trading</th></tr></thead>
-    <tbody>
-      <tr><td>Crypto</td><td>Major and long-tail crypto perpetuals, with the live terminal opening on BTC PERP.</td><td>Mark/index divergence, funding, quoted spread and liquidity at your size.</td></tr>
-      <tr><td>Equities</td><td>Perpetual exposure to selected equity names without traditional market hours.</td><td>Reference pricing, weekend behavior and product-specific risk limits.</td></tr>
-      <tr><td>Commodities</td><td>Commodity-linked perpetual markets are part of the broader Omni catalogue.</td><td>Underlying reference, volatility and whether the quote is currently live.</td></tr>
-      <tr><td>FX and indices</td><td>FX pairs and index-style markets are included in Variational’s 500+ market claim.</td><td>Funding, session liquidity and the exact contract specification.</td></tr>
-      <tr><td>Pre-IPO</td><td>Selected pre-IPO perpetuals are described in the official trading docs.</td><td>Very high gap risk, quote availability and platform risk limits.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Market family</th><th>What Omni says it supports</th><th>What to check before trading</th></tr></thead>
+ <tbody>
+ <tr><td>Crypto</td><td>Major and long-tail crypto perpetuals, with the live terminal opening on BTC PERP.</td><td>Mark/index divergence, funding, quoted spread and liquidity at your size.</td></tr>
+ <tr><td>Equities</td><td>Perpetual exposure to selected equity names without traditional market hours.</td><td>Reference pricing, weekend behavior and product-specific risk limits.</td></tr>
+ <tr><td>Commodities</td><td>Commodity-linked perpetual markets are part of the broader Omni catalogue.</td><td>Underlying reference, volatility and whether the quote is currently live.</td></tr>
+ <tr><td>FX and indices</td><td>FX pairs and index-style markets are included in Variational’s 500+ market claim.</td><td>Funding, session liquidity and the exact contract specification.</td></tr>
+ <tr><td>Pre-IPO</td><td>Selected pre-IPO perpetuals are described in the official trading docs.</td><td>Very high gap risk, quote availability and platform risk limits.</td></tr>
+ </tbody>
+ </table>
 
 The app’s live BTC panel showed mark price, index price, 24-hour volume, open interest, funding and countdown in one header. Those fields are useful for a fast market read, but they are dynamic values, not permanent product specifications; confirm them immediately before execution.
 
@@ -142,17 +142,17 @@ The product UI is only one side of the review. To cross-check scale, I compared 
 *CoinGecko snapshot: exchange-level volume, open interest and market count.*
 
 
-  <table>
-    <thead><tr><th>Metric</th><th>Snapshot</th><th>Source and interpretation</th></tr></thead>
-    <tbody>
-      <tr><td>Perpetual volume, 30d</td><td>$81.583B</td><td><a href="https://defillama.com/protocol/variational">DefiLlama</a> dashboard snapshot, October 18, 2026. The page also shows Arbitrum as the tracked chain.</td></tr>
-      <tr><td>Open interest</td><td>$988.63M</td><td>DefiLlama dashboard snapshot. CoinGecko’s exchange view showed a higher $1.868B figure at its own refresh, illustrating data-source timing differences.</td></tr>
-      <tr><td>24h volume</td><td>$850.713M</td><td><a href="https://www.coingecko.com/en/exchanges/variational-omni">CoinGecko</a> snapshot; the page displayed a 68.2% 24-hour change.</td></tr>
-      <tr><td>Pairs</td><td>574</td><td>CoinGecko snapshot across the perpetuals market list.</td></tr>
-      <tr><td>TVL / value locked</td><td>$100M</td><td>Reported in CoinGecko’s October 4, 2026 case study, not exposed as a live TVL card in the exchange snapshot. Treat it as a dated third-party report.</td></tr>
-      <tr><td>Trading rewards</td><td>$6M returned</td><td>Reported in the same <a href="https://www.coingecko.com/learn/variational-case-study">CoinGecko case study</a>; it is a cumulative historical claim, not a current weekly payout.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Metric</th><th>Snapshot</th><th>Source and interpretation</th></tr></thead>
+ <tbody>
+ <tr><td>Perpetual volume, 30d</td><td>$81.583B</td><td><a href="https://defillama.com/protocol/variational">DefiLlama</a> dashboard snapshot, October 18, 2026. The page also shows Arbitrum as the tracked chain.</td></tr>
+ <tr><td>Open interest</td><td>$988.63M</td><td>DefiLlama dashboard snapshot. CoinGecko’s exchange view showed a higher $1.868B figure at its own refresh, illustrating data-source timing differences.</td></tr>
+ <tr><td>24h volume</td><td>$850.713M</td><td><a href="https://www.coingecko.com/en/exchanges/variational-omni">CoinGecko</a> snapshot; the page displayed a 68.2% 24-hour change.</td></tr>
+ <tr><td>Pairs</td><td>574</td><td>CoinGecko snapshot across the perpetuals market list.</td></tr>
+ <tr><td>TVL / value locked</td><td>$100M</td><td>Reported in CoinGecko’s October 4, 2026 case study, not exposed as a live TVL card in the exchange snapshot. Treat it as a dated third-party report.</td></tr>
+ <tr><td>Trading rewards</td><td>$6M returned</td><td>Reported in the same <a href="https://www.coingecko.com/learn/variational-case-study">CoinGecko case study</a>; it is a cumulative historical claim, not a current weekly payout.</td></tr>
+ </tbody>
+ </table>
 
 The important takeaway is not one “correct” number. DefiLlama and CoinGecko use different refresh cycles and methodologies, so the article preserves both readings instead of silently selecting the larger one. Readers should use the timestamp and source when comparing Omni with Hyperliquid, GMX or Ostium.
 
@@ -164,16 +164,16 @@ The important takeaway is not one “correct” number. DefiLlama and CoinGecko 
 
 Omni advertises zero maker and taker trading fees. That is attractive, but it should not be read as zero cost: an RFQ trade can still have spread, slippage and funding, and moving USDC into or out of the account carries a flat transfer charge.
 
-  <table>
-    <thead><tr><th>Cost item</th><th>Published or observed detail</th><th>How to interpret it</th></tr></thead>
-    <tbody>
-      <tr><td>Trading fee</td><td>0% maker/taker fee in the official Omni materials.</td><td>No explicit commission line, but execution quality still matters.</td></tr>
-      <tr><td>Deposit</td><td>Flat 0.1 USDC deducted from the deposit.</td><td>A small fixed cost that matters more on small accounts.</td></tr>
-      <tr><td>Withdrawal</td><td>Flat 0.1 USDC according to the Getting Started guide.</td><td>Budget it separately from PnL and funding.</td></tr>
-      <tr><td>Spread/slippage</td><td>The live BTC ticket showed a spread and an estimated/max slippage field.</td><td>Review the quote at your actual order size.</td></tr>
-      <tr><td>Funding</td><td>The terminal displays an 8-hour funding rate and countdown.</td><td>Holding cost can dominate a “zero-fee” trade over time.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Cost item</th><th>Published or observed detail</th><th>How to interpret it</th></tr></thead>
+ <tbody>
+ <tr><td>Trading fee</td><td>0% maker/taker fee in the official Omni materials.</td><td>No explicit commission line, but execution quality still matters.</td></tr>
+ <tr><td>Deposit</td><td>Flat 0.1 USDC deducted from the deposit.</td><td>A small fixed cost that matters more on small accounts.</td></tr>
+ <tr><td>Withdrawal</td><td>Flat 0.1 USDC according to the Getting Started guide.</td><td>Budget it separately from PnL and funding.</td></tr>
+ <tr><td>Spread/slippage</td><td>The live BTC ticket showed a spread and an estimated/max slippage field.</td><td>Review the quote at your actual order size.</td></tr>
+ <tr><td>Funding</td><td>The terminal displays an 8-hour funding rate and countdown.</td><td>Holding cost can dominate a “zero-fee” trade over time.</td></tr>
+ </tbody>
+ </table>
 
 <strong>Example:</strong> a 10,000 USDC notional position shows 0 USDC in explicit trading commission under the published schedule. It can still cost more through the quote spread, realized slippage, funding and a 0.1 USDC transfer fee if the account was just funded.
 
@@ -185,16 +185,16 @@ Omni’s official fee documentation is the right place to re-check changes: <a h
 
 ## Order Types and Risk Display
 
-  <table>
-    <thead><tr><th>Control</th><th>Purpose</th><th>Beginner note</th></tr></thead>
-    <tbody>
-      <tr><td>Market</td><td>Request immediate execution against the current quote.</td><td>Fastest, but price impact and slippage deserve attention.</td></tr>
-      <tr><td>Limit</td><td>Set a desired price for the order.</td><td>Execution is not guaranteed; check how the quote is maintained.</td></tr>
-      <tr><td>Pro / trigger</td><td>Advanced execution and conditional controls.</td><td>Understand trigger basis and whether the order is live before relying on it.</td></tr>
-      <tr><td>TP/SL</td><td>Attach take-profit and stop-loss instructions.</td><td>Use only after confirming the trigger price reference.</td></tr>
-      <tr><td>Reduce only</td><td>Prevent an order from increasing the position.</td><td>Useful when closing or trimming leveraged exposure.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Control</th><th>Purpose</th><th>Beginner note</th></tr></thead>
+ <tbody>
+ <tr><td>Market</td><td>Request immediate execution against the current quote.</td><td>Fastest, but price impact and slippage deserve attention.</td></tr>
+ <tr><td>Limit</td><td>Set a desired price for the order.</td><td>Execution is not guaranteed; check how the quote is maintained.</td></tr>
+ <tr><td>Pro / trigger</td><td>Advanced execution and conditional controls.</td><td>Understand trigger basis and whether the order is live before relying on it.</td></tr>
+ <tr><td>TP/SL</td><td>Attach take-profit and stop-loss instructions.</td><td>Use only after confirming the trigger price reference.</td></tr>
+ <tr><td>Reduce only</td><td>Prevent an order from increasing the position.</td><td>Useful when closing or trimming leveraged exposure.</td></tr>
+ </tbody>
+ </table>
 
 ![Live Omni BTC perpetual terminal with order form and risk fields](omni-assets/omni-trade-desktop.png)
 
@@ -300,15 +300,15 @@ Once a position exists, use the lower account panel rather than relying only on 
 
 *Position-management view: the account tabs remain visible below the chart, including Positions, Open Orders, Trade History, Order History, Funding History and Realized PNL.*
 
-  <table>
-    <thead><tr><th>Management task</th><th>What to check</th><th>Why it matters</th></tr></thead>
-    <tbody>
-      <tr><td>Monitor a position</td><td>Market, quantity, mark price, entry price, liquidation price, margin, funding and unrealized PNL.</td><td>Shows whether price movement or funding is driving the account result.</td></tr>
-      <tr><td>Reduce or close</td><td>Use Close or a Reduce Only order; verify the quote and final quantity first.</td><td>Prevents accidentally flipping a long into a short, or adding to exposure.</td></tr>
-      <tr><td>Adjust protection</td><td>Add or edit TP/SL and confirm whether triggers use quoted or mark price.</td><td>The trigger reference can change when fast markets move.</td></tr>
-      <tr><td>Check portfolio health</td><td>Portfolio Value, Isolated Margin, Unrealized PNL, MM Usage, Margin Ratio and Portfolio Leverage.</td><td>Portfolio-wide risk can rise even when one individual position looks manageable.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Management task</th><th>What to check</th><th>Why it matters</th></tr></thead>
+ <tbody>
+ <tr><td>Monitor a position</td><td>Market, quantity, mark price, entry price, liquidation price, margin, funding and unrealized PNL.</td><td>Shows whether price movement or funding is driving the account result.</td></tr>
+ <tr><td>Reduce or close</td><td>Use Close or a Reduce Only order; verify the quote and final quantity first.</td><td>Prevents accidentally flipping a long into a short, or adding to exposure.</td></tr>
+ <tr><td>Adjust protection</td><td>Add or edit TP/SL and confirm whether triggers use quoted or mark price.</td><td>The trigger reference can change when fast markets move.</td></tr>
+ <tr><td>Check portfolio health</td><td>Portfolio Value, Isolated Margin, Unrealized PNL, MM Usage, Margin Ratio and Portfolio Leverage.</td><td>Portfolio-wide risk can rise even when one individual position looks manageable.</td></tr>
+ </tbody>
+ </table>
 
 The live session could not display an active position because the account was restricted and had no connected wallet. The workflow above follows the current <a href="https://docs.variational.io/omni/getting-started-with-omni#managing-open-positions">official position-management guide</a>, while the screenshot preserves what is visibly available before authentication.
 
@@ -364,15 +364,15 @@ Before depositing, read the <a href="https://docs.variational.io/legal/terms-of-
 
 ## Omni vs Named Competitors
 
-  <table>
-    <thead><tr><th>Venue</th><th>Execution model</th><th>Where Omni differs</th></tr></thead>
-    <tbody>
-      <tr><td><a href="https://hyperliquid.xyz/">Hyperliquid</a></td><td>Onchain order-book style perpetual trading.</td><td>Omni uses RFQ/OLP quotes and targets a much wider traditional-asset catalogue.</td></tr>
-      <tr><td><a href="https://gmx.io/">GMX</a></td><td>Pool-based liquidity with crypto-focused markets.</td><td>Omni concentrates liquidity in the OLP and emphasizes cross-asset perpetuals.</td></tr>
-      <tr><td><a href="https://ostium.io/">Ostium</a></td><td>Onchain synthetic exposure to real-world markets.</td><td>Both broaden beyond crypto, but Omni’s interface is explicitly RFQ-driven and tied to Variational’s OLP.</td></tr>
-      <tr><td>Centralized derivatives venues</td><td>Custodial accounts and conventional exchange infrastructure.</td><td>Omni keeps wallet-based settlement and Arbitrum rails, but may have more onboarding and access friction.</td></tr>
-    </tbody>
-  </table>
+ <table>
+ <thead><tr><th>Venue</th><th>Execution model</th><th>Where Omni differs</th></tr></thead>
+ <tbody>
+ <tr><td><a href="https://hyperliquid.xyz/">Hyperliquid</a></td><td>Onchain order-book style perpetual trading.</td><td>Omni uses RFQ/OLP quotes and targets a much wider traditional-asset catalogue.</td></tr>
+ <tr><td><a href="https://gmx.io/">GMX</a></td><td>Pool-based liquidity with crypto-focused markets.</td><td>Omni concentrates liquidity in the OLP and emphasizes cross-asset perpetuals.</td></tr>
+ <tr><td><a href="https://ostium.io/">Ostium</a></td><td>Onchain synthetic exposure to real-world markets.</td><td>Both broaden beyond crypto, but Omni’s interface is explicitly RFQ-driven and tied to Variational’s OLP.</td></tr>
+ <tr><td>Centralized derivatives venues</td><td>Custodial accounts and conventional exchange infrastructure.</td><td>Omni keeps wallet-based settlement and Arbitrum rails, but may have more onboarding and access friction.</td></tr>
+ </tbody>
+ </table>
 
 Omni is strongest when the user values cross-asset breadth, quote-based execution and a single account. Hyperliquid is the cleaner benchmark for visible market-driven execution, while GMX is the more obvious comparison for pool-based DeFi liquidity. The right choice depends on market availability, quote quality and jurisdiction.
 
@@ -421,5 +421,5 @@ The Getting Started guide says deposits, withdrawals and authentication are gasl
 No. The docs describe private-beta access codes and restricted-person rules, while the live terminal may show a region restriction before wallet connection.
 
 
-    <strong>Quick links:</strong> <a href="https://omni.variational.io/">Omni app</a> · <a href="https://docs.variational.io/omni/about-omni">About Omni</a> · <a href="https://docs.variational.io/omni/getting-started-with-omni">Getting Started</a> · <a href="https://docs.variational.io/omni/trading">Trading docs</a> · <a href="https://docs.variational.io/omni/rewards">Rewards</a> · <a href="https://docs.variational.io/technical-documentation/audits">Audits</a><br>
-    This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.
+ <strong>Quick links:</strong> <a href="https://omni.variational.io/">Omni app</a> · <a href="https://docs.variational.io/omni/about-omni">About Omni</a> · <a href="https://docs.variational.io/omni/getting-started-with-omni">Getting Started</a> · <a href="https://docs.variational.io/omni/trading">Trading docs</a> · <a href="https://docs.variational.io/omni/rewards">Rewards</a> · <a href="https://docs.variational.io/technical-documentation/audits">Audits</a><br>
+ This review is educational, not financial advice. Perpetuals and leverage can result in rapid losses.

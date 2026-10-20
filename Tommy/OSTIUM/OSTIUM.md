@@ -2,13 +2,13 @@ DEX Reviews · Hands-on review
 
 # Ostium Review 2026: Complete Beginner's Guide — Trade Global Markets Onchain
 
-    Published: 18 October 2026Author: Editorial TeamLast verified: 18 October 2026
+ Published: 18 October 2026Author: Editorial TeamLast verified: 18 October 2026
 
 A practical guide to Ostium's perpetual trading platform for stocks, ETFs, commodities, indices, forex and crypto. We tested the public trading interface live, recorded the actual UI at three screen sizes, and verified the fee and market details against Ostium's documentation.
 
 
-  **Who this guide is for:** Traders who want leveraged exposure to traditional and crypto markets through a self-custodial wallet, and beginners who want to understand what Ostium shows before they connect funds.
-  **In this guide:** [device experience](#device) · [features](#features) · [markets](#markets) · [fees](#fees) · [tutorial](#tutorial) · [security](#security) · [conclusion](#conclusion)
+ **Who this guide is for:** Traders who want leveraged exposure to traditional and crypto markets through a self-custodial wallet, and beginners who want to understand what Ostium shows before they connect funds.
+ **In this guide:** [device experience](#device) · [features](#features) · [markets](#markets) · [fees](#fees) · [tutorial](#tutorial) · [security](#security) · [conclusion](#conclusion)
 
 ## What Is Ostium?
 
@@ -24,7 +24,7 @@ You deposit USDC, choose a long or short direction, select leverage, and settle 
 
 Ostium is not a spot exchange. You do not receive the underlying stock, barrel of oil or index constituent. You trade a leveraged price position, so profit and loss, financing and liquidation rules matter more than they do in a simple spot swap.
 
-  **In plain terms:** Ostium is a self-custodial onchain venue for leveraged exposure to global markets, accessed through a crypto wallet and settled in USDC.
+ **In plain terms:** Ostium is a self-custodial onchain venue for leveraged exposure to global markets, accessed through a crypto wallet and settled in USDC.
 
 Ostium's official documentation lists **75 perpetual instruments** across six asset classes: Stocks, ETFs, Commodities, Indices, Forex and Crypto. Leverage ranges from 5× to 200× depending on the pair. See the [official trader overview](https://docs.ostium.com/traders/welcome) and the complete [Markets reference](https://docs.ostium.com/traders/reference/markets).
 
@@ -104,7 +104,7 @@ The phone layout is the clearest weakness. The navigation survives, but the char
 
 **Best for:** Quick status checks, not a first leveraged trade or a rushed wallet confirmation.
 
-  **Access limitation observed:** The live page displayed “You cannot access our products from a restricted jurisdiction.” No wallet was connected, no funds were deposited and no order was submitted.
+ **Access limitation observed:** The live page displayed “You cannot access our products from a restricted jurisdiction.” No wallet was connected, no funds were deposited and no order was submitted.
 
 ## Core Features
 
@@ -244,18 +244,18 @@ See the official guides for [funding ↗](https://docs.ostium.com/traders/gettin
 
 Ostium's market list is broader than a typical crypto perpetual venue. The important detail is that every asset class has its own leverage cap, fee and trading schedule.
 
-  <table><thead><tr><th>Asset class</th><th>Pairs</th><th>Typical maximum leverage</th><th>Opening fee</th><th>Trading schedule</th></tr></thead><tbody>
-    <tr><td>Stocks</td><td>35</td><td>Up to 100×</td><td>6 bps</td><td>Mon–Fri, 9:30 AM–4:00 PM ET</td></tr>
-    <tr><td>ETFs</td><td>8</td><td>Up to 75×</td><td>5 bps</td><td>Follows underlying exchange</td></tr>
-    <tr><td>Commodities</td><td>7</td><td>Up to 50×</td><td>3–5 bps</td><td>Generally futures hours with daily break</td></tr>
-    <tr><td>Indices</td><td>7</td><td>Up to 200×</td><td>3 bps</td><td>Extended futures-style hours</td></tr>
-    <tr><td>Forex</td><td>9</td><td>Up to 200×</td><td>3–5 bps</td><td>Sun–Fri, 24/5</td></tr>
-    <tr><td>Crypto</td><td>9</td><td>Up to 200×</td><td>10 bps</td><td>24/7</td></tr>
-  </tbody></table>
+ <table><thead><tr><th>Asset class</th><th>Pairs</th><th>Typical maximum leverage</th><th>Opening fee</th><th>Trading schedule</th></tr></thead><tbody>
+ <tr><td>Stocks</td><td>35</td><td>Up to 100×</td><td>6 bps</td><td>Mon–Fri, 9:30 AM–4:00 PM ET</td></tr>
+ <tr><td>ETFs</td><td>8</td><td>Up to 75×</td><td>5 bps</td><td>Follows underlying exchange</td></tr>
+ <tr><td>Commodities</td><td>7</td><td>Up to 50×</td><td>3–5 bps</td><td>Generally futures hours with daily break</td></tr>
+ <tr><td>Indices</td><td>7</td><td>Up to 200×</td><td>3 bps</td><td>Extended futures-style hours</td></tr>
+ <tr><td>Forex</td><td>9</td><td>Up to 200×</td><td>3–5 bps</td><td>Sun–Fri, 24/5</td></tr>
+ <tr><td>Crypto</td><td>9</td><td>Up to 200×</td><td>10 bps</td><td>24/7</td></tr>
+ </tbody></table>
 
 Representative pairs include **US500/USD**, **EUR/USD**, **XAU/USD**, **AAPL/USD**, **BTC/USD** and **ETH/USD**. The complete list, pair-specific leverage and fees are maintained in the [official Markets reference ↗](https://docs.ostium.com/traders/reference/markets).
 
-  **Market-hours trap:** Crypto is 24/7, but stocks are not. When a traditional market is closed, market orders can be rejected while limit and stop orders may queue for the next session.
+ **Market-hours trap:** Crypto is 24/7, but stocks are not. When a traditional market is closed, market orders can be rejected while limit and stop orders may queue for the next session.
 
 ## How Order Types Work
 
@@ -263,15 +263,15 @@ Representative pairs include **US500/USD**, **EUR/USD**, **XAU/USD**, **AAPL/USD
 
 Ostium supports seven order types: three for opening a position and four for closing one. This matters because the trigger price and the actual execution price are not always the same.
 
-  <table><thead><tr><th>Order type</th><th>Purpose</th><th>Trigger / execution</th><th>Cost note</th></tr></thead><tbody>
-    <tr><td>Market</td><td>Open immediately</td><td>Executes at bid/ask</td><td>$0.10 oracle fee at open</td></tr>
-    <tr><td>Limit</td><td>Open at a target price</td><td>Bid/ask reaches the limit</td><td>$0.10 to place; $0.10 to cancel</td></tr>
-    <tr><td>Stop</td><td>Open after a breakout</td><td>Mid-price triggers, then market execution</td><td>$0.10 to place; $0.10 to cancel</td></tr>
-    <tr><td>Close Market</td><td>Exit immediately</td><td>Executes at bid/ask</td><td>Full successful close can refund oracle fee</td></tr>
-    <tr><td>Take-Profit</td><td>Lock in a target profit</td><td>Bid/ask reaches TP</td><td>No oracle fee on automated execution</td></tr>
-    <tr><td>Stop-Loss</td><td>Limit downside</td><td>Mid-price triggers, then market execution</td><td>Free to set and adjust</td></tr>
-    <tr><td>Liquidation</td><td>Forced close</td><td>Mid-price crosses liquidation price</td><td>Remaining collateral is retained</td></tr>
-  </tbody></table>
+ <table><thead><tr><th>Order type</th><th>Purpose</th><th>Trigger / execution</th><th>Cost note</th></tr></thead><tbody>
+ <tr><td>Market</td><td>Open immediately</td><td>Executes at bid/ask</td><td>$0.10 oracle fee at open</td></tr>
+ <tr><td>Limit</td><td>Open at a target price</td><td>Bid/ask reaches the limit</td><td>$0.10 to place; $0.10 to cancel</td></tr>
+ <tr><td>Stop</td><td>Open after a breakout</td><td>Mid-price triggers, then market execution</td><td>$0.10 to place; $0.10 to cancel</td></tr>
+ <tr><td>Close Market</td><td>Exit immediately</td><td>Executes at bid/ask</td><td>Full successful close can refund oracle fee</td></tr>
+ <tr><td>Take-Profit</td><td>Lock in a target profit</td><td>Bid/ask reaches TP</td><td>No oracle fee on automated execution</td></tr>
+ <tr><td>Stop-Loss</td><td>Limit downside</td><td>Mid-price triggers, then market execution</td><td>Free to set and adjust</td></tr>
+ <tr><td>Liquidation</td><td>Forced close</td><td>Mid-price crosses liquidation price</td><td>Remaining collateral is retained</td></tr>
+ </tbody></table>
 
 Remember the three prices: **bid** is where you can sell, **ask** is where you can buy, and **mid** is the reference price used for some triggers. You never execute at mid-price. See the [official Order Types guide ↗](https://docs.ostium.com/traders/trading/order-types).
 
@@ -283,7 +283,7 @@ Remember the three prices: **bid** is where you can sell, **ask** is where you c
 
 Ostium's cost structure is more nuanced than a single headline trading fee. The official [Fees page ↗](https://docs.ostium.com/traders/reference/fees) lists the following:
 
-  <table><thead><tr><th>Fee</th><th>When it applies</th><th>Rate / rule</th></tr></thead><tbody><tr><td>Opening fee</td><td>When a position opens</td><td>3–10 bps, depending on asset</td></tr><tr><td>Oracle fee</td><td>Each price request</td><td>$0.10 USDC; successful full closes may refund it</td></tr><tr><td>Rollover fee</td><td>While a position is held</td><td>Variable; tied to carry, term structure and/or funding data</td></tr><tr><td>Early-close fee</td><td>Profitable close within 15 seconds</td><td>Decays from 40 bps and is capped by realized profit</td></tr><tr><td>Liquidation</td><td>When margin is wiped out</td><td>Remaining collateral may be retained</td></tr></tbody></table>
+ <table><thead><tr><th>Fee</th><th>When it applies</th><th>Rate / rule</th></tr></thead><tbody><tr><td>Opening fee</td><td>When a position opens</td><td>3–10 bps, depending on asset</td></tr><tr><td>Oracle fee</td><td>Each price request</td><td>$0.10 USDC; successful full closes may refund it</td></tr><tr><td>Rollover fee</td><td>While a position is held</td><td>Variable; tied to carry, term structure and/or funding data</td></tr><tr><td>Early-close fee</td><td>Profitable close within 15 seconds</td><td>Decays from 40 bps and is capped by realized profit</td></tr><tr><td>Liquidation</td><td>When margin is wiped out</td><td>Remaining collateral may be retained</td></tr></tbody></table>
 
 In the live US500/USD interface, we saw **Trade Fees: 0.01%** and **Overnight Financing (24h): −0.0164%**. These are observed values for that market and moment, not a universal platform-wide rate.
 
@@ -365,7 +365,7 @@ Step 5 ends at the real pre-connection state: Restricted jurisdiction blocks the
 
 Self-custody reduces dependence on a centralized account, but it does not eliminate risk. You still rely on smart contracts, oracle pricing, automated execution, liquidity providers and the offchain hedging layer.
 
-  <ul><li>**Leverage risk:** small price moves can materially change collateral.</li><li>**Rollover risk:** holding costs accrue continuously and vary by market.</li><li>**Oracle risk:** the protocol uses an in-house consensus oracle for price discovery.</li><li>**Market-hours risk:** stocks and other traditional assets are not always 24/7.</li><li>**Eligibility risk:** restricted jurisdictions may be unable to access the product.</li></ul>
+ <ul><li>**Leverage risk:** small price moves can materially change collateral.</li><li>**Rollover risk:** holding costs accrue continuously and vary by market.</li><li>**Oracle risk:** the protocol uses an in-house consensus oracle for price discovery.</li><li>**Market-hours risk:** stocks and other traditional assets are not always 24/7.</li><li>**Eligibility risk:** restricted jurisdictions may be unable to access the product.</li></ul>
 
 Read the [Terms of Use ↗](https://docs.ostium.com/legal/terms-of-use) before depositing. This review does not independently audit Ostium's contracts or legal status.
 
@@ -429,7 +429,7 @@ That gives Ostium a second audience beyond discretionary traders: developers can
 
 Ostium uses a margin-based liquidation system with no margin call. The official explanation describes a 25% collateral backstop. At the pair's maximum leverage, liquidation begins after a 75% collateral loss; at lower leverage, the position can tolerate a larger adverse price move.
 
-  <table><thead><tr><th>Leverage</th><th>Approx. collateral loss threshold</th><th>Approx. adverse price move</th></tr></thead><tbody><tr><td>5×</td><td>99.375%</td><td>~19.9%</td></tr><tr><td>10×</td><td>98.75%</td><td>~9.9%</td></tr><tr><td>20×</td><td>97.5%</td><td>~4.9%</td></tr><tr><td>50×</td><td>93.75%</td><td>~1.9%</td></tr><tr><td>100×</td><td>87.5%</td><td>~0.9%</td></tr><tr><td>200×</td><td>75%</td><td>~0.4%</td></tr></tbody></table>
+ <table><thead><tr><th>Leverage</th><th>Approx. collateral loss threshold</th><th>Approx. adverse price move</th></tr></thead><tbody><tr><td>5×</td><td>99.375%</td><td>~19.9%</td></tr><tr><td>10×</td><td>98.75%</td><td>~9.9%</td></tr><tr><td>20×</td><td>97.5%</td><td>~4.9%</td></tr><tr><td>50×</td><td>93.75%</td><td>~1.9%</td></tr><tr><td>100×</td><td>87.5%</td><td>~0.9%</td></tr><tr><td>200×</td><td>75%</td><td>~0.4%</td></tr></tbody></table>
 
 These are approximations. Rollover fees reduce effective collateral over time, so the actual liquidation price can move closer to entry. Use a stop-loss, lower leverage and additional collateral when appropriate. See the [official liquidation guide ↗](https://docs.ostium.com/traders/trading/liquidation).
 
@@ -441,7 +441,7 @@ These are approximations. Rollover fees reduce effective collateral over time, s
 
 This review compares Ostium with three named alternatives: **Hyperliquid** for crypto-native perpetuals, **GMX** for onchain crypto trading, and a **traditional broker** for regulated account-based access to underlying markets.
 
-  <table><thead><tr><th></th><th>Ostium</th><th>Hyperliquid</th><th>GMX</th><th>Traditional broker</th></tr></thead><tbody><tr><td>Exposure</td><td>Stocks, ETFs, commodities, indices, forex and crypto perps</td><td>Primarily crypto perps and spot</td><td>Primarily crypto perps and spot</td><td>Underlying securities or broker products</td></tr><tr><td>Custody</td><td>Wallet and smart contracts</td><td>Wallet and smart contracts</td><td>Wallet and smart contracts</td><td>Broker account</td></tr><tr><td>Settlement</td><td>USDC on Arbitrum</td><td>Hyperliquid network</td><td>Arbitrum / Avalanche deployments</td><td>Broker ledger and fiat rails</td></tr><tr><td>Hours</td><td>Depends on asset class</td><td>Crypto markets generally 24/7</td><td>Crypto markets generally 24/7</td><td>Usually follows exchange hours</td></tr><tr><td>Best advantage</td><td>Broader macro exposure in one onchain venue</td><td>Deep crypto-native trading workflow</td><td>Onchain crypto liquidity and composability</td><td>Familiar account, support and compliance workflow</td></tr></tbody></table>
+ <table><thead><tr><th></th><th>Ostium</th><th>Hyperliquid</th><th>GMX</th><th>Traditional broker</th></tr></thead><tbody><tr><td>Exposure</td><td>Stocks, ETFs, commodities, indices, forex and crypto perps</td><td>Primarily crypto perps and spot</td><td>Primarily crypto perps and spot</td><td>Underlying securities or broker products</td></tr><tr><td>Custody</td><td>Wallet and smart contracts</td><td>Wallet and smart contracts</td><td>Wallet and smart contracts</td><td>Broker account</td></tr><tr><td>Settlement</td><td>USDC on Arbitrum</td><td>Hyperliquid network</td><td>Arbitrum / Avalanche deployments</td><td>Broker ledger and fiat rails</td></tr><tr><td>Hours</td><td>Depends on asset class</td><td>Crypto markets generally 24/7</td><td>Crypto markets generally 24/7</td><td>Usually follows exchange hours</td></tr><tr><td>Best advantage</td><td>Broader macro exposure in one onchain venue</td><td>Deep crypto-native trading workflow</td><td>Onchain crypto liquidity and composability</td><td>Familiar account, support and compliance workflow</td></tr></tbody></table>
 
 ## Conclusion
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "KyberSwap Review 2026: How to Use the DEX Aggregator + Create Your Referral Link (Step-by-Step)"
 slug: "kyberswap-review-tutorial-referral"
 date: "2026-10-14"
@@ -234,9 +234,9 @@ The Tip Link Generator modal opens:
 
 1. Click **"Generate Link"**
 2. A URL appears in the **Generated Link** box — e.g.:
-   ```
-   https://kyberswap.com/partner-swap?chainId=1&inputCurrency=ETH&outputCurrency=USDC&feeReceiver=0xYOUR_WALLET&enableTip=true
-   ```
+ ```
+ https://kyberswap.com/partner-swap?chainId=1&inputCurrency=ETH&outputCurrency=USDC&feeReceiver=0xYOUR_WALLET&enableTip=true
+ ```
 3. Click **"Copy"** and share the link anywhere — Twitter, Telegram, your blog, YouTube description
 
 ### Step 4 — What Your Referrals See
@@ -368,10 +368,10 @@ KyberSwap is non-custodial and audited by four independent firms (ChainSecurity,
 |--|-----------|-------|----------|
 | Chains | 19 | 13 | 9 |
 | Protocol swap fee | None | None | None |
-| Limit orders | ✅ | ✅ | ✅ |
-| Cross-chain swap | ✅ | ✅ | ❌ |
-| Referral system | Tip Link + Affiliate | ✅ | ✅ |
-| Native liquidity | KyberEarn | ✅ (Fusion) | ✅ |
+| Limit orders | | | |
+| Cross-chain swap | | | |
+| Referral system | Tip Link + Affiliate | | |
+| Native liquidity | KyberEarn | (Fusion) | |
 
 For pure best-rate routing across the most chains, KyberSwap's coverage is hard to beat. Always quote both KyberSwap and 1inch for large trades — the best rate varies by pair and size.
 

@@ -1,4 +1,4 @@
-﻿---
+---
 title: "{{SITE_NAME}} Review {{YEAR}}: How to Use It + Referral / Affiliate Guide (Step-by-Step)"
 slug: "{{SLUG}}"
 date: "{{DATE_ISO}}"

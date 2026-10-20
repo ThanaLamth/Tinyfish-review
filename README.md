@@ -1,6 +1,6 @@
-﻿# Tinyfish Review — Auto Article Writer
+# Tinyfish Review — Auto Article Writer
 
-Toolkit tự động viết bài review/tutorial cho các DEX/CEX/Web3 site.  
+Toolkit tự động viết bài review/tutorial cho các DEX/CEX/Web3 site. 
 Chụp screenshot thực tế trên 3 thiết bị → research bằng TinyFish → sinh bài Markdown.
 
 ## Stack
@@ -14,9 +14,9 @@ Chụp screenshot thực tế trên 3 thiết bị → research bằng TinyFish 
 ```bash
 # 1. System deps
 sudo apt-get update && sudo apt-get install -y \
-    nodejs npm xvfb \
-    libgbm-dev libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 \
-    libxdamage1 libxrandr2 libgtk-3-0 libasound2
+ nodejs npm xvfb \
+ libgbm-dev libnss3 libatk-bridge2.0-0 libdrm2 libxcomposite1 \
+ libxdamage1 libxrandr2 libgtk-3-0 libasound2
 
 # 2. TinyFish CLI
 npm install -g @tiny-fish/cli
@@ -75,9 +75,9 @@ python tools/capture_devices.py https://kyberswap.com --out ./screenshots/kybers
 
 # Viết bài hoàn chỉnh (research + generate)
 python tools/write_article.py \
-    --url https://kyberswap.com \
-    --type dex \
-    --slug kyberswap-review-2026
+ --url https://kyberswap.com \
+ --type dex \
+ --slug kyberswap-review-2026
 ```
 
 ## Chạy nhanh (all-in-one)
@@ -95,20 +95,20 @@ python tools/write_article.py --url $SITE --type dex --slug $SLUG --no-screensho
 
 ```
 tools/
-  setup_wallet_once.py     # Chạy 1 lần — setup MetaMask + lưu session
-  capture_devices.py       # Screenshot 3 device via TinyFish CDP
-  capture_wallet_flow.py   # MetaMask connect flow (dùng --reuse sau setup)
-  write_article.py         # Research + generate Markdown article
+ setup_wallet_once.py # Chạy 1 lần — setup MetaMask + lưu session
+ capture_devices.py # Screenshot 3 device via TinyFish CDP
+ capture_wallet_flow.py # MetaMask connect flow (dùng --reuse sau setup)
+ write_article.py # Research + generate Markdown article
 templates/
-  dex_review_template.md   # Article template (DEX/swap)
+ dex_review_template.md # Article template (DEX/swap)
 articles/
-  kyberswap-review-2026.md # Example output
+ kyberswap-review-2026.md # Example output
 screenshots/
-  kyberswap/               # Example screenshots
-    desktop.png / tablet.png / phone.png
-    tutorial/              # Step-by-step captures
-    wallet-flow/           # MetaMask connect captures
-run_wallet_flow.sh         # Ubuntu Xvfb wrapper for wallet flow
+ kyberswap/ # Example screenshots
+ desktop.png / tablet.png / phone.png
+ tutorial/ # Step-by-step captures
+ wallet-flow/ # MetaMask connect captures
+run_wallet_flow.sh # Ubuntu Xvfb wrapper for wallet flow
 ```
 
 ## Biến môi trường (.env)
@@ -120,14 +120,14 @@ PROXY_PORT=12775
 PROXY_USER=29dt
 PROXY_PASS=29dt
 MM_EXT_PATH=/opt/metamask
-USER_DATA_DIR=~/.tinyfish-review/mm-profile   # auto-set by setup_wallet_once.py
+USER_DATA_DIR=~/.tinyfish-review/mm-profile # auto-set by setup_wallet_once.py
 WALLET_MNEMONIC=word1 word2 ... word12
 WALLET_PASSWORD=Demo@Wallet2026!
 ```
 
 ## Session / Cookie được lưu ở đâu?
 
-Playwright `launch_persistent_context` lưu toàn bộ trạng thái trình duyệt  
+Playwright `launch_persistent_context` lưu toàn bộ trạng thái trình duyệt 
 (cookies, localStorage, extension state, MetaMask keyring) vào `USER_DATA_DIR`.
 
 | File/Folder | Nội dung |
@@ -136,7 +136,7 @@ Playwright `launch_persistent_context` lưu toàn bộ trạng thái trình duy�
 | `~/.tinyfish-review/wallet_ready.flag` | JSON flag — setup đã xong |
 | `~/.tinyfish-review/setup-shots/` | Screenshots từ lần setup ban đầu |
 
-Khi dùng `--reuse`, script chỉ mở lại profile cũ và gõ password để unlock —  
+Khi dùng `--reuse`, script chỉ mở lại profile cũ và gõ password để unlock — 
 **không nhập lại seed phrase**.
 
 ## Workflow tự động (cron / Ubuntu service)
@@ -144,6 +144,6 @@ Khi dùng `--reuse`, script chỉ mở lại profile cũ và gõ password để 
 ```bash
 # Viết 1 bài mỗi ngày lúc 8am
 0 8 * * * cd /path/to/Tinyfish-review && \
-    python tools/write_article.py --url https://newsite.com --type dex \
-    >> logs/cron.log 2>&1
+ python tools/write_article.py --url https://newsite.com --type dex \
+ >> logs/cron.log 2>&1
 ```

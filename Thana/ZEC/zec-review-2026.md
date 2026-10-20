@@ -1,4 +1,4 @@
-﻿---
+---
 title: "ZEC Review 2026: I Spent a Day with Zcash — The Privacy Coin That Invented zk-SNARKs"
 slug: "/crypto-reviews/zec-zcash-review-2026/"
 primary_keyword: "Zcash ZEC review 2026"
@@ -216,7 +216,7 @@ Rank #10 by market cap is a significant statement of market confidence. Whether 
 
 ---
 
-## 📖 Glossary of Technical Terms
+## Glossary of Technical Terms
 
 A list of technical terms appearing in this review, explained in plain language:
 

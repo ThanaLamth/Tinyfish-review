@@ -1,11 +1,11 @@
 # RIALO Airdrop 12 Oct 2026 - Comprehensive Review & Step-by-Step Execution Playbook
 
-> **In-Depth Analysis Report, Real-World Screenshots & Step-by-Step Playbook for Farming Rialo Points on Devnet ($0 Capital Required)**  
+> **In-Depth Analysis Report, Real-World Screenshots & Step-by-Step Playbook for Farming Rialo Points on Devnet ($0 Capital Required)** 
 > *Updated: October 12, 2026 | Data verified live via TinyFish CLI*
 
 ---
 
-## 🌐 1. RIALO (SUBZERO LABS) PLATFORM OVERVIEW & TINYFISH-VERIFIED DATA
+## 1. RIALO (SUBZERO LABS) PLATFORM OVERVIEW & TINYFISH-VERIFIED DATA
 
 Using **TinyFish CLI** (`fetch` and `search` commands), all platform parameters and technical architecture of Rialo were verified directly from primary sources:
 
@@ -16,21 +16,21 @@ Using **TinyFish CLI** (`fetch` and `search` commands), all platform parameters 
 
 ---
 
-## 📸 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
+## 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
 
 Screenshot data was captured directly from the live Rialo environment:
 
-### 🖼️ Screenshot 1: Rialo Network Homepage (`rialo.io`)
+### Screenshot 1: Rialo Network Homepage (`rialo.io`)
 ![Rialo Homepage](./rialo-screenshots/rialo_homepage.jpg)
 *Official website evidence*: [rialo.io](https://www.rialo.io)
 
-### 🖼️ Screenshot 2: Rialo Playground Dashboard & Points (`playground.rialo.io`)
+### Screenshot 2: Rialo Playground Dashboard & Points (`playground.rialo.io`)
 ![Rialo Playground](./rialo-screenshots/rialo_playground.jpg)
 *Playground app catalog evidence*: [playground.rialo.io](https://playground.rialo.io)
 
 ---
 
-## ⚠️ 3. IMPORTANT NOTES ON TOKENS & THE RIALO POINTS SYSTEM
+## 3. IMPORTANT NOTES ON TOKENS & THE RIALO POINTS SYSTEM
 
 1. **No official Token or Airdrop confirmation yet**: The project is currently running the **Rialo Points (RP)** system to recognize builders, testers, and community members joining the ecosystem early.
 2. **$0 Capital Required**: All activities are conducted on the **Devnet** with test tokens — **absolutely no real money needs to be deposited**.
@@ -38,10 +38,10 @@ Screenshot data was captured directly from the live Rialo environment:
 
 ---
 
-## 🎯 4. STEP-BY-STEP RIALO POINTS FARMING PLAYBOOK
+## 4. STEP-BY-STEP RIALO POINTS FARMING PLAYBOOK
 
-### 📌 Step 1: Register on Playground & Receive 20 Welcome Points
-1. Visit the official site: 👉 **[playground.rialo.io](https://playground.rialo.io)**
+### Step 1: Register on Playground & Receive 20 Welcome Points
+1. Visit the official site: **[playground.rialo.io](https://playground.rialo.io)**
 2. Sign in with your **Google** account (the system automatically creates a safe Custodial Wallet shared across all apps).
 3. Receive **20 Rialo Points (RP)** welcome bonus immediately.
 4. Link **Discord** and **GitHub** in your profile tab to claim **Retroactive Points** (if you made early contributions).
@@ -49,48 +49,48 @@ Screenshot data was captured directly from the live Rialo environment:
 
 ---
 
-### 📌 Step 2: Interact with DApps on Playground
+### Step 2: Interact with DApps on Playground
 Don't just browse — execute real transactions to record your transaction history on Devnet:
 
-* 🪙 **Meridian**: Experience trading with a Compliant Stablecoin.
-* 🔒 **Guarded Vault**: Interact with the Protected Multisig / Vault feature.
-* 🤖 **Ermac**: Experience the AI model (chat / query).
-* 📊 **Project 1337**: Experience a real-time live market data ticker on-chain.
-* 🏎️ **Agent Grand Prix**: Use RP points to bet on the AI Agent keyword race.
-* 🔮 **Rialo Predict**: Get early access to the parimutuel prediction market (use Points to claim, bet and receive payouts) when the feature opens.
+* **Meridian**: Experience trading with a Compliant Stablecoin.
+* **Guarded Vault**: Interact with the Protected Multisig / Vault feature.
+* **Ermac**: Experience the AI model (chat / query).
+* **Project 1337**: Experience a real-time live market data ticker on-chain.
+* **Agent Grand Prix**: Use RP points to bet on the AI Agent keyword race.
+* **Rialo Predict**: Get early access to the parimutuel prediction market (use Points to claim, bet and receive payouts) when the feature opens.
 
 ---
 
-### 📌 Step 3: Join Discord & Grind Community Roles
+### Step 3: Join Discord & Grind Community Roles
 Discord is where Rialo records your Reputation Record:
 
-* **Official Discord link**: 👉 **[discord.gg/RialoProtocol](https://discord.gg/RialoProtocol)** *(Always verify the link from the @RialoHQ bio — never connect your wallet inside Discord)*.
+* **Official Discord link**: **[discord.gg/RialoProtocol](https://discord.gg/RialoProtocol)** *(Always verify the link from the @RialoHQ bio — never connect your wallet inside Discord)*.
 * **Key Roles**:
-  * **RialONE**: Basic role — complete phone verification to pass the anti-bot waiting room.
-  * **RialOPS**: Important role — for users with X accounts with ≥ 50 followers; submit a screenshot in the proof channel to unlock raid channels.
-  * **Researcher / Artist / Memelord**: Create original technical research content, hand-drawn artwork, or original memes (AI-generated content will be rejected).
-  * **Club Member (Rialo Club)**: Premium role for core members after achieving quality content roles.
+ * **RialONE**: Basic role — complete phone verification to pass the anti-bot waiting room.
+ * **RialOPS**: Important role — for users with X accounts with ≥ 50 followers; submit a screenshot in the proof channel to unlock raid channels.
+ * **Researcher / Artist / Memelord**: Create original technical research content, hand-drawn artwork, or original memes (AI-generated content will be rejected).
+ * **Club Member (Rialo Club)**: Premium role for core members after achieving quality content roles.
 
 ---
 
-### 📌 Step 4: X (Twitter) Engagement & Maintaining Consistency
+### Step 4: X (Twitter) Engagement & Maintaining Consistency
 * Follow [@RialoHQ](https://x.com/RialoHQ) on X.
 * Like, repost, and engage naturally with the project's technology posts.
 * Build your profile to ≥ 50 followers to be ready to claim the **RialOPS** role.
-* 💡 **Success tip**: Return to Playground and execute transactions **every 1–2 weeks**. A spread-out activity history is much more valuable to the Retroactive algorithm than a one-time burst.
+* **Success tip**: Return to Playground and execute transactions **every 1–2 weeks**. A spread-out activity history is much more valuable to the Retroactive algorithm than a one-time burst.
 
 ---
 
-## 🛡️ 5. SAFETY WARNINGS & PRIORITY TABLE
+## 5. SAFETY WARNINGS & PRIORITY TABLE
 
-### ⚠️ Anti-Scam Principles
-* ❌ **Do not send real money**: The entire process takes place on a free Devnet.
-* ❌ **Never share Seed Phrase / Private Key**: Never connect a main wallet holding significant assets.
-* ⚠️ **Watch for fake links**: Many fake websites and Discord servers impersonating Rialo have appeared. Only access links verified from official @RialoHQ social media.
+### Anti-Scam Principles
+* **Do not send real money**: The entire process takes place on a free Devnet.
+* **Never share Seed Phrase / Private Key**: Never connect a main wallet holding significant assets.
+* **Watch for fake links**: Many fake websites and Discord servers impersonating Rialo have appeared. Only access links verified from official @RialoHQ social media.
 
 ---
 
-### 📊 Priority Action Table
+### Priority Action Table
 
 | Priority | Specific Action | Goal & Benefit |
 | :---: | :--- | :--- |
@@ -102,11 +102,11 @@ Discord is where Rialo records your Reputation Record:
 
 ---
 
-## 🌐 6. OFFICIAL REFERENCE LINKS
+## 6. OFFICIAL REFERENCE LINKS
 
-* 🚀 **Rialo Playground**: [playground.rialo.io](https://playground.rialo.io)
-* 🌐 **Official Website**: [rialo.io](https://www.rialo.io)
-* 🐦 **Official X (Twitter) Channel**: [@RialoHQ](https://x.com/RialoHQ)
-* 💬 **Community Discord**: [discord.gg/RialoProtocol](https://discord.gg/RialoProtocol)
-* 📚 **Reference: Airdrops.io**: [airdrops.io/rialo](https://airdrops.io/rialo/)
-* 🐙 **GitHub Repository**: [github.com/ThanaLamth/Tinyfish-review](https://github.com/ThanaLamth/Tinyfish-review)
+* **Rialo Playground**: [playground.rialo.io](https://playground.rialo.io)
+* **Official Website**: [rialo.io](https://www.rialo.io)
+* **Official X (Twitter) Channel**: [@RialoHQ](https://x.com/RialoHQ)
+* **Community Discord**: [discord.gg/RialoProtocol](https://discord.gg/RialoProtocol)
+* **Reference: Airdrops.io**: [airdrops.io/rialo](https://airdrops.io/rialo/)
+* **GitHub Repository**: [github.com/ThanaLamth/Tinyfish-review](https://github.com/ThanaLamth/Tinyfish-review)

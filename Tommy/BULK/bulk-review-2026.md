@@ -304,10 +304,10 @@ Using the lowest tier in the public fee schedule as an illustration, a 3.5 bps t
 
 | Review date | Trading Aura | Total Aura | League | Volume | Fees | Realized PnL | Notes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
-|  |  |  |  |  |  |  |  |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
+| | | | | | | | |
 
 ---
 

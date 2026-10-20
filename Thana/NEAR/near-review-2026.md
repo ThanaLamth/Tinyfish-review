@@ -1,4 +1,4 @@
-﻿# NEAR Protocol ($NEAR) Review 2026: I Clicked Through Everything So You Don't Have To
+# NEAR Protocol ($NEAR) Review 2026: I Clicked Through Everything So You Don't Have To
 
 *Reviewed October 9, 2026 — First-person walkthrough of the ecosystem, chain stats, wallet, DeFi, and the new AI product*
 
@@ -248,7 +248,7 @@ The AI narrative is NEAR's strongest hand in 2026. Whether "blockchain for AI ag
 
 ---
 
-## 📖 Glossary of Technical Terms
+## Glossary of Technical Terms
 
 A list of technical terms appearing in this review, explained in plain language:
 
