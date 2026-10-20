@@ -1,0 +1,8 @@
+{
+  "url": "https://app.1inch.io",
+  "screenshots": {
+    "desktop": "screenshots\\app.1inch.io\\desktop.png",
+    "tablet": "screenshots\\app.1inch.io\\tablet.png",
+    "phone": "screenshots\\app.1inch.io\\phone.png"
+  }
+}
