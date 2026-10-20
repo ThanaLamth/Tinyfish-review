@@ -1,201 +1,201 @@
 # Predict.fun ($PREDICT) Airdrop 15 Oct 2026 - Comprehensive Review & Step-by-Step Execution Playbook
 
-> **Báo cáo Phân tích Chuyên sâu, Dẫn chứng Hình ảnh Trải nghiệm Thực tế & Cẩm nang Từng bước Farming Predict Points (PP) trên BNB Chain**  
-> *Ngày cập nhật: 15 Tháng 10, 2026 | Dữ liệu kiểm chứng & Trải nghiệm nạp tiền thật trên Predict Smart Wallet*
+> **In-Depth Analysis Report, Real-World Screenshots & Step-by-Step Farming Playbook for Predict Points (PP) on BNB Chain**  
+> *Updated: October 15, 2026 | Data verified with live deposit experience on Predict Smart Wallet*
 
 ---
 
-## 🌐 1. TỔNG QUAN NỀN TẢNG PREDICT.FUN & TRẢI NGHIỆM NẠP VỐN THỰC TẾ
+## 🌐 1. PREDICT.FUN PLATFORM OVERVIEW & LIVE DEPOSIT EXPERIENCE
 
-Thông qua công cụ **TinyFish CLI** kết hợp với **trải nghiệm thực tế đăng nhập & nạp tiền thật vào Predict Smart Wallet**, toàn bộ quy trình vận hành và hệ thống airdrop của **Predict.fun** đã được kiểm chứng chuẩn xác:
+Using **TinyFish CLI** combined with a **live login and real-money deposit into Predict Smart Wallet**, the full operation and airdrop system of **Predict.fun** were verified accurately:
 
-* **Định vị & Quy mô Khủng**: **Prediction Market (Thị trường Dự đoán) số 1 native trên BNB Chain**, được lựa chọn làm đối tác cung cấp thị trường dự đoán chính thức tích hợp sâu vào **Binance Web3 Wallet**. Nền tảng ghi nhận khối lượng giao dịch luỹ kế **hàng tỷ USD**, phục vụ hơn **1,000,000 người dùng thực tế** (unique users).
-* **Đội ngũ Sáng lập & Hậu thuẫn Vững chắc**: 
-  * Dự án được ươm mầm và hậu thuẫn chiến lược bởi **YZi Labs** (trước đây là **Binance Labs**).
-  * Nhà sáng lập là **dingaling** (@dingalingts – cựu thành viên cấp cao tại Binance Research, đồng sáng lập PancakeSwap và là một KOL/Whale có tầm ảnh hưởng lớn trong giới Web3).
-* **Trải Nghiệm Thực Tế (Hands-on Live Testing)**:
-  * Đã đăng nhập thực tế và kích hoạt tài khoản **Predict Smart Wallet** (công nghệ Privy + ZeroDev Smart Contract Account).
-  * Thực hiện nạp tiền thật: Nạp thành công **2.00182 USDT** từ ví cá nhân (`...046b`) vào Predict Wallet thông qua cổng thanh toán Fun.xyz.
-  * Tốc độ xử lý siêu tốc: **Đúng 10 giây (Fill time: 10 seconds)** là tiền đã vào ví, hoàn toàn không cần ký phê duyệt phí gas (gasless).
-  * Số dư tài khoản hiển thị ngay trên thanh điều hướng: **Portfolio $2 | Available $2**.
-* **Tín Hiệu Airdrop "Soon" Cực Nóng (Tháng 10/2026)**:
-  * Ngày **06/10/2026**, tài khoản chính thức [@predictdotfun](https://x.com/predictdotfun) đăng dòng trạng thái bùng nổ: **“Soon.”** đính kèm hình ảnh đồng coin thương hiệu.
-  * Ngay bên dưới, Founder **dingaling** xác nhận trực tiếp: **“Weeks, not months. Predict and be rewarded.”** (Chỉ tính bằng tuần, không phải bằng tháng. Hãy tham gia dự đoán và nhận thưởng).
-  * *Tình trạng pháp lý*: Hiện tại chưa có thông báo snapshot hay tỷ lệ quy đổi cụ thể từ PP sang token. Predict Points (PP) là chỉ số ghi nhận cống hiến thực tế của Liquidity Providers (LPs) và trader để chuẩn bị cho đợt phân bổ token sắp tới.
+* **Positioning & Scale**: **The #1 Prediction Market native on BNB Chain**, selected as the official prediction market partner deeply integrated into **Binance Web3 Wallet**. The platform has recorded cumulative trading volume of **billions of USD**, serving over **1,000,000 real users** (unique users).
+* **Founding Team & Strong Backing**:
+  * The project was incubated and strategically backed by **YZi Labs** (formerly **Binance Labs**).
+  * The founder is **dingaling** (@dingalingts — former senior member at Binance Research, co-founder of PancakeSwap, and a highly influential KOL/Whale in the Web3 space).
+* **Hands-on Live Testing**:
+  * Actually logged in and activated a **Predict Smart Wallet** account (Privy + ZeroDev Smart Contract Account technology).
+  * Completed a real deposit: Successfully deposited **2.00182 USDT** from personal wallet (`...046b`) into the Predict Wallet via the Fun.xyz payment gateway.
+  * Ultra-fast processing: **Exactly 10 seconds (Fill time: 10 seconds)** for funds to arrive — no gas approval signature required (gasless).
+  * Account balance displayed immediately in the navigation bar: **Portfolio $2 | Available $2**.
+* **Extremely Hot Airdrop "Soon" Signal (October 2026)**:
+  * On **06/10/2026**, the official account [@predictdotfun](https://x.com/predictdotfun) posted an explosive status: **"Soon."** with a branded coin image.
+  * Founder **dingaling** confirmed directly below: **"Weeks, not months. Predict and be rewarded."**
+  * *Legal status*: There is currently no snapshot announcement or specific PP-to-token conversion ratio. Predict Points (PP) is a metric recording real contributions by Liquidity Providers (LPs) and traders in preparation for the upcoming token distribution.
 
 ---
 
-## 📸 2. DẪN CHỨNG HÌNH ẢNH SCREENSHOTS & GIAO DIỆN THỰC TẾ
+## 📸 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
 
-Toàn bộ hình ảnh được trích xuất trực tiếp từ phiên hoạt động thực tế trên tài khoản Predict.fun:
+All screenshots were captured directly from a live session on a real Predict.fun account:
 
-### 🖼️ Screenshot 1: Trải Nghiệm Nạp Tiền Thật Thành Công Vào Predict Smart Wallet (`predict.fun`)
+### 🖼️ Screenshot 1: Successful Real-Money Deposit into Predict Smart Wallet (`predict.fun`)
 ![Predict Deposit Successful](./predict-screenshots/00_deposit_success_real.png)
-*Dẫn chứng nạp vốn thực tế*: Nhận thành công **2.00182 USDT** trong **10 giây**, số dư hiển thị **Portfolio $2 | Available $2**, xuất hiện thị trường trực tiếp **BTC Up or Down 5m** và biểu ngữ **Maker Rebates**.
+*Real deposit evidence*: Successfully received **2.00182 USDT** in **10 seconds**, balance shows **Portfolio $2 | Available $2**, with live **BTC Up or Down 5m** market and **Maker Rebates** banner.
 
 ---
 
-### 🖼️ Screenshot 2: Trang Chủ Predict.fun & Sổ Lệnh CLOB (`predict.fun`)
+### 🖼️ Screenshot 2: Predict.fun Homepage & CLOB Order Book (`predict.fun`)
 ![Predict Homepage](./predict-screenshots/01_predict_homepage.png)
-*Dẫn chứng website chính thức*: [predict.fun](https://predict.fun) — Giao diện CLOB Prediction Market với các thị trường BTC 5m, Chính trị, Thể thao và Kinh tế.
+*Official website evidence*: [predict.fun](https://predict.fun) — CLOB Prediction Market interface with BTC 5m, Politics, Sports, and Economics markets.
 
 ---
 
-### 🖼️ Screenshot 3: Bảng Điều Khiển Điểm Thưởng Predict Points (`predict.fun/points`)
+### 🖼️ Screenshot 3: Predict Points Dashboard (`predict.fun/points`)
 ![Predict Points Dashboard](./predict-screenshots/02_predict_points.png)
-*Dẫn chứng bảng điểm*: [predict.fun/points](https://predict.fun/points) — Xếp hạng Leaderboard, Reserved Points và thống kê điểm theo tuần.
+*Points dashboard evidence*: [predict.fun/points](https://predict.fun/points) — Leaderboard rankings, Reserved Points, and weekly points statistics.
 
 ---
 
-### 🖼️ Screenshot 4: Khám Phá Thị Trường Đa Lĩnh Vực (`predict.fun/explore`)
+### 🖼️ Screenshot 4: Multi-Category Market Exploration (`predict.fun/explore`)
 ![Predict Explore Markets](./predict-screenshots/03_predict_explore.png)
-*Dẫn chứng thị trường*: [predict.fun/explore](https://predict.fun/explore) — Hệ thống phân loại thị trường đa dạng với badge "Points Active" và "Yield".
+*Market evidence*: [predict.fun/explore](https://predict.fun/explore) — Diverse market categories with "Points Active" and "Yield" badges.
 
 ---
 
-### 🖼️ Screenshot 5: Hướng Dẫn Cơ Chế Tính Điểm LP Points (`docs.predict.fun/how-to-earn-points`)
+### 🖼️ Screenshot 5: LP Points Scoring Mechanism Guide (`docs.predict.fun/how-to-earn-points`)
 ![Docs How to Earn Points](./predict-screenshots/04_docs_points.png)
-*Dẫn chứng tài liệu tính điểm*: [docs.predict.fun/the-basics/how-to-earn-points](https://docs.predict.fun/the-basics/how-to-earn-points) — Cơ chế tính điểm theo giờ (PP/hr), snapshot order book và hệ thống 5 sao.
+*Points scoring documentation evidence*: [docs.predict.fun/the-basics/how-to-earn-points](https://docs.predict.fun/the-basics/how-to-earn-points)
 
 ---
 
-### 🖼️ Screenshot 6: Tính Năng Sinh Lời Venus Protocol Cho Vị Thế Mở (`docs.predict.fun/yields`)
+### 🖼️ Screenshot 6: Venus Protocol Yield Feature for Open Positions (`docs.predict.fun/yields`)
 ![Docs Yields Venus](./predict-screenshots/05_docs_yields.png)
-*Dẫn chứng cơ chế Yield*: [docs.predict.fun/the-basics/yields](https://docs.predict.fun/the-basics/yields) — Tự động định tuyến tài sản ký quỹ USDT sang Venus Protocol để sinh lãi liên tục trong thời gian chờ kết quả.
+*Yield mechanism evidence*: [docs.predict.fun/the-basics/yields](https://docs.predict.fun/the-basics/yields) — Automatically routes collateral USDT to Venus Protocol to generate DeFi yield.
 
 ---
 
-### 🖼️ Screenshot 7: Công Nghệ Smart Wallet Không Cần Quản Lý Seed Phrase (`docs.predict.fun/wallets`)
+### 🖼️ Screenshot 7: Seed-Phrase-Free Smart Wallet Technology (`docs.predict.fun/wallets`)
 ![Docs Smart Wallets](./predict-screenshots/06_docs_wallets.png)
-*Dẫn chứng hạ tầng ví*: [docs.predict.fun/knowledge-base/wallets](https://docs.predict.fun/knowledge-base/wallets) — Tích hợp Privy + ZeroDev Smart Contract Account, nạp rút đa cổng qua Fun.xyz.
+*Wallet infrastructure evidence*: [docs.predict.fun/knowledge-base/wallets](https://docs.predict.fun/knowledge-base/wallets) — Privy + ZeroDev integration for gasless smart contract wallets.
 
 ---
 
-### 🖼️ Screenshot 8: Chính Sách Hoa Hồng Mời Bạn Bè 10% Fees + 10% PP (`docs.predict.fun/invites`)
+### 🖼️ Screenshot 8: 10% Referral Commission Policy + 10% PP (`docs.predict.fun/invites`)
 ![Docs Invites Program](./predict-screenshots/07_docs_invites.png)
-*Dẫn chứng chính sách mời*: [docs.predict.fun/knowledge-base/invites](https://docs.predict.fun/knowledge-base/invites) — Giảm 10% phí cho người được mời, nhận trọn đời 10% phí và 10% PP của tuyến dưới.
+*Referral policy evidence*: [docs.predict.fun/knowledge-base/invites](https://docs.predict.fun/knowledge-base/invites) — 10% fee reduction for referred users + 10% of their PP permanently to referrer.
 
 ---
 
-### 🖼️ Screenshot 9: Thị Trường Tăng Cường Điểm Thưởng Boosted PP (`docs.predict.fun/boosted-pp-markets`)
+### 🖼️ Screenshot 9: Boosted PP Reward Markets (`docs.predict.fun/boosted-pp-markets`)
 ![Docs Boosted PP Markets](./predict-screenshots/08_docs_boosted.png)
-*Dẫn chứng thị trường Boost*: [docs.predict.fun/knowledge-base/boosted-pp-markets](https://docs.predict.fun/knowledge-base/boosted-pp-markets) — Huy hiệu vàng "PP Boosted" với tỷ lệ chia sẻ quỹ điểm vượt trội.
+*Boosted markets evidence*: [docs.predict.fun/knowledge-base/boosted-pp-markets](https://docs.predict.fun/knowledge-base/boosted-pp-markets) — Up to 6 markets with the Boost flag active at any time.
 
 ---
 
-## 🪙 3. CƠ CHẾ FARM PREDICT POINTS (PP) – BÍ QUYẾT TỐI ƯU ĐIỂM SỐ
+## 🪙 3. PREDICT POINTS (PP) FARMING MECHANISM — SCORE OPTIMIZATION SECRETS
 
-Không giống các sàn DEX chỉ đo volume giao dịch đơn thuần, **Predict.fun dành phần lớn điểm thưởng (majority of points) cho các Nhà cung cấp thanh khoản (Liquidity Providers - LPs)** thông qua việc đặt lệnh Limit trên sổ lệnh (Central Limit Order Book - CLOB).
+Unlike DEXs that only measure raw trading volume, **Predict.fun allocates the majority of points to Liquidity Providers (LPs)** — users who place limit orders on both sides of the order book to create a deep, tight market.
 
 ```
-Tổng Điểm Phân Bổ = LP Points (Trọng số lớn nhất) + Trading Points + Holding Points + Referral Bonus
+Total Points Allocated = LP Points (largest weight) + Trading Points + Holding Points + Referral Bonus
 ```
 
 ---
 
-### 🧮 1. Quy Luật Tính Điểm Của Nhà Cung Cấp Thanh Khoản (LP Points):
-* **Tỷ lệ PP/hr niêm yết công khai**: Mỗi thị trường được ấn định một hạn ngạch **Predict Points mỗi giờ (PP/hr)** hiển thị trực tiếp trên thẻ thị trường.
-* **Hệ thống phân cấp 5 sao (5-Star Tiers)**:
-  * ⭐️ (1 sao): Thị trường cơ bản.
-  * ⭐️⭐️⭐️⭐️⭐️ (5 sao): Thị trường đang cần thanh khoản khẩn cấp $\rightarrow$ Hạn ngạch chia điểm cao nhất.
-* **Cơ chế Snapshot ngẫu nhiên**: Hệ thống chụp ảnh (snapshot) sổ lệnh liên tục theo từng phút để tính toán khối lượng thanh khoản thực tế bạn đang duy trì.
-* **4 Điều Kiện Sống Còn Để Nhận Điểm LP**:
-  1. **Đạt Minimum Order Size**: Mỗi thị trường có quy định quy mô lệnh tối thiểu (ví dụ 10–50 shares). Lệnh quá nhỏ sẽ bị bỏ qua.
-  2. **Biên độ chênh lệch (Spread) hẹp**: Giữ chênh lệch giữa giá mua (Bid) và giá bán (Ask) bên dưới ngưỡng trần quy định.
-  3. **Đặt lệnh cả hai phía (Two-Sided Orders)**: Đặt đồng thời cả lệnh mua **YES** và **NO** (hoặc Bid và Ask) để nhận điểm tối đa.
-  4. **Khoảng cách tới Midpoint**: Lệnh đặt **càng sát giá thị trường hiện tại**, hệ số nhân điểm càng cao.
+### 🧮 1. Liquidity Provider (LP) Points Scoring Rules:
+* **Publicly listed PP/hr rate**: Each market is assigned a **Predict Points per hour (PP/hr)** quota displayed directly on the market page.
+* **5-Star Tier System**:
+  * ⭐️ (1 star): Basic market.
+  * ⭐️⭐️⭐️⭐️⭐️ (5 stars): Market urgently needing liquidity $\rightarrow$ Highest points quota.
+* **Random Snapshot Mechanism**: The system takes continuous per-minute order book snapshots to calculate liquidity volume and distribute proportional PP/hr.
+* **4 Critical Conditions for Earning LP Points**:
+  1. **Meet Minimum Order Size**: Each market has a minimum order size requirement (e.g., 10–50 shares). Orders that are too small are ignored.
+  2. **Tight Spread**: Keep the gap between Bid and Ask below the maximum allowed threshold.
+  3. **Two-Sided Orders**: Place both **YES** and **NO** orders (or Bid and Ask) simultaneously to earn maximum points.
+  4. **Distance to Midpoint**: The **closer your order is to the current market price**, the higher the points multiplier.
 
 ---
 
-### ⚡ 2. Các Cơ Chế Tăng Tốc Điểm Khác:
-* 🌟 **PP Boosted Markets (Huy hiệu Vàng)**: Mỗi thời điểm có tối đa **6 thị trường được gắn cờ Boost**. Cung cấp thanh khoản tại các thị trường này giúp bạn thu hoạch lượng PP vượt trội so với thị trường tiêu chuẩn.
-* 📈 **Trading & Position Holding**: Các giao dịch khớp lệnh thực tế và việc duy trì vị thế mở (holding) cũng được hệ thống ghi nhận điểm tích luỹ hàng tuần.
-* 💰 **Yield Độc Quyền Từ Venus Protocol**: Tiền thế chấp USDT của các vị thế đang chờ giải quyết tự động sinh lãi suất DeFi qua Venus Protocol. Người dùng nhận lãi hàng tuần ngay trong trang **Portfolio** (phí quản lý 10%).
-* 🤝 **Chương Trình Giới Thiệu (Referral Program)**: Sau khi nạp tối thiểu **$10 USDT**, bạn mở khóa Invite Code. Bạn nhận vĩnh viễn **10% phí giao dịch (bằng USDT)** và **10% tổng số Predict Points** mà người được mời kiếm được.
-* 🎁 **Reserved Points**: Những ví từng có lịch sử tương tác tại Polymarket, Opinion Labs, Aster... có thể được hệ thống ghi nhận một lượng điểm dự phóng khi tạo tài khoản.
+### ⚡ 2. Other Point Acceleration Mechanisms:
+* 🌟 **PP Boosted Markets (Gold Badge)**: At any given time, up to **6 markets are flagged as Boosted**. Providing liquidity at these markets earns a significantly higher PP/hr rate.
+* 📈 **Trading & Position Holding**: Actual matched trades and maintaining open positions (holding) are also recorded by the system for additional Trading Points and Holding Points.
+* 💰 **Exclusive Yield from Venus Protocol**: Collateral USDT from pending positions automatically earns DeFi yield via Venus Protocol — you earn while you wait.
+* 🤝 **Referral Program**: After depositing a minimum of **$10 USDT**, you unlock your Invite Code. You permanently receive **10% of referred users' PP** (no expiration) and they get a **10% fee discount**.
+* 🎁 **Reserved Points**: Wallets with historical activity on Polymarket, Opinion Labs, Aster, etc., may receive Reserved Points from the system as early recognition.
 
 ---
 
-### 🗓️ Lịch Trình Phân Phối Điểm:
-* Chu kỳ tính điểm diễn ra **hàng tuần**.
-* Sau khi chu kỳ tuần kết thúc, hệ thống cần thời gian xử lý khoảng **2–3 ngày (hoặc 5–6 ngày trong các đợt cao điểm)** để điểm chính thức hiển thị trên tài khoản và cập nhật Bảng xếp hạng Leaderboard.
+### 🗓️ Points Distribution Schedule:
+* The points cycle runs **weekly**.
+* After the weekly cycle ends, the system takes approximately **2–3 days (or 5–6 days during peak periods)** to process before points appear in your account.
 
 ---
 
-## 🎯 4. CẨM NANG HƯỚNG DẪN TỪNG BƯỚC FARM PREDICT POINTS (STEP-BY-STEP PLAYBOOK)
+## 🎯 4. STEP-BY-STEP PREDICT POINTS FARMING PLAYBOOK
 
-### 📌 Bước 1: Tạo Tài Khoản Smart Wallet & Nạp USDT
-1. Truy cập trang chính thức: 👉 **[predict.fun](https://predict.fun)**
-2. Đăng ký thông qua tài khoản Google, X hoặc kết nối ví Web3 cá nhân (MetaMask/Rabby).
-3. Hệ thống tích hợp **Privy + ZeroDev** sẽ tự động tạo một ví hợp đồng thông minh (**Smart Contract Wallet**) độc quyền cho bạn mà không cần quản lý seed phrase hay trả phí gas phê duyệt token (gasless approvals).
-4. Bấm **Deposit** ở góc phải $\rightarrow$ Nạp USDT mạng BNB Chain (cổng Fun.xyz nạp cực nhanh chỉ mất **10 giây**).
-
----
-
-### 📌 Bước 2: Săn Thị Trường Boosted & Points Active
-1. Vào tab **Explore** (hoặc lướt danh sách thị trường ở trang chủ).
-2. Lọc các thị trường có huy hiệu vàng **PP Boosted** và dấu **Points Active**.
-3. Ưu tiên các thị trường có mức đánh giá từ **3 đến 5 sao** để hưởng tốc độ cộng điểm PP/hr cao nhất.
+### 📌 Step 1: Create Smart Wallet & Deposit USDT
+1. Visit the official site: 👉 **[predict.fun](https://predict.fun)**
+2. Sign up via Google, X account, or connect a personal Web3 wallet (MetaMask/Rabby).
+3. The **Privy + ZeroDev** integration will automatically create a dedicated **Smart Contract Wallet** for you (no seed phrase to manage).
+4. Click **Deposit** in the top-right corner $\rightarrow$ Deposit USDT on BNB Chain (the Fun.xyz gateway is extremely fast — just **10 seconds**).
 
 ---
 
-### 📌 Bước 3: Đặt Lệnh Limit Cung Cấp Thanh Khoản (Chiến Thuật Hai Phía)
-1. Mở chi tiết thị trường bạn đã chọn (ví dụ: BTC Up or Down 5m, hoặc World Cup/Elections).
-2. Chuyển chế độ đặt lệnh sang **Limit Order** (không dùng Market Order vì phí cao và ít điểm).
-3. **Chiến thuật đặt lệnh an toàn**:
-   * Đặt 1 lệnh mua YES ở mức giá sát ngay dưới giá thị trường (ví dụ giá thị trường đang 50¢ thì đặt 48¢–49¢).
-   * Đặt 1 lệnh mua NO ở mức giá đối ứng tương đương.
-   * Đảm bảo quy mô mỗi lệnh vượt qua mức tối thiểu (Minimum Size) hiển thị trên form.
-4. Giữ lệnh luôn ở trạng thái **Live (đang chờ khớp)** trên sổ lệnh. Lệnh tồn tại càng lâu qua các đợt snapshot theo phút thì điểm cộng dồn càng lớn.
+### 📌 Step 2: Hunt Boosted & Points Active Markets
+1. Go to the **Explore** tab (or browse the market list on the homepage).
+2. Filter for markets with the gold **PP Boosted** badge and **Points Active** indicator.
+3. Prioritize markets rated **3 to 5 stars** for the highest PP/hr accumulation rate.
 
 ---
 
-### 📌 Bước 4: Chiến Lược Quản Trị Rủi Ro Khớp Lệnh (Hedging)
-* Khi bạn đặt lệnh limit sát giá thị trường để tối đa hóa điểm, sẽ có lúc lệnh của bạn bị người khác khớp (matched/filled).
-* **Cách xử lý**:
-  * Nếu lệnh bị fill, bạn trở thành người nắm giữ vị thế (Holding) và tiếp tục được nhận điểm Holding + lãi suất DeFi từ Venus Protocol.
-  * Nếu không muốn giữ rủi ro kết quả thị trường, bạn có thể sang **Polymarket** mở một vị thế đối ứng ngược lại để phòng hộ (Hedge), giữ cho tổng vốn được bảo toàn nguyên vẹn trong khi vẫn farm được điểm ở cả hai bên!
+### 📌 Step 3: Place Limit Orders to Provide Liquidity (Two-Sided Strategy)
+1. Open the detail view of your chosen market (e.g., BTC Up or Down 5m, or World Cup/Elections).
+2. Switch order mode to **Limit Order** (avoid Market Order — higher fees and fewer points).
+3. **Safe order placement strategy**:
+   * Place 1 YES buy order just below the current market price (e.g., if market is at 50¢, place at 48¢–49¢).
+   * Place 1 NO buy order at the corresponding price on the other side.
+   * Ensure each order size exceeds the Minimum Size shown on the form.
+4. Keep orders in **Live (pending)** status on the order book. The longer orders persist across per-minute snapshots, the more LP Points you accumulate.
 
 ---
 
-### 📌 Bước 5: Mở Khóa Invite Link & Nhận Lãi Venus Hàng Tuần
-1. Nạp tối thiểu **$10** để hệ thống kích hoạt trang **Invite**.
-2. Lấy liên kết giới thiệu chia sẻ cho bạn bè để nhận thêm **10% PP thụ động**.
-3. Định kỳ hàng tuần vào trang **Portfolio** để bấm **Claim Yield** từ Venus Protocol và kiểm tra điểm thưởng mới được cộng.
+### 📌 Step 4: Order Fill Risk Management (Hedging)
+* When you place limit orders close to the market price to maximize points, your orders may occasionally get matched (filled) by others.
+* **How to handle**:
+  * If your order gets filled, you become a position holder (Holding) and continue earning Holding Points + DeFi yield from Venus Protocol.
+  * If you don't want exposure to the market outcome, you can go to **Polymarket** and open a corresponding opposite position to hedge (Hedging).
 
 ---
 
-## 🛡️ 5. CẢNH BÁO AN TOÀN, NGUYÊN TẮC FAIR PLAY & THỨ TỰ ƯU TIÊN
-
-### ⚠️ Quy Tắc Fair Play Bắt Buộc (Tránh Bị Reset Điểm Về 0):
-* ❌ **Tuyệt đối không đặt lệnh giả (Non-executable orders)**: Các hành vi đặt lệnh rồi hủy ngay lập tức (cancellation abuse), hoặc đặt lệnh với số dư ảo/thao túng số dư sẽ bị hệ thống quét và **RESET TOÀN BỘ SỐ ĐIỂM PP VỀ 0**.
-* ❌ **Không tự cắn lệnh (Self-trading)**: Không tạo nhiều ví để tự giao dịch với chính mình.
-* ⚖️ Predict.fun thực hiện các đợt truy quét (ban waves) định kỳ dựa trên dữ liệu lịch sử on-chain để loại bỏ các tài khoản gian lận trước khi phân bổ airdrop.
+### 📌 Step 5: Unlock Invite Link & Claim Venus Yield Weekly
+1. Deposit a minimum of **$10** to unlock the **Invite** page.
+2. Share your referral link with friends to earn an additional **10% PP passively**.
+3. Visit the **Portfolio** page weekly to click **Claim Yield** from Venus Protocol and check for newly credited points.
 
 ---
 
-### 📊 Bảng Thứ Tự Ưu Tiên Hành Động
+## 🛡️ 5. SAFETY WARNINGS, FAIR PLAY RULES & PRIORITY ORDER
 
-| Thứ Tự | Hành Động Cụ Thể | Mục Tiêu & Lợi Thế Chiến Lược |
+### ⚠️ Mandatory Fair Play Rules (Avoid Having Points Reset to Zero):
+* ❌ **Never place fake orders (Non-executable orders)**: Placing orders then immediately cancelling (cancellation abuse), or submitting orders that can never be filled, will trigger the system's anti-gaming detection.
+* ❌ **No self-trading**: Do not create multiple wallets to trade with yourself.
+* ⚖️ Predict.fun runs periodic ban waves based on historical on-chain data to remove accounts that game the system.
+
+---
+
+### 📊 Priority Action Table
+
+| Priority | Specific Action | Goal & Strategic Advantage |
 | :---: | :--- | :--- |
-| **1** | Đăng ký tài khoản trên [predict.fun](https://predict.fun) & Nạp USDT trên BNB Chain | Kích hoạt Smart Wallet, nhận tiền trong 10s không cần gas |
-| **2** | Chọn các thị trường **PP Boosted** và xếp hạng **3–5 sao** | Đạt tỷ lệ cộng điểm PP/hr cao nhất nền tảng |
-| **3** | Đặt Limit order cả 2 phía (YES & NO) với spread hẹp sát Midpoint | Tối ưu hóa 100% công thức tính điểm LP Points |
-| **4** | Giữ lệnh live liên tục, chỉ điều chỉnh khi giá thị trường dịch chuyển lớn | Đảm bảo xuất hiện trong toàn bộ các snapshot theo phút |
-| **5** | Lấy link Invite mở rộng mạng lưới & Kiểm tra Leaderboard hàng tuần | Nhận thêm 10% PP thụ động và theo dõi vị thế trước khi TGE |
+| **1** | Register on [predict.fun](https://predict.fun) & Deposit USDT on BNB Chain | Activate Smart Wallet, receive deposited funds and unlock all features |
+| **2** | Choose **PP Boosted** markets rated **3–5 stars** | Achieve the highest PP/hr accumulation rate on the platform |
+| **3** | Place limit orders on both sides (YES & NO) with tight spread near Midpoint | Fully optimize the LP Points scoring formula |
+| **4** | Keep orders live continuously, adjust only when market price moves significantly | Ensure presence in all per-minute snapshots |
+| **5** | Get Invite link to expand your network & check Leaderboard weekly | Earn an extra 10% passive PP and track your position before the token snapshot |
 
 ---
 
-## 🌐 6. TỔNG HỢP DANH SÁCH HYPERLINKS THAM KHẢO CHÍNH THỨC
+## 🌐 6. OFFICIAL REFERENCE LINKS
 
-* 🚀 **Predict Web App (Tham gia ngay)**: [predict.fun](https://predict.fun)
-* 🎁 **Trang Bảng Điểm Predict Points**: [predict.fun/points](https://predict.fun/points)
-* 🧭 **Khám Phá Thị Trường (Explore)**: [predict.fun/explore](https://predict.fun/explore)
-* 🐦 **Kênh X (Twitter) chính thức**: [@predictdotfun](https://x.com/predictdotfun)
-* 👤 **Tài Khoản Founder dingaling**: [@dingalingts](https://x.com/dingalingts)
-* 📚 **Tài Liệu Hướng Dẫn (Docs)**: [docs.predict.fun](https://docs.predict.fun)
-* 🪙 **Chi tiết cơ chế tính điểm PP**: [docs.predict.fun/the-basics/how-to-earn-points](https://docs.predict.fun/the-basics/how-to-earn-points)
-* 📈 **Cơ chế Boosted PP Markets**: [docs.predict.fun/knowledge-base/boosted-pp-markets](https://docs.predict.fun/knowledge-base/boosted-pp-markets)
-* 🌾 **Cơ chế Sinh Lời Yield Venus Protocol**: [docs.predict.fun/the-basics/yields](https://docs.predict.fun/the-basics/yields)
-* 🤝 **Chương trình Mời Bạn Bè (Invites)**: [docs.predict.fun/knowledge-base/invites](https://docs.predict.fun/knowledge-base/invites)
+* 🚀 **Predict Web App (Join now)**: [predict.fun](https://predict.fun)
+* 🎁 **Predict Points Dashboard**: [predict.fun/points](https://predict.fun/points)
+* 🧭 **Market Explorer**: [predict.fun/explore](https://predict.fun/explore)
+* 🐦 **Official X (Twitter) Channel**: [@predictdotfun](https://x.com/predictdotfun)
+* 👤 **Founder dingaling Account**: [@dingalingts](https://x.com/dingalingts)
+* 📚 **Documentation (Docs)**: [docs.predict.fun](https://docs.predict.fun)
+* 🪙 **PP Scoring Mechanism Details**: [docs.predict.fun/the-basics/how-to-earn-points](https://docs.predict.fun/the-basics/how-to-earn-points)
+* 📈 **Boosted PP Markets Mechanism**: [docs.predict.fun/knowledge-base/boosted-pp-markets](https://docs.predict.fun/knowledge-base/boosted-pp-markets)
+* 🌾 **Venus Protocol Yield Mechanism**: [docs.predict.fun/the-basics/yields](https://docs.predict.fun/the-basics/yields)
+* 🤝 **Friend Referral Program (Invites)**: [docs.predict.fun/knowledge-base/invites](https://docs.predict.fun/knowledge-base/invites)
 * 🐙 **GitHub Repository**: [github.com/ThanaLamth/Tinyfish-review](https://github.com/ThanaLamth/Tinyfish-review)

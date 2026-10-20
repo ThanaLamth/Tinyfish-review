@@ -248,33 +248,33 @@ The AI narrative is NEAR's strongest hand in 2026. Whether "blockchain for AI ag
 
 ---
 
-## 📖 Giải Thích Thuật Ngữ
+## 📖 Glossary of Technical Terms
 
-Danh sách các thuật ngữ kỹ thuật xuất hiện trong bài review này, giải thích theo ngôn ngữ đơn giản:
+A list of technical terms appearing in this review, explained in plain language:
 
-| Thuật ngữ | Giải thích |
-|-----------|-----------|
-| **Layer 1 (L1)** | Blockchain nền tảng cơ sở — lớp đầu tiên và cơ bản nhất trong kiến trúc blockchain. NEAR Protocol là L1, giống như Ethereum, Solana, hay Bitcoin. Mọi giao dịch cuối cùng đều được xác nhận tại lớp này. |
-| **TPS (Transactions Per Second)** | Số giao dịch blockchain xử lý được mỗi giây. NEAR thiết kế cho 1M TPS lý thuyết nhờ sharding; thực tế live đang ở ~6 TPS tại thời điểm review (blockchain chưa đạt tải tối đa). |
-| **Sharding** | Kỹ thuật chia blockchain thành nhiều "mảnh" (shard) xử lý song song. Thay vì mọi node xử lý mọi giao dịch, mỗi shard xử lý một tập con giao dịch — cho phép tăng TPS tuyến tính theo số shard. |
-| **Validator** | Máy tính/node tham gia xác nhận giao dịch và tạo block mới. NEAR có 421 active validator, mỗi validator cần stake một lượng NEAR tối thiểu để tham gia. |
-| **Staking** | Khóa coin vào protocol để hỗ trợ bảo mật mạng lưới và nhận phần thưởng. Người stake NEAR được chia sẻ phần thưởng inflation (~5%/năm) từ protocol. |
-| **Block Time** | Thời gian trung bình để blockchain tạo một block mới. NEAR: ~0.594 giây — rất nhanh, giúp giao dịch xác nhận nhanh hơn Ethereum (12 giây) hay Bitcoin (10 phút). |
-| **Finality** | Thời điểm một giao dịch được xác nhận vĩnh viễn và không thể đảo ngược. NEAR đạt finality trong ~1.2 giây — nghĩa là sau 1.2 giây, giao dịch của bạn là chắc chắn và an toàn. |
-| **Gas / Gas Fee** | Phí giao dịch trả cho validator để xử lý giao dịch của bạn. NEAR cực kỳ rẻ — phí giao dịch thường dưới $0.001. |
-| **TGas (Tera-Gas)** | Đơn vị đo lượng tính toán trong NEAR Protocol. 1 TGas = 10¹² gas units. Phí gas trên NearBlocks hiển thị là 0.0001 NEAR/TGas. |
-| **TVL (Total Value Locked)** | Tổng giá trị tài sản đang bị "khóa" trong các giao thức DeFi. NEAR có $221.26M TVL — thấp so với vốn hóa $6B+, tỷ lệ TVL/MCap chỉ ~3.7%. |
-| **APY (Annual Percentage Yield)** | Lãi suất hàng năm tính cả lãi kép. RHEA Finance hiển thị APY 632% — đây là con số từ liquidity mining emission, không phải lãi thật từ phí giao dịch, và sẽ giảm khi incentive cạn. |
-| **Liquidity Mining** | Cơ chế protocol phát thưởng token cho người cung cấp thanh khoản. APY cao bất thường (như 632%) thường là do liquidity mining — sẽ giảm dần khi token thưởng cạn hoặc có nhiều người tham gia hơn. |
-| **DeFi (Decentralized Finance)** | Tài chính phi tập trung — các dịch vụ tài chính (cho vay, giao dịch, kiếm lãi) chạy trên smart contract blockchain, không cần ngân hàng hay trung gian. |
-| **TEE (Trusted Execution Environment)** | Môi trường thực thi bảo mật được cách ly ở cấp phần cứng — dữ liệu xử lý bên trong TEE không thể bị đọc ngay cả bởi người vận hành server. NEAR AI dùng Intel TDX + NVIDIA GPU TEE để chạy AI model mà không ai có thể đọc dữ liệu đầu vào. |
-| **Hardware-signed proof** | Bằng chứng mật mã được ký bởi chip phần cứng TEE, xác minh rằng kết quả AI thực sự được tính toán trong môi trường bảo mật — không thể giả mạo bởi nhà cung cấp dịch vụ. |
-| **NEAR Intents** | Hệ thống cho phép người dùng mô tả "ý định" giao dịch (ví dụ: "tôi muốn đổi 100 USDC sang ETH với giá tốt nhất") và để các solver cạnh tranh thực hiện giao dịch đó. Kiến trúc khác với DEX truyền thống. |
-| **FDV (Fully Diluted Valuation)** | Vốn hóa tính theo tổng cung tối đa (kể cả coin chưa phát hành). Với NEAR, FDV = MCap vì supply là vô hạn (inflationary) — không có "token bị khóa" chưa unlock. |
-| **Inflationary supply** | Mô hình cung token không có giới hạn tối đa — protocol liên tục phát hành coin mới (NEAR ~5%/năm) để thưởng cho validator và staker. Khác với Bitcoin có tổng cung cố định 21M. |
-| **Open Interest (OI)** | Tổng giá trị các vị thế hợp đồng tương lai (futures/perp) đang mở chưa được đóng lại. NEAR có $2.473B Perps OI — cao, cho thấy có nhiều trader đang bet vào NEAR với đòn bẩy. |
-| **Human-readable account** | Hệ thống đặt tên tài khoản NEAR theo dạng `tenban.near` thay vì chuỗi ký tự hex như `0x742d35Cc...`. Dễ nhớ và ít sai địa chỉ hơn. |
-| **CertiK** | Công ty audit bảo mật smart contract chuyên nghiệp. NEAR có CertiK score 4.5/5 — mức đánh giá bảo mật tốt. |
-| **Market Cap (Vốn hóa)** | Tổng giá trị của tất cả coin đang lưu thông = Giá × Số coin đang lưu hành. NEAR: ~$4.68 × 1.308B = ~$6.12B. |
-| **Block Explorer** | Website tra cứu giao dịch, ví, và block trên blockchain. NearBlocks (nearblocks.io) là block explorer chính thức của NEAR. |
-| **AI Agent** | Chương trình AI tự động thực hiện các tác vụ phức tạp theo mục tiêu được giao (không cần nhập lệnh từng bước). NEAR đang positioning như blockchain cho "economy of AI agents". |
+| Term | Explanation |
+|------|-------------|
+| **Layer 1 (L1)** | The base blockchain layer — the first and most fundamental layer in the architecture. NEAR Protocol is an L1, like Ethereum, Solana, or Bitcoin. All transactions are ultimately confirmed at this layer. |
+| **TPS (Transactions Per Second)** | The number of transactions the blockchain processes per second. NEAR is designed for 1M TPS theoretically through sharding; the live network was at ~6 TPS at time of review (chain has not yet reached its maximum). |
+| **Sharding** | A technique that splits the blockchain into multiple "shards" that process transactions in parallel. Instead of every node processing every transaction, each shard handles a subset — enabling TPS to scale linearly with the number of shards. |
+| **Validator** | A computer/node that participates in confirming transactions and creating new blocks. NEAR has 421 active validators; each must stake a minimum amount of NEAR to participate. |
+| **Staking** | Locking coins into the protocol to support network security and earn rewards. NEAR stakers share in inflation rewards (~5%/year) from the protocol. |
+| **Block Time** | Average time for the blockchain to produce a new block. NEAR: ~0.594s — very fast, with confirmations quicker than Ethereum (12s) or Bitcoin (10 min). |
+| **Finality** | The point at which a transaction is permanently confirmed and cannot be reversed. NEAR reaches finality in ~1.2 seconds — meaning after 1.2s, your transaction is certain and safe. |
+| **Gas / Gas Fee** | Transaction fee paid to validators for processing your transaction. NEAR is extremely cheap — fees are typically under $0.001. |
+| **TGas (Tera-Gas)** | Unit of computation in NEAR Protocol. 1 TGas = 10¹² gas units. The gas price on NearBlocks is shown as 0.0001 NEAR/TGas. |
+| **TVL (Total Value Locked)** | Total value of assets "locked" in DeFi protocols. NEAR has $221.26M TVL — low relative to its $6B+ market cap; TVL/MCap ratio is only ~3.7%. |
+| **APY (Annual Percentage Yield)** | Annual interest rate including compounding. RHEA Finance shows 632% APY — this is driven by liquidity mining emissions, not real fees, and will decrease as incentives run out. |
+| **Liquidity Mining** | Protocol mechanism rewarding token holders for providing liquidity. Unusually high APY (like 632%) typically reflects liquidity mining — it will fall as reward tokens deplete or more participants join. |
+| **DeFi (Decentralized Finance)** | Financial services (lending, trading, yield) running on smart contracts without banks or intermediaries. |
+| **TEE (Trusted Execution Environment)** | A secure computing environment isolated at the hardware level — data processed inside a TEE cannot be read even by the server operator. NEAR AI uses Intel TDX + NVIDIA GPU TEE to run AI models with no one able to read the input data. |
+| **Hardware-signed proof** | A cryptographic proof signed by TEE hardware, verifying that an AI result was genuinely computed inside the secure environment — cannot be faked by the service provider. |
+| **NEAR Intents** | A system allowing users to express transaction "intent" (e.g., "I want to swap 100 USDC for ETH at the best rate") and let solvers compete to execute it. A different architecture from traditional DEXs. |
+| **FDV (Fully Diluted Valuation)** | Market cap calculated on maximum total supply. For NEAR, FDV = MCap because the supply is unlimited (inflationary) — there are no "locked tokens" yet to unlock. |
+| **Inflationary supply** | A token model with no hard cap — the protocol continuously issues new coins (NEAR ~5%/year) to reward validators and stakers. Different from Bitcoin's fixed 21M supply. |
+| **Open Interest (OI)** | Total value of open futures/perp positions. NEAR has $2.473B in Perps OI — high, indicating many traders are using leveraged bets on NEAR. |
+| **Human-readable account** | NEAR's account naming system uses names like `yourname.near` instead of hex strings like `0x742d35Cc...`. Easier to remember and less prone to address errors. |
+| **CertiK** | Professional smart contract security audit firm. NEAR has a CertiK score of 4.5/5 — indicating a strong security rating. |
+| **Market Cap** | Total value of all circulating coins = Price × Circulating Supply. NEAR: ~$4.68 × 1.308B = ~$6.12B. |
+| **Block Explorer** | Website for looking up transactions, wallets, and blocks on the blockchain. NearBlocks (nearblocks.io) is NEAR's official block explorer. |
+| **AI Agent** | An AI program that autonomously executes complex tasks toward a given goal (without step-by-step instructions). NEAR is positioning itself as the blockchain for the "economy of AI agents." |

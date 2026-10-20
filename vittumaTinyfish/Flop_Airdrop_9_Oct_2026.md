@@ -1,118 +1,118 @@
 # Flop Airdrop 9 Oct 2026 - Comprehensive Review & Step-by-Step Execution Guide
 
-> **Báo cáo Phân tích, Kiểm chứng Dữ liệu Trực tiếp qua TinyFish CLI & Hướng dẫn Chi tiết Săn Airdrop Flop Network**  
-> *Ngày tạo: 09 Tháng 10, 2026*
+> **Direct Data Analysis & Verification via TinyFish CLI, plus Detailed Step-by-Step Flop Network Airdrop Guide**  
+> *Created: October 9, 2026*
 
 ---
 
-## 🌐 1. TRẢI NGHIỆM THỰC TẾ & XÁC MINH DỮ LIỆU QUA TINYFISH CLI
+## 🌐 1. LIVE EXPERIENCE & DATA VERIFICATION VIA TINYFISH CLI
 
-Thông qua công cụ **TinyFish CLI** (`fetch` và `search`), dữ liệu từ các trang chính thức của Flop Network đã được trích xuất và kiểm chứng trực tiếp:
+Using **TinyFish CLI** (`fetch` and `search` commands), data from Flop Network's official pages was extracted and verified directly:
 
-* **Trang chủ**: [flop.finance](https://flop.finance/)
+* **Homepage**: [flop.finance](https://flop.finance/)
 * **Airdrop Rules**: [flop.finance/airdrop](https://flop.finance/airdrop)
 * **Testnet Spec**: [flop.finance/testnet](https://flop.finance/testnet)
-* **X / Twitter chính thức**: [@flop_labs](https://x.com/flop_labs) và Co-founder Arthur Hayes [@CryptoHayes](https://x.com/CryptoHayes)
+* **Official X / Twitter**: [@flop_labs](https://x.com/flop_labs) and Co-founder Arthur Hayes [@CryptoHayes](https://x.com/CryptoHayes)
 
-### 📸 Hình ảnh Giao diện & Dẫn chứng Trực quan
+### 📸 Interface Screenshots & Visual Evidence
 
-#### 🖼️ Screenshot 1: Trang chủ Flop Finance (`flop.finance`)
+#### 🖼️ Screenshot 1: Flop Finance Homepage (`flop.finance`)
 ![Flop Finance Homepage](./screenshots/flop_homepage.jpg)
 
-#### 🖼️ Screenshot 2: Bảng Quản trị & Phân bổ Airdrop (`flop.finance/airdrop`)
+#### 🖼️ Screenshot 2: Airdrop Management Dashboard (`flop.finance/airdrop`)
 ![Flop Airdrop Dashboard](./screenshots/flop_airdrop_dashboard.jpg)
 
 ---
 
-## 🏆 2. CHI TIẾT 2 CUỘC THI PRE-TESTNET ĐANG DIỄN RA
+## 🏆 2. DETAILS OF 2 ACTIVE PRE-TESTNET COMPETITIONS
 
-Flop Labs và Arthur Hayes đã triển khai 2 cuộc thi thử nghiệm tiền-Testnet trên môi trường **Technocore** (`technocore.chat`). Đây là các tiêu chí quan trọng để nhận thưởng $FLOP sớm:
+Flop Labs and Arthur Hayes launched 2 pre-Testnet trial competitions on the **Technocore** environment (`technocore.chat`). These are the first officially announced airdrop qualification activities:
 
-### 🏆 Cuộc thi 1: NVDA Perp Prediction Contest (1,000,000 $FLOP)
-* **Dẫn chứng Tweet Gốc**: [Arthur Hayes (@CryptoHayes) on X](https://x.com/CryptoHayes/status/2103453504513937720) (Ngày 25/09/2026).
-* **Nội dung**: Các AI Agent dự đoán giá hợp đồng phái sinh **NVDA perp** trên **Hyperliquid** vào ngày 04/10/2026. Các Agent tự động đọc luật, nhận đồng tiền giao dịch và thực hiện trade tự động trên Technocore.
-* **Giải thưởng**: **1,000,000 $FLOP** cho Top 3 Agent có PnL cao nhất (trao giải khi Mainnet ra mắt).
+### 🏆 Competition 1: NVDA Perp Prediction Contest (1,000,000 $FLOP)
+* **Source Tweet Evidence**: [Arthur Hayes (@CryptoHayes) on X](https://x.com/CryptoHayes/status/2103453504513937720) (September 25, 2026).
+* **Description**: AI Agents predict the **NVDA perp** price on **Hyperliquid** on October 4, 2026. Agents autonomously read the rules, receive trading funds, and execute automated trades on Technocore.
+* **Prize**: **1,000,000 $FLOP** for the Top 3 Agents with the highest PnL (awarded at Mainnet launch).
 
-### ✍️ Cuộc thi 2: 100,000 $FLOP Sonnet Challenge
-* **Dẫn chứng Tweet Gốc**: [Flop Labs (@flop_labs) on X](https://x.com/flop_labs/status/2098307911948890489) (Ngày 11/09 - 18/09/2026).
-* **Nội dung**: Các AI Agent lập nhóm 4–8 Agents để cùng viết một bài thơ Sonnet (mỗi lượt/turn viết 1 từ). Yêu cầu có DID đăng ký từ trước (Pre-start DID).
-* **Giải thưởng**: **100,000 $FLOP** (50,000 $FLOP cho Team thắng + 50,000 $FLOP chia cho người dùng bình chọn/Voters).
+### ✍️ Competition 2: 100,000 $FLOP Sonnet Challenge
+* **Source Tweet Evidence**: [Flop Labs (@flop_labs) on X](https://x.com/flop_labs/status/2098307911948890489) (September 11–18, 2026).
+* **Description**: AI Agents form groups of 4–8 to collaboratively write a Sonnet poem (each turn writes 1 word). Requires a pre-registered DID (Pre-start DID).
+* **Prize**: **100,000 $FLOP** (50,000 $FLOP for the winning team + 50,000 $FLOP split among voters).
 
 ---
 
-## 📊 3. TỔNG QUAN ALLOCATION & CƠ CHẾ UNLOCK GENESIS (4.4 TỶ $FLOP)
+## 📊 3. GENESIS ALLOCATION OVERVIEW & UNLOCK MECHANISM (4.4 BILLION $FLOP)
 
-* **Tổng Genesis Pool**: **4,400,000,000 $FLOP** (~24.3% tổng cung năm thứ 10).
-* **Mô hình Launch**: **100% Fair Launch** (No Pre-sale, No VCs).
+* **Total Genesis Pool**: **4,400,000,000 $FLOP** (~24.3% of year-10 total supply).
+* **Launch Model**: **100% Fair Launch** (No Pre-sale, No VCs).
 
-| Vai Trò | Pool Allocation | Công Thức Tính | Cơ Chế Unlock (Unlock Terms) | Link Nộp Form |
+| Role | Pool Allocation | Calculation Formula | Unlock Terms | Application Form |
 | :--- | :--- | :--- | :--- | :--- |
-| **Miner (GPU)** | 1.2 Tỷ $FLOP | Pro-rata theo compute đã verify (FLOPs) | 🟢 **25% Liquid** lúc Genesis; 75% còn lại unlock 1:1 theo $FLOP phí inference Mainnet | [Apply Miner](https://flop.finance/apply/miner) |
-| **Agent (User/Bot)** | 1.2 Tỷ $FLOP | Pro-rata theo compute đã mua trong session settled + Contests | 🔒 Khóa 100%. Mở khóa 3:1 (Tiêu 3 $FLOP khóa vào compute để mở 1 $FLOP liquid) | N/A (Dùng DID) |
-| **Validator** | 1.2 Tỷ $FLOP | Top 1,000 ranking Testnet (1.2M FLOP/ghế) | 🔒 Khóa làm Bond thế chấp đến Halving 1 (~2 năm), mở dần 1 validator/ngày trong 1,000 ngày | [Apply Validator](https://flop.finance/apply/validator) |
-| **Ecosystem** | 800 Triệu $FLOP | Creator, referral, builder, security reports, Sonnet Voters | Phân bổ theo các chương trình phát triển mạng lưới | [Apply Creator](https://flop.finance/apply/kol) |
+| **Miner (GPU)** | 1.2B $FLOP | Pro-rata by verified compute (FLOPs) | 🟢 **25% Liquid** at Genesis; remaining 75% unlocks 1:1 as $FLOP inference fees are paid on Mainnet | [Apply Miner](https://flop.finance/apply/miner) |
+| **Agent (User/Bot)** | 1.2B $FLOP | Pro-rata by compute purchased in settled sessions + Contests | 🔒 100% locked. Unlocks 3:1 (spend 3 locked $FLOP on compute to unlock 1 liquid $FLOP) | N/A (Use DID) |
+| **Validator** | 1.2B $FLOP | Top 1,000 Testnet ranking (1.2M FLOP/slot) | 🔒 Locked as Bond collateral until Halving 1 (~2 years), then unlocking 1 validator/day over 1,000 days | [Apply Validator](https://flop.finance/apply/validator) |
+| **Ecosystem** | 800M $FLOP | Creators, referrals, builders, security reports, Sonnet Voters | Distributed via network development programs | [Apply Creator](https://flop.finance/apply/kol) |
 
 ---
 
-## 🎯 4. HƯỚNG DẪN CHI TIẾT CÁCH THỰC THI (HOW-TO-FARM PLAYBOOK)
+## 🎯 4. DETAILED EXECUTION GUIDE (HOW-TO-FARM PLAYBOOK)
 
 ---
 
-### 🟢 LUỒNG 1: DÀNH CHO CÁ NHÂN / DÙNG MÁY TÍNH THƯỜNG (VAI AGENT & VOTER)
-> **Dễ nhất - Không tốn GPU - Ai cũng làm được**
+### 🟢 PATH 1: FOR INDIVIDUALS / REGULAR COMPUTERS (AGENT & VOTER ROLE)
+> **Easiest path — No GPU required — Anyone can do it**
 
-1. **Tạo Định Danh DID (`did:key:...`)**:
-   * Sử dụng khoá mã hóa Ed25519 tạo khoá cặp (Public/Private Key).
-   * Định danh DID dạng `did:key:z6M...` trên [technocore.chat](https://technocore.chat/).
-   * Lưu trữ mã hoá Private Key an toàn tại máy cá nhân.
+1. **Create a DID Identity (`did:key:...`)**:
+   * Use Ed25519 cryptographic keys to generate a key pair (Public/Private Key).
+   * Create your DID in the format `did:key:z6M...` on [technocore.chat](https://technocore.chat/).
+   * Store your Private Key encrypted safely on your local machine.
 
-2. **Tham Gia Bình Chọn & Viết Nội Dung (Pre-Testnet Contests)**:
-   * Dùng DID đăng ký bầu chọn cho các bài thơ Sonnet để chia pool **50,000 $FLOP**.
-   * Cài đặt Agent tham gia các cuộc thi Trading trên Technocore để tranh giải **1,000,000 $FLOP**.
+2. **Participate in Voting & Content Creation (Pre-Testnet Contests)**:
+   * Use your DID to register and vote for Sonnet poems to share the **50,000 $FLOP** voter pool.
+   * Set up an Agent to participate in the Trading competitions on Technocore to compete for **1,000,000 $FLOP**.
 
-3. **Thực Thi Khi Testnet Q4 2026 Mở**:
-   * Rút token Testnet từ Faucet.
-   * Chạy bot tự động mua compute AI Inference trong các session settled.
-   * ⚠️ **Lưu ý**: Giữ token Faucet = 0 điểm. Chỉ lượng token thực sự tiêu vào compute mới được tính điểm airdrop.
-
----
-
-### 🚀 LUỒNG 2: DÀNH CHO NGƯỜI CÓ GPU ≥ 16GB VRAM (VAI MINER)
-> **Tiềm năng cao nhất - Nhận 25% Liquid ngay tại Genesis**
-
-1. **Chuẩn bị GPU**: Cần tối thiểu 1 GPU hoặc 1 cluster GPU có VRAM **$\ge$ 16 GB** (RTX 3090, 4090, A6000, A100 hoặc thuê GPU Cloud từ Vast.ai / RunPod).
-2. **Nộp Form**: Truy cập [flop.finance/apply/miner](https://flop.finance/apply/miner) để đăng ký thông tin phần cứng.
-3. **Chạy Node khi Testnet ra mắt**:
-   * Cài đặt Flop Miner Client.
-   * Tiến hành bước Hiệu chuẩn (Calibration) năng lực GPU FLOPs.
-   * Giữ node 24/7 phục vụ các session inference. Tính toán được xác thực (verified) mới được tính điểm.
+3. **Execute When Testnet Q4 2026 Opens**:
+   * Withdraw Testnet tokens from the Faucet.
+   * Run an automated bot to purchase AI Inference compute in settled sessions.
+   * ⚠️ **Note**: Holding Faucet tokens without spending = 0 points. Only tokens actually spent on compute count toward airdrop points.
 
 ---
 
-### 🖥️ LUỒNG 3: DÀNH CHO NGƯỜI CÓ VPS SERVER (VAI VALIDATOR)
+### 🚀 PATH 2: FOR USERS WITH GPU ≥ 16GB VRAM (MINER ROLE)
+> **Highest potential — Receive 25% Liquid immediately at Genesis**
 
-1. **Cấu hình Server**: CPU 8+ Cores, 64 GB RAM, 4 TB NVMe SSD (tối thiểu 2 TB), Mạng 1 Gbps.
-2. **Nộp Form**: Truy cập [flop.finance/apply/validator](https://flop.finance/apply/validator).
-3. **Chạy Node & Giữ Top Ranking**: Deploy Validator Node, giữ Uptime > 99.9% để lọt **Top 1,000 Ranking** giành suất **1.2 Triệu $FLOP Genesis Bond**.
-
----
-
-## 🛡️ 5. QUY TẮC CHỐNG BAN & CHỐNG FARM RÁC (ANTI-SYBIL)
-
-1. **One Participant, One Score**: Nhiều ví chung một chủ bị gộp thành 1 điểm. Hãy tập trung cho 1 DID duy nhất.
-2. **Loại Trừ Volume Nội Bộ**: Tự mua compute từ Miner do chính mình sở hữu sẽ bị loại trừ volume.
-3. **Treo Máy Rỗng = 0 Điểm**: Miner treo máy idle hoặc gian lận cấu hình không nhận được thưởng.
-4. **Cảnh Báo Scam**: Không gửi Private Key/Seed Phrase cho bất cứ ai. Dự án không có trang claim sớm.
+1. **Prepare GPU**: Requires at least 1 GPU or GPU cluster with VRAM **≥ 16 GB** (RTX 3090, 4090, A6000, A100, or rent GPU Cloud from Vast.ai / RunPod).
+2. **Submit Application**: Visit [flop.finance/apply/miner](https://flop.finance/apply/miner) to register hardware information.
+3. **Run Node When Testnet Launches**:
+   * Install the Flop Miner Client.
+   * Complete the GPU FLOPs Calibration step.
+   * Keep the node running 24/7 to serve inference sessions. Only verified compute counts toward points.
 
 ---
 
-### 🌐 DANH SÁCH HYPERLINKS THAM KHẢO
+### 🖥️ PATH 3: FOR USERS WITH A VPS SERVER (VALIDATOR ROLE)
 
-* 🚀 [Trang chủ Flop Finance](https://flop.finance/)
-* 🎁 [Quy tắc Airdrop Chính thức](https://flop.finance/airdrop)
-* ⚙️ [Thông số Testnet](https://flop.finance/testnet)
-* 📝 [Form Apply Miner](https://flop.finance/apply/miner)
-* 🖥️ [Form Apply Validator](https://flop.finance/apply/validator)
-* 📣 [Form Apply Creator / KOL](https://flop.finance/apply/kol)
+1. **Server Requirements**: 8+ Core CPU, 64 GB RAM, 4 TB NVMe SSD (minimum 2 TB), 1 Gbps network.
+2. **Submit Application**: Visit [flop.finance/apply/validator](https://flop.finance/apply/validator).
+3. **Run Node & Maintain Top Ranking**: Deploy Validator Node, maintain Uptime > 99.9% to reach **Top 1,000 Ranking** and secure a **1.2 Million $FLOP Genesis Bond** slot.
+
+---
+
+## 🛡️ 5. ANTI-BAN & ANTI-SPAM RULES (ANTI-SYBIL)
+
+1. **One Participant, One Score**: Multiple wallets with the same owner are merged into 1 score. Focus on 1 DID only.
+2. **Internal Volume Excluded**: Purchasing compute from a Miner you own yourself will have that volume excluded.
+3. **Idle Machine = 0 Points**: Miners with idle machines or falsified configuration receive no rewards.
+4. **Scam Warning**: Never share your Private Key/Seed Phrase with anyone. The project has no early claim page.
+
+---
+
+### 🌐 REFERENCE LINKS
+
+* 🚀 [Flop Finance Homepage](https://flop.finance/)
+* 🎁 [Official Airdrop Rules](https://flop.finance/airdrop)
+* ⚙️ [Testnet Specifications](https://flop.finance/testnet)
+* 📝 [Miner Application Form](https://flop.finance/apply/miner)
+* 🖥️ [Validator Application Form](https://flop.finance/apply/validator)
+* 📣 [Creator / KOL Application Form](https://flop.finance/apply/kol)
 * 🐦 [X / Twitter @flop_labs](https://x.com/flop_labs)
 * 🐦 [X / Twitter @CryptoHayes](https://x.com/CryptoHayes)

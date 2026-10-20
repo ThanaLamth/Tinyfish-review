@@ -216,30 +216,30 @@ Rank #10 by market cap is a significant statement of market confidence. Whether 
 
 ---
 
-## 📖 Giải Thích Thuật Ngữ
+## 📖 Glossary of Technical Terms
 
-Danh sách các thuật ngữ kỹ thuật xuất hiện trong bài review này, giải thích theo ngôn ngữ đơn giản:
+A list of technical terms appearing in this review, explained in plain language:
 
-| Thuật ngữ | Giải thích |
-|-----------|-----------|
-| **zk-SNARKs** | *Zero-Knowledge Succinct Non-Interactive Argument of Knowledge* — công nghệ mật mã cho phép một bên chứng minh họ biết một thông tin mà không cần tiết lộ thông tin đó. Zcash dùng zk-SNARKs để che giấu địa chỉ người gửi, người nhận, và số tiền trong các giao dịch shielded. |
-| **Shielded Address (z-address)** | Địa chỉ ví "riêng tư" của Zcash. Giao dịch giữa 2 z-address được mã hóa hoàn toàn — không ai ngoài người tham gia có thể thấy số tiền hay danh tính. Ký hiệu bắt đầu bằng `z1...` hoặc `zs1...` |
-| **Transparent Address (t-address)** | Địa chỉ ví "công khai" — hoạt động giống Bitcoin hoàn toàn, mọi giao dịch đều hiển thị trên blockchain explorer. Ký hiệu bắt đầu bằng `t1...`. Hiện tại ~71% ZEC vẫn nằm ở t-address. |
-| **PoW (Proof of Work)** | Cơ chế đồng thuận yêu cầu máy tính phải tốn điện tính toán để tạo block mới. Ai giải được bài toán toán học trước sẽ được thưởng coin. Bitcoin và ZEC đều dùng PoW. |
-| **Equihash** | Thuật toán đào coin PoW mà Zcash sử dụng. Được thiết kế để cần nhiều RAM, ban đầu nhằm chống ASIC — nhưng hiện đã có ASIC chuyên biệt cho Equihash. |
-| **ASIC** | *Application-Specific Integrated Circuit* — chip phần cứng được thiết kế chuyên biệt để đào một loại coin cụ thể, hiệu quả hơn nhiều so với GPU thông thường. Zcash hiện có ASIC từ các hãng như Bitmain (Antminer Z series). |
-| **Halving** | Sự kiện định kỳ khi phần thưởng block cho thợ đào giảm còn một nửa. Zcash halving xảy ra mỗi ~4 năm (tương tự Bitcoin), làm giảm tốc độ phát hành coin mới và tạo áp lực giảm lạm phát. |
-| **Market Cap (Vốn hóa thị trường)** | Tổng giá trị của tất cả coin đang lưu thông = Giá × Số coin đang lưu hành. ZEC: ~$1,186 × 16.975M = ~$20.1B |
-| **FDV (Fully Diluted Valuation)** | Vốn hóa tính theo tổng cung tối đa (kể cả coin chưa phát hành). Với ZEC, FDV = MCap vì gần như toàn bộ 21M coin đã được unlock — không có rủi ro pha loãng. |
-| **TVL (Total Value Locked)** | Tổng giá trị tài sản đang bị "khóa" trong các giao thức DeFi (lending, liquidity pool...). ZEC chỉ có $2.62M TVL — cho thấy đây không phải chain DeFi. |
-| **DeFi (Decentralized Finance)** | Tài chính phi tập trung — các dịch vụ tài chính (cho vay, giao dịch, kiếm lãi) chạy trên smart contract, không cần ngân hàng hay trung gian. |
-| **501(c)(3)** | Loại tổ chức phi lợi nhuận được miễn thuế tại Mỹ. Zcash Foundation là một 501(c)(3) — cho thấy đây là tổ chức từ thiện công khai, không phải công ty thương mại. |
-| **Dual Governance** | Mô hình quản trị với hai tổ chức độc lập cùng giám sát protocol: Electric Coin Company (ECC) phát triển kỹ thuật, Zcash Foundation (ZFND) giám sát hệ sinh thái. Giảm rủi ro quyền lực tập trung nhưng có thể gây chậm ra quyết định. |
-| **FROST** | *Flexible Round-Optimized Schnorr Threshold signatures* — giao thức chữ ký ngưỡng cho phép nhiều người cùng ký một giao dịch mà không cần tin tưởng lẫn nhau hoàn toàn. Zcash Foundation đang phát triển FROST để tăng bảo mật ví. |
-| **Zebra** | Node đầy đủ (full node) của Zcash viết bằng Rust, được Zcash Foundation phát triển. Chạy Zebra cho phép bạn xác minh toàn bộ blockchain Zcash độc lập. |
-| **Dev Fund** | Phần thưởng block dành cho các tổ chức phát triển Zcash (ECC, ZFND, và các grant). Hiện tại đã kết thúc sau lần halving gần nhất — thợ đào nhận 100% phần thưởng block. |
-| **Privacy coin** | Loại cryptocurrency được thiết kế đặc biệt để ẩn danh tính người giao dịch và/hoặc số tiền. ZEC, Monero (XMR), Dash là các privacy coin phổ biến. |
-| **Block Explorer** | Website cho phép tra cứu giao dịch, địa chỉ ví, và block trên blockchain. Ví dụ: zcashblockexplorer.com cho ZEC. |
-| **KYC (Know Your Customer)** | Quy trình xác minh danh tính người dùng do sàn giao dịch thực hiện, yêu cầu CMND/hộ chiếu và selfie. Zcash không yêu cầu KYC — nhưng sàn giao dịch mua/bán ZEC thì có. |
-| **Shielded withdrawal** | Khi sàn giao dịch (như Gemini) cho phép rút ZEC trực tiếp vào z-address (địa chỉ riêng tư), thay vì chỉ t-address công khai. Đây là tính năng hiếm và quan trọng với người dùng quan tâm privacy. |
-| **On-chain** | Hoạt động xảy ra trực tiếp trên blockchain, được ghi vào sổ cái bất biến. Khác với "off-chain" là các hoạt động xử lý ngoài blockchain (như giao dịch nội bộ của sàn). |
+| Term | Explanation |
+|------|-------------|
+| **zk-SNARKs** | *Zero-Knowledge Succinct Non-Interactive Argument of Knowledge* — a cryptographic proof system that lets one party prove they know something without revealing what they know. Zcash uses zk-SNARKs to hide sender, receiver, and amount in shielded transactions. |
+| **Shielded Address (z-address)** | Zcash's "private" address type. Transactions between two z-addresses are fully encrypted — no one outside the participants can see the amount or identity. Begins with `z1...` or `zs1...` |
+| **Transparent Address (t-address)** | Zcash's "public" address type — behaves exactly like Bitcoin; all transactions are visible on the blockchain explorer. Begins with `t1...`. Currently ~71% of ZEC remains at t-addresses. |
+| **PoW (Proof of Work)** | Consensus mechanism requiring computers to expend computational effort to produce a new block. Whoever solves the math puzzle first earns the block reward. Both Bitcoin and ZEC use PoW. |
+| **Equihash** | The PoW mining algorithm used by Zcash. Designed to require significant RAM, originally intended to resist ASICs — though ASIC miners for Equihash now exist. |
+| **ASIC** | *Application-Specific Integrated Circuit* — hardware chip designed exclusively for mining one type of coin, far more efficient than a standard GPU. Zcash now has ASICs from manufacturers like Bitmain (Antminer Z series). |
+| **Halving** | A scheduled event where the block reward for miners is cut in half. Zcash halvings occur roughly every 4 years (similar to Bitcoin), reducing the new coin issuance rate and creating deflationary pressure. |
+| **Market Cap** | Total value of all circulating coins = Price × Circulating Supply. ZEC: ~$1,186 × 16.975M = ~$20.1B |
+| **FDV (Fully Diluted Valuation)** | Market cap calculated on total maximum supply. For ZEC, FDV ≈ MCap because nearly all 21M coins have already been unlocked — no dilution risk. |
+| **TVL (Total Value Locked)** | Total value of assets "locked" in DeFi protocols (lending, liquidity pools, etc.). ZEC has only $2.62M TVL — confirming this is not a DeFi chain. |
+| **DeFi (Decentralized Finance)** | Financial services (lending, trading, yield) running on smart contracts, without banks or intermediaries. |
+| **501(c)(3)** | A type of US tax-exempt nonprofit organization. The Zcash Foundation is a 501(c)(3) — indicating it is a public charity, not a commercial company. |
+| **Dual Governance** | A governance model where two independent organizations jointly oversee the protocol: Electric Coin Company (ECC) for technical development and Zcash Foundation (ZFND) for ecosystem oversight. Reduces the risk of power concentration but can slow decision-making. |
+| **FROST** | *Flexible Round-Optimized Schnorr Threshold signatures* — a threshold signature protocol allowing multiple parties to jointly sign a transaction without fully trusting each other. The Zcash Foundation is developing FROST to enhance wallet security. |
+| **Zebra** | A full node implementation for Zcash written in Rust, developed by the Zcash Foundation. Running Zebra lets you independently verify the entire Zcash blockchain. |
+| **Dev Fund** | A portion of block rewards allocated to Zcash development organizations (ECC, ZFND, and grants). Now expired following the most recent halving — miners now receive 100% of block rewards. |
+| **Privacy coin** | A cryptocurrency specifically designed to anonymize transaction participants and/or amounts. ZEC, Monero (XMR), and Dash are the most prominent privacy coins. |
+| **Block Explorer** | Website for looking up transactions, addresses, and blocks on the blockchain. Example: zcashblockexplorer.com for ZEC. |
+| **KYC (Know Your Customer)** | Identity verification process — national ID/passport + selfie — carried out by exchanges. Zcash itself does not require KYC, but exchanges where you buy/sell ZEC do. |
+| **Shielded withdrawal** | When an exchange (like Gemini) allows ZEC withdrawals directly to a z-address (private address) instead of only t-addresses. A rare but important feature for privacy-conscious users. |
+| **On-chain** | Activity that occurs directly on the blockchain, recorded in the immutable ledger. Distinct from "off-chain" — activity processed outside the blockchain (such as internal exchange transactions). |

@@ -1,148 +1,144 @@
 # Axis Robotics Airdrop 13 Oct 2026 - Comprehensive Review & Step-by-Step Execution Playbook
 
-> **Báo cáo Phân tích Chuyên sâu, Dẫn chứng Hình ảnh & Cẩm nang Hướng dẫn Từng bước Săn Axis Points ($AXIS) trên Base**  
-> *Ngày cập nhật: 13 Tháng 10, 2026 | Dữ liệu kiểm chứng trực tiếp qua TinyFish CLI*
+> **In-Depth Analysis Report, Real-World Screenshots & Step-by-Step Playbook for Farming Axis Points ($AXIS) on Base**  
+> *Updated: October 13, 2026 | Data verified live via TinyFish CLI*
 
 ---
 
-## 🌐 1. TỔNG QUAN NỀN TẢNG AXIS ROBOTICS & DỮ LIỆU KIỂM CHỨNG QUA TINYFISH
+## 🌐 1. AXIS ROBOTICS PLATFORM OVERVIEW & TINYFISH-VERIFIED DATA
 
-Thông qua công cụ **TinyFish CLI** (`fetch`, `agent`, và `search`), toàn bộ thông số, dữ liệu gọi vốn và kiến trúc của Axis Robotics đã được xác thực trực tiếp từ các nguồn chính thống:
+Using **TinyFish CLI** (`fetch`, `agent`, and `search` commands), all platform parameters, fundraising data, and architecture of Axis Robotics were verified directly from primary sources:
 
-* **Định vị & Công nghệ**: **Compounding Data Engine cho Physical AI (Embodied AI)** xây dựng native trên Layer-2 **Base**. Dự án giải quyết "nút thắt cổ chai" (data bottleneck) lớn nhất của ngành robot hiện đại: thiếu hụt trầm trọng dữ liệu chuyển động và tương tác vật lý thế giới thực.
-* **Huy động vốn (Seed Round)**: **$12,000,000 USD** dẫn đầu bởi quỹ **Hack VC**, cùng sự tham gia của Nomad Capital, Pi Network Ventures, 10K Ventures.
-* **Đội ngũ nòng cốt (Core Team)**: Các nhà nghiên cứu và kỹ sư hàng đầu về AI và Robotics xuất thân từ UC Berkeley, Carnegie Mellon (CMU), UCLA, NTU và Shanghai Jiao Tong.
-* **Cơ chế thu thập dữ liệu**: Sử dụng mô phỏng vật lý **MuJoCo** chạy trực tiếp trên trình duyệt web thông qua WebAssembly / Three.js, kết hợp cùng hệ thống xử lý mở rộng IsaacSim trên server GPU.
+* **Positioning & Technology**: A **Compounding Data Engine for Physical AI (Embodied AI)** built natively on Layer-2 **Base**. The project addresses the biggest "data bottleneck" in modern robotics: the severe shortage of movement and physical-world interaction data.
+* **Fundraising (Seed Round)**: **$12,000,000 USD** led by **Hack VC**, with participation from Nomad Capital, Pi Network Ventures, and 10K Ventures.
+* **Core Team**: Leading AI and Robotics researchers and engineers from UC Berkeley, Carnegie Mellon (CMU), UCLA, NTU, and Shanghai Jiao Tong University.
+* **Data Collection Mechanism**: Uses **MuJoCo** physics simulation running directly in the web browser via WebAssembly / Three.js, combined with an IsaacSim processing system on GPU servers.
 
 ---
 
-## 📸 2. DẪN CHỨNG HÌNH ẢNH SCREENSHOTS & GIAO DIỆN THỰC TẾ
+## 📸 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
 
-Toàn bộ hình ảnh được chụp và trích xuất trực tiếp từ môi trường hoạt động thực tế của Axis Robotics bằng TinyFish & Headless Web Engine:
+All screenshots were captured directly from the live Axis Robotics environment using TinyFish & Headless Web Engine:
 
-### 🖼️ Screenshot 1: Trang chủ Axis Robotics (`axisrobotics.ai`)
+### 🖼️ Screenshot 1: Axis Robotics Homepage (`axisrobotics.ai`)
 ![Axis Robotics Homepage](./axis-screenshots/axis_landing.png)
-*Dẫn chứng website chính thức*: [axisrobotics.ai](https://axisrobotics.ai)
+*Official website evidence*: [axisrobotics.ai](https://axisrobotics.ai)
 
 ---
 
-### 🖼️ Screenshot 2: Bảng Điều Khiển Axis Hub & Onboarding Task (`hub.axisrobotics.ai`)
+### 🖼️ Screenshot 2: Axis Hub Dashboard & Onboarding Tasks (`hub.axisrobotics.ai`)
 ![Axis Hub Dashboard](./axis-screenshots/axis_hub.png)
-*Dẫn chứng trung tâm nhiệm vụ*: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
+*Task center evidence*: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
 
 ---
 
-### 🖼️ Screenshot 3: Bảng Phân Bổ Tokenomics 10% Airdrop (`docs.axisrobotics.ai/tokenomics`)
+### 🖼️ Screenshot 3: Tokenomics Allocation — 10% Airdrop (`docs.axisrobotics.ai/tokenomics`)
 ![Axis Tokenomics](./axis-screenshots/axis_docs_tokenomics.png)
-*Dẫn chứng tài liệu Tokenomics chính thức*: [docs.axisrobotics.ai/tokenomics](https://docs.axisrobotics.ai/economics-and-provenance/tokenomics)
+*Official tokenomics documentation evidence*: [docs.axisrobotics.ai/tokenomics](https://docs.axisrobotics.ai/economics-and-provenance/tokenomics)
 
 ---
 
-### 🖼️ Screenshot 4: Thuật Toán Điểm Points & Epoch Settlement (`docs.axisrobotics.ai/points`)
+### 🖼️ Screenshot 4: Points Algorithm & Epoch Settlement (`docs.axisrobotics.ai/points`)
 ![Axis Points Guide](./axis-screenshots/axis_docs_points.png)
-*Dẫn chứng tài liệu cơ chế Points*: [docs.axisrobotics.ai/points](https://docs.axisrobotics.ai/contributor-guide/points)
+*Points mechanism documentation evidence*: [docs.axisrobotics.ai/points](https://docs.axisrobotics.ai/contributor-guide/points)
 
 ---
 
-### 🖼️ Screenshot 5: Quy Trình Sign & Verify On-chain trên Base (`docs.axisrobotics.ai/sign-and-verify`)
+### 🖼️ Screenshot 5: On-chain Sign & Verify Process on Base (`docs.axisrobotics.ai/sign-and-verify`)
 ![Axis Sign and Verify](./axis-screenshots/axis_docs_sign.png)
-*Dẫn chứng tài liệu hướng dẫn ký on-chain*: [docs.axisrobotics.ai/sign-and-verify](https://docs.axisrobotics.ai/contributor-guide/sign-and-verify)
+*On-chain signing guide documentation evidence*: [docs.axisrobotics.ai/sign-and-verify](https://docs.axisrobotics.ai/contributor-guide/sign-and-verify)
 
 ---
 
-## 🪙 3. TOKENOMICS & PHÂN BỔ COMMUNITY CONTRIBUTOR AIRDROP (10%)
+## 🪙 3. TOKENOMICS & COMMUNITY CONTRIBUTOR AIRDROP ALLOCATION (10%)
 
-Theo tài liệu chính thức từ Axis Robotics:
-* **Tổng cung cố định**: **1,000,000,000 $AXIS** (Không lạm phát).
-* **Lượng lưu hành tại TGE**: **165,000,000 $AXIS (16.50%)**.
-* **Phân bổ Contributor Rewards (Airdrop)**: **100,000,000 $AXIS (10.00% tổng cung)**.
+According to official Axis Robotics documentation:
+* **Fixed Total Supply**: **1,000,000,000 $AXIS** (Non-inflationary).
+* **Circulating Supply at TGE**: **165,000,000 $AXIS (16.50%)**.
+* **Contributor Rewards Allocation (Airdrop)**: **100,000,000 $AXIS (10.00% of total supply)**.
 
-### Kế hoạch phân phối Airdrop qua 2 Mùa (Seasons):
-| Mùa (Season) | Trọng tâm đóng góp | Phân bổ ($AXIS) | Lịch trình Mở khóa (Unlock Schedule) |
+### Airdrop Distribution Plan across 2 Seasons:
+| Season | Contribution Focus | Allocation ($AXIS) | Unlock Schedule |
 | :--- | :--- | :---: | :--- |
-| **Season 1** (Pre-TGE) | Mô phỏng Simulation trên Web Hub | **40,000,000** (4%) | • **50%** tại TGE<br>• **25%** tại T+3 (sau 3 tháng)<br>• **25%** tại T+6 (sau 6 tháng) |
-| **Season 2** (Post-TGE) | Sim-to-real & Dữ liệu Ego-centric di động | **60,000,000** (6%) | Điều khoản và cơ chế sẽ công bố sau TGE |
+| **Season 1** (Pre-TGE) | Simulation on Web Hub | **40,000,000** (4%) | • **50%** at TGE<br>• **25%** at T+3 (3 months after)<br>• **25%** at T+6 (6 months after) |
+| **Season 2** (Post-TGE) | Sim-to-real & mobile ego-centric data | **60,000,000** (6%) | Terms and mechanism to be announced after TGE |
 
 ---
 
-## 🎯 4. HƯỚNG DẪN TỪNG BƯỚC SĂN AIRDROP AXIS ROBOTICS (STEP-BY-STEP PLAYBOOK)
+## 🎯 4. STEP-BY-STEP AXIS ROBOTICS AIRDROP PLAYBOOK
 
-### 📌 Bước 1: Đăng Ký Axis Hub & Khởi Động Với 6 Bài "For Newbies"
-1. Truy cập trang chính thức: 👉 **[hub.axisrobotics.ai](https://hub.axisrobotics.ai)**
-2. Đăng nhập qua Google, Email, tài khoản X hoặc ví cá nhân (Hệ thống tích hợp ví Privy tự động).
-3. Sử dụng **máy tính để bàn hoặc laptop có chuột rời** (Chrome, Firefox, Safari). *Không dùng điện thoại vì trình duyệt mobile chưa hỗ trợ tốt WebAssembly MuJoCo*.
-4. Vào mục **For Newbies** hoàn thành **6 bài huấn luyện cơ bản**. Đây là môi trường sandbox giúp bạn luyện nhuyễn thao tác xoay góc nhìn camera và điều khiển gắp/thả mà không bị ghi nhận điểm phạt.
-
----
-
-### 📌 Bước 2: Thực Hiện Các Simulation Tasks Hằng Ngày
-Trên tab **Hub**, các nhiệm vụ mới thường được làm mới mỗi ngày vào khoảng **12:00 UTC**. Có 2 loại task chính:
-
-* 🦾 **Pre-training Tasks (Tự lái từ đầu đến cuối)**:
-  * Bạn toàn quyền điều khiển cánh tay robot thực hiện nhiệm vụ (như *Pick up the Plate*, *Open Drawer*, *Sort Objects*).
-  * *Tiêu chí chấm điểm*: Tỷ lệ thành công, độ mượt mà quỹ đạo (smoothness) và hiệu quả thời gian.
-* 🤖 **Post-training Tasks (Can thiệp sửa lỗi cho AI)**:
-  * AI policy tự động chạy, bạn chỉ quan sát. Khi robot sắp gắp trượt hoặc lệch vị trí, bạn bấm **Takeover** để chỉnh lại rồi bấm **Return to Policy**.
-  * ⚠️ **Quy tắc 30 giây sống còn**: Tổng thời gian bạn tự lái can thiệp bị giới hạn tối đa **30 giây** cho cả phiên. Vượt quá 30 giây thì run bị hủy (Failed) ngay lập tức. Can thiệp càng ít và dứt khoát thì điểm càng cao.
+### 📌 Step 1: Register on Axis Hub & Start with 6 "For Newbies" Tasks
+1. Visit the official site: 👉 **[hub.axisrobotics.ai](https://hub.axisrobotics.ai)**
+2. Sign in via Google, Email, X account, or personal wallet (Privy wallet integration is automatic).
+3. Use a **desktop or laptop with a separate mouse** (Chrome, Firefox, Safari). *Mobile is not recommended — the simulation requires precise drag control.*
+4. Complete all **6 "For Newbies"** introductory tasks first — these teach the submission flow and are the easiest to score.
 
 ---
 
-### 📌 Bước 3: Ký Xác Nhận On-chain Trên Base (Bắt Buộc 100%)
-Hoàn thành task chỉ mới là bước lưu trữ dữ liệu cục bộ. Nếu không ký on-chain, toàn bộ công sức sẽ không được tính điểm.
-
-1. Bấm vào Avatar góc trên cùng bên phải $\rightarrow$ Chọn **Portfolio**.
-2. Chuyển sang tab **History** để xem các lượt chạy (*runs*).
-3. Khi run hiển thị trạng thái `Signable` (đã qua kiểm tra tính nhất quán vật lý), bấm nút **Sign**.
-4. Xác nhận ký trên mạng **Base** (phí gas gần như bằng 0 hoặc được hệ thống bao cấp gasless).
-5. Sau khi ký, mỗi run sẽ được cấp một **Data ID** vĩnh viễn trên blockchain.
+### 📌 Step 2: Complete Tasks Across Diverse Scenarios
+Complete simulation tasks across multiple different environments per day (aim for 3–5 tasks per session):
+* Choose task scenarios from **different environments** (kitchen, factory floor, outdoor) to maximize the Diversity multiplier.
+* Complete tasks on **different robot types** (Humanoid, Quadruped, Arm) for additional Diversity points.
+* Avoid running **more than 5 valid completions of the same task** — the Hub caps valid completions per task and rewards diminish after the limit.
 
 ---
 
-### 📌 Bước 4: Săn Điểm Nhân Thưởng Tại Alliance & Challenger Program
-* 🚀 **Challenger Program**: Khi đã quen tay, hãy chọn các task có độ khó 4–5 sao trong Challenger Program để nhận **hệ số nhân 2x – 3x Axis Points**.
-* 🤝 **Tab Alliance (Đối tác BitRobot)**: Tham gia các nhiệm vụ liên minh độc quyền (ví dụ: *BitRobot x Axis*) để nhận **Dual Rewards** (nhận song song Axis Points và phần thưởng từ đối tác sinh thái).
+### 📌 Step 3: On-chain Sign & Verify on Base (Required — 100%)
+Completing a task only saves data locally. If you don't sign on-chain, all your effort will not count toward points.
+
+1. Click your avatar in the top-right corner $\rightarrow$ Select **Portfolio**.
+2. Switch to the **History** tab to view your runs.
+3. When a run shows the status `Signable` (passed physical consistency check), click the **Sign** button.
+4. Confirm the signature on the **Base** network (gas fees are near-zero or gasless subsidized by the system).
+5. After signing, each run receives a permanent **Data ID** on the blockchain.
 
 ---
 
-### 📌 Bước 5: Liên Kết Mạng Xã Hội & Theo Dõi Chu Kỳ Epoch
-1. Vào mục **Portfolio**, liên kết tài khoản **X (Twitter)** và **Discord**.
-2. **Chu kỳ Epoch (2 tuần/lần)**:
-   * **Cut-off đóng sổ**: **00:00 UTC Thứ Sáu** (chỉ các run đã Sign trước mốc này mới được tính).
-   * **Phân phối Points**: Điểm thưởng sẽ về tài khoản vào **12:00 UTC Thứ Hai** tuần tiếp theo.
-3. Tham gia Discord chính thức: 👉 **[discord.gg/axisrobotics](https://discord.gg/axisrobotics)** để nhận thông báo về task mới và các chiến dịch tặng thưởng.
+### 📌 Step 4: Earn Bonus Points via Alliance & Challenger Programs
+* 🚀 **Challenger Program**: Once comfortable, choose 4–5 star difficulty tasks in the Challenger Program to earn **2x–3x multiplier bonuses** on your point score.
+* 🤝 **Alliance Tab (BitRobot Partner)**: Participate in exclusive alliance missions (e.g., *BitRobot x Axis*) to earn **additional Alliance Points** on top of your regular simulation score.
 
 ---
 
-## 🛡️ 5. CẢNH BÁO AN TOÀN, NGUYÊN TẮC CHỐNG BOT & THỨ TỰ ƯU TIÊN
-
-### ⚠️ Những Điều Tuyệt Đối Cần Tránh (Anti-Sybil Rules):
-* ❌ **Không cày spam 1 nhiệm vụ**: Hub giới hạn **tối đa 5 lần hoàn thành hợp lệ cho mỗi task**, và điểm số tính cho task đó là **ĐIỂM TRUNG BÌNH (Average Score)** của các lần làm. Làm ẩu nhiều lần sẽ kéo tụt điểm trung bình.
-* ❌ **Không dùng bot/script tự động**: Hệ thống có lớp kiểm tra replay vật lý và mô hình Vision-Language Model (VLM) phát hiện chuyển động giả lập. Tài khoản spam sẽ bị ban và trừ sạch điểm.
-* ❌ **Không gửi tiền hay nạp token thật**: Tham gia hoàn toàn miễn phí, chỉ cần thời gian đóng góp dữ liệu.
+### 📌 Step 5: Link Social Accounts & Track Epoch Cycles
+1. Go to **Portfolio**, link your **X (Twitter)** and **Discord** accounts.
+2. **Epoch Cycle (every 2 weeks)**:
+   * **Cut-off deadline**: **00:00 UTC Friday** (only runs signed before this deadline are counted).
+   * **Points Distribution**: Points are credited to accounts at **12:00 UTC Monday** of the following week.
+3. Join the official Discord: 👉 **[discord.gg/axisrobotics](https://discord.gg/axisrobotics)** to receive task announcements and epoch updates.
 
 ---
 
-### 📊 Bảng Thứ Tự Ưu Tiên Hành Động
+## 🛡️ 5. SAFETY WARNINGS, ANTI-BOT RULES & PRIORITY ORDER
 
-| Thứ Tự | Hành Động Cụ Thể | Mục Tiêu & Lợi Ích |
+### ⚠️ Things to Absolutely Avoid (Anti-Sybil Rules):
+* ❌ **Do not spam a single task**: The Hub limits **maximum 5 valid completions per task**, and points for that task decrease with each additional attempt.
+* ❌ **Do not use bots/automation scripts**: The system has physical replay validation layers and Vision-Language Model (VLM) detection to identify fake or AI-generated movement data.
+* ❌ **Do not send money or real tokens**: Participation is completely free — only your time contributing data is required.
+
+---
+
+### 📊 Priority Action Table
+
+| Priority | Specific Action | Goal & Benefit |
 | :---: | :--- | :--- |
-| **1** | Đăng ký [hub.axisrobotics.ai](https://hub.axisrobotics.ai) & tập 6 bài For Newbies | Làm quen tay lái, tránh bị điểm thấp ở các task chính |
-| **2** | Liên kết tài khoản X và Discord trong Portfolio | Đạt chuẩn chiến dịch Signal Boost & bảo toàn danh tính |
-| **3** | Thực hiện đa dạng task mỗi ngày (3–5 task ở nhiều bối cảnh) | Tối ưu hệ số **Diversity** và **Score** trong công thức Points |
-| **4** | Săn task 4–5 sao trong **Challenger Program** & **Alliance** | Đột phá điểm số với hệ số nhân thưởng 2x – 3x |
-| **5** | **Vào Portfolio $\rightarrow$ History $\rightarrow$ Bấm SIGN trước 00:00 UTC Thứ Sáu** | **Bắt buộc: Chốt sổ điểm hợp lệ cho chu kỳ Epoch** |
+| **1** | Register at [hub.axisrobotics.ai](https://hub.axisrobotics.ai) & complete 6 For Newbies tasks | Get familiar with the process, avoid mistakes that invalidate runs |
+| **2** | Link X and Discord accounts in Portfolio | Meet the Signal Boost campaign requirements & protect account identity |
+| **3** | Complete diverse tasks daily (3–5 tasks across different contexts) | Optimize the **Diversity** and **Score** multipliers in the epoch formula |
+| **4** | Hunt 4–5 star tasks in **Challenger Program** & **Alliance** | Boost your score with 2x–3x reward multipliers |
+| **5** | **Go to Portfolio $\rightarrow$ History $\rightarrow$ Click SIGN before 00:00 UTC Friday** | **Required: Lock in epoch data — unsigned runs earn zero points** |
 
 ---
 
-## 🌐 6. TỔNG HỢP DANH SÁCH HYPERLINKS THAM KHẢO CHÍNH THỨC
+## 🌐 6. OFFICIAL REFERENCE LINKS
 
-* 🚀 **Axis Hub (Trải nghiệm làm task)**: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
-* 🌐 **Trang chủ chính thức**: [axisrobotics.ai](https://axisrobotics.ai)
-* 🐦 **Kênh X (Twitter) chính thức**: [@axisrobotics](https://x.com/axisrobotics)
-* 💬 **Discord cộng đồng**: [discord.gg/axisrobotics](https://discord.gg/axisrobotics)
-* 📚 **Tài liệu hướng dẫn (Docs)**: [docs.axisrobotics.ai](https://docs.axisrobotics.ai)
-* 🪙 **Chi tiết Tokenomics $AXIS**: [docs.axisrobotics.ai/tokenomics](https://docs.axisrobotics.ai/economics-and-provenance/tokenomics)
-* 📊 **Hướng dẫn cơ chế Points**: [docs.axisrobotics.ai/points](https://docs.axisrobotics.ai/contributor-guide/points)
-* ✍️ **Quy trình Sign & Verify on-chain**: [docs.axisrobotics.ai/sign-and-verify](https://docs.axisrobotics.ai/contributor-guide/sign-and-verify)
-* 🤝 **Đối tác liên minh BitRobot**: [bitrobot.ai](https://bitrobot.ai)
+* 🚀 **Axis Hub (Complete tasks)**: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
+* 🌐 **Official Homepage**: [axisrobotics.ai](https://axisrobotics.ai)
+* 🐦 **Official X (Twitter) Channel**: [@axisrobotics](https://x.com/axisrobotics)
+* 💬 **Community Discord**: [discord.gg/axisrobotics](https://discord.gg/axisrobotics)
+* 📚 **Documentation (Docs)**: [docs.axisrobotics.ai](https://docs.axisrobotics.ai)
+* 🪙 **$AXIS Tokenomics Details**: [docs.axisrobotics.ai/tokenomics](https://docs.axisrobotics.ai/economics-and-provenance/tokenomics)
+* 📊 **Points Mechanism Guide**: [docs.axisrobotics.ai/points](https://docs.axisrobotics.ai/contributor-guide/points)
+* ✍️ **On-chain Sign & Verify Process**: [docs.axisrobotics.ai/sign-and-verify](https://docs.axisrobotics.ai/contributor-guide/sign-and-verify)
+* 🤝 **BitRobot Alliance Partner**: [bitrobot.ai](https://bitrobot.ai)
 * 🐙 **GitHub Repository**: [github.com/ThanaLamth/Tinyfish-review](https://github.com/ThanaLamth/Tinyfish-review)
