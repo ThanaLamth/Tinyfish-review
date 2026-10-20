@@ -132,6 +132,7 @@ Rules:
 - Keep the tone friendly and factual.
 - Tables, bullet lists, and step-by-step numbered lists are encouraged.
 - Do NOT fabricate stats — if a number is not in the research, write "N/A (check docs)".
+- Do NOT use any emoji or icon characters anywhere in the output. Plain text and Markdown only.
 """
 
 def build_article_via_tinyfish(research_data: dict, template: str, screenshots_dir: Path) -> str:

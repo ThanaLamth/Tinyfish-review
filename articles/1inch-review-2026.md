@@ -6,7 +6,7 @@ author: "Editorial Team"
 category: "DEX Aggregator Reviews"
 tags: ["1inch", "DEX aggregator", "crypto swap", "DeFi", "decentralized exchange", "cross-chain swap", "beginner crypto guide", "referral guide"]
 excerpt: "A complete beginner's guide to 1inch — the DEX aggregator that searches 18+ blockchains to find you the best crypto swap rates. Covers features, fees, security, step-by-step tutorials, and how the referral system works."
-featured_image: "C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/desktop.png"
+featured_image: "../screenshots/app.1inch.io/desktop.png"
 ---
 
 # 1inch Review 2026: Complete Beginner's Guide — Swap Crypto, Use on Any Device, and Earn with Referral Links
@@ -33,13 +33,13 @@ It also handles **cross-chain swaps** — meaning you can move assets from one b
 **Who built it?** 1inch was founded in 2019 by Sergej Kunz and Anton Bukov, who famously built the first version of the product at an ETHNewYork hackathon in under 18 hours. What started as a simple DEX aggregator (a tool that searches multiple exchanges at once) has grown into a full ecosystem covering swaps, a mobile wallet, a portfolio tracker, cross-chain transfers, and a suite of business APIs. As of October 2026, 1inch is available to users in the USA, Europe, Asia, and most other regions without needing a VPN.
 
 **Key facts (October 20, 2026):**
-- 💱 **$815 billion+** in total swap volume processed since launch
-- 🔄 **267 million+** total swaps completed
-- 👛 **28 million+** wallets ever connected
-- 🌐 Supports **18+ blockchain networks** including Ethereum, BNB Chain, Polygon, Arbitrum, Solana, Base, and more
-- 🔒 Built-in MEV (Maximal Extractable Value — a type of attack where bots front-run your trade to steal value) protection
-- 🇺🇸 Available in the USA without a VPN or workaround
-- 📱 Available as a web app and a mobile wallet app
+-  **$815 billion+** in total swap volume processed since launch
+-  **267 million+** total swaps completed
+-  **28 million+** wallets ever connected
+-  Supports **18+ blockchain networks** including Ethereum, BNB Chain, Polygon, Arbitrum, Solana, Base, and more
+-  Built-in MEV (Maximal Extractable Value — a type of attack where bots front-run your trade to steal value) protection
+-  Available in the USA without a VPN or workaround
+-  Available as a web app and a mobile wallet app
 
 ---
 
@@ -48,7 +48,7 @@ It also handles **cross-chain swaps** — meaning you can move assets from one b
 We opened 1inch on three different screen sizes and took real screenshots so you know exactly what to expect before you visit.
 
 ### On a Laptop or Desktop Computer (1440px wide)
-![1inch Desktop Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/desktop.png)
+![1inch Desktop Interface](../screenshots/app.1inch.io/desktop.png)
 *The 1inch swap interface on a 1440px desktop — the token selector, rate preview, and settings panel are all visible at a glance without scrolling.*
 
 **Best for:** Anyone doing larger or more complex trades who wants to see all the information — input token, output token, rate breakdown, slippage settings (slippage = how much the price can move before your trade cancels), and route visualisation — side by side without scrolling. Desktop is also the most comfortable environment for first-time users learning the interface.
@@ -56,7 +56,7 @@ We opened 1inch on three different screen sizes and took real screenshots so you
 ---
 
 ### On a Tablet — iPad (1024px wide)
-![1inch Tablet Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tablet.png)
+![1inch Tablet Interface](../screenshots/app.1inch.io/tablet.png)
 *The 1inch swap screen on an iPad at 1024px — the layout adapts cleanly, keeping the core swap panel central and easy to tap.*
 
 **Best for:** Users who prefer a touch screen but still want a reasonably large display. The swap panel fits well on a tablet screen, and tapping token selectors feels natural. Good for checking portfolio positions (via 1inch Portfolio) while on the go.
@@ -64,7 +64,7 @@ We opened 1inch on three different screen sizes and took real screenshots so you
 ---
 
 ### On a Phone — iPhone 16 Pro Max (430px wide)
-![1inch Mobile Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/phone.png)
+![1inch Mobile Interface](../screenshots/app.1inch.io/phone.png)
 *1inch on an iPhone 16 Pro Max — the interface stacks vertically into a clean single-column layout, optimised for thumb navigation.*
 
 **Best for:** Quick swaps when you're away from your desk. The mobile web experience is clean, but for the best phone experience, 1inch also offers a dedicated **1inch Wallet app** (available on iOS and Android) which combines swapping, portfolio tracking, and wallet management in a single native app.
@@ -77,34 +77,34 @@ We opened 1inch on three different screen sizes and took real screenshots so you
 
 1inch offers four main areas of functionality, each explained below in plain English:
 
-### 1. 🔄 Token Swap (The Core Feature)
+### 1.  Token Swap (The Core Feature)
 This is the heart of 1inch. You pick a token you have (e.g. ETH — Ethereum's native currency) and a token you want (e.g. USDC — a stablecoin pegged to the US dollar), enter your amount, and 1inch's algorithm (called **Pathfinder**) scans all connected DEXs to find the optimal route. Sometimes it splits your trade across multiple exchanges simultaneously — you don't need to do anything; it all happens automatically in a single transaction.
 
-### 2. 🌉 Cross-Chain Swaps (No Bridging Required)
+### 2.  Cross-Chain Swaps (No Bridging Required)
 Normally, moving assets from one blockchain to another (e.g. Ethereum → Solana) requires a "bridge" — a separate service that locks your tokens on one chain and mints equivalent tokens on another. This is slow, complex, and has historically been a target for hacks. 1inch's **intent-based cross-chain swaps** handle this in a single step using atomic execution (meaning the whole transaction either completes fully or reverts entirely — your funds are never stuck halfway). Supported networks include Ethereum, BNB Chain, Polygon, Optimism, Arbitrum, Avalanche, zkSync Era, Base, Linea, Unichain, Sonic, Solana, Gnosis, Cronos, HyperEVM, Monad, Robinhood, and more.
 
-### 3. 📊 Limit Orders
+### 3.  Limit Orders
 Think of a limit order like a standing instruction to your bank: "Only change my dollars to euros if the rate hits 1.15 — don't do it at today's worse rate." On 1inch, you can set a limit order to swap Token A for Token B only when Token B reaches your target price. Your order sits open until the price is met, then executes automatically. This is free to set up and costs no extra gas (the small fee paid to the blockchain network for processing transactions) beyond the swap itself.
 
-### 4. 🔒 Security Tools (MEV Protection + Wallet Screening)
+### 4.  Security Tools (MEV Protection + Wallet Screening)
 - **MEV Protection:** MEV (Maximal Extractable Value) attacks are when bots monitor pending transactions and insert their own trades in front of yours to profit at your expense — like someone cutting the queue at a ticket booth and reselling the tickets. 1inch routes trades in a way that makes this significantly harder.
 - **Wallet Screening & Risk Scoring:** Before you interact with a new token or contract, 1inch scans it against blocklists and assigns a risk score, warning you if something looks suspicious (like a scam token).
 - **Atomic Execution on Cross-Chain:** Your cross-chain swaps either complete fully or revert — you can never be left in a state where your tokens have left Chain A but not arrived on Chain B.
 
-### 5. 📱 1inch Wallet App
+### 5.  1inch Wallet App
 A standalone mobile app (iOS & Android) for storing, swapping, and tracking your crypto. Think of it as combining a bank account, a currency exchange desk, and a portfolio tracker in your pocket.
 
-### 6. 📈 1inch Portfolio
+### 6.  1inch Portfolio
 A dashboard for tracking all your crypto holdings across multiple wallets and DeFi protocols (DeFi = decentralised finance, financial services built on blockchains). Shows profit/loss (PnL), liquidity positions (where you've deposited tokens to earn fees), and staking rewards.
 
-### 7. 🏗️ 1inch Business / API
+### 7.  1inch Business / API
 For developers and businesses wanting to embed 1inch's swap routing, pricing data, or infrastructure (including RPC nodes — the servers that talk to the blockchain) into their own products.
 
 ---
 
 ## Fee Schedule
 
-> ⚠️ **Important note:** The research data available for this review does not include a detailed published fee schedule from 1inch's documentation. The figures below reflect what is publicly known from the homepage and general DeFi industry knowledge. Always verify the latest fees at [app.1inch.io](https://app.1inch.io) before transacting.
+>  **Important note:** The research data available for this review does not include a detailed published fee schedule from 1inch's documentation. The figures below reflect what is publicly known from the homepage and general DeFi industry knowledge. Always verify the latest fees at [app.1inch.io](https://app.1inch.io) before transacting.
 
 | Fee Type | Amount | Who Pays It | Plain English Explanation |
 |---|---|---|---|
@@ -117,7 +117,7 @@ For developers and businesses wanting to embed 1inch's swap routing, pricing dat
 | **1inch Portfolio** | Free | N/A | Portfolio tracking is free. |
 | **1inch Business API** | N/A (check docs) | Businesses | Pricing depends on usage tier. See 1inch Business section on the website. |
 
-> 💡 **Beginner tip:** The most important "fee" on any DEX swap is often not a protocol fee but **price impact** — how much your trade moves the market. 1inch's aggregation helps minimise this by splitting large trades across multiple pools.
+>  **Beginner tip:** The most important "fee" on any DEX swap is often not a protocol fee but **price impact** — how much your trade moves the market. 1inch's aggregation helps minimise this by splitting large trades across multiple pools.
 
 ---
 
@@ -129,7 +129,7 @@ Go to [https://app.1inch.io](https://app.1inch.io)
 
 Click the **"Connect"** button (usually top-right corner).
 
-![Step 1 — Connect Button](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step1_homepage_connect_btn.png)
+![Step 1 — Connect Button](../screenshots/app.1inch.io/tutorial/step1_homepage_connect_btn.png)
 
 Choose your wallet — MetaMask, WalletConnect, Coinbase Wallet, and many others are supported.
 
@@ -146,9 +146,9 @@ Click it to open a dropdown list of all 18+ supported chains. Select the network
 - If you have tokens on Arbitrum (a faster, cheaper version of Ethereum) → select **Arbitrum**
 - If you want to do a cross-chain swap (moving from one network to another) → use the **Cross-chain** tab instead of changing the network selector
 
-![Step 2 — Network Selection](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step2_network_dropdown.png)
+![Step 2 — Network Selection](../screenshots/app.1inch.io/tutorial/step2_network_dropdown.png)
 
-> 💡 **Why does the network matter?** Each blockchain is a separate ecosystem. Tokens on Ethereum don't automatically appear on Arbitrum — they're different "versions" of the same asset. 1inch can swap tokens within the same network, or use its cross-chain feature to move across networks. Always make sure the network selected in 1inch matches the network your wallet is set to — otherwise your transaction may fail or go to the wrong place.
+>  **Why does the network matter?** Each blockchain is a separate ecosystem. Tokens on Ethereum don't automatically appear on Arbitrum — they're different "versions" of the same asset. 1inch can swap tokens within the same network, or use its cross-chain feature to move across networks. Always make sure the network selected in 1inch matches the network your wallet is set to — otherwise your transaction may fail or go to the wrong place.
 
 ---
 
@@ -159,10 +159,10 @@ Once you're on the right network, the swap interface is straightforward:
 1. **"You pay" field (top box):** Click the token name (e.g. "ETH") and either search for your token by name or paste its contract address (a unique identifier for each token on the blockchain). Enter the amount you want to spend.
 2. **"You receive" field (bottom box):** Select the token you want to receive. 1inch automatically calculates and shows you the estimated amount you'll get, based on current market rates across all connected exchanges.
 3. **Review the route:** 1inch shows you which exchange(s) it's routing through and in what percentages. You don't need to understand this in detail — it's shown for transparency.
-4. **Adjust slippage if needed:** Slippage tolerance (found in the ⚙️ settings) is how much price movement you'll accept before the transaction auto-cancels. The default is usually fine for most trades.
+4. **Adjust slippage if needed:** Slippage tolerance (found in the  settings) is how much price movement you'll accept before the transaction auto-cancels. The default is usually fine for most trades.
 5. **Click "Swap"** and confirm in your wallet.
 
-![Step 3 — Swap Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step3_swap_eth_usdc.png)
+![Step 3 — Swap Interface](../screenshots/app.1inch.io/tutorial/step3_swap_eth_usdc.png)
 
 **Key fields to review before confirming:**
 
@@ -186,9 +186,9 @@ Here's how:
 5. Click **"Place order"** and sign the transaction in your wallet. Note: placing a limit order requires a one-time signature (gas-free on most setups) but the actual swap will consume gas when it executes.
 6. Your order appears under "Open Orders." You can cancel it any time before it fills.
 
-![Step 4 — Limit Order Tab](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step4_limit_order_tab.png)
+![Step 4 — Limit Order Tab](../screenshots/app.1inch.io/tutorial/step4_limit_order_tab.png)
 
-> 💡 **Beginner analogy:** A limit order is like telling a travel agent, "Book me the flight only if the price drops to $300 — don't book it at today's $450 rate." The agent (1inch) keeps watching and books automatically when conditions are met.
+>  **Beginner analogy:** A limit order is like telling a travel agent, "Book me the flight only if the price drops to $300 — don't book it at today's $450 rate." The agent (1inch) keeps watching and books automatically when conditions are met.
 
 ---
 
@@ -200,7 +200,7 @@ A referral link is a special URL (web address) that contains a code identifying 
 
 **Think of it like a tip jar:** When a friend recommends a great restaurant and the restaurant gives that friend a loyalty point every time you eat there, that's the same idea. You pay nothing extra — the tip comes out of what the platform would have kept anyway.
 
-> ⚠️ **Important:** Based on the research available for this review, 1inch's specific referral or affiliate programme details — including exact commission rates, how to generate your own referral link, and any programme terms — are **N/A (check docs)**. The information below describes how referral systems typically work on DEX aggregators. Always verify the current programme details directly at [app.1inch.io](https://app.1inch.io) or in the official 1inch documentation before relying on them.
+>  **Important:** Based on the research available for this review, 1inch's specific referral or affiliate programme details — including exact commission rates, how to generate your own referral link, and any programme terms — are **N/A (check docs)**. The information below describes how referral systems typically work on DEX aggregators. Always verify the current programme details directly at [app.1inch.io](https://app.1inch.io) or in the official 1inch documentation before relying on them.
 
 ### How to Use Someone Else's Referral Link
 
@@ -210,14 +210,14 @@ When someone shares a referral link with you, here's what happens step by step:
 
 Click the referral link your friend or influencer shared. It will open 1inch with a special parameter in the URL — this is what tells the platform who referred you.
 
-![Referral Link — Homepage View](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/ref/desktop.png)
+![Referral Link — Homepage View](../screenshots/app.1inch.io/ref/desktop.png)
 
 **Step 2 — Connect your wallet**
 
 You connect your wallet exactly as described in the tutorial above.
 
-![Wallet Picker](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/wallet-flow/07_wallet_picker.png)
-![Connected State](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/wallet-flow/10_kyberswap_connected.png)
+![Wallet Picker](../screenshots/app.1inch.io/wallet-flow/07_wallet_picker.png)
+![Connected State](../screenshots/app.1inch.io/wallet-flow/10_kyberswap_connected.png)
 
 **Step 3 — Review the swap**
 
@@ -238,7 +238,7 @@ After reviewing everything, click **"Swap"** → your wallet opens a final confi
 
 ### How to Create Your Own Referral Link
 
-> ⚠️ Specific steps for generating a personal referral or affiliate link on 1inch are **N/A (check docs)** based on the research available at the time of writing. To find the most current referral programme details:
+>  Specific steps for generating a personal referral or affiliate link on 1inch are **N/A (check docs)** based on the research available at the time of writing. To find the most current referral programme details:
 
 1. Visit [https://app.1inch.io](https://app.1inch.io) and connect your wallet.
 2. Look for a **"Refer a Friend," "Affiliate,"** or **"Earn"** section in the main navigation or your account/profile area.
@@ -271,14 +271,14 @@ Before you interact with a token, 1inch scans it against known blocklists (datab
 1inch's core contracts have been audited by independent security firms (specific audit details are **N/A (check docs)** in the research provided — verify at the official 1inch security page).
 
 **Best practices:**
-- ✅ Always double-check you are on the real site: **https://app.1inch.io** — bookmark it to avoid phishing (fake copycat websites)
-- ✅ Never share your wallet seed phrase (12–24 word recovery phrase) with anyone, including anyone claiming to be 1inch support
-- ✅ Start with a small test swap before moving large amounts
-- ✅ Review the token risk score 1inch displays before swapping an unfamiliar token
-- ✅ Check the "Minimum Received" figure before confirming — set slippage no higher than necessary
-- ✅ Use a hardware wallet (a physical device like a Ledger or Trezor) for large holdings — compatible with 1inch via WalletConnect
-- ⛔ Do not approve unlimited token spend unless you understand what you're doing — use the "Custom" approval amount option if available
-- ⛔ Avoid swapping tokens with very high price impact (over 5%) — this usually indicates low liquidity or a suspicious token
+-  Always double-check you are on the real site: **https://app.1inch.io** — bookmark it to avoid phishing (fake copycat websites)
+-  Never share your wallet seed phrase (12–24 word recovery phrase) with anyone, including anyone claiming to be 1inch support
+-  Start with a small test swap before moving large amounts
+-  Review the token risk score 1inch displays before swapping an unfamiliar token
+-  Check the "Minimum Received" figure before confirming — set slippage no higher than necessary
+-  Use a hardware wallet (a physical device like a Ledger or Trezor) for large holdings — compatible with 1inch via WalletConnect
+-  Do not approve unlimited token spend unless you understand what you're doing — use the "Custom" approval amount option if available
+-  Avoid swapping tokens with very high price impact (over 5%) — this usually indicates low liquidity or a suspicious token
 
 ---
 
@@ -290,13 +290,13 @@ Before you interact with a token, 1inch scans it against known blocklists (datab
 |---|---|---|---|---|
 | **Type** | DEX Aggregator | Single DEX (+ aggregator mode) | DEX Aggregator | DEX Aggregator (Solana) |
 | **Chains supported** | 18+ | ~10+ | ~10+ | Solana only |
-| **Cross-chain swaps** | ✅ Yes (atomic, no bridge needed) | ⚠️ Limited | ⚠️ Limited | ❌ Solana only |
-| **Best rate routing** | ✅ Splits across many DEXs | ⚠️ Mainly Uniswap pools | ✅ Multi-DEX routing | ✅ On Solana |
-| **Limit orders** | ✅ Yes | ✅ Yes | ✅ Yes | ✅ Yes |
-| **MEV protection** | ✅ Built-in | ⚠️ Partial (Uniswap X) | ⚠️ Partial | ✅ Yes |
-| **Mobile wallet app** | ✅ Yes (1inch Wallet) | ✅ Yes (Uniswap Wallet) | ❌ No native wallet | ❌ No native wallet |
-| **Portfolio tracker** | ✅ Yes (1inch Portfolio) | ❌ No | ❌ No | ❌ No |
-| **US availability** | ✅ Yes, no VPN needed | ✅ Yes | ✅ Yes | ✅ Yes |
+| **Cross-chain swaps** |  Yes (atomic, no bridge needed) |  Limited |  Limited |  Solana only |
+| **Best rate routing** |  Splits across many DEXs |  Mainly Uniswap pools |  Multi-DEX routing |  On Solana |
+| **Limit orders** |  Yes |  Yes |  Yes |  Yes |
+| **MEV protection** |  Built-in |  Partial (Uniswap X) |  Partial |  Yes |
+| **Mobile wallet app** |  Yes (1inch Wallet) |  Yes (Uniswap Wallet) |  No native wallet |  No native wallet |
+| **Portfolio tracker** |  Yes (1inch Portfolio) |  No |  No |  No |
+| **US availability** |  Yes, no VPN needed |  Yes |  Yes |  Yes |
 | **Total swap volume** | $815B+ | N/A (check docs) | N/A (check docs) | N/A (check docs) |
 | **Protocol fee** | N/A (check docs) | 0.15%–0.3% (varies) | N/A (check docs) | N/A (check docs) |
 
@@ -307,18 +307,18 @@ Before you interact with a token, 1inch scans it against known blocklists (datab
 ## Verdict
 
 **Who 1inch is for:**
-- 🟢 **Beginner crypto users** who want the confidence that they're getting a competitive rate without having to manually check five different exchanges
-- 🟢 **Multi-chain users** who hold assets across Ethereum, Arbitrum, Solana, BNB Chain, and want one interface to manage it all
-- 🟢 **Safety-conscious traders** who appreciate built-in MEV protection, wallet scanning, and atomic cross-chain execution
-- 🟢 **Mobile-first users** who want a full-featured DeFi wallet app rather than browser-only access
-- 🟢 **US-based users** who want a fully accessible DeFi platform without geographic restrictions or VPN workarounds
-- 🟢 **Power users** who want limit orders, detailed route transparency, and portfolio tracking in one ecosystem
+-  **Beginner crypto users** who want the confidence that they're getting a competitive rate without having to manually check five different exchanges
+-  **Multi-chain users** who hold assets across Ethereum, Arbitrum, Solana, BNB Chain, and want one interface to manage it all
+-  **Safety-conscious traders** who appreciate built-in MEV protection, wallet scanning, and atomic cross-chain execution
+-  **Mobile-first users** who want a full-featured DeFi wallet app rather than browser-only access
+-  **US-based users** who want a fully accessible DeFi platform without geographic restrictions or VPN workarounds
+-  **Power users** who want limit orders, detailed route transparency, and portfolio tracking in one ecosystem
 
 **Who should look elsewhere:**
-- 🔴 Users who want **centralised exchange** features like fiat on-ramps (depositing regular money directly), order books, or customer support with account recovery — 1inch is non-custodial (no company holds your funds) and has no fiat deposit feature
-- 🔴 Those who are **not yet comfortable managing a self-custody wallet** (seed phrases, gas fees) — consider a beginner-focused centralised exchange like Coinbase first, then graduate to 1inch
-- 🔴 Users who **only trade on Solana** and want the most native Solana experience — Jupiter may have a slight edge for Solana-native trading
-- 🔴 Anyone who needs **24/7 customer support with account recovery** — as a decentralised protocol, 1inch cannot recover lost wallets or reverse transactions
+-  Users who want **centralised exchange** features like fiat on-ramps (depositing regular money directly), order books, or customer support with account recovery — 1inch is non-custodial (no company holds your funds) and has no fiat deposit feature
+-  Those who are **not yet comfortable managing a self-custody wallet** (seed phrases, gas fees) — consider a beginner-focused centralised exchange like Coinbase first, then graduate to 1inch
+-  Users who **only trade on Solana** and want the most native Solana experience — Jupiter may have a slight edge for Solana-native trading
+-  Anyone who needs **24/7 customer support with account recovery** — as a decentralised protocol, 1inch cannot recover lost wallets or reverse transactions
 
 **Rating: 4.5 / 5**
 
@@ -328,13 +328,13 @@ Before you interact with a token, 1inch scans it against known blocklists (datab
 
 ## Quick Links
 
-- 🌐 **Main app:** [https://app.1inch.io](https://app.1inch.io)
-- 📱 **1inch Wallet app:** Available on iOS and Android — search "1inch Wallet" in your app store
-- 📊 **1inch Portfolio:** Accessible from the main app navigation
-- 🏗️ **1inch Business / API:** [https://1inch.io](https://1inch.io) → Business section
-- 🔒 **Security information:** Check the "Learn more about security" link in the main app
-- 📖 **Official documentation:** Check [https://docs.1inch.io](https://docs.1inch.io) for the latest fee schedules, referral programme details, and technical guides
-- 🐦 **Official Twitter/X:** @1inch
+-  **Main app:** [https://app.1inch.io](https://app.1inch.io)
+-  **1inch Wallet app:** Available on iOS and Android — search "1inch Wallet" in your app store
+-  **1inch Portfolio:** Accessible from the main app navigation
+-  **1inch Business / API:** [https://1inch.io](https://1inch.io) → Business section
+-  **Security information:** Check the "Learn more about security" link in the main app
+-  **Official documentation:** Check [https://docs.1inch.io](https://docs.1inch.io) for the latest fee schedules, referral programme details, and technical guides
+-  **Official Twitter/X:** @1inch
 
 ---
 
