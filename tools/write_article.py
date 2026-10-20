@@ -220,16 +220,16 @@ def _build_screenshot_map(screenshots_dir: Path, domain: str) -> dict:
     """Map template screenshot placeholders to relative paths."""
     base = screenshots_dir / domain
     mapping = {
-        "SS_DESKTOP":     str(base / "desktop.png"),
-        "SS_TABLET":      str(base / "tablet.png"),
-        "SS_PHONE":       str(base / "phone.png"),
-        "SS_STEP1":       str(base / "tutorial" / "step1_homepage_connect_btn.png"),
-        "SS_STEP2":       str(base / "tutorial" / "step2_network_dropdown.png"),
-        "SS_STEP3":       str(base / "tutorial" / "step3_swap_eth_usdc.png"),
-        "SS_STEP4":       str(base / "tutorial" / "step4_limit_order_tab.png"),
-        "SS_WALLET_PICK": str(base / "wallet-flow" / "07_wallet_picker.png"),
-        "SS_CONNECTED":   str(base / "wallet-flow" / "10_kyberswap_connected.png"),
-        "SS_REF_DESKTOP": str(base / "ref" / "desktop.png"),
+        "SS_DESKTOP":     (base / "desktop.png").as_posix(),
+        "SS_TABLET":      (base / "tablet.png").as_posix(),
+        "SS_PHONE":       (base / "phone.png").as_posix(),
+        "SS_STEP1":       (base / "tutorial" / "step1_homepage_connect_btn.png").as_posix(),
+        "SS_STEP2":       (base / "tutorial" / "step2_network_dropdown.png").as_posix(),
+        "SS_STEP3":       (base / "tutorial" / "step3_swap_eth_usdc.png").as_posix(),
+        "SS_STEP4":       (base / "tutorial" / "step4_limit_order_tab.png").as_posix(),
+        "SS_WALLET_PICK": (base / "wallet-flow" / "07_wallet_picker.png").as_posix(),
+        "SS_CONNECTED":   (base / "wallet-flow" / "10_kyberswap_connected.png").as_posix(),
+        "SS_REF_DESKTOP": (base / "ref" / "desktop.png").as_posix(),
     }
     return mapping
 

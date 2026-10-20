@@ -6,7 +6,7 @@ author: "Editorial Team"
 category: "DEX Aggregator Reviews"
 tags: ["1inch", "DEX aggregator", "crypto swap", "DeFi", "decentralized exchange", "cross-chain swap", "beginner crypto guide", "referral guide"]
 excerpt: "A complete beginner's guide to 1inch — the DEX aggregator that searches 18+ blockchains to find you the best crypto swap rates. Covers features, fees, security, step-by-step tutorials, and how the referral system works."
-featured_image: "C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\desktop.png"
+featured_image: "C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/desktop.png"
 ---
 
 # 1inch Review 2026: Complete Beginner's Guide — Swap Crypto, Use on Any Device, and Earn with Referral Links
@@ -48,7 +48,7 @@ It also handles **cross-chain swaps** — meaning you can move assets from one b
 We opened 1inch on three different screen sizes and took real screenshots so you know exactly what to expect before you visit.
 
 ### On a Laptop or Desktop Computer (1440px wide)
-![1inch Desktop Interface](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\desktop.png)
+![1inch Desktop Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/desktop.png)
 *The 1inch swap interface on a 1440px desktop — the token selector, rate preview, and settings panel are all visible at a glance without scrolling.*
 
 **Best for:** Anyone doing larger or more complex trades who wants to see all the information — input token, output token, rate breakdown, slippage settings (slippage = how much the price can move before your trade cancels), and route visualisation — side by side without scrolling. Desktop is also the most comfortable environment for first-time users learning the interface.
@@ -56,7 +56,7 @@ We opened 1inch on three different screen sizes and took real screenshots so you
 ---
 
 ### On a Tablet — iPad (1024px wide)
-![1inch Tablet Interface](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\tablet.png)
+![1inch Tablet Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tablet.png)
 *The 1inch swap screen on an iPad at 1024px — the layout adapts cleanly, keeping the core swap panel central and easy to tap.*
 
 **Best for:** Users who prefer a touch screen but still want a reasonably large display. The swap panel fits well on a tablet screen, and tapping token selectors feels natural. Good for checking portfolio positions (via 1inch Portfolio) while on the go.
@@ -64,7 +64,7 @@ We opened 1inch on three different screen sizes and took real screenshots so you
 ---
 
 ### On a Phone — iPhone 16 Pro Max (430px wide)
-![1inch Mobile Interface](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\phone.png)
+![1inch Mobile Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/phone.png)
 *1inch on an iPhone 16 Pro Max — the interface stacks vertically into a clean single-column layout, optimised for thumb navigation.*
 
 **Best for:** Quick swaps when you're away from your desk. The mobile web experience is clean, but for the best phone experience, 1inch also offers a dedicated **1inch Wallet app** (available on iOS and Android) which combines swapping, portfolio tracking, and wallet management in a single native app.
@@ -129,7 +129,7 @@ Go to [https://app.1inch.io](https://app.1inch.io)
 
 Click the **"Connect"** button (usually top-right corner).
 
-![Step 1 — Connect Button](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\tutorial\step1_homepage_connect_btn.png)
+![Step 1 — Connect Button](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step1_homepage_connect_btn.png)
 
 Choose your wallet — MetaMask, WalletConnect, Coinbase Wallet, and many others are supported.
 
@@ -146,7 +146,7 @@ Click it to open a dropdown list of all 18+ supported chains. Select the network
 - If you have tokens on Arbitrum (a faster, cheaper version of Ethereum) → select **Arbitrum**
 - If you want to do a cross-chain swap (moving from one network to another) → use the **Cross-chain** tab instead of changing the network selector
 
-![Step 2 — Network Selection](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\tutorial\step2_network_dropdown.png)
+![Step 2 — Network Selection](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step2_network_dropdown.png)
 
 > 💡 **Why does the network matter?** Each blockchain is a separate ecosystem. Tokens on Ethereum don't automatically appear on Arbitrum — they're different "versions" of the same asset. 1inch can swap tokens within the same network, or use its cross-chain feature to move across networks. Always make sure the network selected in 1inch matches the network your wallet is set to — otherwise your transaction may fail or go to the wrong place.
 
@@ -162,7 +162,7 @@ Once you're on the right network, the swap interface is straightforward:
 4. **Adjust slippage if needed:** Slippage tolerance (found in the ⚙️ settings) is how much price movement you'll accept before the transaction auto-cancels. The default is usually fine for most trades.
 5. **Click "Swap"** and confirm in your wallet.
 
-![Step 3 — Swap Interface](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\tutorial\step3_swap_eth_usdc.png)
+![Step 3 — Swap Interface](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step3_swap_eth_usdc.png)
 
 **Key fields to review before confirming:**
 
@@ -186,7 +186,7 @@ Here's how:
 5. Click **"Place order"** and sign the transaction in your wallet. Note: placing a limit order requires a one-time signature (gas-free on most setups) but the actual swap will consume gas when it executes.
 6. Your order appears under "Open Orders." You can cancel it any time before it fills.
 
-![Step 4 — Limit Order Tab](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\tutorial\step4_limit_order_tab.png)
+![Step 4 — Limit Order Tab](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/tutorial/step4_limit_order_tab.png)
 
 > 💡 **Beginner analogy:** A limit order is like telling a travel agent, "Book me the flight only if the price drops to $300 — don't book it at today's $450 rate." The agent (1inch) keeps watching and books automatically when conditions are met.
 
@@ -210,14 +210,14 @@ When someone shares a referral link with you, here's what happens step by step:
 
 Click the referral link your friend or influencer shared. It will open 1inch with a special parameter in the URL — this is what tells the platform who referred you.
 
-![Referral Link — Homepage View](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\ref\desktop.png)
+![Referral Link — Homepage View](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/ref/desktop.png)
 
 **Step 2 — Connect your wallet**
 
 You connect your wallet exactly as described in the tutorial above.
 
-![Wallet Picker](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\wallet-flow\07_wallet_picker.png)
-![Connected State](C:\Users\admin\Projects\Tinyfish-review\screenshots\app.1inch.io\wallet-flow\10_kyberswap_connected.png)
+![Wallet Picker](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/wallet-flow/07_wallet_picker.png)
+![Connected State](C:/Users/admin/Projects/Tinyfish-review/screenshots/app.1inch.io/wallet-flow/10_kyberswap_connected.png)
 
 **Step 3 — Review the swap**
 
