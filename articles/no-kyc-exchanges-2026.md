@@ -66,6 +66,9 @@ ProBit, a smaller Korean-origin exchange that had offered optional KYC tiers, ce
 
 ## 1. Toobit — Best No-KYC CEX Overall
 
+![Toobit no-KYC exchange homepage - October 2026](./screenshots/no-kyc/toobit_homepage.png)
+
+
 **Type:** Centralized Exchange | **No-KYC Withdrawal:** 5 BTC / 24 hours | **US Access:** Blocked
 
 Toobit launched in October 2022 and has grown to over 4 million registered users. It is registered in the Cayman Islands and offers more than 1,300 trading pairs across spot and futures markets, including up to 200x leverage on selected contracts.
@@ -136,6 +139,9 @@ Because edgeX is non-custodial, the exchange itself never holds user funds in th
 
 ## 3. Uniswap — Best No-KYC Spot DEX
 
+![Uniswap DEX app interface - October 2026](./screenshots/no-kyc/uniswap_app.png)
+
+
 **Type:** Decentralized Exchange | **No-KYC Model:** No account required | **US Access:** Available (with limitations)
 
 Uniswap is the most widely used decentralized spot exchange in the world. You connect a self-custody wallet, trade directly against automated market maker (AMM) liquidity pools via Ethereum or L2 networks, and never interact with a central party that could request your ID.
@@ -156,6 +162,9 @@ In a notable policy shift, **Uniswap Labs stopped charging interface fees on Dec
 ---
 
 ## 4. Bisq — Best No-KYC P2P Exchange
+
+![Bisq P2P exchange homepage - October 2026](./screenshots/no-kyc/bisq_homepage.png)
+
 
 **Type:** Peer-to-Peer | **No-KYC Model:** No central account or KYC | **US Access:** Available
 
@@ -181,6 +190,9 @@ A user on r/TransDIY who was familiar with Bisq's fee structure added:
 
 ## 5. RoboSats — Best Lightning P2P
 
+![RoboSats Lightning P2P - October 2026](./screenshots/no-kyc/robosats_homepage.png)
+
+
 **Type:** P2P Lightning Network | **No-KYC Model:** Pseudonymous | **US Access:** Available
 
 RoboSats is a P2P Bitcoin exchange built on top of the Lightning Network. Users generate a temporary "robot identity" (a pseudonymous avatar) to list or fill buy/sell orders, with payments settled via Lightning or on-chain Bitcoin.
@@ -198,6 +210,9 @@ The pseudonymous identity model means no persistent account, no email address, n
 ---
 
 ## 6. Godex — Best Instant Swap (No Account)
+
+![Godex instant crypto swap - October 2026](./screenshots/no-kyc/godex_homepage.png)
+
 
 **Type:** Instant Exchange | **No-KYC Model:** Accountless | **US Access:** Available
 

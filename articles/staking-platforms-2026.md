@@ -61,6 +61,9 @@ Ethereum's exit queue stood at approximately 3 days on September 28, 2026. That 
 
 ### 1. Kraken — Best for Flexible ETH Staking (up to 2.72% APY)
 
+![Kraken ETH staking page - October 2026](./screenshots/staking/kraken_staking.png)
+
+
 **Rate:** Up to 2.72% APY on ETH (September 28, 2026)
 **Commission:** Taken from the quoted rate (exact percentage not published)
 **Custody:** Kraken holds all staked assets
@@ -86,6 +89,9 @@ The platform's longevity matters here: Kraken has operated since 2011, has never
 ---
 
 ### 2. Lido — Best for DeFi Integration (stETH 2.34% APY)
+
+![Lido liquid staking homepage - October 2026](./screenshots/staking/lido_homepage.png)
+
 
 **Rate:** stETH 2.34% APY (September 28, 2026)
 **Commission:** 10% of rewards (split between node operators and the Lido DAO treasury)
@@ -138,6 +144,9 @@ The case for Coinbase staking is entirely about convenience and regulatory clari
 
 ### 4. EigenLayer — Best for ETH Restaking (Power Users)
 
+![EigenLayer restaking app - October 2026](./screenshots/staking/eigenlayer_homepage.png)
+
+
 **Rate:** Base ETH yield + variable restaking rewards from Actively Validated Services
 **Commission:** Set by individual operators; not fixed
 **Custody:** Non-custodial smart contracts
@@ -168,6 +177,9 @@ Solana staking operates on an epoch schedule of approximately 2 days. Stakes act
 
 ### 5. Jito — Best SOL Staking with MEV Rewards (4.92% APY)
 
+![Jito SOL liquid staking - October 2026](./screenshots/staking/jito_homepage.png)
+
+
 **Rate:** jitoSOL 4.92% APY (September 28, 2026)
 **Commission:** 4% of rewards
 **Custody:** Non-custodial — smart contract
@@ -193,6 +205,9 @@ Reddit's Solana community has widely adopted jitoSOL as the default staking choi
 ---
 
 ### 6. Marinade — Best for Steady Native SOL Staking (~4.76% APY)
+
+![Marinade Finance staking app - October 2026](./screenshots/staking/marinade_homepage.png)
+
 
 **Rate:** mSOL approximately 4.76% APY (September 28, 2026)
 **Commission:** ~6% of rewards

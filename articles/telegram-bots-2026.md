@@ -64,6 +64,9 @@ A persistent threat that accelerated through 2025 is impersonation bots. Bad act
 
 ## 1. Banana Gun — Highest Volume, Multi-Chain Pioneer
 
+![Banana Gun trading bot - October 2026](./screenshots/telegram-bots/bananagun_homepage.png)
+
+
 **Official bot:** @BananaGunBot on Telegram | **Website:** bananagun.io
 
 Banana Gun is the undisputed volume leader among Telegram trading bots. As of late 2026, the platform has processed **over $16.09 billion in cumulative trading volume** and serves more than **1.3 million registered users** — figures that dwarf most competitors and speak to both adoption and infrastructure reliability.
@@ -111,6 +114,9 @@ What distinguishes Banana Gun from most competitors is its **revenue-sharing mod
 ---
 
 ## 2. Trojan on Solana — Best Dedicated Solana Sniper
+
+![Trojan on Solana bot website - October 2026](./screenshots/telegram-bots/trojan_homepage.png)
+
 
 **Official bot:** @TrojanTradingBot on Telegram | **Website:** trojan.finance (verify on official site)
 
@@ -160,6 +166,9 @@ The referral incentive creates a network of organic promoters, which helps expla
 ---
 
 ## 3. Maestro — Most Feature-Rich Multi-Chain Bot
+
+![Maestro trading bots homepage - October 2026](./screenshots/telegram-bots/maestro_homepage.png)
+
 
 **Official bot:** @MaestroSniperBot on Telegram | **Website:** maestrobots.com
 
@@ -213,6 +222,9 @@ Maestro supports **nine blockchain networks**: Ethereum (ETH), Binance Smart Cha
 ---
 
 ## 4. BonkBot — Best for Beginners
+
+![BonkBot Solana sniper bot - October 2026](./screenshots/telegram-bots/bonkbot_homepage.png)
+
 
 **Official bot:** @bonkbot_io on Telegram | **Website:** bonkbot.io
 

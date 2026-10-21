@@ -8,6 +8,9 @@
 
 ## Quick Verdict Table
 
+![DappRadar DeFi rankings used in our research - October 2026](./screenshots/presales/dappradar_trending.png)
+
+
 | # | Project | Network | Presale Price | Hard Cap | Raised (Live) | Auditors | Our Rating |
 |---|---------|---------|---------------|----------|----------------|----------|------------|
 | 1 | Bitcoin Hyper (HYPER) | Bitcoin L2 / SVM | $0.01 (early) → $0.0337 (current) | $52.8M | $32.28M | Coinsult, SpyWolf | ⭐⭐⭐⭐⭐ |
@@ -41,6 +44,9 @@ With those criteria in mind, here are the five presales we tracked across Reddit
 ---
 
 ## 1. Bitcoin Hyper (HYPER) — Best Overall Layer-2 Presale
+
+![BitcoinHyper (HYPER) presale - October 2026](./screenshots/presales/bitcoinhyper_homepage.png)
+
 
 **Network:** Bitcoin L2 + Solana Virtual Machine (SVM)  
 **Presale Entry Price:** $0.01 (early stages) — currently $0.0337 (live on site as of Oct 21, 2026)  
@@ -109,6 +115,9 @@ The presence of skeptics is not unusual for presales at this scale — the key c
 ---
 
 ## 2. Maxi Doge (MAXI) — Best Meme Coin Presale
+
+![Maxi Doge (MAXI) presale website - October 2026](./screenshots/presales/presale_maxi_homepage.png)
+
 
 **Network:** Ethereum  
 **Presale Price:** $0.00028185  

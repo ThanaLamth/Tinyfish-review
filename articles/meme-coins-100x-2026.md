@@ -56,6 +56,9 @@ These are the blue chips of meme coins — if such a thing can be said with a st
 
 ### 1. Dogecoin (DOGE)
 
+![Dogecoin (DOGE) on CoinGecko - October 2026](./screenshots/meme-coins/doge_coingecko.png)
+
+
 **Current price (Oct 2026):** ~$0.0815  
 **Market cap:** ~$12.3B–$15B  
 **Key exchanges:** Coinbase, Binance, Kraken, Robinhood  
@@ -74,6 +77,9 @@ For years, the biggest knock on DOGE was that there was nothing to *do* with it 
 ---
 
 ### 2. Pepe (PEPE)
+
+![PEPE coin price on CoinGecko - October 2026](./screenshots/meme-coins/pepe_coingecko.png)
+
 
 **Current price (Oct 2026):** ~$0.00000452  
 **Market cap:** ~$1.9B  
@@ -95,6 +101,9 @@ CryptoNews' October 2026 market tracking lists PEPE as one of the four most acti
 ---
 
 ### 3. Shiba Inu (SHIB)
+
+![Shiba Inu (SHIB) on CoinGecko - October 2026](./screenshots/meme-coins/shib_coingecko.png)
+
 
 **Current price (Oct 2026):** ~$0.00000512  
 **Market cap:** ~$3.4B  
