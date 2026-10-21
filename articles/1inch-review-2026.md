@@ -216,8 +216,8 @@ Click the referral link your friend or influencer shared. It will open 1inch wit
 
 You connect your wallet exactly as described in the tutorial above.
 
-![Wallet Picker](../screenshots/app.1inch.io/wallet-flow/07_wallet_picker.png)
-![Connected State](../screenshots/app.1inch.io/wallet-flow/10_kyberswap_connected.png)
+![Connect Wallet - 1inch](../screenshots/app.1inch.io/desktop.png)
+![1inch Interface](../screenshots/app.1inch.io/ref/desktop.png)
 
 **Step 3 — Review the swap**
 
