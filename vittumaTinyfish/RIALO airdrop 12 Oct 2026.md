@@ -14,23 +14,14 @@ Using **TinyFish CLI** (`fetch` and `search` commands), all platform parameters 
 * **Positioning & Technology**: Layer-1 Real-World Blockchain with **Reactive Transactions** architecture (automatically triggers on-chain actions from real-world data without Oracle or off-chain middleware), compatible with Solana VM and RISC-V smart contracts.
 * **Mainnet Target**: **2026**.
 
----
-
-## 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
-
-Screenshot data was captured directly from the live Rialo environment:
-
-### Screenshot 1: Rialo Network Homepage (`rialo.io`)
 ![Rialo Homepage](./rialo-screenshots/rialo_homepage.jpg)
 *Official website evidence*: [rialo.io](https://www.rialo.io)
 
-### Screenshot 2: Rialo Playground Dashboard & Points (`playground.rialo.io`)
-![Rialo Playground](./rialo-screenshots/rialo_playground.jpg)
-*Playground app catalog evidence*: [playground.rialo.io](https://playground.rialo.io)
 
 ---
 
-## 3. IMPORTANT NOTES ON TOKENS & THE RIALO POINTS SYSTEM
+
+## 2. IMPORTANT NOTES ON TOKENS & THE RIALO POINTS SYSTEM
 
 1. **No official Token or Airdrop confirmation yet**: The project is currently running the **Rialo Points (RP)** system to recognize builders, testers, and community members joining the ecosystem early.
 2. **$0 Capital Required**: All activities are conducted on the **Devnet** with test tokens — **absolutely no real money needs to be deposited**.
@@ -38,14 +29,18 @@ Screenshot data was captured directly from the live Rialo environment:
 
 ---
 
-## 4. STEP-BY-STEP RIALO POINTS FARMING PLAYBOOK
+## 3. STEP-BY-STEP RIALO POINTS FARMING PLAYBOOK
 
 ### Step 1: Register on Playground & Receive 20 Welcome Points
 1. Visit the official site: **[playground.rialo.io](https://playground.rialo.io)**
 2. Sign in with your **Google** account (the system automatically creates a safe Custodial Wallet shared across all apps).
 3. Receive **20 Rialo Points (RP)** welcome bonus immediately.
 4. Link **Discord** and **GitHub** in your profile tab to claim **Retroactive Points** (if you made early contributions).
-5. Go to the **Account** tab → Click **"Request devnet $RIALO"** to faucet test tokens (~5 tokens/hour).
+5. Go to the **Account** tab
+
+![Rialo Playground](./rialo-screenshots/rialo_playground.jpg)
+*Playground app catalog evidence*: [playground.rialo.io](https://playground.rialo.io)
+ → Click **"Request devnet $RIALO"** to faucet test tokens (~5 tokens/hour).
 
 ---
 
@@ -81,7 +76,7 @@ Discord is where Rialo records your Reputation Record:
 
 ---
 
-## 5. SAFETY WARNINGS & PRIORITY TABLE
+## 4. SAFETY WARNINGS & PRIORITY TABLE
 
 ### Anti-Scam Principles
 * **Do not send real money**: The entire process takes place on a free Devnet.
@@ -102,7 +97,7 @@ Discord is where Rialo records your Reputation Record:
 
 ---
 
-## 6. OFFICIAL REFERENCE LINKS
+## 5. OFFICIAL REFERENCE LINKS
 
 * **Rialo Playground**: [playground.rialo.io](https://playground.rialo.io)
 * **Official Website**: [rialo.io](https://www.rialo.io)

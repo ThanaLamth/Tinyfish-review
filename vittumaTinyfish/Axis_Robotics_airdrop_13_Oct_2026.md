@@ -14,43 +14,14 @@ Using **TinyFish CLI** (`fetch`, `agent`, and `search` commands), all platform p
 * **Core Team**: Leading AI and Robotics researchers and engineers from UC Berkeley, Carnegie Mellon (CMU), UCLA, NTU, and Shanghai Jiao Tong University.
 * **Data Collection Mechanism**: Uses **MuJoCo** physics simulation running directly in the web browser via WebAssembly / Three.js, combined with an IsaacSim processing system on GPU servers.
 
----
-
-## 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
-
-All screenshots were captured directly from the live Axis Robotics environment using TinyFish & Headless Web Engine:
-
-### Screenshot 1: Axis Robotics Homepage (`axisrobotics.ai`)
 ![Axis Robotics Homepage](./axis-screenshots/axis_landing.png)
 *Official website evidence*: [axisrobotics.ai](https://axisrobotics.ai)
 
----
-
-### Screenshot 2: Axis Hub Dashboard & Onboarding Tasks (`hub.axisrobotics.ai`)
-![Axis Hub Dashboard](./axis-screenshots/axis_hub.png)
-*Task center evidence*: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
 
 ---
 
-### Screenshot 3: Tokenomics Allocation — 10% Airdrop (`docs.axisrobotics.ai/tokenomics`)
-![Axis Tokenomics](./axis-screenshots/axis_docs_tokenomics.png)
-*Official tokenomics documentation evidence*: [docs.axisrobotics.ai/tokenomics](https://docs.axisrobotics.ai/economics-and-provenance/tokenomics)
 
----
-
-### Screenshot 4: Points Algorithm & Epoch Settlement (`docs.axisrobotics.ai/points`)
-![Axis Points Guide](./axis-screenshots/axis_docs_points.png)
-*Points mechanism documentation evidence*: [docs.axisrobotics.ai/points](https://docs.axisrobotics.ai/contributor-guide/points)
-
----
-
-### Screenshot 5: On-chain Sign & Verify Process on Base (`docs.axisrobotics.ai/sign-and-verify`)
-![Axis Sign and Verify](./axis-screenshots/axis_docs_sign.png)
-*On-chain signing guide documentation evidence*: [docs.axisrobotics.ai/sign-and-verify](https://docs.axisrobotics.ai/contributor-guide/sign-and-verify)
-
----
-
-## 3. TOKENOMICS & COMMUNITY CONTRIBUTOR AIRDROP ALLOCATION (10%)
+## 2. TOKENOMICS & COMMUNITY CONTRIBUTOR AIRDROP ALLOCATION (10%)
 
 According to official Axis Robotics documentation:
 * **Fixed Total Supply**: **1,000,000,000 $AXIS** (Non-inflationary).
@@ -63,14 +34,30 @@ According to official Axis Robotics documentation:
 | **Season 1** (Pre-TGE) | Simulation on Web Hub | **40,000,000** (4%) | • **50%** at TGE<br>• **25%** at T+3 (3 months after)<br>• **25%** at T+6 (6 months after) |
 | **Season 2** (Post-TGE) | Sim-to-real & mobile ego-centric data | **60,000,000** (6%) | Terms and mechanism to be announced after TGE |
 
+![Axis Tokenomics](./axis-screenshots/axis_docs_tokenomics.png)
+*Official tokenomics documentation*: [docs.axisrobotics.ai/tokenomics](https://docs.axisrobotics.ai/economics-and-provenance/tokenomics)
+
+![Axis Points Guide](./axis-screenshots/axis_docs_points.png)
+*Points mechanism documentation*: [docs.axisrobotics.ai/points](https://docs.axisrobotics.ai/contributor-guide/points)
+
+
+
 ---
 
-## 4. STEP-BY-STEP AXIS ROBOTICS AIRDROP PLAYBOOK
+## 3. STEP-BY-STEP AXIS ROBOTICS AIRDROP PLAYBOOK
 
 ### Step 1: Register on Axis Hub & Start with 6 "For Newbies" Tasks
 1. Visit the official site: **[hub.axisrobotics.ai](https://hub.axisrobotics.ai)**
 2. Sign in via Google, Email, X account, or personal wallet (Privy wallet integration is automatic).
 3. Use a **desktop or laptop with a separate mouse** (Chrome, Firefox, Safari). *Mobile is not recommended — the simulation requires precise drag control.*
+
+![Axis Hub Dashboard](./axis-screenshots/axis_hub.png)
+*Task center evidence*: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
+
+
+![Axis Hub Dashboard](./axis-screenshots/axis_hub.png)
+*Task center evidence*: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
+
 4. Complete all **6 "For Newbies"** introductory tasks first — these teach the submission flow and are the easiest to score.
 
 ---
@@ -85,6 +72,10 @@ Complete simulation tasks across multiple different environments per day (aim fo
 
 ### Step 3: On-chain Sign & Verify on Base (Required — 100%)
 Completing a task only saves data locally. If you don't sign on-chain, all your effort will not count toward points.
+
+![Axis Sign and Verify](./axis-screenshots/axis_docs_sign.png)
+*On-chain signing guide*: [docs.axisrobotics.ai/sign-and-verify](https://docs.axisrobotics.ai/contributor-guide/sign-and-verify)
+
 
 1. Click your avatar in the top-right corner → Select **Portfolio**.
 2. Switch to the **History** tab to view your runs.
@@ -109,7 +100,7 @@ Completing a task only saves data locally. If you don't sign on-chain, all your 
 
 ---
 
-## 5. SAFETY WARNINGS, ANTI-BOT RULES & PRIORITY ORDER
+## 4. SAFETY WARNINGS, ANTI-BOT RULES & PRIORITY ORDER
 
 ### Things to Absolutely Avoid (Anti-Sybil Rules):
 * **Do not spam a single task**: The Hub limits **maximum 5 valid completions per task**, and points for that task decrease with each additional attempt.
@@ -130,7 +121,7 @@ Completing a task only saves data locally. If you don't sign on-chain, all your 
 
 ---
 
-## 6. OFFICIAL REFERENCE LINKS
+## 5. OFFICIAL REFERENCE LINKS
 
 * **Axis Hub (Complete tasks)**: [hub.axisrobotics.ai](https://hub.axisrobotics.ai)
 * **Official Homepage**: [axisrobotics.ai](https://axisrobotics.ai)

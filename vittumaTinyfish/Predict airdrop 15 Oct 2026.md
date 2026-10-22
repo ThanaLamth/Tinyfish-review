@@ -23,67 +23,18 @@ Using **TinyFish CLI** combined with a **live login and real-money deposit into 
  * Founder **dingaling** confirmed directly below: **"Weeks, not months. Predict and be rewarded."**
  * *Legal status*: There is currently no snapshot announcement or specific PP-to-token conversion ratio. Predict Points (PP) is a metric recording real contributions by Liquidity Providers (LPs) and traders in preparation for the upcoming token distribution.
 
----
+![Predict Deposit](./predict-screenshots/00_deposit_success_real.png)
+*Real deposit evidence*: Successfully received **2.00182 USDT** in **10 seconds**, balance **Portfolio $2 | Available $2**.
 
-## 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
-
-All screenshots were captured directly from a live session on a real Predict.fun account:
-
-### Screenshot 1: Successful Real-Money Deposit into Predict Smart Wallet (`predict.fun`)
-![Predict Deposit Successful](./predict-screenshots/00_deposit_success_real.png)
-*Real deposit evidence*: Successfully received **2.00182 USDT** in **10 seconds**, balance shows **Portfolio $2 | Available $2**, with live **BTC Up or Down 5m** market and **Maker Rebates** banner.
-
----
-
-### Screenshot 2: Predict.fun Homepage & CLOB Order Book (`predict.fun`)
 ![Predict Homepage](./predict-screenshots/01_predict_homepage.png)
-*Official website evidence*: [predict.fun](https://predict.fun) — CLOB Prediction Market interface with BTC 5m, Politics, Sports, and Economics markets.
+*Official website*: [predict.fun](https://predict.fun) — CLOB Prediction Market with BTC 5m, Politics, Sports, Economics.
+
+
 
 ---
 
-### Screenshot 3: Predict Points Dashboard (`predict.fun/points`)
-![Predict Points Dashboard](./predict-screenshots/02_predict_points.png)
-*Points dashboard evidence*: [predict.fun/points](https://predict.fun/points) — Leaderboard rankings, Reserved Points, and weekly points statistics.
 
----
-
-### Screenshot 4: Multi-Category Market Exploration (`predict.fun/explore`)
-![Predict Explore Markets](./predict-screenshots/03_predict_explore.png)
-*Market evidence*: [predict.fun/explore](https://predict.fun/explore) — Diverse market categories with "Points Active" and "Yield" badges.
-
----
-
-### Screenshot 5: LP Points Scoring Mechanism Guide (`docs.predict.fun/how-to-earn-points`)
-![Docs How to Earn Points](./predict-screenshots/04_docs_points.png)
-*Points scoring documentation evidence*: [docs.predict.fun/the-basics/how-to-earn-points](https://docs.predict.fun/the-basics/how-to-earn-points)
-
----
-
-### Screenshot 6: Venus Protocol Yield Feature for Open Positions (`docs.predict.fun/yields`)
-![Docs Yields Venus](./predict-screenshots/05_docs_yields.png)
-*Yield mechanism evidence*: [docs.predict.fun/the-basics/yields](https://docs.predict.fun/the-basics/yields) — Automatically routes collateral USDT to Venus Protocol to generate DeFi yield.
-
----
-
-### Screenshot 7: Seed-Phrase-Free Smart Wallet Technology (`docs.predict.fun/wallets`)
-![Docs Smart Wallets](./predict-screenshots/06_docs_wallets.png)
-*Wallet infrastructure evidence*: [docs.predict.fun/knowledge-base/wallets](https://docs.predict.fun/knowledge-base/wallets) — Privy + ZeroDev integration for gasless smart contract wallets.
-
----
-
-### Screenshot 8: 10% Referral Commission Policy + 10% PP (`docs.predict.fun/invites`)
-![Docs Invites Program](./predict-screenshots/07_docs_invites.png)
-*Referral policy evidence*: [docs.predict.fun/knowledge-base/invites](https://docs.predict.fun/knowledge-base/invites) — 10% fee reduction for referred users + 10% of their PP permanently to referrer.
-
----
-
-### Screenshot 9: Boosted PP Reward Markets (`docs.predict.fun/boosted-pp-markets`)
-![Docs Boosted PP Markets](./predict-screenshots/08_docs_boosted.png)
-*Boosted markets evidence*: [docs.predict.fun/knowledge-base/boosted-pp-markets](https://docs.predict.fun/knowledge-base/boosted-pp-markets) — Up to 6 markets with the Boost flag active at any time.
-
----
-
-## 3. PREDICT POINTS (PP) FARMING MECHANISM — SCORE OPTIMIZATION SECRETS
+## 2. PREDICT POINTS (PP) FARMING MECHANISM — SCORE OPTIMIZATION SECRETS
 
 Unlike DEXs that only measure raw trading volume, **Predict.fun allocates the majority of points to Liquidity Providers (LPs)** — users who place limit orders on both sides of the order book to create a deep, tight market.
 
@@ -94,6 +45,10 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 ---
 
 ### 1. Liquidity Provider (LP) Points Scoring Rules:
+
+![Docs How to Earn Points](./predict-screenshots/04_docs_points.png)
+*Points scoring docs*: [docs.predict.fun/the-basics/how-to-earn-points](https://docs.predict.fun/the-basics/how-to-earn-points)
+
 * **Publicly listed PP/hr rate**: Each market is assigned a **Predict Points per hour (PP/hr)** quota displayed directly on the market page.
 * **5-Star Tier System**:
  * (1 star): Basic market.
@@ -108,7 +63,11 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 ---
 
 ### 2. Other Point Acceleration Mechanisms:
-* **PP Boosted Markets (Gold Badge)**: At any given time, up to **6 markets are flagged as Boosted**. Providing liquidity at these markets earns a significantly higher PP/hr rate.
+* **PP Boosted Markets (Gold Badge)**:
+
+![Docs Boosted PP Markets](./predict-screenshots/08_docs_boosted.png)
+*Boosted market docs*: [docs.predict.fun/knowledge-base/boosted-pp-markets](https://docs.predict.fun/knowledge-base/boosted-pp-markets)
+ At any given time, up to **6 markets are flagged as Boosted**. Providing liquidity at these markets earns a significantly higher PP/hr rate.
 * **Trading & Position Holding**: Actual matched trades and maintaining open positions (holding) are also recorded by the system for additional Trading Points and Holding Points.
 * **Exclusive Yield from Venus Protocol**: Collateral USDT from pending positions automatically earns DeFi yield via Venus Protocol — you earn while you wait.
 * **Referral Program**: After depositing a minimum of **$10 USDT**, you unlock your Invite Code. You permanently receive **10% of referred users' PP** (no expiration) and they get a **10% fee discount**.
@@ -122,13 +81,17 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 
 ---
 
-## 4. STEP-BY-STEP PREDICT POINTS FARMING PLAYBOOK
+## 3. STEP-BY-STEP PREDICT POINTS FARMING PLAYBOOK
 
 ### Step 1: Create Smart Wallet & Deposit USDT
 1. Visit the official site: **[predict.fun](https://predict.fun)**
 2. Sign up via Google, X account, or connect a personal Web3 wallet (MetaMask/Rabby).
 3. The **Privy + ZeroDev** integration will automatically create a dedicated **Smart Contract Wallet** for you (no seed phrase to manage).
-4. Click **Deposit** in the top-right corner → Deposit USDT on BNB Chain (the Fun.xyz gateway is extremely fast — just **10 seconds**).
+4. Click **Deposit** in the top-right corner
+
+![Docs Smart Wallets](./predict-screenshots/06_docs_wallets.png)
+*Wallet infrastructure*: [docs.predict.fun/knowledge-base/wallets](https://docs.predict.fun/knowledge-base/wallets) — Privy + ZeroDev gasless smart contract wallets.
+ → Deposit USDT on BNB Chain (the Fun.xyz gateway is extremely fast — just **10 seconds**).
 
 ---
 
@@ -136,6 +99,10 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 1. Go to the **Explore** tab (or browse the market list on the homepage).
 2. Filter for markets with the gold **PP Boosted** badge and **Points Active** indicator.
 3. Prioritize markets rated **3 to 5 stars** for the highest PP/hr accumulation rate.
+
+![Predict Explore Markets](./predict-screenshots/03_predict_explore.png)
+*Market evidence*: [predict.fun/explore](https://predict.fun/explore) — Market categories with Points Active and Yield badges.
+
 
 ---
 
@@ -154,18 +121,30 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 * When you place limit orders close to the market price to maximize points, your orders may occasionally get matched (filled) by others.
 * **How to handle**:
  * If your order gets filled, you become a position holder (Holding) and continue earning Holding Points + DeFi yield from Venus Protocol.
- * If you don't want exposure to the market outcome, you can go to **Polymarket** and open a corresponding opposite position to hedge (Hedging).
+ * If you don't want exposure to the market outcome
+
+![Docs Yields Venus](./predict-screenshots/05_docs_yields.png)
+*Yield mechanism*: [docs.predict.fun/the-basics/yields](https://docs.predict.fun/the-basics/yields) — Automatically routes USDT to Venus Protocol for DeFi yield.
+, you can go to **Polymarket** and open a corresponding opposite position to hedge (Hedging).
 
 ---
 
 ### Step 5: Unlock Invite Link & Claim Venus Yield Weekly
 1. Deposit a minimum of **$10** to unlock the **Invite** page.
 2. Share your referral link with friends to earn an additional **10% PP passively**.
-3. Visit the **Portfolio** page weekly to click **Claim Yield** from Venus Protocol and check for newly credited points.
+3. Visit the **Portfolio** page weekly to click **Claim Yield**
+
+![Predict Points Dashboard](./predict-screenshots/02_predict_points.png)
+*Points dashboard*: [predict.fun/points](https://predict.fun/points) — Leaderboard rankings, Reserved Points, weekly statistics.
+
+![Docs Invites Program](./predict-screenshots/07_docs_invites.png)
+*Invite program docs*: [docs.predict.fun/knowledge-base/invites](https://docs.predict.fun/knowledge-base/invites) — 10% PP referral commission.
+
+ from Venus Protocol and check for newly credited points.
 
 ---
 
-## 5. SAFETY WARNINGS, FAIR PLAY RULES & PRIORITY ORDER
+## 4. SAFETY WARNINGS, FAIR PLAY RULES & PRIORITY ORDER
 
 ### Mandatory Fair Play Rules (Avoid Having Points Reset to Zero):
 * **Never place fake orders (Non-executable orders)**: Placing orders then immediately cancelling (cancellation abuse), or submitting orders that can never be filled, will trigger the system's anti-gaming detection.
@@ -186,7 +165,7 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 
 ---
 
-## 6. OFFICIAL REFERENCE LINKS
+## 5. OFFICIAL REFERENCE LINKS
 
 * **Predict Web App (Join now)**: [predict.fun](https://predict.fun)
 * **Predict Points Dashboard**: [predict.fun/points](https://predict.fun/points)

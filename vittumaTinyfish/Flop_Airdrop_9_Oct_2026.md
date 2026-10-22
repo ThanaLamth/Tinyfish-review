@@ -14,19 +14,19 @@ Using **TinyFish CLI** (`fetch` and `search` commands), data from Flop Network's
 * **Testnet Spec**: [flop.finance/testnet](https://flop.finance/testnet)
 * **Official X / Twitter**: [@flop_labs](https://x.com/flop_labs) and Co-founder Arthur Hayes [@CryptoHayes](https://x.com/CryptoHayes)
 
-### Interface Screenshots & Visual Evidence
-
-#### Screenshot 1: Flop Finance Homepage (`flop.finance`)
 ![Flop Finance Homepage](./screenshots/flop_homepage.jpg)
+*Official website evidence*: [flop.finance](https://flop.finance) — Flop Network homepage overview.
 
-#### Screenshot 2: Airdrop Management Dashboard (`flop.finance/airdrop`)
-![Flop Airdrop Dashboard](./screenshots/flop_airdrop_dashboard.jpg)
 
----
+
 
 ## 2. DETAILS OF 2 ACTIVE PRE-TESTNET COMPETITIONS
 
 Flop Labs and Arthur Hayes launched 2 pre-Testnet trial competitions on the **Technocore** environment (`technocore.chat`). These are the first officially announced airdrop qualification activities:
+
+![Flop Airdrop Dashboard](./screenshots/flop_airdrop_dashboard.jpg)
+*Airdrop management dashboard evidence*: [flop.finance/airdrop](https://flop.finance/airdrop) — Live airdrop qualification dashboard.
+
 
 ### Competition 1: NVDA Perp Prediction Contest (1,000,000 $FLOP)
 * **Source Tweet Evidence**: [Arthur Hayes (@CryptoHayes) on X](https://x.com/CryptoHayes/status/2103453504513937720) (September 25, 2026).

@@ -10,7 +10,15 @@
 Using **TinyFish CLI** (`fetch`, `agent`, and `search` commands), all platform architecture details, project information, and points program documentation for **Arcus** were extracted and verified directly from primary sources:
 
 * **Positioning & Breakthrough Innovation**: A **next-generation Decentralized Exchange (DEX)** combining **Stock Token (Tokenized Equities/RWA)** trading and **Perpetual Futures** with **24/7 non-stop trading** (Trade while the world sleeps) and a **0% spot trading fee** policy.
-* **Development Team & Strategic Backing**: Built by **dYdX Labs** (led by Founder **Eddie Zhang** — founder of Pocket Protector, acquired by dYdX Labs) in partnership with **Robinhood Crypto** serving as both strategic investor and ecosystem integration partner.
+* **Development Team & Strategic Backing**:
+
+![Arcus Homepage](./arcus-screenshots/07_homepage.png)
+*Official website*: [arcus.xyz](https://arcus.xyz) — 24/7 stocks and perps trading at 0% fees.
+
+![Arcus Launch Team](./arcus-screenshots/08_launch_team.png)
+*Official partnership*: [arcus.xyz/blog/welcome-to-arcus](https://arcus.xyz/blog/welcome-to-arcus)
+
+ Built by **dYdX Labs** (led by Founder **Eddie Zhang** — founder of Pocket Protector, acquired by dYdX Labs) in partnership with **Robinhood Crypto** serving as both strategic investor and ecosystem integration partner.
 * **Blockchain Infrastructure & Order Matching**: Operating natively on **Robinhood Chain** (an EVM Layer-2 chain purpose-built for high-throughput financial trading). The off-chain matching engine achieves **100,000+ orders/second** with ultra-fast confirmation times of **~20ms**, while custody and settlement are fully non-custodial on-chain. The standard settlement currency is the **USDG** stablecoin.
 * **Real Beta Achievements (TinyFish & DefiLlama data)**:
  * Cumulative trading volume exceeding **$5,000,000,000 USD** ($5B+).
@@ -18,71 +26,22 @@ Using **TinyFish CLI** (`fetch`, `agent`, and `search` commands), all platform a
  * Peak single-day trading volume exceeding **$500,000,000 USD**.
  * Total Value Locked (TVL) on the platform above **$25,000,000 USD**.
 
----
+![Arcus DefiLlama](./arcus-screenshots/11_defillama.png)
+*DefiLlama stats*: [defillama.com/protocol/arcus](https://defillama.com/protocol/arcus) — TVL $25M+, volume $5B+.
 
-## 2. SCREENSHOT EVIDENCE & LIVE INTERFACE DOCUMENTATION
-
-All screenshots were captured directly from the live Arcus environment using TinyFish:
-
-### Screenshot 1: Arcus Homepage (`arcus.xyz`)
-![Arcus Homepage](./arcus-screenshots/07_homepage.png)
-*Official website evidence*: [arcus.xyz](https://arcus.xyz) — Positioning for 24/7 stocks and perps trading at 0% fees.
 
 ---
 
-### Screenshot 2: dYdX Labs x Robinhood Chain Partnership Announcement (`arcus.xyz/blog`)
-![Arcus Launch Team & Partnership](./arcus-screenshots/08_launch_team.png)
-*Official announcement evidence*: [Welcome to Arcus Blog](https://arcus.xyz/blog/welcome-to-arcus)
 
----
-
-### Screenshot 3: Tokenized Stock Spot Trading Interface — TSLA (`app.arcus.xyz/trade/spot/TSLA`)
-![Arcus TSLA Spot Interface](./arcus-screenshots/01_spot_tsla.png)
-*Spot trading evidence*: [app.arcus.xyz/trade/spot/TSLA](https://app.arcus.xyz/trade/spot/TSLA) — TradingView chart, corporate data, and 0% fee swap form.
-
----
-
-### Screenshot 4: Self-Custodial Wallet Connection Modal (`app.arcus.xyz`)
-![Arcus Wallet Connection Modal](./arcus-screenshots/02_sign_in_modal.png)
-*Wallet connection evidence*: [app.arcus.xyz](https://app.arcus.xyz) — Privy Web3 infrastructure integration with self-custody wallet.
-
----
-
-### Screenshot 5: Perpetuals Trading Interface (`app.arcus.xyz/trade/perps/BTC-USDG`)
-![Arcus Perps Interface](./arcus-screenshots/03_perps_btc.png)
-*Perps trading evidence*: [app.arcus.xyz/trade/perps](https://app.arcus.xyz/trade/perps) — Cross-margin, up to 50x leverage and deep liquidity.
-
----
-
-### Screenshot 6: Arcus Points & Rewards Dashboard (`app.arcus.xyz/rewards`)
-![Arcus Points Rewards Dashboard](./arcus-screenshots/04_rewards.png)
-*Points Dashboard evidence*: [app.arcus.xyz/rewards](https://app.arcus.xyz/rewards) — Season 0, Season 1 leaderboard and 250,000 points/week distribution.
-
----
-
-### Screenshot 7: Multi-Asset RWA & Equities Discovery Market (`app.arcus.xyz/markets`)
-![Arcus Discover Markets](./arcus-screenshots/06_discover.png)
-*95+ listed markets evidence*: [app.arcus.xyz/markets](https://app.arcus.xyz/markets) — US and international stocks, indices (SPY, QQQ), commodities, and crypto.
-
----
-
-### Screenshot 8: High-Speed Order Matching Architecture (`docs.arcus.xyz`)
-![Arcus Architecture Docs](./arcus-screenshots/10_architecture_docs.png)
-*Architecture documentation evidence*: [docs.arcus.xyz](https://docs.arcus.xyz) — Off-chain matching engine 100k+ TPS, 20ms trade latency.
-
----
-
-### Screenshot 9: Liquidity & Volume Data on DefiLlama
-![Arcus DefiLlama Metrics](./arcus-screenshots/11_defillama.png)
-*DefiLlama stats evidence*: [defillama.com/protocol/arcus](https://defillama.com/protocol/arcus) — TVL $25M+, cumulative volume $5B+.
-
----
-
-## 3. TOKENOMICS & ARCUS POINTS PROGRAM BREAKDOWN
+## 2. TOKENOMICS & ARCUS POINTS PROGRAM BREAKDOWN
 
 According to official Arcus protocol documentation:
 
-**Points Pool**: **250,000 Arcus Points distributed weekly** from a fixed pool. Points do not accumulate — each week, the pool is distributed proportionally based on that week's activity score.
+**Points Pool**: **250,000 Arcus Points distributed weekly**
+
+![Arcus Architecture Docs](./arcus-screenshots/10_architecture_docs.png)
+*Architecture docs*: [docs.arcus.xyz](https://docs.arcus.xyz) — Off-chain matching engine 100k+ TPS, 20ms latency.
+ from a fixed pool. Points do not accumulate — each week, the pool is distributed proportionally based on that week's activity score.
 
 **5 Official Scoring Multipliers**:
 | Multiplier | Criteria | Boost Factor |
@@ -97,14 +56,22 @@ According to official Arcus protocol documentation:
 
 ---
 
-## 4. STEP-BY-STEP ARCUS POINTS FARMING PLAYBOOK
+## 3. STEP-BY-STEP ARCUS POINTS FARMING PLAYBOOK
 
 ### Step 1: Access the App & Start with Spot Trading (No Invite Code Needed)
 1. Visit the official app: **[app.arcus.xyz](https://app.arcus.xyz)**
 2. Connect wallet: MetaMask, Coinbase Wallet, or create a new self-custody wallet via Privy.
 3. Switch to the **Robinhood Chain** network (Chain ID: 1996). If prompted, click **"Add Network"** to auto-configure.
 4. Fund your account with **USDG** stablecoin (bridge from Base or Ethereum via the in-app bridge).
-5. Start trading **Spot** markets (TSLA, SPY, BTC, ETH, etc.) — no invite code required.
+5. Start trading **Spot** markets
+
+![Arcus TSLA Spot](./arcus-screenshots/01_spot_tsla.png)
+*Spot trading evidence*: [app.arcus.xyz/trade/spot/TSLA](https://app.arcus.xyz/trade/spot/TSLA) — TradingView chart, 0% fee.
+
+![Arcus Wallet Modal](./arcus-screenshots/02_sign_in_modal.png)
+*Wallet connection*: [app.arcus.xyz](https://app.arcus.xyz) — Privy Web3 self-custody wallet integration.
+
+ (TSLA, SPY, BTC, ETH, etc.) — no invite code required.
 
 ---
 
@@ -113,7 +80,11 @@ Perps trading requires an Invite Code (Beta access control):
 * Earn codes from traders who have traded over $1M volume (each $1M vol generates 1 single-use code).
 * Get codes via referral links from community partners.
 * Join the waitlist at: **[waitlist.arcus.xyz](https://waitlist.arcus.xyz)** (connect wallet and X account to import trade history from dYdX, Hyperliquid, Lighter).
-2. Once you have a code: Go to **app.arcus.xyz** → Select **Perps** tab → Enter Invite Code → Deposit USDG margin.
+2. Once you have a code: Go to **app.arcus.xyz**
+
+![Arcus Perps Interface](./arcus-screenshots/03_perps_btc.png)
+*Perps trading*: [app.arcus.xyz/trade/perps](https://app.arcus.xyz/trade/perps) — Cross-margin, up to 50x leverage.
+ → Select **Perps** tab → Enter Invite Code → Deposit USDG margin.
 
 ---
 
@@ -122,19 +93,27 @@ To maximize rewards from the 250,000 points/week pool:
 * **Target golden hours (Out-of-hours Boost)**: Prioritize opening positions and trading in the evenings, weekends, or early mornings US time to capture the full out-of-hours boost multiplier.
 * **Hold quality positions**: Keep positions open for hours to days rather than scalping, which naturally diversifies your portfolio and accumulates Retained Position points.
 * **Maintain stable collateral balance**: Avoid depositing funds, trading, then immediately withdrawing. Keep your USDG balance in the account to build your Retained Deposits score.
-* **Diversify into RWA**: Focus 60–70% of trading volume on Stock Tokens and economic indices to maximize the RWA Boost.
+* **Diversify into RWA**: Focus 60
+
+![Arcus Discover Markets](./arcus-screenshots/06_discover.png)
+*95+ listed markets*: [app.arcus.xyz/markets](https://app.arcus.xyz/markets) — Stocks, indices (SPY, QQQ), commodities, crypto.
+–70% of trading volume on Stock Tokens and economic indices to maximize the RWA Boost.
 
 ---
 
 ### Step 5: Check Rankings & Collect Points Weekly
 1. Regularly visit the Dashboard: **[app.arcus.xyz/rewards](https://app.arcus.xyz/rewards)**
 2. Check for updated points every **Wednesday at 3:00 PM ET**.
-3. Track tier progression: **Bronze → Silver → Gold → Platinum → Diamond**.
+3. Track tier progression: **Bronze
+
+![Arcus Points Dashboard](./arcus-screenshots/04_rewards.png)
+*Points Dashboard*: [app.arcus.xyz/rewards](https://app.arcus.xyz/rewards) — Season 0 & 1 leaderboard, 250,000 pts/week.
+ → Silver → Gold → Platinum → Diamond**.
 4. When your perps volume (or that of your referrals) hits $1M milestones, collect new Invite Codes from the **Rewards** tab to share with your community.
 
 ---
 
-## 5. RISK WARNINGS, ANTI-GAMING RULES & PRIORITY ORDER
+## 4. RISK WARNINGS, ANTI-GAMING RULES & PRIORITY ORDER
 
 ### Actions That Result in Points Deduction or Full Cancellation (Anti-Gaming / Slashing):
 * **Wash Trading & Self-Matching**: Opening matching buy and sell orders on the same account, or linking multiple wallets to create artificial volume against yourself.
@@ -156,7 +135,7 @@ To maximize rewards from the 250,000 points/week pool:
 
 ---
 
-## 6. OFFICIAL REFERENCE LINKS
+## 5. OFFICIAL REFERENCE LINKS
 
 * **Arcus Web App (Trade directly)**: [app.arcus.xyz](https://app.arcus.xyz)
 * **Arcus Rewards / Points Dashboard**: [app.arcus.xyz/rewards](https://app.arcus.xyz/rewards)

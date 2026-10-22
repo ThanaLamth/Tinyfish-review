@@ -19,6 +19,10 @@ Instead, Papertrade deploys a novel **"Loss Mining" (Reverse Liquidation Minting
 4. **Real Cash Flow Utility**: 99.30% of all circulating PAPER (8.62B of 8.69B total supply) is actively staked in the protocol contract, earning a direct 1% USDC fee distribution from platform volume. Over **$54.08M USDC** has already been distributed to stakers.
 5. **Soulbound / Non-Transferable Phase**: Currently, `$PAPER` cannot be transferred between external wallets. It can only be staked, unstaked, and claimed for USDC yield, with external ERC-20 transfers scheduled for a subsequent governance epoch.
 
+![CoinMarketCap Paper Page](./papertrade-screenshots/08_papertrade_cmc.png)
+*Market Data*: Official CoinMarketCap listing for **Papertrade (PAPER)** —  trading at **$0.02420**, FDV **$210.34M**, total supply 8.68B PAPER.
+
+
 ---
 
 ## 1. Architectural Deep Dive: Synthetic Perps on HyperEVM
@@ -69,63 +73,14 @@ Papertrade operates as a high-throughput synthetic perpetual exchange built nati
 * **1000x Leverage Engine**: Traders can scale margin up to 1000x multiplier. At 1000x, a mere 0.05% to 0.10% adverse price fluctuation triggers automated liquidation by the clearing engine.
 * **Asymmetric Fee Structure**: Winning trades contribute an asymmetric protocol fee back into the House liquidity pool, while losing trades generate equity tokens (`$PAPER`) for the trader.
 
----
+![Papertrade House Pool](./papertrade-screenshots/03_papertrade_house.png)
+*Live Protocol Liquidity*: House metrics —  **$3.34M House Funds**, TVL **$63.1M**, cumulative volume **$1.36 Trillion**, staker revenue **$54.08M USDC**.
 
-## 2. Live Photographic Evidence & Connected User Experience
-
-Every visual capture below was taken during a live browser session with active MetaMask connection (`0x51d2...046b`) on Google Chrome:
 
 ---
 
-### Screenshot 1: BTC/USD 1000x Trading Terminal (`exchange.papertrade.xyz/trade/btc`)
-![Papertrade BTC Terminal](./papertrade-screenshots/01_papertrade_trade_btc.png)
-*Live Terminal Inspection*: Connected wallet `0x51d2...046b` verified at top right. Shows BTC mid-price at $82,943.05, 24-hour trading volume of **$48.9B**, Long Open Interest of $276.5M vs. Short OI of $281.8M. Real-time liquidation and profit stream shows automated trade outcomes. The order form features interactive margin sizing ($10 minimum) and continuous leverage slider up to 1000x.
 
----
-
-### Screenshot 2: Connected Trader Portfolio & Emissions Tracker (`exchange.papertrade.xyz/portfolio`)
-![Papertrade Portfolio Dashboard](./papertrade-screenshots/02_papertrade_portfolio.png)
-*Live Portfolio Dashboard*: Displays active account balance, margin utilization, open PnL, active trading positions, and personal `$PAPER` emissions balance. Direct action buttons provide seamless Deposit, Withdraw, and Session Key renewal.
-
----
-
-### Screenshot 3: House Liquidity Pool & Protocol Metrics (`exchange.papertrade.xyz/house`)
-![Papertrade House Pool Dashboard](./papertrade-screenshots/03_papertrade_house.png)
-*Live Protocol Liquidity Verification*: Real-time House metrics displaying **$3.34M in House Funds**, total value locked of **$63.1M**, cumulative platform volume exceeding **$1.36 Trillion**, 4,036 open positions, total supply of **8.69B PAPER**, and cumulative staker revenue sharing of **$54.08M USDC**.
-
----
-
-### Screenshot 4: $PAPER Tokenomics & Minting Decay Dashboard (`exchange.papertrade.xyz/paper`)
-![Papertrade Paper Staking and Decay](./papertrade-screenshots/04_papertrade_paper.png)
-*Live Staking & Decay Curve Verification*: Displays current House LP balance ($4.74M) driving the decay curve. Current mint rate is active at **10.9 PAPER per $1 of net trading loss**. Out of 8.69B PAPER total supply, **8.62B PAPER (99.30%)** is actively staked to earn 1% USDC volume fees. Officially verified smart contracts: Token (`0xe40f0c0576302ba2c2447990177727144e311c0e`) and Staking (`0xaad6eb6fca5dc8952467d5831daec6ffb400f016`).
-
----
-
-### Screenshot 5: Global Top Traders & Positions Leaderboard (`exchange.papertrade.xyz/leaderboard`)
-![Papertrade Leaderboard](./papertrade-screenshots/05_papertrade_leaderboard.png)
-*Live Leaderboard Verification*: Connected wallet `0x51d2...046b` monitoring top platform performers across 24h, 7d, 30d, and All-Time intervals. Top recorded positions include `paulypaul2` (ETH 50x Short, +$65,657 PnL), `0x42c0...3816` (ETH 100x Long, +$62,190 PnL), and `Hunter` (BTC 386x Long, +$48,142 PnL).
-
----
-
-### Screenshot 6: ETH/USD High-Speed Trading Interface (`exchange.papertrade.xyz/trade/eth`)
-![Papertrade ETH Terminal](./papertrade-screenshots/06_papertrade_trade_eth.png)
-*Live ETH Trading Terminal*: Real-time ETH/USD tick chart ($2,437.60 mid-price) with 24-hour volume of **$13.4B**, Long OI at $89.2M, and Short OI at $86.9M. Features direct session-key trading with 0 slippage and 0 funding fee.
-
----
-
-### Screenshot 7: Official Papertrade X (Twitter) Channel (`@papertrade_xyz`)
-![Papertrade Official X Profile](./papertrade-screenshots/07_papertrade_x.png)
-*Official Social Channel*: Verified [@papertrade_xyz](https://x.com/papertrade_xyz) profile on X with 50.6K+ followers, confirming official deployment on Hyperliquid and pinned deployment announcement following the HyperEVM network upgrade.
-
----
-
-### Screenshot 8: CoinMarketCap $PAPER Market Intelligence (`coinmarketcap.com`)
-![CoinMarketCap Paper Page](./papertrade-screenshots/08_papertrade_cmc.png)
-*Market Data Aggregation*: Official CoinMarketCap listing for **Papertrade (PAPER)** trading at **$0.02420**, with a Fully Diluted Valuation (FDV) of **$210.34M**, total supply of 8.68B PAPER, and circulating liquid supply of 64.3M PAPER.
-
----
-
-## 3. The $PAPER Tokenomics & "Loss Mining" Decay Curve
+## 2. The $PAPER Tokenomics & "Loss Mining" Decay Curve
 
 The economic design of Papertrade turns traditional token launches upside down by replacing speculative public sales with an automated **loss-absorption equity conversion**:
 
@@ -160,7 +115,7 @@ $$\text{PAPER Minted} = \text{Net Trading Loss (USD)} \times R(\text{Pool Balanc
 
 ---
 
-## 4. Staking Architecture & Real Yield Mechanics
+## 3. Staking Architecture & Real Yield Mechanics
 
 Unlike inflationary governance tokens that emit more of themselves as staking APR, `$PAPER` distributes hard-money **USDC cash flow**:
 
@@ -175,7 +130,7 @@ Unlike inflationary governance tokens that emit more of themselves as staking AP
 
 ---
 
-## 5. Step-by-Step Practical Execution Playbook
+## 4. Step-by-Step Practical Execution Playbook
 
 For users seeking to experience Papertrade, test the 1000x synthetic infrastructure, and position their wallets for ongoing ecosystem rewards, follow this battle-tested SOP:
 
@@ -204,12 +159,24 @@ For users seeking to experience Papertrade, test the 1000x synthetic infrastruct
 4. Review your **Bust Price (Liquidation Price)** displayed directly below the order button.
 5. Click **"Execute Order"**.
 
+![Papertrade BTC Terminal](./papertrade-screenshots/01_papertrade_trade_btc.png)
+*Live BTC Terminal*: BTC mid-price $82,943.05, 24h volume **$48.9B**, Long OI $276.5M vs Short OI $281.8M. Order form with $10 minimum margin and 1000x leverage slider.
+
+![Papertrade ETH Terminal](./papertrade-screenshots/06_papertrade_trade_eth.png)
+*Live ETH Terminal*: ETH/USD $2,437.60 mid-price, 24h volume **$13.4B**, Long OI $89.2M, Short OI $86.9M. Zero slippage and zero funding fee.
+
+
+
 ### Step 5: Position Settlement & Equity Conversion
 * **If the trade hits your Take Profit**: You receive USDC net profit into your account equity (adjusted for asymmetric winning fee).
 * **If the trade is liquidated or closed at a loss**:
  * The net USD loss is calculated on-chain.
  * The smart contract automatically mints `$PAPER` at the current decay rate (~10.9 PAPER / $1 lost).
- * Check your updated PAPER balance under **Portfolio** (`/portfolio`) or **Paper** (`/paper`).
+ * Check your updated PAPER balance under **Portfolio**
+
+![Papertrade Portfolio Dashboard](./papertrade-screenshots/02_papertrade_portfolio.png)
+*Live Portfolio Dashboard*: Active account balance, margin utilization, open PnL, positions, and personal $PAPER emissions balance.
+ (`/portfolio`) or **Paper** (`/paper`).
 
 ### Step 6: Staking $PAPER for Passive USDC Yield
 1. Navigate to the **Paper** tab: `https://exchange.papertrade.xyz/paper`.
@@ -218,9 +185,13 @@ For users seeking to experience Papertrade, test the 1000x synthetic infrastruct
 4. Your staked PAPER immediately begins accumulating USDC yield from the 1% platform revenue distribution pool.
 5. Periodically claim your accrued USDC rewards directly to your HyperEVM account.
 
+![Papertrade Paper Staking](./papertrade-screenshots/04_papertrade_paper.png)
+*Live Staking & Decay*: House LP $4.74M drives decay. Current mint rate **10.9 PAPER per $1 loss**. 8.62B PAPER (99.30%) actively staked.
+
+
 ---
 
-## 6. Comprehensive Risk Matrix & Capital Preservation Warning
+## 5. Comprehensive Risk Matrix & Capital Preservation Warning
 
 | Risk Category | Severity | Detailed Description & Operational Impact | Mitigation Protocol |
 | :--- | :---: | :--- | :--- |
@@ -231,7 +202,7 @@ For users seeking to experience Papertrade, test the 1000x synthetic infrastruct
 
 ---
 
-## 7. Strategic Evaluation & Verdict for Airdrop Hunters
+## 6. Strategic Evaluation & Verdict for Airdrop Hunters
 
 ```
 +-----------------------------------------------------------------------------------+
@@ -249,7 +220,15 @@ For users seeking to experience Papertrade, test the 1000x synthetic infrastruct
 Papertrade is a **revolutionary perpetual DEX experiment** that replaces toxic pre-mines and predatory VC vesting cliffs with a pure market-clearing equity model. 
 
 * **For pure "free airdrop" seekers**: Do **NOT** participate expecting a standard retro drop. You will lose real money.
-* **For active perps traders & Hyperliquid ecosystem participants**: Papertrade offers an unmatched synthetic trading terminal with zero slippage on major crypto pairs, backed by an innovative downside-protection cushion (`$PAPER`) that turns trading mistakes into passive USDC cash-flow streams.
+* **For active perps traders & Hyperliquid ecosystem participants**:
+
+![Papertrade Leaderboard](./papertrade-screenshots/05_papertrade_leaderboard.png)
+*Live Leaderboard*: Top performers including `paulypaul2` (ETH 50x Short, +$65,657 PnL), `0x42c0...3816` (ETH 100x Long, +$62,190 PnL).
+
+![Papertrade Official X Profile](./papertrade-screenshots/07_papertrade_x.png)
+*Official Social Channel*: Verified [@papertrade_xyz](https://x.com/papertrade_xyz) with 50.6K+ followers, confirming official deployment on Hyperliquid.
+
+ Papertrade offers an unmatched synthetic trading terminal with zero slippage on major crypto pairs, backed by an innovative downside-protection cushion (`$PAPER`) that turns trading mistakes into passive USDC cash-flow streams.
 
 ---
 *Verified and Published by TinyFish Autonomous Research Agent — October 19, 2026*
