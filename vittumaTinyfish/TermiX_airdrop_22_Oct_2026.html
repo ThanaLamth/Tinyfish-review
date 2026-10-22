@@ -170,19 +170,94 @@
       margin-bottom: 16px;
       line-height: 1.7;
     }
-    /* Architecture Diagram */
-    .arch-container {
-      background: #070a12;
-      border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 24px;
-      font-family: 'JetBrains Mono', monospace;
-      font-size: 13px;
-      overflow-x: auto;
-      color: #94a3b8;
-      line-height: 1.5;
-      margin: 20px 0;
+    
+    /* Visual Architecture Flowchart */
+    .visual-arch {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin: 24px 0 36px;
     }
+    .arch-stage {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 20px 22px;
+      position: relative;
+      transition: all 0.2s ease;
+    }
+    .arch-stage:hover {
+      border-color: rgba(99, 102, 241, 0.4);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+    .arch-stage-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+    .arch-stage-header h4 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 0.3px;
+    }
+    .arch-grid-2 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+    }
+    .arch-grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+    }
+    .arch-card {
+      background: #090e18;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 14px 16px;
+    }
+    .arch-card-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #e2e8f0;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .arch-card p {
+      font-size: 12.5px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+    .arch-connector-box {
+      margin-top: 12px;
+      background: rgba(6, 182, 212, 0.08);
+      border: 1px dashed rgba(6, 182, 212, 0.3);
+      border-radius: 8px;
+      padding: 10px 14px;
+      font-size: 12.5px;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .arch-arrow {
+      text-align: center;
+      font-size: 16px;
+      color: var(--primary);
+      margin: -4px 0;
+      user-select: none;
+    }
+    .arch-stage-tge {
+      border-color: rgba(16, 185, 129, 0.4);
+      background: linear-gradient(180deg, var(--bg-card) 0%, rgba(16, 185, 129, 0.06) 100%);
+    }
+
     /* KyberSwap 5-Block Container */
     .kyber-block {
       background: var(--bg-card);
@@ -434,44 +509,101 @@
         </p>
       </div>
 
-      <!-- Architecture ASCII Flowchart -->
-      <div class="arch-container">
-+-----------------------------------------------------------------------------------------+
-|                                    USER & AGENT LAYER                                   |
-|       Client Agents (Job Creators / Buyers)  |  Provider Agents (AI Service Sellers)    |
-+-----------------------------------------------------------------------------------------+
-                                             |
-                         TermiX On-Chain Agent Registry (BSC)
-                      [.agent Handle Minting — ERC-8004 Standard]
-                                             |
-                                             v
-+-----------------------------------------------------------------------------------------+
-|                    AGENT AUTONOMOUS COMMERCE PROTOCOL (AACP) ESCROW                     |
-|  • Escrow Lock (USDC/USDT)  |  Milestone Staking  |  2% Protocol Fee Settlement         |
-+-----------------------------------------------------------------------------------------+
-                                             |
-                     +-----------------------+-----------------------+
-                     |                                               |
-           [Successful Delivery]                               [Disputed Work]
-                     v                                               v
-        Cryptographic Proof Release                     zkVM + TEE Dispute Arbitration
-       Escrow Cleared -> Provider Paid                 Objective Verification -> Ruling
-                     |                                               |
-                     +-----------------------+-----------------------+
-                                             |
-                                             v
-+-----------------------------------------------------------------------------------------+
-|                            TERMIX POINTS (TP) SEASON 1 LEDGER                           |
-|  • Client Job Points: 100 / 90 / 80 TP per $1  | Provider Job Points: 50 / 45 / 40 TP/$1|
-|  • Social Bounties: 500 TP (X) + 500 TP (Discord) | Agent Registration: 200 TP / Agent  |
-|  • Content Creation: Dynamic Daily TP          | Referral Commissions: 5% - 20% Tiered  |
-+-----------------------------------------------------------------------------------------+
-                                             |
-                                             v
-+-----------------------------------------------------------------------------------------+
-|                               $TMT GOVERNANCE TOKEN AT TGE                              |
-|  • Prospective Community Airdrop               |  0.30% Kaito Katalyst Creator Pool     |
-+-----------------------------------------------------------------------------------------+
+      <!-- Modern Visual Architecture Flowchart -->
+      <div class="visual-arch">
+        <div class="arch-stage">
+          <div class="arch-stage-header">
+            <span class="badge badge-primary">STAGE 1</span>
+            <h4>User & Autonomous Agent Identity Layer</h4>
+          </div>
+          <div class="arch-grid-2">
+            <div class="arch-card">
+              <div class="arch-card-title">🧑‍💻 Client Agents (Job Buyers)</div>
+              <p>Deposit stablecoins (USDC/USDT), define task deliverables, and set milestone verification criteria.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-title">🤖 Provider Agents (AI Service Sellers)</div>
+              <p>Deploy specialized capabilities (code audit, trading bots, scraping), quote pricing, and stake collateral.</p>
+            </div>
+          </div>
+          <div class="arch-connector-box">
+            <span class="badge badge-cyan">On-Chain Registry</span> Mint sovereign <code>.agent</code> handles on BNB Chain (ERC-8004 DID standard for on-chain identity & reputation).
+          </div>
+        </div>
+
+        <div class="arch-arrow">⬇️</div>
+
+        <div class="arch-stage">
+          <div class="arch-stage-header">
+            <span class="badge badge-gold">STAGE 2</span>
+            <h4>AACP Smart Escrow Rails (BNB Chain)</h4>
+          </div>
+          <div class="arch-card">
+            <div class="arch-card-title">🔒 Cryptographic Escrow Vault</div>
+            <p>Funds are locked trustlessly in smart contracts upon hiring. Features milestone-based tranches, automated execution, and a 2% protocol settlement take rate.</p>
+          </div>
+        </div>
+
+        <div class="arch-arrow">⬇️</div>
+
+        <div class="arch-stage">
+          <div class="arch-stage-header">
+            <span class="badge badge-cyan">STAGE 3</span>
+            <h4>Autonomous Verification & Dual Settlement Rails</h4>
+          </div>
+          <div class="arch-grid-2">
+            <div class="arch-card" style="border-left: 3px solid #10b981;">
+              <div class="arch-card-title" style="color: #34d399;">✅ Path A: Successful Delivery</div>
+              <p>Provider submits cryptographic proof of delivery (signed output/hash) ➔ Escrow automatically cleared to provider wallet.</p>
+            </div>
+            <div class="arch-card" style="border-left: 3px solid #f59e0b;">
+              <div class="arch-card-title" style="color: #fbbf24;">⚖️ Path B: Disputed Work</div>
+              <p>Evaluator nodes running in <strong>zkVM + TEEs</strong> verify deliverables against test suites ➔ Objective automated refund/ruling.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow">⬇️</div>
+
+        <div class="arch-stage">
+          <div class="arch-stage-header">
+            <span class="badge badge-primary">STAGE 4</span>
+            <h4>TermiX Points (TP) Season 1 Ledger</h4>
+          </div>
+          <div class="arch-grid-3">
+            <div class="arch-card">
+              <div class="arch-card-title">💰 Job Points</div>
+              <p>Client: 100 / 90 / 80 TP per $1<br>Provider: 50 / 45 / 40 TP per $1</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-title">🎁 Base Starter Bonus</div>
+              <p>+1,400 TP base via social bindings & agent registrations</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-title">🤝 Referral Engine</div>
+              <p>5% to 20% tiered rebate commission on referee volume</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="arch-arrow">⬇️</div>
+
+        <div class="arch-stage arch-stage-tge">
+          <div class="arch-stage-header">
+            <span class="badge badge-green">STAGE 5</span>
+            <h4>$TMT Governance Token Distribution at TGE</h4>
+          </div>
+          <div class="arch-grid-2">
+            <div class="arch-card">
+              <div class="arch-card-title">🪂 Prospective Ecosystem Airdrop</div>
+              <p>TermiX Points (TP) serve as non-transferable weight for community distribution at TGE.</p>
+            </div>
+            <div class="arch-card">
+              <div class="arch-card-title">🏆 0.30% Kaito Katalyst Creator Pool</div>
+              <p>0.24% allocated to 450 ranked creators (EN 40%, ZH 40%, KR 20%) + 0.06% for stakers. 100% unlocked at TGE.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 

@@ -24,37 +24,44 @@ Backed by **YZi Labs** ($1M Seed Round) and deployed primarily on **BNB Chain (B
 
 TermiX re-architects decentralized service commerce into a four-stage autonomous lifecycle:
 
-```
-+-----------------------------------------------------------------------------------------+
-|                                    USER & AGENT LAYER                                   |
-|       Client Agents (Job Creators / Buyers)  |  Provider Agents (AI Service Sellers)    |
-+-----------------------------------------------------------------------------------------+
-                                             |
-                         TermiX On-Chain Agent Registry (BSC)
-                      [.agent Handle Minting — ERC-8004 Standard]
-                                             |
-                                             v
-+-----------------------------------------------------------------------------------------+
-|                    AGENT AUTONOMOUS COMMERCE PROTOCOL (AACP) ESCROW                     |
-|  • Escrow Lock (USDC/USDT)  |  Milestone Staking  |  2% Protocol Fee Settlement         |
-+-----------------------------------------------------------------------------------------+
-                                             |
-                     +-----------------------+-----------------------+
-                     |                                               |
-           [Successful Delivery]                               [Disputed Work]
-                     v                                               v
-        Cryptographic Proof Release                     zkVM + TEE Dispute Arbitration
-       Escrow Cleared -> Provider Paid                 Objective Verification -> Ruling
-                     |                                               |
-                     +-----------------------+-----------------------+
-                                             |
-                                             v
-+-----------------------------------------------------------------------------------------+
-|                            TERMIX POINTS (TP) SEASON 1 LEDGER                           |
-|  • Client Job Points: 100 / 90 / 80 TP per $1  | Provider Job Points: 50 / 45 / 40 TP/$1|
-|  • Social Bounties: 500 TP (X) + 500 TP (Discord) | Agent Registration: 200 TP x 2      |
-|  • Multi-Tier Referral Commission: 5% -> 20%     | Kaito Katalyst: 0.30% $TMT Allocation|
-+-----------------------------------------------------------------------------------------+
+```mermaid
+flowchart TD
+    subgraph Identity["1. User & Agent Layer (BSC ERC-8004)"]
+        Client["🧑‍💻 Client Agents (Job Buyers)"]
+        Provider["🤖 Provider Agents (AI Service Sellers)"]
+        Registry["TermiX On-Chain Registry (.agent handles)"]
+        Client --> Registry
+        Provider --> Registry
+    end
+
+    subgraph Escrow["2. AACP Escrow Protocol"]
+        Lock["USDC / USDT Smart Escrow Lock"]
+        Stake["Milestone Staking & 2% Protocol Fee"]
+        Registry --> Lock
+        Lock --> Stake
+    end
+
+    subgraph Resolution["3. Delivery & Verification Rails"]
+        Success["✅ Path A: Successful Delivery"]
+        Dispute["⚖️ Path B: Disputed Work"]
+        Proof["Cryptographic Proof Release -> Provider Paid"]
+        zkVM["zkVM + TEE Automated Dispute Arbitration"]
+        Stake --> Success
+        Stake --> Dispute
+        Success --> Proof
+        Dispute --> zkVM
+    end
+
+    subgraph Points["4. TermiX Points (TP) Season 1"]
+        TP["TP Utility Ledger<br>• Client: 100 / 90 / 80 TP per $1<br>• Provider: 50 / 45 / 40 TP per $1<br>• Base Starter: +1,400 TP | Referrals: 5%-20%"]
+        Proof --> TP
+        zkVM --> TP
+    end
+
+    subgraph TGE["5. $TMT Token Distribution"]
+        Token["$TMT Governance Token at TGE<br>• Community Ecosystem Airdrop<br>• 0.30% Kaito Katalyst Creator Pool"]
+        TP --> Token
+    end
 ```
 
 ### Core Technological Foundations:
