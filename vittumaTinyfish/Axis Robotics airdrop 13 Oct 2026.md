@@ -86,7 +86,7 @@ Complete simulation tasks across multiple different environments per day (aim fo
 ### Step 3: On-chain Sign & Verify on Base (Required — 100%)
 Completing a task only saves data locally. If you don't sign on-chain, all your effort will not count toward points.
 
-1. Click your avatar in the top-right corner $\rightarrow$ Select **Portfolio**.
+1. Click your avatar in the top-right corner → Select **Portfolio**.
 2. Switch to the **History** tab to view your runs.
 3. When a run shows the status `Signable` (passed physical consistency check), click the **Sign** button.
 4. Confirm the signature on the **Base** network (gas fees are near-zero or gasless subsidized by the system).
@@ -126,7 +126,7 @@ Completing a task only saves data locally. If you don't sign on-chain, all your 
 | **2** | Link X and Discord accounts in Portfolio | Meet the Signal Boost campaign requirements & protect account identity |
 | **3** | Complete diverse tasks daily (3–5 tasks across different contexts) | Optimize the **Diversity** and **Score** multipliers in the epoch formula |
 | **4** | Hunt 4–5 star tasks in **Challenger Program** & **Alliance** | Boost your score with 2x–3x reward multipliers |
-| **5** | **Go to Portfolio $\rightarrow$ History $\rightarrow$ Click SIGN before 00:00 UTC Friday** | **Required: Lock in epoch data — unsigned runs earn zero points** |
+| **5** | **Go to Portfolio → History → Click SIGN before 00:00 UTC Friday** | **Required: Lock in epoch data — unsigned runs earn zero points** |
 
 ---
 

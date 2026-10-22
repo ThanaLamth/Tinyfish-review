@@ -271,7 +271,7 @@ Traders who participated prior to the October 12 launch of Season 1 are classifi
 Follow this precise execution sequence to optimize your standing in Season 1 while preserving capital:
 
 ### Step 1: Secure an Access Code & Complete Registration
-1. Visit the official app: 👉 **[https://app.txflow.com/r/TXTENKO](https://app.txflow.com/r/TXTENKO)**.
+1. Visit the official app: **[https://app.txflow.com/r/TXTENKO](https://app.txflow.com/r/TXTENKO)**.
 2. If prompted, input code `TXTENKO` or `TXEXITPUMP` and click **"Verify"**.
 3. Connect your EVM-compatible self-custody wallet (MetaMask, Rabby, OKX Wallet).
 4. Authorize the login signature to link your address.
@@ -309,11 +309,11 @@ To farm Open Interest points without directional market risk:
 
 | Risk Category | Severity | Technical Failure Mode & Mechanics | Defensive Strategy |
 | :--- | :---: | :--- | :--- |
-| **Liquidation on Perps** | 🔴 **HIGH** | Using excessive leverage (10x–20x) during rapid market wicks can wipe out collateral. | Keep leverage strictly between 2x and 5x. Always set Stop-Loss (TP/SL) orders at entry. |
-| **Wash Trading Disqualification** | 🔴 **HIGH** | Rapidly opening and closing identical positions within seconds to churn volume triggers automated Sybil detection, reducing points to zero. | Prioritize Open Interest duration. Hold positions for multiple hours or days; trade naturally. |
-| **Counterfeit Token Scams** | 🟠 **HIGH** | Unofficial tokens named `$TXFLOW` launched on decentralized exchanges are malicious honeypots attempting to siphon liquidity. | TxFlow has NO live tradeable token. Points cannot be traded. Ignore all third-party DEX tokens. |
-| **Bridge Phishing Contracts** | 🟠 **HIGH** | Fake websites prompting users to deposit funds into spoofed bridge contracts can drain wallet balances. | Verify that the deposit contract strictly matches `0xcDE3F99bCB4c91e19124e41730489EAeFEc24565`. |
-| **Funding Rate Drag** | 🟡 **MODERATE** | Holding perpetual positions during periods of high funding rate skew can erode collateral balance. | Monitor the 1-hour funding rate countdown on the terminal. Rebalance when rates spike above 0.02%. |
+| **Liquidation on Perps** | **HIGH** | Using excessive leverage (10x–20x) during rapid market wicks can wipe out collateral. | Keep leverage strictly between 2x and 5x. Always set Stop-Loss (TP/SL) orders at entry. |
+| **Wash Trading Disqualification** | **HIGH** | Rapidly opening and closing identical positions within seconds to churn volume triggers automated Sybil detection, reducing points to zero. | Prioritize Open Interest duration. Hold positions for multiple hours or days; trade naturally. |
+| **Counterfeit Token Scams** | **HIGH** | Unofficial tokens named `$TXFLOW` launched on decentralized exchanges are malicious honeypots attempting to siphon liquidity. | TxFlow has NO live tradeable token. Points cannot be traded. Ignore all third-party DEX tokens. |
+| **Bridge Phishing Contracts** | **HIGH** | Fake websites prompting users to deposit funds into spoofed bridge contracts can drain wallet balances. | Verify that the deposit contract strictly matches `0xcDE3F99bCB4c91e19124e41730489EAeFEc24565`. |
+| **Funding Rate Drag** | **MODERATE** | Holding perpetual positions during periods of high funding rate skew can erode collateral balance. | Monitor the 1-hour funding rate countdown on the terminal. Rebalance when rates spike above 0.02%. |
 
 ---
 

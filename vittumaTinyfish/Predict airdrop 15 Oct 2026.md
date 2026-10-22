@@ -97,7 +97,7 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 * **Publicly listed PP/hr rate**: Each market is assigned a **Predict Points per hour (PP/hr)** quota displayed directly on the market page.
 * **5-Star Tier System**:
  * (1 star): Basic market.
- * (5 stars): Market urgently needing liquidity $\rightarrow$ Highest points quota.
+ * (5 stars): Market urgently needing liquidity → Highest points quota.
 * **Random Snapshot Mechanism**: The system takes continuous per-minute order book snapshots to calculate liquidity volume and distribute proportional PP/hr.
 * **4 Critical Conditions for Earning LP Points**:
  1. **Meet Minimum Order Size**: Each market has a minimum order size requirement (e.g., 10–50 shares). Orders that are too small are ignored.
@@ -128,7 +128,7 @@ Total Points Allocated = LP Points (largest weight) + Trading Points + Holding P
 1. Visit the official site: **[predict.fun](https://predict.fun)**
 2. Sign up via Google, X account, or connect a personal Web3 wallet (MetaMask/Rabby).
 3. The **Privy + ZeroDev** integration will automatically create a dedicated **Smart Contract Wallet** for you (no seed phrase to manage).
-4. Click **Deposit** in the top-right corner $\rightarrow$ Deposit USDT on BNB Chain (the Fun.xyz gateway is extremely fast — just **10 seconds**).
+4. Click **Deposit** in the top-right corner → Deposit USDT on BNB Chain (the Fun.xyz gateway is extremely fast — just **10 seconds**).
 
 ---
 

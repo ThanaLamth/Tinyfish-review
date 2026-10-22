@@ -281,7 +281,7 @@ To build your Consumer Passport and maximize future token positioning, execute t
 
 ### Step 1: Install Official Chrome Extension
 1. Open Google Chrome on desktop or laptop.
-2. Navigate directly to the verified portal: 👉 **[https://conso.xyz/extension](https://conso.xyz/extension)**.
+2. Navigate directly to the verified portal: **[https://conso.xyz/extension](https://conso.xyz/extension)**.
 3. Click **"Download Extension"** to open the Chrome Web Store listing (`bjibbmkefnaamkenamdppfengeepadpi`).
 4. Click **"Add to Chrome"** and pin the Conso mascot extension icon to your browser toolbar.
 
@@ -301,7 +301,7 @@ To build your Consumer Passport and maximize future token positioning, execute t
 2. Check the **Missions** tab inside the extension once daily to claim completed daily bounties and review weekly milestones.
 
 ### Step 5: Check CONSO BOTS Whitelist & Mine Impressions
-1. Navigate to: 👉 **[https://conso.xyz/bots](https://conso.xyz/bots)**.
+1. Navigate to: **[https://conso.xyz/bots](https://conso.xyz/bots)**.
 2. Connect your X account and review your GTD / FCFS eligibility status.
 3. If not eligible or seeking additional BOTS, author high-quality analytical content on X regarding Conso's Walrus Protocol architecture to harvest impressions.
 4. Prepare a compatible **Sui Wallet** (e.g., Sui Wallet, Nightly) for when the free-mint claim window opens.
@@ -316,10 +316,10 @@ To build your Consumer Passport and maximize future token positioning, execute t
 
 | Risk Category | Severity | Detailed Analysis & Failure Modes | Defensive Best Practice |
 | :--- | :---: | :--- | :--- |
-| **Sybil Prompt Spamming** | 🔴 **HIGH** | Attempting to script, macro, or flood AI tools with repetitive nonsense text triggers automated penalty algorithms, reducing overall ZAP balance. | Use AI tools naturally. Quality and multi-day consistency outweigh brute-force prompt volume. |
-| **Secondary Market OTC Scams** | 🟠 **HIGH** | CONSO BOTS feature pre-mint lockups. Unofficial OTC Discord/Telegram channels offering "cheap whitelist spots" or pre-market tokens are predominantly phishing traps. | Never buy OTC allocations from third parties. Rely exclusively on official claims via `conso.xyz/bots`. |
-| **Phishing Chrome Extensions** | 🟠 **HIGH** | Counterfeit browser extensions impersonating Conso may attempt to capture session cookies or private keys. | Verify the official Extension ID (`bjibbmkefnaamkenamdppfengeepadpi`) and developer (`AlphaDevs Labs L.L.C-FZ`). |
-| **No Formally Confirmed Token** | 🟡 **MODERATE** | Conso has not yet officially launched or scheduled an ERC-20 / Sui native token. Points (ZAPs) and BOTS represent speculative early ecosystem positioning. | Zero capital is required to farm. Do not risk financial capital beyond personal time and compute. |
+| **Sybil Prompt Spamming** | **HIGH** | Attempting to script, macro, or flood AI tools with repetitive nonsense text triggers automated penalty algorithms, reducing overall ZAP balance. | Use AI tools naturally. Quality and multi-day consistency outweigh brute-force prompt volume. |
+| **Secondary Market OTC Scams** | **HIGH** | CONSO BOTS feature pre-mint lockups. Unofficial OTC Discord/Telegram channels offering "cheap whitelist spots" or pre-market tokens are predominantly phishing traps. | Never buy OTC allocations from third parties. Rely exclusively on official claims via `conso.xyz/bots`. |
+| **Phishing Chrome Extensions** | **HIGH** | Counterfeit browser extensions impersonating Conso may attempt to capture session cookies or private keys. | Verify the official Extension ID (`bjibbmkefnaamkenamdppfengeepadpi`) and developer (`AlphaDevs Labs L.L.C-FZ`). |
+| **No Formally Confirmed Token** | **MODERATE** | Conso has not yet officially launched or scheduled an ERC-20 / Sui native token. Points (ZAPs) and BOTS represent speculative early ecosystem positioning. | Zero capital is required to farm. Do not risk financial capital beyond personal time and compute. |
 
 ---
 

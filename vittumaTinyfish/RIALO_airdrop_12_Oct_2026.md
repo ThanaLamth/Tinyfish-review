@@ -45,7 +45,7 @@ Screenshot data was captured directly from the live Rialo environment:
 2. Sign in with your **Google** account (the system automatically creates a safe Custodial Wallet shared across all apps).
 3. Receive **20 Rialo Points (RP)** welcome bonus immediately.
 4. Link **Discord** and **GitHub** in your profile tab to claim **Retroactive Points** (if you made early contributions).
-5. Go to the **Account** tab $\rightarrow$ Click **"Request devnet $RIALO"** to faucet test tokens (~5 tokens/hour).
+5. Go to the **Account** tab → Click **"Request devnet $RIALO"** to faucet test tokens (~5 tokens/hour).
 
 ---
 

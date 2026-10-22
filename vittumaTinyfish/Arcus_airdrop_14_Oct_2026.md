@@ -113,7 +113,7 @@ Perps trading requires an Invite Code (Beta access control):
 * Earn codes from traders who have traded over $1M volume (each $1M vol generates 1 single-use code).
 * Get codes via referral links from community partners.
 * Join the waitlist at: **[waitlist.arcus.xyz](https://waitlist.arcus.xyz)** (connect wallet and X account to import trade history from dYdX, Hyperliquid, Lighter).
-2. Once you have a code: Go to **app.arcus.xyz** $\rightarrow$ Select **Perps** tab $\rightarrow$ Enter Invite Code $\rightarrow$ Deposit USDG margin.
+2. Once you have a code: Go to **app.arcus.xyz** → Select **Perps** tab → Enter Invite Code → Deposit USDG margin.
 
 ---
 
@@ -129,7 +129,7 @@ To maximize rewards from the 250,000 points/week pool:
 ### Step 5: Check Rankings & Collect Points Weekly
 1. Regularly visit the Dashboard: **[app.arcus.xyz/rewards](https://app.arcus.xyz/rewards)**
 2. Check for updated points every **Wednesday at 3:00 PM ET**.
-3. Track tier progression: **Bronze $\rightarrow$ Silver $\rightarrow$ Gold $\rightarrow$ Platinum $\rightarrow$ Diamond**.
+3. Track tier progression: **Bronze → Silver → Gold → Platinum → Diamond**.
 4. When your perps volume (or that of your referrals) hits $1M milestones, collect new Invite Codes from the **Rewards** tab to share with your community.
 
 ---
