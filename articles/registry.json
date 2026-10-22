@@ -16,5 +16,14 @@
     "date_written": "2026-10-20",
     "article_path": "C:\\Users\\admin\\Projects\\Tinyfish-review\\articles\\1inch-review-2026.md",
     "git_pushed": false
+  },
+  {
+    "url": "https://app.uniswap.org",
+    "domain": "app.uniswap.org",
+    "slug": "uniswap-review-2026",
+    "site_type": "dex",
+    "date_written": "2026-10-22",
+    "article_path": "C:\\Users\\admin\\Projects\\Tinyfish-review\\articles\\uniswap-review-2026.md",
+    "git_pushed": false
   }
 ]

@@ -57,6 +57,8 @@ def capture_all(url: str, out_dir: Path, devices: list, proxy: str = ""):
                 device_scale_factor=prof["device_scale_factor"],
                 is_mobile=prof["is_mobile"],
                 user_agent=prof["user_agent"],
+                locale="en-US",
+                extra_http_headers={"Accept-Language": "en-US,en;q=0.9"},
             )
             page = ctx.new_page()
             try:

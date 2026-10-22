@@ -1,0 +1,8 @@
+{
+  "url": "https://app.uniswap.org",
+  "screenshots": {
+    "desktop": "screenshots\\app.uniswap.org\\desktop.png",
+    "tablet": "screenshots\\app.uniswap.org\\tablet.png",
+    "phone": "screenshots\\app.uniswap.org\\phone.png"
+  }
+}
